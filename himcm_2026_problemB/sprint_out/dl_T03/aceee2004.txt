@@ -1,0 +1,684 @@
+             Paving the Path for a New Generation of High-Efficiency
+                     Supermarket Refrigerated Display Cases
+
+           Rafik Sarhadian, Ramin Faramarzi, Bruce A. Coburn, and John Lutton,
+                               Southern California Edison
+                           Homayun Navaz, Kettering University
+                             David Walker, Foster-Miller Inc.
+
+
+ABSTRACT
+
+        This paper discusses the results of experimental evaluation of a number of viable and
+near-term energy-efficiency solutions applicable to open vertical refrigerated display cases.
+With energy usage intensity of 43 kWh to 70 kWh per square-foot per year, supermarkets are
+one of the most energy-intensive commercial building types in the United States. A major factor
+affecting the design and operation of supermarket refrigeration systems is the cooling load
+requirements of the display cases. Medium-temperature display cases and, in particular, open
+vertical display cases, are one of the most thermally vulnerable display cases in supermarkets.
+These display cases, which are typically used to merchandize meat, diary and delicatessen, fish
+and produce, operate at discharge air temperatures of 28oF to 32oF. They also comprise the
+largest portion of display case line ups. Historically, display case manufacturers have not
+invested in energy-efficiency improvements of their products. This has been due to lack of
+demand from their customers as well as first cost considerations. Furthermore, the absence of
+energy-efficiency standards for display cases, coupled with supermarkets’ dominant emphasis on
+merchandising facets have impeded the related research and development efforts.
+        Laboratory tests were conducted to quantify the impacts of several energy-efficiency
+measures on the performance of a selected open vertical display case. The result of
+incorporating these technologies indicated an improvement of 19% in refrigeration effect and
+reduction of 11% in electric power usage of the refrigeration system (excluding condenser).
+These improvements were achieved without affecting the target product temperature.
+
+Introduction
+        This work was sponsored in part by the United States (U.S.) Department of Energy,
+Office of Building Technology, State and Community Programs under contract DE-AC05-
+00OR22725 with UT-Battelle, LLC. The purpose of this project was to evaluate the impacts of
+near-term energy-efficiency solutions in refrigerated display cases without affecting food safety
+or hampering the merchandizing facets. The project employed a combination of experimental
+and analytical methods to evaluate the effects of selected viable technologies on the energy-
+efficiency of a thermally vulnerable display case. The economics of these near-term
+technologies can have an influential role in their market adoption. The study, however,
+temporarily steered away from considering potential cost barriers and focused on technical
+feasibility and energy impacts.
+
+
+
+
+                                             3-275
+Background
+
+       In the U.S. today, over 199,000 supermarkets operate their refrigeration systems
+continuously to ensure proper merchandizing and safety of their perishable food products (Food
+Marketing Institute 2004). Supermarkets are one of the most electric energy intensive
+commercial building types in the U.S. Their annual electric energy usage intensity is between 43
+kWh to 70 kWh per square-foot (Komor et al. 1998). In a typical supermarket, refrigeration of
+perishable foods accounts for about 50% of total electric energy usage (ADL 1996).
+Furthermore, past research reveals that the major contributor to the total cooling load of medium-
+temperature open vertical display cases is the infiltration load, which comprises roughly 70% to
+80% of the total cooling load. Infiltration load refers to the entrainment of warm and moist air
+from the room into the refrigerated space (Faramarzi 1999). These cases have a large presence
+in supermarkets and account for up to 50% of the total refrigerated display case line ups (Electric
+Power Research Institute 1992).
+
+Approach
+
+        This study has been categorized into three phases. A brief description of each phase is
+provided below. The testing of the display cases followed the procedures specified in the
+American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE)
+Standard 72-98 (ASHRAE 1998).
+        In phase 1, the energy impact of a number of viable display case energy-efficiency
+measures (EEMs) was quantified by performing whole-building hourly simulations. A special
+version of the U.S. Department of Energy’s (DOE-2) program was used to develop a model
+based on an actual supermarket information. The model was then calibrated using available end-
+use monitored data to increase confidence in simulation results. As part of the calibration
+process, the non-weather dependent electrical loads, such as lighting and equipment as well as
+their corresponding hourly usage profiles were reconciled with the end-use monitored data.
+Simulation results were used to identify viable energy-efficient technologies for implementation
+in the second phase of the project. Additionally, under this phase, a standard eight-foot long,
+medium temperature open vertical display case was selected and evaluated for thermal
+performance benchmarking purposes. These cases are typically used for merchandizing poultry,
+fish, produce, fresh meat, dairy and delicatessen items and have a large presence in
+supermarkets. Thermal characteristics of the selected standard display case were evaluated in the
+laboratory to establish baseline performance data. Finally, a combination of analytical and
+experimental methods was used to study the air curtain performance. These methods involved
+the use of digital particle image velocimetry (DPIV) and laser Doppler velocimetry (LDV) to
+visualize and quantify the air flowfield along the plane of the air curtain. The DPIV and LDV
+results were also used to calibrate a computational fluid dynamics (CFD) model, which was later
+used to simulate the air curtain performance for a variety of conditions.
+        In phase 2, the baseline display case was retrofitted with the selected energy-efficient
+technologies, which were identified in phase 1. Results obtained from CFD modeling were used
+to determine the best discharge air grille (DAG) configuration and velocity profile to minimize
+the infiltration load of the display case. Based on the obtained intelligence, limited modifications
+were made to the geometry of DAG assembly. The thermal performance of the display case was
+then evaluated.
+
+
+
+                                               3-276
+        In phase 3, findings from previous phases were used to develop energy-efficiency
+specifications for fabricating a new display case (prototype). The shell of the prototype case was
+fabricated with a modified DAG configuration with the intention of reducing the infiltration load
+of the case. The next step included the design, fabrication and installation of the energy-efficient
+components. These components included: low temperature differential evaporator, tangential
+evaporator fans driven by an electronically commutated motor (ECM), high-efficiency super T8
+fluorescent lamps with high power factor ballast, dual-port thermostatic expansion valve (TXV)
+and micro-channel liquid-to-suction heat exchanger (LSHX). Lastly, the thermal performance of
+the prototype was evaluated.
+
+Baseline Display Case Description
+       The eight-foot long baseline display case with the rated cooling capacity of 1,561 Btu/hr
+per foot was equipped with four shelves, three shaded pole fan motors, and two rows of standard
+T8 canopy lights with electronic ballast (Figure 1). Off-cycle defrost was initiated three times
+per day and terminated at coil outlet temperature of ~47oF. Following the manufacturer’s
+published data, the baseline display case was set up to operate at a saturated evaporating
+temperature (SET) of 17oF and discharge air temperature (DAT) of 28oF (Hill Phoenix 2001).
+
+                      Figure 1. Photograph of the Baseline Display Case
+
+
+
+
+Cooling Load Constituents
+
+         The total cooling load of a display case is comprised of both sensible and latent portions.
+Generally, the sensible portion is comprised of heat gained from lights, evaporator fan motors,
+defrost process (electric or hot gas), anti-sweat heater(s), thermal conduction, radiation, warm air
+infiltration and product pull-down load. The latent portion, on the other hand, is comprised of
+moist air infiltration and product latent heat of respiration (ASHRAE 2002). A display case heat
+transfer model was developed to determine the contribution of various cooling load components
+based on the measured data. Figure 2 depicts test data representing the main cooling load
+components for a medium-temperature, open, multi-deck display cases (Faramarzi 1999).
+
+Energy-Efficiency Measures (EEMs)
+       The selection of the EEMs in this study was performed based on the following criteria:
+
+1.     Near-term implementation
+
+
+
+                                               3-277
+2.     Potential for energy-efficiency improvements
+3.     Enhancement of the ability to maintain target product temperature
+
+        The selected EEMs were grouped into five main categories. Technologies within these
+categories were expected to improve the refrigeration system performance, maintain a tightly
+targeted product temperature and reduce the electric power usage of the case.
+
+     Figure 2. Cooling Load Components of a Typical Open Multi-Deck Display Case
+
+                                                   Infiltration
+                                                       73%
+
+
+
+
+                                                                                  Lights
+                                      Conduction                           Fans
+                                                      Radiation                     8%
+                                         4%                                 3%
+                                                        12%
+
+
+
+
+EEMs Descriptions and Categories
+
+        1. The evaporator coil assembly EEM consisted of a high-efficiency evaporator coil and a
+dual port TXV. The high-efficiency coil features a large heat transfer surface with staggered fin
+design, and enhanced tubing. Table 1 compares the key operational characteristics of the high-
+efficiency and baseline evaporator coils. The dual-port TXV regulates the refrigerant flow by
+opening its larger port during post-defrost periods and reducing the flow through its smaller port
+for temperature holding.
+
+       Table 1. Summary of Baseline and Prototype Case Evaporator Specifications
+             Design Parameter                       Baseline Evaporator                      Prototype Evaporator
+             Overall Dimensions                    81”W x 7 5/8”H x 12” D                  81”W x 7 1/2”H x 13 9/16” D
+             Number of Circuits                                     4                                  6
+      Number of Tube Passes per Circuit                            12                                  12
+              Liquid Line Fed                                     Front                               Back
+                                                                                               3 for 5 Front Rows
+          Number of Fins per Inch                                   2
+                                                                                               4 for 7 Rear Rows
+                Fin Material                            Flat Aluminum                            Flat Aluminum
+         Tube/Pipe Outside Diameter                               9/16”                               3/8”
+             Tube/Pipe Material                                   Copper                             Copper
+         Tube/Pipe Internal Surface                           Smooth                                Enhanced
+
+       2. The air distribution EEM consisted of two tangential fans (Figure 3a) operated by a 1/3
+horsepower dual shaft ECM, which had an efficiency of about 80%. Each tangential fan had 30
+blades with an airflow inlet/outlet angle of 180 degrees. The wheel diameter and length of each
+tangential fan was 4.5” and 36”, respectively.
+
+
+                                                       3-278
+       3. The liquid-to-suction heat exchanger EEM was made of aluminum and utilized micro-
+channel heat exchangers (Figure 3b). In each module a liquid channel was sandwiched by 12
+vapor tubes. These vapor tubes were 5/32” in diameter and 38” long. The liquid channel
+dimensions were: 3/32”D x 1.57”W x 40”L. The measured heat exchanger effectiveness,
+defined as the ratio of actual to maximum possible heat transfer, was about 70%.
+
+                  Figure 3. Photographs of the Tangential Fans and LSHX
+
+
+
+
+             (a) Tangential Fans                              (b) LSHX
+
+        4. The lighting system EEM consisted of high-efficiency super T8 fluorescent lamps (30
+watts, 4100K) with low ballast factor electronic ballast (EB). The low ballast factor allowed the
+lamps operation at lower amperage. The power factor of the EB was over 90% with an input
+voltage of 120V and line current of 0.79A.
+        5. The air curtain EEM involved the investigation of the air curtain effectiveness in
+reducing infiltration load and maintaining the food products at a prescribed temperature. The
+investigation also identified those parameters that can have significant impact on the reduction of
+entrained air and infiltration rate. The analysis employed a combination of numerical and
+experimental methodologies to ascertain the thermo-fluid characteristics of air curtain and to
+better understand the entrainment phenomenon.
+        The experimental approach relied on the DPIV technology, which is based on a two-
+dimensional mapping of the flowfield within the air curtain. The velocity flowfield obtained
+from the DPIV was used to determine the volumetric rate of entrained air into the display case.
+Since determining the air velocities at the DAG and return air grille (RAG) were critical
+operational aspects of the air curtain, special attention was given to this measurement. For this
+reason, the highly accurate and non-intrusive technique of LDV was employed for precise
+determination of the discharge air velocity (DAV) and the case volumetric flow rate.
+        The numerical approach relied on CFD modeling of the display case. A CFD model was
+developed and calibrated using the experimental data in order to perform air curtain simulations.
+The boundary conditions of the CFD model were established based on the DAG and RAG
+velocity profiles obtained from the DPIV results. The CFD model was then used to perform a
+series of parametric simulations correlating the entrainment rate to key operational variables such
+as turbulence intensity and Reynolds number.
+
+Test Design and Setup
+        The test setup and design followed guidelines specified in ASHRAE Standard 72-98. The
+refrigeration system was charged with a hydroflurocarbon refrigerant (R-404A). The
+refrigeration system controller maintained a fixed saturated condensing temperature (SCT) of
+95oF (+ 0.5oF) for all tests. The display cases were tested in a controlled environment room at
+
+
+                                              3-279
+Southern California Edison’s Refrigeration and Thermal Test Center (RTTC) located in
+Irwindale, Calif.
+        All tests were performed under steady-state conditions following ASHRAE Standard 72-
+98. Average DAT, which was the critical control point was maintained at 30oF (+ 0.5oF) to
+prevent the maximum product temperature from exceeding 41oF. The controlled environment
+chamber was maintained at a constant dry bulb (DB) temperature of 75.2oF + 2oF and wet bulb
+of 64.4oF + 2oF, corresponding to 55% relative humidity (RH), throughout the entire 24-hour test
+period. The intensity of ambient lighting in the controlled environment room was 115 foot-
+candles and was in compliance with the ASHRAE standard, which requires a minimum of 74.4
+foot-candles. The foot-candle measurement was taken at a distance of one foot from the air
+curtain. The entering liquid refrigerant temperature and pressure, measured at 6.1” of pipe
+length from the display case, were maintained at 80oF and 214 psig (corresponding to a SCT of
+~94oF). These parameters meet the ASHRAE standard, which requires the entering liquid
+temperature be 80.6oF + 5oF, and SCT to be maintained between 89.6oF and 120.2oF.
+        The product temperatures were monitored at 24 locations within the display case. For
+each display shelf, two product simulators were located at the left end, the right end and the
+center. At each left, right, center location, one product simulator was placed on the shelf surface
+at the front of the shelf and one at the rear edge of the shelf. As a result, six product simulators
+were used on each of four shelves.
+        ASHRAE 72-98 also requires food product zones be filled with test packages and dummy
+products to simulate the presence of food product in the cases. According to the ASHRAE
+standard, food products are comprised of 80% to 90% water, fibrous materials, and salt.
+Therefore, plastic containers completely filled with a sponge material soaked in a 50% + 2% by
+volume solution of propylene glycol and distilled water were used to simulate the product during
+the tests. The spaces in the test display case where temperature measurement was not required
+were stocked with dummy products to stabilize the temperature in the case and account for
+transient heat transfer effects.
+
+Data Acquisition
+
+        The RTTC’s data acquisition system was set up to scan 128 data channels in ten-second
+intervals and to log channel outputs in two-minute intervals. Collected data was screened closely
+to ensure the key control parameters were within acceptable ranges. In the event that any of the
+control parameters fell outside acceptable limits, the problem was flagged and a series of
+diagnostic investigations were carried out. Corrections were then made and tests were repeated
+as necessary. Once the data passed the initial screening process, it was imported to RTTC’s
+customized refrigeration analysis model where detailed calculations were performed. The
+collected data points from the two-minute intervals were averaged into hourly values where
+necessary and used for a secondary screening of the results.
+        Prior to the test, all instruments including thermocouples, resistance temperature devices,
+pressure transducers, anemometers, mass flow and power transducers, were calibrated. With the
+objectives of minimizing instrument error and maintaining a high level of repeatability and
+accuracy in the data, careful attention was paid to the design of monitoring system. The location
+of sensors within the test display case is depicted in Figure 4. The instrumentation was set up
+based on the following guidelines:
+
+
+
+
+                                               3-280
+1.     Use of sensors with high accuracy
+2.     Minimization of sensor drift errors by use of redundant sensors
+3.     Utilization of National Institute of Standards and Technology calibrated instruments of
+       high accuracy
+4.     Elimination of interference from power conductors and high frequency signals by
+       shielding sensor leads
+
+                                                     Figure 4. Sensor Locations
+                         R                                                                       MAIN CHANNELS DESCRIPTION
+
+                                A1,2,4 (i,j,k)                                    A                     DISCHARGE AIR
+                                                                                  B                      RETURN AIR
+                                P                                                 C          AIR ENTERING EVAPORATOR [After Fans]
+
+                                                     Fi,j,k Gi,j,k                D        COIL SURFACE TEMPERATURE (PER CIRCUIT)
+                                                                                  E               AIR LEAVING EVAPORATOR
+                                                                                   F           FRONT PRODUCT TEMPERATURES
+                                                                                  G             BACK PRODUCT TEMPERATURES
+                                                                                  H     AIR PRESSURE DIFFERENTIAL ACROSS EVAPORATOR
+                                                                                   J              REFRIGERANT AT COIL EXIT
+                                                     Fi,j,k Gi,j,k
+                                                                                  K                 AIR INSIDE CASE CAVITY
+                                                                                   L        REFRIGERANT AT EXPANSION VALVE EXIT
+                                                                                  M         REFRIGERANT AT EXPANSION VALVE INLET
+
+                                                            K1,2                  P                  CASE LIGHT - POWER
+                                                                                  Q               CASE FAN MOTORS - POWER
+                                                                                  R             ANTI-SWEAT HEATERS - POWER
+                                                     Fi,j,k Gi,j,k                                  SUBSCRIPTS (numerical)
+                                                                                   1                    TEMPERATURE
+                                                                                   2                  RELATIVE HUMIDITY
+                 B1,2,4 (i,j)                                                      3                      PRESSURE
+                                                                                   4                      VELOCITY
+
+                                Fi,j,k                     Gi,j,k                  5               DEWPOINT TEMPERATURE
+                                                                                                     SUBSCRIPTS (roman)
+
+                     Q          C1 (k)       Evaporator     E1,2 (k)               i                        LEFT
+                                C                           E4 (jk)
+                        C5 (ijk) 4 (jk)          D                                 j                       MIDDLE
+                                C1 (j)                      E1,2 (j) E5 (ijk)      k                        RIGHT
+                                C1,2,4,5 (i)                E1,2,5 (i)            jk             BETWEEN RIGHT AND MIDDLE
+                      M1,3          L1,3         H                J1,3            ijk      COMBINATION OF RIGHT, MIDDLE, AND LEFT
+
+
+
+
+Test Facility
+
+        The RTTC is a 3,800 square-feet testing facility. This facility is comprised of three main
+categories of test chambers: supermarket test chambers, HVAC test chambers, and refrigerated
+walk-in test chambers.
+        The supermarket test area is comprised of a controlled environment room and a
+mechanical room. In the mechanical room, three refrigeration racks and a variety of heat
+rejection equipment can serve various display case systems, which are housed in the controlled
+environment room. The controlled environment room is an isolated thermal zone served by
+independent cooling, heating and humidification systems. This allows simulation of various
+indoor conditions of a supermarket. The sensible cooling load representing people and other
+heat gain sources is provided by a constant volume direct expansion system, which reclaims
+waste refrigeration heat via a six-row coil. Auxiliary electric heaters located down-stream of the
+heat reclaim coils provide additional heating when required. While the air is conditioned to a
+desired thermostatic set point, an advanced ultrasonic humidification unit introduces precise
+amounts of moisture into the air surrounding the display cases. This moist air represents the
+latent load due to outside air and people. There are three laminar diffusers in the room, each
+supplying air at approximately 370 cubic-feet-per-minute.
+
+
+
+
+                                                                                3-281
+Discussion of Results
+        This section discusses and compares results obtained from testing of the baseline and the
+prototype display cases. One of the critical challenges of the study was to maintain an identical
+maximum product temperature, while keeping average DAT at 30oF (+ 0.5oF) for both units.
+The warmest product temperature for both units was 39.6oF (+ 0.5oF), which was observed at the
+bottom shelf front center location and occurred during post-defrost periods.
+        The refrigeration system, test chamber, and the product temperatures were allowed to
+reach a steady-state equilibrium condition prior to initiation of the test runs. Figure 5 illustrates
+that the test chamber maintained relatively non-varying DB and RH during the entire test period
+for both units.
+
+ Figure 5. Two-Minute Room Dry-Bulb and Relative Humidity Data over 24-Hour Period
+                                             95
+
+                                             85
+                 and Relative Humidity (%)
+                  Room Dry-Bulb Temp (F)
+
+
+
+
+                                                  Room Dry-Bulb Temperature
+                                             75
+
+                                             65
+
+                                             55
+                                                    Room Relative Humidity
+                                             45
+
+                                             35
+
+                                             25
+
+                                                         Baseline                Prototype
+
+
+
+
+        Figure 6 depicts the discharge and suction pressures for both display cases. The test rack
+controller was programmed to run at a fixed discharge pressure of 220 psig, corresponding to
+95oF SCT, for both test scenarios. For the baseline unit, the suction pressure was set according
+to the case manufacturer’s specifications to provide a SET of 17oF. For the prototype unit, the
+SET (or the suction pressure) was raised until a similar DAT and maximum product temperature
+as the baseline were achieved. As a result, the prototype case operated at a SET of roughly 23oF,
+which was about 6oF (or 8 psig) higher than the baseline case.
+
+Discharge Air Temperature and Product Temperatures
+
+        The average DAT for both the baseline and prototype cases was about 30oF (+ 0.5oF)
+while maintaining an average product temperature of 33oF (Figure 7). The highest product
+temperature for both scenarios was recorded during post-defrost periods while the lowest was
+prior to initiation of defrost. The variations in product temperature can be attributed to variations
+in DAT. The DAT reached its lowest temperature at the beginning of the refrigeration periods
+due to frost or ice having been removed from the coil during defrosts. Unlike the prototype case,
+the DAT of the baseline tends to increase almost half way through refrigeration cycles. This
+increase can be attributed to larger frost formation on the baseline coil as a result of longer
+refrigeration periods.
+
+
+
+
+                                                                         3-282
+     Figure 6. Two-Minute Suction and Discharge Pressures Data over 24-Hour Period
+                                              260                                                                                   150
+
+                                              240                                                                                   130
+
+
+
+
+                  Discharge Pressure (psig)
+                                                          Discharge Pressure
+
+
+
+
+                                                                                                                                          Suction Pressure (psig)
+                                              220                                                                                   110
+
+                                              200                                                                                   90
+
+                                              180                                                                                   70
+                                                         Suction Pressure
+                                              160                                                                                   50
+                                                    Avg. Suction Pressure = 50.4 psig           Avg. Suction Pressure = 58.6 psig
+                                              140                                                                                   30
+
+                                              120                                                                                   10
+
+                                              100                                                                                   -10
+                                                               Baseline                                   Prototype
+
+
+
+
+   Figure 7. Two-Minute Average Discharge Air Temp. and Product Temperature Data
+                                over 24-Hour Period
+                                               45
+
+                                                      Avg. Product Temp = 32.8 F                      Avg. Product Temp = 33.3 F
+                Average Discharge Air
+                and Product Temp (F)
+
+
+
+
+                                               40
+
+
+
+                                               35
+
+
+
+                                               30
+                                                          Avg. DAT = 29.5 F                                Avg. DAT = 30.3 F
+
+                                               25
+                                                                 Baseline                                       Prototype
+
+                                                              Average DAT                                Average Product Temp
+
+
+
+
+Collected Condensate and Defrost Duration
+
+        Figure 8 depicts the two-minute profile of condensate mass collected over the entire test
+period for both display cases. As shown, the overall magnitudes of collected condensate were
+relatively close for both scenarios. Horizontal lines in Figure 8 show no (or insignificant amount
+of) moisture being collected during refrigeration periods. Vertical lines indicate the mass of
+melted frost collected during each defrost cycle.
+        The defrost frequency for the baseline case was set to three defrosts per day (based on the
+manufacturer’s specifications), which resulted in 102 minutes of defrost over 24-hours. With
+only three defrosts per day, the more effective evaporator of the prototype case experienced
+faster frost blockage due to its higher rate of moisture removal than the baseline. As a result,
+after conducting a series of experiments, the optimum number of defrost cycles was set to six per
+day to minimize the adverse post-defrost product temperature rise. Doubling the number of
+defrost cycles in the prototype case increased the overall defrost duration to 168 minutes.
+
+
+
+
+                                                                                        3-283
+      Figure 8. Two-Minute Mass of Collected Condensate Data over 24-Hour Period
+                                    100
+                                          Total Condensate = 83.30 lbs           Total Condensate = 86.65 lbs
+                                    90
+                                    80
+
+
+
+                Mass of Collected
+                Condensate (lbs)
+                                    70
+                                    60
+                                    50
+                                    40
+                                    30
+                                    20
+                                    10
+                                     0
+                                                  Baseline                               Prototype
+
+
+
+
+Air Curtain Study
+
+         The CFD results of the air curtain study suggested that DAV characteristics including
+velocity profile, Reynolds number and turbulence intensity all have significant impacts on
+infiltration. The CFD model predicted the lowest entrainment rate to take place under conditions
+where the velocity profile at the DAG resembled a skewed parabola and the Reynolds number
+was around 3,000. Accordingly, several attempts were made to modify the DAG assembly to
+establish similar conditions as suggested by the CFD results. Unfortunately, none of these
+modifications proved to yield sizable reductions in the infiltration rate.
+
+Evaporator Coil Effectiveness, Superheat, and Total Subcooling
+
+        The evaporator effectiveness as a function of the product of overall coefficient of heat
+transfer and its surface area (UA) for the prototype unit was improved by 68% over the baseline
+case. Use of a micro-channel LSHX resulted in roughly a 34oF increase in total system
+subcooling. The prototype case used a dual port mechanical TXV. This allowed for faster
+temperature recovery than in the baseline case during post-defrost periods. It also allowed for
+more effective utilization of the evaporator by operating at 6oF superheat, which was 4oF less
+than the baseline.
+
+Refrigeration Effect and Refrigerant Mass Flow Rate
+
+        Figure 9 depicts the refrigeration effect and refrigerant mass flow rate for both cases.
+Refrigeration effect represents the cooling capacity of the evaporator per pound of refrigerant
+flow. The prototype case was operated at 63.5 Btu/lb, which was 10 Btu/lb (or 18%) higher than
+the baseline. This improvement was largely due to the use of a more effective evaporator, which
+allowed for operations at higher SET. A high-efficiency LSHX, which increased subcooling
+from 17oF to 52oF also made a partial contribution to the improvement in the refrigeration effect.
+The prototype case also required 9% less circulation of refrigerant than the baseline, which was a
+result of an improved refrigeration effect and a small reduction in cooling load.
+
+
+
+
+                                                                         3-284
+     Figure 9. Two-Minute Refrigeration Effect and Refrigerant Mass Flow Rate Data
+                                 over 24-Hour Period
+                                  66                                                                          4.5
+                                       Refrigerant Mass Flow Rate                Avg. Refrig. Effect = 63.5
+                                  64
+                                                                                                              4.0
+                                  62
+
+
+
+
+                                                                                                                    Flow Rate (lb/min)
+                                                                                                                    Refrigerant Mass
+                Effect (Btu/lb)
+                Refrigeration
+                                  60                                                                          3.5
+                                  58
+                                        Avg. Flow Rate = 3.75 lb/min
+                                  56                                                                          3.0
+                                       Refrigeration Effect                    Avg. Flow Rate = 3.41 lb/min
+                                  54
+                                                                                                              2.5
+                                  52
+                                          Avg. Refrig. Effect = 53.6
+                                                    Bt /lb
+                                  50                                                                          2.0
+                                                 Baseline                             Prototype
+
+
+
+
+Cooling Capacity and Cooling Load Components
+
+        The cooling capacity, which is the product of refrigeration effect and mass flow rate, was
+12,038 Btu/hr and 12,977 Btu/hr for the baseline and the prototype, respectively. The total
+cooling load was comprised of infiltration, radiation, conduction, and internal loads (lights and
+evaporator fans). As expected, the largest component of the cooling load was infiltration, which
+contributed over 80% to the total cooling load for each display case. Based on the heat transfer
+model’s results, the contribution of radiation (8%) and conduction (4%) to the total cooling load
+remained unchanged since both display cases operated at similar average DAT. The contribution
+of internal loads, however, decreased from 6% in the baseline case to 5% in the prototype. This
+reduction was due to less heat dissipation from the high-efficiency lighting system and the
+evaporator fan motor.
+
+Power, Energy, and System Efficiency
+
+        The prototype unit required roughly 20% less fan and lighting power than the baseline
+unit (Figure 10). Furthermore, the increase in refrigeration effect and decrease in refrigerant
+mass flow resulted in a drop of 10% in the compressor power requirement of the prototype case.
+Combining the savings obtained from the compressor, evaporator fan motor and lighting yielded
+11% reduction in total power consumption and a 22% increase in the total energy-efficiency ratio
+(EER). Additionally, the decrease in compressor power run time of the prototype case translated
+into a savings of 14% in compressor energy usage.
+
+Conclusions
+        Overall, the prototype display case operated more efficiently than the baseline. Despite
+several attempts to implement air curtain improvements, the infiltration load of the prototype
+display case remained the same as the baseline. Both the baseline and the prototype cases
+experienced a maximum post-defrost product temperature of 39.6oF (+ 0.5oF) at the bottom shelf
+front center location. The prototype evaporator coil UA was improved by 68% over the baseline
+
+
+
+                                                                       3-285
+case. While the mass flow rate of refrigerant for the prototype decreased by 9%, its refrigeration
+effect was increased by 19% over the baseline case. The prototype unit benefited from a
+reduction of 10% and 14% in compressor power and energy consumption, respectively. Further
+power enhancements were made possible through efficient lighting (21%) and an efficient
+evaporator fan motor (20%). The overall impacts of all these measures resulted in a 22%
+improvement in the overall system EER. These improvements were achieved while target
+product temperatures were maintained and the total cooling capacity was similar to the baseline
+case. Future research is highly recommended to further investigate the air curtain performance
+and subsequently develop effective means to reduce infiltration.
+
+               Figure 10. Average End-Use Power Data over 24-Hour Period
+                                1,600
+                                                         1,460                                    1,315
+                                1,400                                    Evap. Fan
+                                                                         Lighting System
+                                1,200
+                                                                         Compressor
+                Power (watts)
+
+
+
+
+                                1,000
+
+                                 800
+
+                                 600
+
+                                 400
+                                        115     112                             92         88
+                                 200
+
+                                   0
+                                              Baseline                                Prototype
+
+
+
+References
+American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE). 2002.
+      Refrigeration Handbook.
+American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE). 1998.
+      Standard 72-1998. Method of Testing Open Refrigerators.
+Electric Power Research Institute (EPRI). 1992. Field Testing of High-Efficiency Supermarket
+        Refrigeration, TR-1002351, December.
+Faramarzi, R. 1999. Efficient Display Case Refrigeration. American Society of Heating,
+      Refrigerating and Air-Conditioning Engineers (ASHRAE) Journal. November, pp.46-54.
+Food Marketing Institute, Inc. (FMI). 2004. Facts and Figures. Retrieved from World Wide Web
+      at http://www.fmi.org/facts&figs/superfact.html.
+Hill Phoenix. 2001. Merchandisers Engineering Reference Manual. Rev. 1: July, p. 134.
+Komor, P., C. Fong, and J. Nelson. 1998. Delivering Energy Services to Supermarkets and
+      Grocery Stores. E Source. Boulder, Co. June.
+Arthur D. Little, Inc. (ADL). 1996. Energy Savings Potential for Commercial Refrigeration
+       Equipment – Final Report, prepared for United States Department of Energy, Building
+       Equipment Division Office of Building Technologies.
+
+
+
+                                                                 3-286
+

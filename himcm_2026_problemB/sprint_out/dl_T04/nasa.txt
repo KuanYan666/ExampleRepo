@@ -1,0 +1,1164 @@
+   Correlation of Water Frost Porosity in Laminar Flow over Flat Surfaces
+
+              (Running Head: Water Frost Porosity in Laminar Flow)
+
+                                       Max Kandula
+
+            ASRC Aerospace, John F. Kennedy Space Center, FL 32899, USA
+
+                        E-mail address: max.kandula-l@nasa.gov
+
+
+
+   Abstract
+
+   A dimensionless correlation has been proposed for water frost porosity expressing its
+
+   dependence on frost surface temperature and Reynolds number for laminar forced flow
+
+   over a flat surface. The correlation is presented in terms of a dimensionless frost surface
+
+   temperature scaled with the cold plate temperature, and the freezing temperature. The
+
+   flow Reynolds number is scaled with reference to the critical Reynolds number for
+
+   laminar-turbulent transition. The proposed correlation agrees satisfactorily with the
+
+   simultaneous measurements of frost density and frost surface temperature covering a
+
+   range of plate temperature, ambient air velocity, humidity, and temperature. It is
+
+   revealed that the frost porosity depends primarily on the frost surface and the plate
+
+   temperatures and the flow Reynolds number, and is only weakly dependent on the
+
+   relative humidity. The results also point out the general character of frost porosity
+
+   displaying a decrease with an increase in flow Reynolds number.
+
+
+
+Key Words: Water frost, frost density, frost porosity, porous media, temperature and
+
+Reynolds number dependence
+
+
+
+
+                                                                                           1
+Nomenclature
+
+c p specific heat at constant pressure, kJ/kg.K
+
+
+Fa Fourier number, ar:Jj I L2
+
+hm average heat transfer coefficient, W/m 2 .K
+
+k   thermal conductivity, W/m.K
+
+L plate length, m
+
+Numaverage Nusselt number, hmLI koo
+
+Pr Prandtl number of air, C pJioo I koo
+
+Re flow Reynolds number, uooL I v 00
+
+t   time, sec
+
+T   temperature, K
+
+Tf frost temperature, K
+
+Too freestream temperature, K
+
+U oo freestream velocity, m/s
+
+
+x axial distance from the leading edge of the plate, m
+
+Greek Symbols
+
+a thermal diffusivity, m 2/s
+
+¢ relative humidity
+
+
+e dimensionless frost surface temperature, (Tft - Tw)I(Tm - Tw)
+
+If/ frost porosity
+
+
+
+
+                                                                  2
+f1 dynamic viscosity, kglm.s
+
+v kinematic viscosity, f1 / p (m2/s)
+
+                                    3
+P f average frost density, kg/m
+
+OJ     'humidity ratio (absolute humidity) of moist air, kg (water vapor)/kg(dry air)
+
+~     = Re/Re c
+
+Subscripts
+
+CI)    ambient (freestream, moist air)
+
+c      critical (laminar-turbulent transition)
+
+f      frost
+
+g air-vapor mixture
+
+m freezing
+
+w plate wall
+
+fs frost surface
+
+
+1. Introduction
+
+       Frost formation represents an important consideration in cryogenics, refrigeration,
+
+aerospace, meteorology and various process industries. Processes involving simultaneous
+
+heat transfer and frost formation are occasioned in gas coolers, refrigerators, regenerators,
+
+freeze-out purification of gases, cryopumping, and the storage of cryogenic liquids.
+
+       Frost forms when moist air comes in contact with a cold surface maintained at a
+
+temperature which is below the freezing temperature of water (273 K) and is less than the
+
+dew point temperature, so that water vapor directly passes from a gaseous state to solid
+
+state (ice) releasing the latent heat of sublimation. Water frost represents a complex porous
+
+
+                                                                                             3
+medium comprised of ice particles randomly distributed in air-water vapor mixture (Fig.
+
+1). The frost growth (characterized by a moving boundary) and the densification are
+
+governed by heat and mass diffusion processes within the frost layer and at the frost-air
+
+interface.
+
+    Frost offers significant thermal resistance to heat transport in heat exchangers, and
+
+increases the pressure drop by flow restriction. Frost/icing on aircraft wings causes
+
+significant aerodynamic penalties in lift and drag, leading to a decrease in lift and an
+
+increase in drag. Frost/ice formation on cold fuel/oxidizer tanks and other components
+
+may cause debris concerns when it is shed on critical components of aerospace vehicles.
+
+The prediction of frost growth is thus of great practical importance.
+
+    The frost porosity If/ is directly related to the frost density PI by the relation
+
+
+                                               1- PI/Pice
+                                          If/ = -----"---                                    (1)
+                                                1- P g / Pice
+
+where Pice is the density of ice, and P g the density of air-vapor mixture. Note that Pice is
+
+usually taken as 917 kg/m 3 . In traditional porous packed beds, the 'effective thermal
+
+conductivity is modeled as a function of porosity If/ (see Cheng and Hsu, 1999).
+
+        The calculation of frost growth requires information concerning the average frost
+
+density and effective frost thermal conductivity. During frost formation, frost thickness,
+
+frost density, frost thermal conductivity, and frost surface temperature increase
+
+continuously (Fig. 1). Generally, the frost thermal conductivity is correlated with frost
+
+density (Ostin and Anderson, 1991), with additional dependence on the frost surface
+
+temperature and atmospheric variables including air velocity, air humidity, and air
+
+temperature. Whereas several theoretical models have been proposed for the prediction of
+
+
+
+                                                                                             4
+frost thermal conductivity as a function of frost density (or frost porosity) and frost surface
+
+temperature (Kandula 2010), published work on the frost density dependence is relatively
+
+small. Inaccuracies in the frost porosity could lead to significant errors and uncertainties in
+
+the predicted frost thickness and frost surface temperature.
+                                                         I
+
+
+
+
+   Experimental studies (for example, Sahin 1994) have shown that the frost density
+
+depends on frost surface temperature, plate temperature, and additionally on air velocity,
+
+air humidity, and air temperature. Theoretical considerations suggest that the frost surface
+
+temperature in tum depends on the plate temperature, and the atmospheric variables
+
+governing heat and mass transport at the frost surface (Cheng and Cheng, 2001). Generally,
+
+frost density is known to increase with an increase in flow Reynolds number (Sahin 1994).
+
+Measurements by Ostin and Anderson (1991) suggest that the frost thickness depends
+
+strongly on the cold plate temperature and the air humidity. Higher plate and air
+
+temperatures lead to denser frosts, while higher humidity ratios produce lower frost density
+
+(Sahin 1994).
+
+    When the frost surface approaches a constant value with time (below the melting
+
+temperature), a quasi-steady condition prevails. If the surface temperature approaches the
+
+freezing temperature, a cyclic increase (small) in frost thickness is manifested, and is
+
+accompanied by a large and abrupt increase in frost density (Ostin and Anderson, 1991). A
+
+corresponding increase Gump) in the thermal conductivity of frost was also noticed.
+
+Melting at the frost surface was also reported by other investigators (Trammel et aI., 1967;
+
+Aoki, 1983; Cheng and Wu, 2003).
+
+    Brian et al. (1969) point out that forced convection frosts formed at relatively high
+
+temperatures are endowed with densities ranging from 300 to 500 kg/m3, while natural
+
+
+
+
+                                                                                            5
+convection frosts at low temperatures are usually light and fluffy with densities between 10
+
+and 50 kg/m3 . This is to be expected primarily because heat and mass transfer coefficients
+
+in forced convection are considerably higher relative to those in natural convection.
+
+   In view of the complex processes connected with the heat and mass transfer processes
+
+within the frost layer (regarded as a porous medium), most correlations for frost density are
+
+essentially empirical. Early correlations proposed for frost density are formulated in
+
+dimensional form, restricting their generality. The correlation due to Hosoda and Uzuhashi
+
+(1967) expresses the frost density in terms of plate temperature (power-law) and air
+
+velocity without regard to the frost surface temperature. A widely considered correlation
+
+due to Hayashi et al. (1977) expresses frost density as an exponential function of frost
+
+surface temperature alone, with no consideration for the plate temperature. Hermes et al.
+
+(2009) present a frost density correlation as an exponential function of both frost surface
+
+temperature and plate temperature, but exclude the effect of atmospheric variables.
+
+   Among other correlations, Biguria and Wentzel (1970) proposed a frost density
+
+correlation in a mixed mode (semi-dimensionless form) in terms of a dimensionless frost
+
+surface temperature (scaled with respect to plate temperature and melting temperature), and
+
+dimensional parameters, namely, the plate temperature, air velocity, and air humidity. In
+
+recent times, increasing emphasis is directed towards the development of frost density
+
+correlations in fully dimensionless form. Yang and Lee (2005) proposed a correlation for
+
+frost density with dimensionless frost surface temperature (scaled with plate temperature,
+
+melting temperature and air temperature), air humidity ratio, Reynolds number, and Fourier
+
+number. It is evident that correlations involving Fourier number (dimensionless time) seem
+
+to be less general, as they impose a limitation on the range of frosting times encountered in
+
+
+
+
+                                                                                              6
+actual applications. Also, the use of air temperature in scaling the frost surface temperature
+
+does not lend to a general representation of the full range of frost surface temperature
+
+(starting from the plate temperature initially to the melting temperature eventually).
+
+    It is the purpose of this note to examine the dependence of frost density variation with
+
+frost surface temperature, the plate temperature, and the flow Reynolds number in the
+
+laminar regime. Existing experimental data on simultaneous measurements of.frost density
+
+and frost surface temperature is examined, and a new correlation for frost density in
+
+forced flow over flat surfaces is proposed that is applicable to a full range of frost surface
+
+temperature and flow velocity (within the laminar limit).
+
+2. Existing Correlations for Frost Density
+
+    An excellent summary of the various correlations for the thermophysical properties of
+
+frost (density and thermal conductivity) is presented by Yang and Lee (2004), indicating their
+
+range of validity. The geometries considered include flat plate, vertical plate, horizontal
+
+parallel plates, and cylindrical tubes. Iragorry et al. (2004) provided a critical review of frost
+
+properties (density, thermal conductivity, frost thickness, and convective heat transfer) along
+
+with frost growth models. The frost density correlations considered the geometries of flat
+
+plates and vertical plates.
+
+    Hosoda and Uzuhashi (1967) present a correlation for frost density in terms of plate
+
+temperature and flow velocity as:
+
+                                                    -0.445
+                                     Pf = 3401Tw 1           + 85u oo                                (2)
+
+where the frost density Pf is in kg/m 3, Tw is the plate temperature (DC), and U oo is the air
+
+velocity in mls. This correlation is valid for - 20 ~ Tw ~ -5 DC, 0 ~ Too ~ 10 DC, 1 ~ U oo ~ 5
+
+
+
+
+                                                                                                 7
+mis, 0.0188:::; o}oo :::; 0.00604kg (vapor)/kg (dry air), and 0 :::; t:::; 240min, where O}oostands
+
+for the air humidity and t for the time.
+
+    Biguria and Wentzel (1970) proposed a correlation of the form
+
+
+                                                                                                     (3)
+
+
+where Tft is the frost surface temperature, Tm the melting temperature (0 DC for water), x is
+
+the distance from the leading edge of the flat plate. This correlation is valid for their test
+
+
+
+
+0.0065:::; o}oo :::; 0.0135 kg (vapor)/kg (dry air), and 0:::; t:::; 50min.
+
+    Hayashi et aI. (1977) proposed the following correlation for the frost density as a function
+
+of frost surface temperature only:
+
+                                   PI = 650expl0.227(Tft -273.15)J                                   (4)
+
+
+where PI is in kg/m3, and Tft is in degrees Kelvin. Eq. (4) is widely considered for frost
+
+growth modeling (see for example, Cheng and Cheng, 2001; Sherif et aI., 1993). It is
+
+applicable for -18.6 DC< Tft <-5 DC, air stream velocities U oo in the range of 2-6 mIs, an
+
+airstream humidity ratio 0}000fO.0075 kg (vapor)/kg (dry air), and t= 0 to 450 min.
+
+   Fig. 2a shows graphically the variation of frost density as a function of frost surface
+
+temperature according to Eq. (4). This correlation is known to predict unacceptably higher
+
+values of frost density for frost surface temperatures within about 5 K below the freezing
+
+temperature, with increasing error as the frost surface approaches the freezing temperature
+
+(Iragorry et aI., 2004). Hermes et aI. (2009) point out that the correlation of Hayashi et aI.
+
+(1977) overpredicts the frost density in comparison with the measurements (Fig. 2b).
+
+
+
+                                                                                                 8
+Another limitation of Hayashi et al. 's correlation is ascribed to its dependence on surface
+
+temperature only without regard to the plate temperature.
+
+    Yang and Lee (2005) suggest a correlation for frost density of the form:
+
+
+                                                                                                    (5a)
+
+
+In Eq. (5a), the Reynolds number Re and the Fourier number Fa are defined by
+
+                                                                                                    (5b)
+
+Their correlation is limited to - 5'5, TrYJ '5, 15 DC, - 35 '5, Tw ~ -15 DC, 1.0'5, U oo ~ 2.5 mis, and
+
+0.00322'5, OJoo '5, 0.00847 kg (vapor)/kg (dry air). The dependence of frost density on the
+
+dimensionless frost surface temperature is of the exponential form, indicating a strong
+
+dependence of frost density on the frost surface temperature.
+
+    Hermes et al. (2009) recently considered a frost density correlation of the form:
+
+                                                                                                    (6a)
+
+where the constants a,b,c are evaluated by comparison with their test data as:
+
+                                  a = 207.3, b = 0.266, c = 0.0615                                  (6b)
+
+The range of their measurements is: -16 '5, Tw ~ -4 DC, 16 '5, Too '5, 22 DC, U OO = 0.7 mis, and
+
+50 '5, ¢oo ~ 80 %, where ¢oo is the relative humidity.
+
+3. Proposed Correlation for Frost Density
+
+       As the frost thickness increases, it becomes imperative that we account for both frost
+
+surface temperature and plate temperature in contributing to the variation of frost density.
+
+On the basis of their observations concerning frost density measurements, Biguria and
+
+Wentzel (1970) originally suggested that the density could be correlated with both plate
+
+
+
+
+                                                                                                   9
+temperature and frost surface temperature (see Eq. 3). Since frost surface temperature
+
+depends on the air parameters (air temperature, air humidity and air velocity), it is to be
+
+expected that the dependence of frost density on the air temperature and air humidity
+
+(thermodynamic state variables) can be indirectly accounted for by the frost surface
+
+temperature. Also the effect of time is expected to be absorbed through the frost surface
+
+temperature, which is known to increase monotonically with time.
+
+     Considering the joint effects of frost surface temperature and air velocity, we proceed
+
+with a correlation for frost density in the form
+
+
+                                                                                               (7 a)
+
+
+
+where                                                                                          (7b)
+
+
+In the preceding equation, B is the dimensionless frost surface temperature, and Re c is the
+
+critical Reynolds number for laminar-turbulent transition. The choice of the dimensionless
+
+frost surface temperature, as defined in Eq. (7b), is adapted from Biguria and Wentzel
+
+(1970). A value of Re c ~ 10 5 is considered in the present work, based on available
+
+measurements on frost formation (Biguria and Wentzel, 1970; Yang et aI., 2006) and
+
+considering the roughness ofthe frost surface. For a detailed account concerning the role of
+
+surface roughness in laminar-turbulent transition, Schlichting (1979) and White (1991) may
+
+be consulted.
+
+     Equation (7a) satisfies the requirement that
+
+                                     PI/Pice = 0       @B=O                                    (8a)
+
+
+
+
+                                                                                              10
+Considering a maximum possible frost density of SOO kg/m 3 for pre-melting frosts in the
+
+laminar forced flow (Brian et aI., 1970), we may consider that
+
+                                              Cl = O.S                                      (8b)
+
+so that                   PI I Pice = O.S,      @   e = 1, q = Rei Re c = 1                 (8c)
+
+      Heat transfer in a laminar boundary layer past a flat plate is well-correlated by (Kays
+
+and Crawford, 1980)
+
+                              NU m = 0.664Reo. 5 Pr 1l3 ,      Pr > 0.6                     (9a)
+
+where the average Nusselt number Nu m and the Prandtl number Pr are defined by
+
+                               Nu m = hmL I koo'    Pr = C pooJloo I koo                    (9b)
+
+The quantity hm is the average convective heat transfer coefficient, and koo the thermal
+
+conductivity of moist air. Eq. (9a) suggests that the constant c4 can be reasonably represented
+
+by
+
+                                              C4 = O.S                                      (10)
+
+      The remaining constants c2 ,c3 are to be determined by a comparison ofEq. (7a) with
+
+the detailed measurements of Hermes et ai. (2009).
+
+4. Results and Discussion
+
+4.1 Correlation with the Data of Hermes et ai. (2009)
+
+     Hermes et ai. (2009) recently obtained elaborate measurements of frost growth and
+
+densification processes. A total of 12 test runs were conducted for frost density
+
+measurements for a range of parameters: Tw=-So, 10°, -IS °c, Too =16 °c and 22°C, ¢oo =
+
+SO% and 80%, U oo =0.7 mis, and t =60 min and 120 min. The data are obtained on an
+
+aluminum plate. An electronic scale was used to measure the mass of frost deposited. T-
+
+
+                                                                                           11
+type thermocouples were used to measure temperature. An infrared camera was also used
+
+to measure the frost surface temperature (± 0.2 °C). The frost thickness was measured by
+
+image processing (± 5 J.lI11 uncertainty). The overall uncertainties in frost thickness and frost
+
+density are ± 2% and ± 5% respectively.
+
+     Figure 3 presents a correlation ofEq. (7a) with the measured frost density of Hermes et
+
+al. (2009). The frost density data for t = 60 min and t = 120 min are presented in a
+
+dimensionless form with P f / Pice as a function of dimensionless frost surface temperature
+
+ O. The correlation constants c2, c3 are evaluated as
+
+                                                                                              (11)
+
+Thus the frost density correlation takes the form
+
+
+                           Pf     = 0.50exp{ - [0.376 + 1.5(1- 0)](1-   c;o.s)}               (12)
+                           Pice
+
+     Equation (12) is seen to correlate well with the data covering dimensionless
+
+temperature 0 from about 0.45 to 1.0. Note that 0 ~ O(Tfs = Tw) physically corresponds to
+
+the condition of very early frost growth, when the frost temperature is very close to the plate
+
+temperature. On the other extreme, 0 ~ 1 (Tfs = Tm = OOC) physically represents the
+
+situation when the frost surface attains the melting temperature. It is observed that the data
+
+for t = 120 min generally shift to the right (increasing 0) relative to that at t =60 min. This
+
+is to be expected since both the frost surface temperature and frost density increase with time.
+
+This consideration suggests that the time effects could be satisfactorily incorporated into Tfs
+
+as envisaged by Eq. (12). The data presented in this form suggests that the frost density is not
+
+strongly correlated with the relative humidity.
+
+
+
+
+                                                                                            12
+        Figure 3 reveals that at () = 1, the value of Pf I Pice approaches 0.37, which is
+
+considerably less than the value of unity (corresponding to ice). An abrupt density transition
+
+Gump) in frost density is expected as () ~ 1. This abrupt transition near () = 1 is advocated
+
+by the measurements of Ostin and Anderson (1991), as alluded to earlier. Thus the data of
+
+Hermes et al. (2009) appears to be consistent with the character of the frost data of Ostin and
+
+Anderson (1991) with regard to the possibility of a jump in frost density as the frost surface
+
+approaches the melting temperature.
+
+4.2 Comparison with the Data of Lee et al. (2003)
+
+        In an effort to further validate the present correlation for frost density with an
+
+independent set of observations, the correlation Eq. (12) was compared to the measurements
+
+of frost density by Lee et al. (2003). To the author's knowledge, these are the only
+
+measurements on frost density at relatively high temperature, other than the data of Hermes
+
+et al. (2009) already discussed in the preceding sections, where both the frost density and
+
+frost surface temperature were simultaneously measured. The same correlation constants c2
+
+and c3defined by Eq. (11) are considered in the prediction of frost density according to Eq.
+
+(12).
+
+        Two sets of data are considered here for comparison. One set of data corresponds to
+
+Tw =-15 °c, Too =15 0 C, 0)00 =0.00633 kg (vapor)/kg(dry air), and u oo =2.5 mls. The other
+
+set of data corresponds to Tw = -20°C, Too = 10°C, 0)00 = 0.00528 kg (vapor)/kg (dry air),
+
+and U oo = 1.75 mls. The flow Reynolds numbers corresponding to the air velocities of 1.75
+
+mls and 2.5 mls are respectively 0.31 x 10 5 and 0.44x 105 • Uncertainty in the measured frost
+
+density is estimated at 6.9%, and uncertainty in the frost surface temperature is estimated at
+
+4.4%.
+
+
+                                                                                             13
+      Figure 4 displays a comparison of the proposed correlation with the data of Lee et al.
+
+(2003) at the two Reynolds numbers considered, corresponding to ~ = 0.4 and 0.56 which are
+
+considerably higher relative to that encountered in the data of Hermes et al. (2009). The data
+
+cover a range of Ofrom to 0.1 to 0.5, and suggest that the frost density at a constant 0
+
+increases as the Reynolds number increases. This trend is predicted by the proposed
+
+correlation, which agrees reasonably well with the data, except for very small values of O.
+
+The predicted values of Pf / Pice at 0 = 1for ~ = 0.4 and 0.56 are respectively about 0.43 and
+
+0.44, which compare to the value of 0.37 for ~ = 0.04 (shown in Fig. 3). The relatively lower
+
+range of 0 arising in the data of Lee at al. (2003) may be regarded as complementing the
+
+data of Hermes et aI, (2009) which span a range of 0 from 0.5 to unity.
+
+4.3 Character of Frost Density and Frost Porosity
+
+      The general character of frost density as predicated by the proposed correlation (Eq. 12)
+
+is illustrated in Fig. Sa covering 0::; 0::; 1and 0.05 ::; ~ ::; 1. The results suggest that the frost
+
+density variation due to flow Reynolds number is indeed remarkable, and that the density
+
+variation (at a constant 0) displays the existence of a peak in the neighborhood of oaround
+
+0.7 to 0.8. As ~ ~ 1 (Reynolds number nearing the critical value), the frost density varies
+
+linearly with the dimensionless frost surface temperature. Measurements such as those of
+
+Biguria and Wentzel (1970) suggest that the frost density in turbulent flow ( ~ > 1) exceed
+
+those in laminar flow, as is to be expected.
+
+      Figure 5b represents the variation of frost porosity as obtained by the proposed
+
+formulation (Eqs. 1 and 12) covering 0::; 0 ~ 1and 0.05::; ~ ::; 1 . In obtaining these results,
+
+                                                   3
+values of Pice =917 kg/m3, and P g ::::: 1.2 kg/m are considered. At a given frost surface
+
+
+
+
+                                                                                                 14
+temperature, the frost porosity decreases with an increase in flow Reynolds number. It is
+
+noticed that at a given Reynolds number the frost porosity decreases with an increase in the
+
+frost surface temperature. This result is consistent with the phenomenon of frost densification
+
+as the frost growth proceeds. Measurements on packed beds suggest that thermal dispersion
+
+effect increases as the porosity increases (Du et aI., 2003). An increase in thermal dispersion
+
+amounts to an increase in thermal conduction, which in tum implies an increase in frost
+
+density. This consideration points out a plausible explanation for the underprediction of the
+
+low density data of Lee et ai. (2003) corresponding to low frost surface temperature.
+
+     Thermal dispersion effects are intimately related to eddy convection (Kandula 20 I 0),
+
+and were treated by Cheng and Vortmeyer (1988) along with wall channeling effects
+
+(existence of a peak velocity in a region close to the external boundary, analogous to a wall
+
+jet in single-phase flow). Convection in variable porosity media, including channeling effects
+
+were considered by Vafai (1984).
+
+5. Discussion
+
+     The practical and physical significance of the proposed correlation lies in its application
+
+to frost modeling. The author (Kandula 2011a) recently incorporated the proposed frost
+
+density model in conjunction with the newly-developed effective frost thermal conductivity
+
+model (Kandula, 20 I 0) to accurately predict the frost growth, frost densification, frost
+
+surface temperature and heat flux when compared to five sets of test data from various
+
+investigators covering a fairly wide range of variables (wall temperature, air humidity, air
+
+velocity, and air temperature). The effective frost conductivity model was based on a porous
+
+packed bed model of Zehner and Schlunder (1970), see also Kandula (201Ib). The
+
+
+
+
+                                                                                             15
+satisfactory prediction of the frost parameters lends confidence in the proposed frost density
+
+correlation.
+
+     It should be pointed out that the present correlation for frost porosity is limited to
+
+laminar forced convection, and does not address the conditions of turbulent flow. Also
+
+natural convection effects (laminar/turbulent), driven by the temperature differential
+
+(between the air and the frost surface) are excluded from consideration in the present
+
+formulation.
+
+     The plate temperature becomes especially important at very low plate temperatures
+
+(approaching cryogenic temperatures), for which sufficient data on frost density is presently
+
+unavailable. A detailed investigation of the low temperature effects is beyond the scope of
+
+the present investigation. More experimental data on frost density (with simultaneous
+
+measurement of frost surface temperature) covering a wide range of plate temperatures will
+
+be of great help in extending the generality of frost density correlations for use in practical
+
+applications.
+
+6. Conclusions
+
+      The proposed correlation for water frost porosity in terms of dimensionless frost
+
+surface temperature and flow Reynolds number, applicable to laminar flow, satisfactorily
+
+describes the experimental data on frost density. It is revealed that flow Reynolds number has
+
+an important effect on the frost porosity, and that at the critical Reynolds number the frost
+
+density is described by a linear variation with dimensionless frost temperature. The results
+
+also suggest that the effect of relative humidity of air on frost porosity is rather unimportant
+
+in the framework of the present correlation, suggesting that the air humidity effects are
+
+indirectly absorbed into the frost surface temperature.
+
+
+
+
+                                                                                              16
+Acknowledgement
+
+     The author thanks the reviewers for helpful suggestions in improving the manuscript.
+
+This work was funded by NASA Kennedy Space Center, with Mark Collard as Project
+
+Manager.
+
+References
+
+Aoki, K., A study on frost formation (the process of frost formation involving the phenomena
+
+of water permeation and freezing), Bull. JSME, Vol. 26, pp. 87-93, 1983.
+
+Biguria, G. and Wenzel, L.A., Measurement and correlation of water frost conductivity and
+
+density, I&EC Fundamentals, Vol. 9, pp. 129-138, 1970.
+
+Brian, P.L.T., Reid, R.C., and Brazinsky, I., Cryogenic frost properties, Cryogenic
+
+Technology, Vol. 5, pp. 205-212, 1969.
+
+Brian, P.L.T., Reid, R.c., and Shah, Y.T., Frost deposition on cold surfaces, IEC
+
+Fundamentals, Vol. 9, No.3, pp. 375-380, 1970.
+
+Cheng, C-H and Cheng, Y-C, Predictions of frost growth on a cold plate in atmospheric air,
+
+International Communications in Heat Mass Transfer, Vol. 28, No.7, pp. 953-962, 200l.
+
+Cheng, C-H and Wu, K-K, Observations of early-stage frost formation on a cold plate in
+
+atmospheric air flow, ASME J. of Heat Transfer, Vol. 125, pp. 95-102, 2003.
+
+Cheng, P. and Vortmeyer, D., Transverse thermal dispersion and wall channeling in a packed
+
+bed with forced convective flow, Chern. Engng. Sci., Vol. 9, pp. 2523-2532, 1988.
+
+Cheng, P. and Hsu, C-T, The effective stagnant thermal conductivity of porous media with
+
+periodic structures, J. Porous Media, Vol. 2, pp. 19-38, 1999.
+
+
+
+
+                                                                                      17
+Du, J., Hu, x., and Wang, B-X, Thermal dispersion model for single phase flow in porous
+
+media, Heat Transfer - Asian Research, Vol. 32, pp. 545-552,2003.
+
+Hayashi, Y., Aoki, A., Adachi, S., and Hori, K., Study of frost properties correlating with
+
+frost formation types, ASME J. of Heat Transfer, Vol. 99, pp. 239-245, 1977.
+
+Hermes, C. J. L., Piucco, R 0., Barbosa, Jr., J. R, and Melo, c., A study of frost growth and
+
+densification on flat surfaces, Experimental Thermal and Fluid Science, Vol. 33, pp. 371-
+
+379,2009.
+
+Hosoda, T. and Uzuhashi, H., Effects of frost on the heat transfer coefficient, Hitashi
+
+Review, Vol. 16, No.6, pp. 254-259, 1967.
+
+Iragorry, J., Tao, Y-X, and Jia, S., A critical review of properties and models for frost
+
+formation analysis, HVAC & R Research, Vol. 10, No.4, pp. 393-420, 2004.
+
+Kandula, M., Effective thermal conductivity of frost considering mass diffusion and eddy
+
+convection, Special Topics and Reviews in Porous Media, Vol. 1, No.4, pp. 321-336,2010.
+
+Kandula, M., Frost growth and densification in laminar flow over flat surfaces, Int. J. Heat
+
+Mass Transfer, 2011a (in press).
+
+Kandula, M., On the effective thermal conductivity of porous packed beds with uniform
+
+spherical particles, J. Porous Media, 2011 b (in press).
+
+Kays, W. M. and Crawford, M. E., Convective Heat and Mass Transfer, McGraw-Hill, 2nd
+
+edition, New York, 1980.
+
+Lee, K-S, Jhee, S., and Yank, D-K., Predictions of the frost formation on a cold flat surface,
+
+Int. J. Heat Mass Transfer, Vol. 46, pp. 3789-3796, 2003.
+
+Ostin, R and Anderson, S., Frost growth parameters in a forced air stream, Int. J. of Heat
+
+Mass Transfer, Vol. 34 (4/5), pp. 1009-1017, 1991.
+
+
+
+
+                                                                                            18
+Sahin, A., An experimental study on the initiation and growth of frost formation on a
+
+horizontal plate, Experimental Heat Transfer, Vol. 7, pp. 101-119, 1994.
+
+Schlichting, H., Boundary Layer Theory, 7th edition, McGraw-Hill, New York, 1979.
+
+Sherif, S.A., Raju, S. P., Padki, M. M., and Chan, A. B., A semi-empirical transient method
+
+for modeling frost formation on a flat plate, Rev. Int. Froid, Vol. 16, No.5, pp. 321-329,
+
+1993.
+
+Trammel, G. I., Canterbury, 1., and Killgore, E. M., Heat transfer form humid air to a
+
+horizontal flat plate held at subfreezing temperatures, ASHRAE Trans., Vol. 73, part I,
+
+IV.3.l-IV.3.6, 1967.
+
+Vafai, K., Convective flow and heat transfer in variable-porosity media, 1. Fluid Mechanics,
+
+Vol. 147, pp. 233-259, 1984.
+
+Yang, D-K and Lee, K-S, Dimensionless correlations of frost properties on a cold plate, Int.
+
+1. of Refrigeration, Vol. 27, pp. 89-96,2004.
+
+Yang, D-K., and Lee, K-S., Modeling of frosting behavior on a cold plate, Int. 1.
+
+Refrigeration, Vol. 28, pp. 396-402,2005.
+
+Yang, D-K., Lee, K-S., and Cha, D-l., Frost formation on a cold surface under turbulent
+
+flow, Int. 1. Refrigeration, Vol. 29, pp. 164-169,2006.
+
+White, F.M., Viscous Fluid Flow, 2nd edition, McGraw-Hill, New York, 1991.
+
+Zehner, P., and Schlunder, E.U., Thermal conductivity of granular materials at moderate
+
+temperatures, Chemie Ingr. Tech., Vol. 42, pp. 933-941, 1970 (in German).
+
+
+
+
+                                                                                          19
+Figure Captions
+
+Figure 1. Schematic of porous frost layer, frost growth and frost densification.
+
+Figure 2. Frost density variation according to the correlation of Hayashi et al. (1977):
+
+(a) frost density variation with frost surface temperature, (b) comparison with
+
+measurements of Hermes et al. (2009), adapted from Hermes et al. (2009).
+
+Figure 3. Comparison of the proposed correlation with the data of Hermes et al. (2009).
+
+Figure 4. Comparison of the proposed correlation with the data of Lee et al. (2003).
+
+Figure 5a. Frost density dependence on temperature and Reynolds number according to the
+
+proposed correlation.
+
+Figure 5b. Frost porosity dependence on temperature and Reynolds number according to the
+
+proposed correlation.
+
+
+
+
+                                                                                           20
+                                                                                     mass transter of vapor to the frost surface
+                     moist air: Too ,Uoo ,(j}oo                                                  heat convection & latent heat of sublimation
+                                                                     •                                              frost growth and dl.'11sification
+
+
+
+
+                                                 77/77777772727772/
+                                                          L
+                                                 --x
+               Figure 1. Schematic of porous frost layer, frost growth and frost densification.
+
+
+
+
+         0.8 '-~"'--'---'--'..-r-.-----~,-,~.,-----;-,.,..,                                               350.-------------------------,
+                                                                 iii                     I   I'                                                o
+
+
+
+                 lr,~-'.                   -'-t- '-.~)-':-'~ -:-~- " '-f'-'- f'~- ';,)~:," . +.-;-1
+                                                                                                                                               o
+                                                                                                                                           o
+                                                                                                          300
+                                                                                                                                                   o     0
+         ::            _:,-_ic'-:r'-:-;'*t-f'-'-n
+                                           ..                                            i
+                                                                                                                                      o
+                                                                                                                                                             o
+      " 0.5 -+-~.~- --i ~   .----t-.. T~'~- -'-;-, ~
+                                             I      -.-                                                                                o
+     .\1     I ,!      ,!
+~ O.4l ,..,. _.rangeofdata - --
+                            t
+                                  l'   I' I I
+                                             ~..: I
+                                                    I
+                                                                 'I ,.. .                        I
+ ,...,
+
+
+ -       OJ
+         0.2
+               :-<..i---i
+
+
+                 trJ.. --· y-
+             !-: ,1-'1
+                                  -1-..      I
+
+
+
+                                          -+1' --
+
+                        I-i· -. - ---.- -t : ~I-;-~-l-
+                                                          -
+                                                                 I
+
+
+
+                                                              -~ l~'            :-\-: +-h
+                                                                         1------.1.-""
+
+
+
+                                                                                 J
+                                                                                         I   I   1                        o
+
+                                                                                                                          o
+                                                                                                                              o
+                                                                                                                                  0
+
+
+                                                                                                                                   0
+                                                                                                                                           o
+
+
+
+
+                 I' I I    'I                                            ' I                                                      correlation: Hayashiet a!. (19n)
+         O.1     I'I
+                       -i-'I- ·-t ---~ ~-rI i'i:-rl
+                 +-;-,- --
+                                                 !               I       '
+                                                                         1                                                        data: Hl:lIl11cs d aI. (2009)
+          o I :I                  ,!                             ,   I, ':               !: I I             O~~--~--~--~--~-J--~
+           -25              -20        -15      -10         -5                                        0         o    50       100      150 200 250               300   350
+                            frost surface temperature, t1eg C                                                        1ll>:IlSIU'>:d rro~ dl2lsity. kgmJ
+                                                 (a)                                                                                               (b)
+
+
+Figure 2. Frost density variation according to the correlation of Hayashi et al. (1977):
+(a) frost density variation with frost surface temperature, (b) comparison with
+measurements of Hermes et al. (2009), adapted from Hermes et al. (2009).
+
+
+
+
+                                                                                                                                                                       21
+           0.5
+                         0 data (t=60 min. <1>=50%)
+
+           0.4
+                         • data (t=60 min, <1>=80%)
+                        ~ data (t= 120 min. <1>=50%)
+
+                        •  data (t= 120 min, <1>=80%)
+                       - - correlation (proposed)
+      0
+      0    0.3
+  ci-
+ -....
+  Q.
+                     data of Hermes et al. (2009): ~= 0.04
+
+           0.2
+
+                                         0
+           0.1
+
+
+                o ~=-----~------~------~------~--------
+                 o      0.2     0.4    0.6     0.8
+                                                       e
+Figure 3. Comparison ofthe proposed correlation with the data of Hermes et a1. (2000).
+
+
+
+          0.5
+
+
+          0.4         • data (Lee et al. 2003; ~ = 0.4)
+                      ... data (Lee et al. 2003 ; ~ = 0.56)
+                    --proposed correlation ( ~= 0.4)
+          0.3       -----proposed correlation ( ~= 0.56)
+    o
+    u
+  ci-
+ a.
+          0.2
+
+
+          0.1
+
+
+            o -=------~------~------~------~------~
+                o            0.2             0.4           0.6   0.8
+                                                   e
+Figure 4. Comparison of the proposed correlation with the data of Lee et a1. (2003).
+
+
+
+
+                                                                                         22
+               0.6                         -,------ -     1 - - ---,--
+
+                         - ~= 0.05
+
+               0.5       ----- ~   = 0.1
+                         ._.- ~ = 0.2
+                          - - ~= 0.4
+
+               0.4
+                         .. _- ~ = 0.6
+                          - - .; = 0. 8
+
+         II)
+                           - ~= 1.0
+
+
+ -
+         u
+  6.- 0.3
+  Q.
+
+
+
+               0.2
+
+               0.1
+
+                 0
+                     0       0.2           0.4          0.6         0.8
+                                                    e
+Figure Sa. Frost density dependence on temperature and Reynolds number according to the
+proposed correlation.
+
+
+
+
+               0.8
+
+  :7
+ .~ 0.6
+  ell
+                         - ~= 0.05
+  e
+  o                      ----- ~ = 0.1
+  0..
+ .....                   ._.- ~ = 0.2
+  ell
+  o
+               0.4
+ ¢                        - - ~ = 0.4
+                         .. _- ~ = 0.6
+                                                   proposed correlation
+                          - - ~ = 0.8
+               0.2       . - ~ = 1.0
+
+                 o
+                     o        0.2            0.4           0.6            0.8
+                                       frost surface temperature,   e
+Figure 5b. Frost porosity dependence on temperature and Reynolds number according to the
+proposed correlation.
+
+
+                                                                                   23
+

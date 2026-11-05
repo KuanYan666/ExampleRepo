@@ -1,0 +1,97 @@
+==========================================================================
+T04 BASE CASE (store 24 C / 55 %RH, case -18 C)
+==========================================================================
+W_store 10.24 g/kg, W_case 0.824 g/kg, m_inf 0.0272 kg/s
+frost growth rate      : 0.922 kg/h = 22.1 kg/day
+clean coil: air 0.621 kg/s, UA0 0.687 kW/K, NTU0 1.10, eta_II 0.403, Carnot(Te0) 4.22
+calibrated m_cap 31.4 kg -> implied frost density 338 kg/m3, k_f 0.406 W/mK
+clean: Te -24.00 C, COP 1.700, P 1.471 kW
+  t= 4 h  m_f=  3.7 kg  airflow  96.6%  UA  96.0%  Te -24.23 C  COP 1.692  dP    7.2 W
+  t= 8 h  m_f=  7.4 kg  airflow  92.0%  UA  91.6%  Te -24.54 C  COP 1.681  dP   16.6 W
+  t=12 h  m_f= 11.1 kg  airflow  86.0%  UA  86.5%  Te -24.96 C  COP 1.666  dP   29.6 W
+  t=16 h  m_f= 14.8 kg  airflow  77.8%  UA  80.3%  Te -25.58 C  COP 1.645  dP   49.0 W
+  t=20 h  m_f= 18.4 kg  airflow  66.8%  UA  72.6%  Te -26.59 C  COP 1.612  dP   80.7 W
+  t=24 h  m_f= 22.1 kg  airflow  52.2%  UA  62.5%  Te -28.47 C  COP 1.552  dP  140.4 W
+
+OPTIMUM T* = 17.70 h  (1.28 defrosts/day), average penalty 365 W
+  at T*: frost 16.3 kg, heater 5.06 kWh, recool 1.41 kWh, heater on 56 min, degradation integral 0.40 kWh, dP(T*) 60 W
+  marginal rate at T* 365 W vs average 365 W (should match)
+  flat bottom: within +2% of optimum for T in [12.8, 22.9] h
+  T= 6.00 h: 3.66/day melt 6.73  overhead 3.50  degr 0.12  TOTAL penalty 10.35 kWh/day  (heater 24 min, frost 5.5 kg)  base compressor 35.3
+  T= 8.00 h: 2.77/day melt 6.81  overhead 2.67  degr 0.17  TOTAL penalty 9.64 kWh/day  (heater 29 min, frost 7.4 kg)  base compressor 35.3
+  T=12.00 h: 1.87/day melt 6.90  overhead 1.82  degr 0.28  TOTAL penalty 9.00 kWh/day  (heater 40 min, frost 11.1 kg)  base compressor 35.3
+  T=17.70 h: 1.28/day melt 6.98  overhead 1.27  degr 0.51  TOTAL penalty 8.77 kWh/day  (heater 56 min, frost 16.3 kg)  base compressor 35.3
+  T=24.00 h: 0.94/day melt 7.10  overhead 1.00  degr 0.93  TOTAL penalty 9.04 kWh/day  (heater 75 min, frost 22.1 kg)  base compressor 35.3
+  heater time limit 40 min reached at T = 11.9 h -> constrained optimum 11.9 h, penalty 375 W (+2.8% vs unconstrained)
+  per kg of water: compressor 0.463 kWh to freeze on, defrost 0.334 kWh to melt off (+72%); fixed overhead per defrost K = 0.97 kWh
+  effective COP incl. defrost at T=6.0 h: 1.315
+  effective COP incl. defrost at T=12.0 h: 1.355
+  effective COP incl. defrost at T=17.7 h: 1.362
+
+SAWTOOTH: COP 1.700 (clean) -> 1.633 at T* (3.9% drop); airflow -> 74%
+  cycle-average effective COP incl. defrost = 1.362 (19.9% below clean-coil COP)
+  product temperature peak during defrost: -8.7 C (rise 9.3 K)
+  interval -> heater minutes, food rise per defrost (indicator)
+    T= 6 h: heater   24 min, food +4.7 K, 3.66 events/day
+    T= 8 h: heater   29 min, food +5.6 K, 2.77 events/day
+    T=12 h: heater   40 min, food +7.1 K, 1.87 events/day
+    T=18 h: heater   57 min, food +9.1 K, 1.26 events/day
+    T=24 h: heater   75 min, food +10.7 K, 0.94 events/day
+
+HUMIDITY SWEEP (24 C store)
+ RH%  frost kg/h   T*h  defr/day  m* kg  pen kWh/d (melt/ovh/degr)   6h-timer  8h  12h  heater-min  base kWh/d
+ 30.0   0.462   32.85   0.71    15.2    4.60 (3.58/0.68/0.34)    6.94  6.16  5.38      52   29.6
+ 32.5   0.508   30.30   0.77    15.4    5.02 (3.92/0.74/0.36)    7.28  6.51  5.74      53   30.2
+ 35.0   0.554   28.15   0.82    15.6    5.44 (4.27/0.80/0.37)    7.62  6.86  6.10      54   30.7
+ 37.5   0.599   26.25   0.88    15.7    5.86 (4.61/0.85/0.39)    7.96  7.20  6.46      54   31.3
+ 40.0   0.645   24.55   0.94    15.8    6.28 (4.95/0.91/0.41)    8.30  7.55  6.82      54   31.9
+ 42.5   0.691   23.10   0.99    16.0    6.69 (5.30/0.97/0.43)    8.65  7.90  7.18      55   32.4
+ 45.0   0.737   21.80   1.05    16.1    7.11 (5.64/1.03/0.44)    8.99  8.25  7.54      55   33.0
+ 47.5   0.783   20.60   1.11    16.1    7.53 (5.97/1.09/0.46)    9.33  8.60  7.90      56   33.6
+ 50.0   0.830   19.55   1.16    16.2    7.94 (6.31/1.15/0.48)    9.67  8.94  8.27      56   34.1
+ 52.5   0.876   18.60   1.22    16.3    8.35 (6.65/1.21/0.49)   10.01  9.29  8.63      56   34.7
+ 55.0   0.922   17.70   1.28    16.3    8.77 (6.98/1.27/0.51)   10.35  9.64  9.00      56   35.3
+ 57.5   0.968   16.90   1.33    16.4    9.18 (7.32/1.33/0.52)   10.69  9.99  9.37      56   35.9
+ 60.0   1.015   16.15   1.39    16.4    9.59 (7.65/1.40/0.54)   11.03 10.35  9.74      57   36.5
+ 62.5   1.061   15.50   1.44    16.5   10.00 (7.98/1.45/0.56)   11.37 10.70 10.12      57   37.0
+ 65.0   1.108   14.85   1.50    16.5   10.41 (8.32/1.52/0.57)   11.72 11.05 10.50      57   37.6
+ 67.5   1.155   14.25   1.56    16.5   10.81 (8.65/1.58/0.59)   12.06 11.40 10.88      57   38.2
+ 70.0   1.201   13.70   1.62    16.5   11.22 (8.97/1.65/0.60)   12.40 11.76 11.26      57   38.8
+ RH%  constrained T (heater <= 40 min)  penalty kWh/day
+ 30.0   T_c = 24.05 h   4.68 kWh/day  (unconstrained 4.60)
+ 35.0   T_c = 20.05 h   5.56 kWh/day  (unconstrained 5.44)
+ 40.0   T_c = 17.15 h   6.43 kWh/day  (unconstrained 6.28)
+ 45.0   T_c = 14.95 h   7.29 kWh/day  (unconstrained 7.11)
+ 50.0   T_c = 13.30 h   8.15 kWh/day  (unconstrained 7.94)
+ 55.0   T_c = 11.90 h   9.01 kWh/day  (unconstrained 8.77)
+ 60.0   T_c = 10.80 h   9.86 kWh/day  (unconstrained 9.59)
+ 65.0   T_c =  9.85 h   10.71 kWh/day  (unconstrained 10.41)
+ 70.0   T_c =  9.10 h   11.55 kWh/day  (unconstrained 11.22)
+  winter (30% RH) with summer-optimal timer T=14.9 h: 5.09 kWh/day vs optimum 4.60
+  winter (30% RH) with worst-case 6 h timer T=6.0 h: 6.94 kWh/day vs optimum 4.60
+log-log slope: T* ~ (frost rate)^-0.93;  optimal frost mass m* ~ (frost rate)^0.07
+  day/night humidity: timer 6 h              penalty 9.88 kWh/day, 3.65 defrosts/day
+  day/night humidity: timer 8 h              penalty 9.16 kWh/day, 2.77 defrosts/day
+  day/night humidity: timer 12 h             penalty 8.51 kWh/day, 1.87 defrosts/day
+  day/night humidity: timer T*=19.6 h        penalty 8.16 kWh/day, 1.15 defrosts/day
+  day/night humidity: demand m*=16.2 kg      penalty 8.21 kWh/day, 1.20 defrosts/day
+  best demand threshold 16.0 kg -> 8.11 kWh/day
+
+TORNADO on T* (base 17.70 h)
+  share of water reaching coil β      0.7 ->  17.75 h      1.0 ->  17.70 h
+  coil area (m²)                     20.0 ->  17.75 h     45.0 ->  17.65 h
+  heat escaping to store ψ            0.0 ->  17.95 h      0.6 ->  17.45 h
+  coil approach (K)                   5.0 ->  18.00 h      8.0 ->  17.15 h
+  clean COP                           1.4 ->  17.25 h      2.0 ->  18.10 h
+  defrost efficiency η_d              0.3 ->  18.60 h      0.5 ->  16.95 h
+  fan operating point                 0.6 ->  18.65 h      0.8 ->  16.40 h
+  coil share of pressure drop         0.3 ->  15.90 h      0.7 ->  19.15 h
+  coil heat capacity (kJ/K)          15.0 ->  15.20 h     40.0 ->  19.85 h
+  airflow left at calibration         0.8 ->  14.70 h     0.92 ->  24.05 h
+  calibration hour                    8.0 ->  12.80 h     16.0 ->  22.15 h
+
+MONTE CARLO (uniform over tornado ranges, N=400)
+  RH 40%: T* median 24.8 h, 5-95% [16.1, 35.8] h
+  RH 55%: T* median 17.9 h, 5-95% [11.6, 25.9] h
+  RH 65%: T* median 15.0 h, 5-95% [9.7, 21.8] h
+  ratio T*(40%)/T*(65%): median 1.65, 5-95% [1.63, 1.68]

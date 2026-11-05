@@ -1,0 +1,429 @@
+Lecture 7
+
+
+
+
+   1
+2
+3
+4
+5
+6
+been found that a man doing hard work in the sun requires about one litre of water
+per hour.
+
+2.4 Factors affecting Human Comfort
+
+  In designing winter or summer air conditioning system, the designer should be
+well conversant with a number of factors which physiologically affect human
+comfort. The important factors are as follows:
+
+1. Effective temperature, 2. Heat production and regulation in human body, 3. Heat
+and moisture losses from the human body, 4. Moisture content of air, 5. Quality and
+quantity of air. 6. Air motion, 7. Hot and cold surfaces, and 8. Air stratification.
+
+   These factors are discussed, in detail, in the following articles:
+
+2.5 Effective Temperature
+   The degree of warmth or cold felt by a human body depends mainly on the
+following three factors:
+
+1. Dry bulb temperature, 2. Relative humidity, and 3. Air velocity.
+
+   In order to evaluate the combined effect of these factors, the term effective
+temperature is employed. It is defined as that index which correlates the combined
+effects of air temperature, relative humidity and air velocity on the human body. The
+numerical value of effective temperature is made equal to the temperature of still (i.e.
+5 to 8 m/min air velocity) saturated air, which produces the same sensation of warmth
+or coolness as produced under the given conditions.
+
+   The practical application of the concept of effective temperature is presented by
+the comfort chart, as shown in Fig. 2.1. This chart is the result of research made on
+different kinds of people subjected to wide range of environmental temperature,
+relative humidity and air movement by the American Society of Heating,
+Refrigeration and Air conditioning Engineers (ASHRAE). It is applicable to
+reasonably still air (5 to 8 m/min air velocity) to situations where the occupants are
+seated at rest or doing light work and to spaces whose enclosing surfaces are at a
+mean temperature equal to the air dry bulb temperature.
+
+   In the comfort chart, as shown in Fig. 2.1, the dry bulb temperature is taken as
+abscissa and the wet bulb temperature as ordinates. The relative humidity lines are
+replotted from the psychrometric chart. The statistically prepared graphs
+
+
+
+                                           99
+
+
+
+
+                                      7
+corresponding to summer and winter season are also superimposed. These graphs
+have effective temperature scale as abscissa and % of people feeling comfortable as
+ordinate.
+
+   A close study of the chart reveals that the several combinations of wet and dry
+bulb temperatures with different relative humidities will produce the same effective
+temperature. However, all points located on a given effective temperature line do not
+indicate conditions of equal comfort or discomfort. The extremely high or low
+relative humidities may produce conditions of discomfort regardless of the existent
+effective temperature. The moist desirable relative humidity range lies between 30
+and 70 per cent. When the relative humidity is much below 30 per cent, the mucous
+membranes and the skin surface become too dry for comfort and health. On the other
+hand, if the relative humidity is above 70 per cent, there is a tendency for a clammy
+or sticky sensation to develop. The curves at the top and bottom, as shown in Fig. 2.1,
+indicate the percentages of person participating in tests, who found various effective
+temperatures satisfactory for comfort.
+
+   The comfort chart shows the range for both summer and winter condition within
+which a condition of comfort exists for most people. For summer conditions, the
+chart indicates that a maximum of 98 percent people felt comfortable for an effective
+temperature of 21.6ºC. For winter conditions, chart indicates that an effective
+temperature of 20ºC was desired by 97.7 percent people. It has been found that for
+comfort, women require 0.5ºC higher effective temperature than men. All men and
+women above 40 years of age prefer 0.5ºC higher effective temperature than the
+persons below 40 years of age.
+
+   It may be noted that the comfort chart, as shown in Fig. 2.1, does not take into
+account the variations in comfort conditions when there are wide variations in the
+mean radiant temperature (MRT). In the range of 26.5ºC, a rise of 0.5ºC in mean
+radiant temperature above the room dry bulb temperature raises the effective
+temperature by 0.5ºC. The effect of mean radiant temperature on comfort is less
+pronounced at high temperatures than at low temperatures.
+
+Note: From the comfort chart, we see that for a point corresponding to dry bulb
+temperature of 2.5ºC, wet bulb temperature of 12.5ºC and relative humidity of 60%,
+the effective temperature is 16ºC. Now for the same feeling of comfort and warmth,
+there is another point on 100% relative humidity line at which dry bulb temperature
+and wet bulb temperature are both equal to 16º C. Thus both have an effective
+temperature of 16ºC.
+
+
+
+
+                                         100
+
+
+
+
+                                    8
+   The comfort conditions for persons at work vary with the rate of work and the
+amount of clothing worn. In general, the greater the degree of activity, the lower the
+effective temperature necessary for comfort.
+
+   Fig. 2.2 shows the variation in effective temperature with different air velocities.
+We see that for the atmospheric conditions of 24ºC dry bulb temperature and 16ºC
+wet bulb temperature correspond to about 21ºC with nominally still air (velocity 6
+m/min) and it is about 17ºC at an air velocity of 210 m/min. The same effective
+temperature is observed at higher dry bulb and wet bulb temperatures with higher
+velocities. The case is reversed after 37.8ºC as in that case higher velocities will
+increase sensible heat flow from air to body and will decrease comfort. The same
+effective temperature means same feeling of warmth, but it does not mean same
+comfort.
+
+
+
+
+        Fig. 2.1:. Comfort chart for still air (air velocities from 5 to 8 m /min).
+
+
+
+
+                                           101
+
+
+
+
+                                      9
+2.6 Modified Comfort Chart
+
+    The comfort chart, as shown in Fig. 2.1, has become obsolete now a days due to
+its short comings of over exaggeration of humidity at lower temperature and under
+estimation of humidity at heat tolerance level. The modified comfort chart according
+to ASHRAE is shown in Fig. 2.3 and it is commonly used these days. This chart was
+developed on the basis of research done in 1963 by the institute for environmental
+research at Kansas State University. The mean radiant temperature was kept equal to
+dry bulb temperature and air velocity was less than 0.17 m/s.
+
+2.7 Heat Production and Regulation in Human Body
+
+   The human body acts like a heat engine which gets its energy from the combustion
+of food within the body. The process of combustion (called metabolism) produces
+heat and energy due to the oxidation of products in the body by oxygen obtained from
+
+physical activity and his environment. The rate at which the body produces heat is
+termed as metabolic rate. The heat production from a normal healthy person when
+asleep (called basal metabolic rate) is about 60 watts and it is about ten times more
+for a person carrying out sustained very hard work.
+
+
+
+
+                Fig. 2.2. Variation of effective temperature with air velocity.
+
+
+
+
+                                         102
+
+
+
+
+                                   10
+   Since the body has a thermal efficiency of 20 per cent, therefore the remaining 80
+per cent of the heat must be rejected to the surrounding environment, otherwise
+accumulation of heat results which causes discomfort. The rate and the manner of
+rejection of heat is controlled by the automatic regulation system of a human body.
+
+   In order to effect the loss of heat from the body to produce cold, the body may
+react to bring more blood to the capillaries in the skin. The heat losses from the skin,
+now, may take place by radiation, convection and by evaporation. When the process
+of radiation or convection or both fails to produce necessary loss of heat, the sweat
+glands become more active and more moisture is deposited on the skin, carrying heat
+away as it evaporates . it may be noted that when the temperature of surrounding air
+and objects is below the blood temperature, the heat is removed by radiation and
+convection. On the other hand, when the temperature of surrounding air is above the
+blood temperature, the heat is removed by evaporation only. In case the body fails to
+throw off the requisite amount of heat, the blood temperature rises. This results in the
+accumulation of heat which will cause discomfort.
+
+   The human body attempts to maintain its temperature when exposed to cold by the
+withdrawal of blood from the outer portions of the skin, by decreased blood
+circulation and by an increased rate of metabolism.
+
+2.8 Heat and Moisture Losses from the Human Body
+
+   The heat is given off from the human body as either sensible or latent heat or both.
+In order to design any air conditioning system for spaces which human bodies are to
+occupy, it is necessary to know the rates at which these two forms of heat are given
+off under different conditions of air temperature and bodily activity.
+
+   Fig. 2.4a shows the graph between sensible heat loss by radiation and convection
+for an average man and the dry bulb temperature for different types of activity. Fig.
+2.4b shows the graph between the latent heat loss by evaporation for an average man
+and dry bulb temperature for different type of activity.
+
+    The total heat loss from the human body under varying effective temperatures is
+shown in Fig. 2.4c. From curve D, which applies to men at rest, we see that from
+about 19ºC to 30ºC effective temperature, the heat loss is constant. At the lower
+effective temperature, the heat dissipation increases which results in a feeling of
+coolness. At higher effective temperature, the ability to lose heat rapidly decreases
+resulting in severe discomfort. The curves A, B, C and D shown in Fig. 2.4 represents
+as follows
+
+
+
+                                         103
+
+
+
+
+                                    11
+Curve A   Men working at the rate of 90 kN.m/h
+Curve B   Men working at the rate of 45 kN.m/h
+Curve C   Men working at the rate of 22.5 kN.m/h
+Curve D   Men at rest.
+
+
+
+
+               Fig. 2.3. Modified comfort chart.
+
+
+
+
+                             104
+
+
+
+
+                       12
+ (a) Relation between      (b) relation between        (c) relation between total
+ sensible heat loss from   latent heat loss from the   heat loss from the human
+ the human body and        human body and dry          body      and    effective
+ dry bulb temperature      bulb temperature for        temperature for still air.
+ for still air.            still air.
+
+                                          Fig. 2.4
+2.9 Moisture Content of Air
+    We have seen in Art. 2.5 that the dry bulb temperature, relative humidity and air
+motion are interrelated. The moisture content of outside air during winter is generally
+low and it is above the average during summer, because the capacity of the air to
+carry moisture is dependent upon its dry bulb temperature. This means that in winter,
+if the cold outside air having a low moisture content leaks into the conditioned space,
+it will cause a low relative humidity unless moisture is added to the air by the process
+of humidification. In summer, the reverse will take place unless moisture is removed
+from the inside air by the dehumidification process. Thus, while designing an air
+conditioning system, the proper dry bulb temperature for either summer or winter
+must be selected in accordance with the practical consideration of relative humidities
+which are feasible. In general, for winter conditions in the average residence, relative
+humidities above 35 to 40 per cent are not practical. In summer comfort cooling, the
+air of the occupied space should not have a relative humidity above 60 per cent. With
+these limitations, the necessary dry bulb temperature for the air may be determined
+from the comfort chart.
+
+2.10    Quality and Quantity of Air
+
+   The air in an occupied space should, at all times, be free from toxic, unhealthful or
+disagreeable fumes such as carbon dioxide. It should also be free from dust and
+odour. In order to obtain these conditions, enough clean outside air must always be
+supplied to an occupied space to counteract or adequately dilute the sources of
+contamination.
+
+
+                                           105
+
+
+
+
+                                     13
+    The concentration of odour in a room depends upon many factors such as dietary
+and hygienic habits of occupants, type and amount of outdoor air supplied, room
+volume per occupant and types of odour sources. In general, when there is no
+smoking in a room, 1 m 3 /min per person of outside air will take care of all the
+conditions. But when smoking takes place in a room, 1.5 m 3 /min per person of outside
+air is necessary. In most air conditioning systems, a large amount of air is recirculated
+over and above the required amount of outside air to satisfy the minimum ventilation
+conditions in regard to odour and purity. For general application, a minimum of 0.3
+m 3 /min of outside air per person, mixed with 0.6 m 3 /min of recirculated air is good.
+
+2.11 Air Motion
+
+   The air motion which includes the distribution of air is very important to maintain
+uniform temperature in the conditioned space. No air conditioning system is
+satisfactory unless the air handled is properly circulated and distributed. Ordinarily,
+the air velocity in the occupied zone should not exceed 8 to 12 m/min. The air
+velocities in the space above the occupied zone should be very high in order to
+produce good distribution of air in the occupied zone, provided that the air in motion
+does not produce any objectionable noise. The flow of air should be preferably
+towards the faces of the individuals rather than from the rear in the occupied zone.
+Also for the proper and perfect distribution of air in the air conditioned space, down
+flow should be preferred instead of up flow. The air motion without proper air
+distribution produces local cooling sensation known as draft.
+
+2.12 Cold and Hot Surfaces
+
+    The cold or hot objects in a conditioned space may cause discomfort to the
+occupants. A single glass of large area when exposed to the outdoor air during winter
+will produce discomfort to the occupants of a room by absorbing heat from them by
+radiation. On the other hand, a ceiling that is warmer than the room air during
+summer causes discomfort. Thus, in the designing of an air conditioning system, the
+temperature of the surfaces to which the body may be exposed must be given
+considerable importance.
+
+2.13 Air Stratification
+
+    When air is heated, its density decreases and thus it rises to the upper part of the
+confined space. This results in a considerable variation in the temperatures between
+the floor and ceiling levels. The movement of the air to produce the temperature
+gradient from floor to ceiling is termed as air stratification. In order to achieve
+
+
+
+                                          106
+
+
+
+
+                                    14
+comfortable conditions in the occupied space, the air conditioning system must be
+designed to reduce the air stratification to a minimum.
+
+2.14 Factors Affecting Optimum Effective Temperature
+
+    The important factors which affect the optimum effective temperature are as
+follows:
+
+1. Climatic and seasonal differences
+
+   It is a known fact that the people living in colder climates feel comfortable at a
+lower effective temperatures than those living in warmer regions. There is a
+relationship between the optimum indoor effective temperature and the optimum
+outdoor temperature, which changes with seasons. We see from the comfort chart
+(Fig. 2.1) that in winter the optimum effective temperature is 19oC whereas in
+summer this temperature is 22ºC.
+
+2. Clothing
+
+   It is another important factor which affects the optimum effective temperature. It
+may be noted that the person with light clothing need less optimum temperature than
+a person with heavy clothing.
+
+3. Age and Sex
+
+   We have already discussed that the women of all ages require higher effective
+temperature (about 0.5ºC) than men. Similar is the case with young and old people.
+The children also need higher effective temperature than adults. Thus, the maternity
+halls are always kept at an effective temperature of 2 to 3ºC higher than the effective
+temperature used for adults.
+
+4. Duration of stay
+
+   It has been established that if the stay in a room is shorter (as in the case of
+persons going to banks), then higher effective temperature is required than that
+needed for long stay (as in the case of persons working in an office).
+
+
+
+
+                                         107
+
+
+
+
+                                   15
+5. Kind of activity
+
+   When the activity of the person is heavy such as people working in a factory,
+dancing hall, then low effective temperature is needed than for the people sitting in
+cinema hall or auditorium.
+
+6. Density of occupants
+
+   The effect of body radiant heat from person to person particularly in a densely
+occupied space like auditorium is large enough which require a slight lower effective
+temperature.
+
+2.15 Inside Summer Design Conditions
+
+   Table 2.1 shows the recommended inside design conditions for summer comfort
+cooling.
+
+
+                 Table 2.1. Recommended inside design conditions.
+
+       Outside    Occupancy over 40 minutes              Occupancy below 40 minutes
+       DBT(oC)
+
+       26.5       23.9    18.3    60      21.7    24.4      18.9    61      22.2
+
+                  25      17.2    47      21.7    25.6      17.8    47      22.2
+
+                  26.1    16.1    35      21.7    26.7      16.7    36      22.2
+       29.5       24.4    18.9    61      22.2    25        19.4    61      22.8
+
+                  25.6    17.8    47      22.2    26.1      18.3    48      22.8
+
+                  26.7    16.7    36      22.2    27.2      17.2    36      22.8
+       32.5       25      19.4    61      22.8    25.6      20.6    64      23.3
+
+                  26.1    18.3    48      22.8    26.7      19.4    52      23.3
+
+                  27.2    17.2    36      22.8    27.8      18.3    40      23.3
+       35.5       25.6    20.6    64      23.3    26.1      21.1    65      23.9
+
+                  26.7    19.4    52      23.3    27.2      20      52      23.9
+
+                  27.8    18.3    40      23.3    28.3      18.9    41      23.9
+       37.5       26.1    21.1    65      23.9    27.2      21.7    63      24.4
+
+
+
+
+                                         108
+
+
+
+
+                                   16
+

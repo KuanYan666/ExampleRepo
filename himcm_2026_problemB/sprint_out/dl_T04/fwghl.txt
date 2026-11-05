@@ -1,0 +1,618 @@
+                                                              ®
+                                                                                       Excel™ FWGH-L
+                                                                                                                                Frozen
+                                                                                                          Merchandiser Data Sheet
+
+                                                                                                        P/N 0540997_E
+                                                                                                           NSF Certified   ®
+
+
+
+                                                                                                                           June 2016
+
+
+
+
+Note: Portion of parts removed for clarity.
+
+
+
+NSF Certification
+This merchandiser model is manufactured
+to meet NSF/ANSI (National Sanitation
+Foundation) Standard #7 requirements for
+construction, materials and cleanability.
+
+
+Performance Data                                           Page 2      Electrical Loads                                           Page 6
+Product Data (AHRI Statistics)                             Page 2      Replacement Parts List                                     Page 7
+Cross Section                                              Page 3      Wiring Diagrams                                            Page 8
+Plan Views                                                 Page 4      Computing Refrigeration and Electrical Load               Page 11
+Estimated Shipping Weights                                 Page 5      Revision History                                          Page 11
+
+
+
+
+Data sheet-Excel FWGH-L
+We reserve the right to change or revise specifications and product design in connection with any feature of our products. Such changes do
+not entitle the buyer to corresponding changes, improvements, additions or replacements for equipment previously sold or shipped.
+
+
+©2016 HUSSMANN CORPORATION • BRIDGETON, MO 63044-2483 U.S.A.
+U.S. & CANADA 1-800-922-1919 • MEXICO 1-800-890-2900 • WWW.HUSSMANN.COM                                              Spanish 0542265
+Excel     FWGH-L
+Frozen
+
+
+
+ Refrigeration Data 1
+                                                   8 Ft Case
+                                                                                     AHRI 1200
+                                              FF                    IC3             Rating Point 2
+     Discharge Air °F (°C)              –10 (–23.33)       –16 (–26.66)             –9 (–22.77)
+     Avg Evaporator °F (°C)    4
+                                        –18 (–27.77)       –24 (–31.11)            –15 (–26.11)
+     Unit Sizing °F (°C)                –21 (–29.44)       –27 (–32.77)            –18 (–27.77)
+     Btu/hr per ft (Watts/m)
+      Parallel                            280 (269)            285 (274)             275 (135)
+      Conventional                        290 (279)            300 (289)             285 (274)
+
+
+                                                   12 Ft Case
+                                                                                     AHRI 1200
+                                              FF                     IC             Rating Point 2
+     Discharge Air °F (°C)              –10 (–23.33)       –16 (–26.66)             –9 (–22.77)
+     Avg. Evaporator °F (°C)      4
+                                        –18 (–27.77)       –24 (–31.11)            –15 (–26.11)
+     Unit Sizing °F (°C)                –21 (–29.44)       –27 (–32.77)            –18 (–27.77)
+     Btu/hr per ft (Watts/m)
+      Parallel                            290 (279)            295 (284)             285 (274)
+      Conventional                        300 (289)            310 (298)             295 (284)
+ Notes:
+ 1. All data based on store temperature and humidity that does not exceed 75 deg F and 55% relative humidity.
+ 2. For energy consumption comparison only.
+ 3. Dual temperature operation kits are not suitable for ice cream temperature applications.
+ 4. For high glide refrigerants, evaporator temperatures listed represent average coil temperature as measured throughout the coil.
+
+ Defrost Data                                              Conventional Controls                     Estimated Charge 6		FWGH
+ Frequency (hours between defrost)      24                 		                FWEGH                    8 ft    2.5 lb   40 oz 1.1 kg
+ Defrost Water              0.5 lb/ft/day                  Low Pressure Backup                       12 ft    3.7 lb   59 oz 1.7 kg
+                                                           Control CI/CO 5
+ 			(0.7 kg/m)
+                                                                                                     6
+                                                                                                       This is an average for all refrigerant types.
+                                                           FF                    –15°F /–27°F
+ (± 15% based on case configuration and product                                                      Actual refrigerant charge may vary by approx-
+                                                           		               –26.1°C / –32.7°C
+ loading).                                                                                           imately half a pound.
+                                                           IC                    –21°F /–33°F
+ Offtime		FWGH
+                                                           		               –29.4°C / –36.1°C
+ Time (minutes) Not Recommended
+
+ Electric                                                  Indoor Unit Only,
+ Temp Term (°F)              48                            Pressure Defrost
+ Failsafe (minutes)          60                            Termination 5
+                                                           		        Not Recommended
+ Gas                                                       5
+ Duration (minutes)                                            Use a Temperature Pressure Chart to
+                                                           determine PSIG conversions.
+ FF                   15
+ IC                   18
+
+ Product Data
+      Recommended Usable Cube 7 (Cu Ft/Ft)                     7.28 ft3 /ft (0.68 m /m)3
+
+
+
+      AHRI Total Display Area 8 (Sq Ft/Ft)                     8.13 ft2 /ft (2.48 m /m)2
+
+
+
+      Shelf Area (Sq Ft/Ft)                                    5.50 ft2 /ft (1.68 m /m)2
+
+
+
+ 7
+      AHRI Refrigerated Volume less shelving and other unusable space: Refrigerated Volume/Unit of Length, ft3/ft [m3/m]
+ 8
+      Computed using AHRI 1200 standard methodology: Total Display Area, ft2 [m2]/Unit of Length, ft [m]
+
+2 of 11                    U.S. & CANADA 1-800-922-1919 • MEXICO 1-800-890-2900                       FWGH-L Merchandiser Data Sheet
+Excel Low / Medium Temperature,
+Wide Island Display with Glass Walls and Lids                                                                       Excel   FWGH-L
+                                                                                                                               Frozen
+
+
+
+                    Hussmann refrigerated merchandisers configured for sale for use in the United States
+                    meet or surpass the requirements of the DOE 2012 energy efficiency standards.
+
+
+                                                                                Dimensions shown as in. and (mm).
+
+
+
+
+FWGH-L
+                                                                           Optional PTM
+
+       47
+      (1194)                                                  lose                                          Open – C
+                                                      Open – C                                                      lose
+
+               42 ¾
+               (1085)
+
+                                                                     Load Limit                            Load Limit
+                               15
+                              (381)          15 ⅞        15 ¼
+                                              (403)       (387)
+                                                                     33 (838)
+                    18 ½
+                    (470)
+                                                         FAN             COIL                    COIL       FAN
+                            3⅛
+                            (79)
+                                                                                                                               5¾
+                                                                                                                               (146)
+                                                                                           59 ¾ (1518)
+       Case-to-Case
+       Connection                                         4 (102)
+
+                                                        1 ½ (38)                     Refrigeration
+                                                                                            Outlet
+                                                       3 ¼ (83)
+
+                                      11 ¾ (298)                                   68 ⅞ (1749)
+
+                                                                                80 ⅝ (2048)
+
+
+
+
+NSF Certification
+This merchandiser model is manufactured
+to meet NSF/ANSI (National Sanitation
+Foundation) Standard #7 requirements for
+construction, materials and cleanability.
+
+P/N 0540997_E                 HUSSMANN CORPORATION • BRIDGETON, MO 63044-2483 U.S.A. • WWW.HUSSMANN.COM                        3 of 11
+Excel FWGH-L                                                                                    Dimensions shown as in. and (mm).
+Frozen
+                                                      Plan Views
+
+                                  144 ½ (3670)
+                                                       132 ½ (3366)
+                                    130 ⅜ (3312)
+                                                                               12 ⅛ (307)
+                                 41 ½                        43 ⅞              4 ½ (115)
+          8½                     (1054)                        (1114)
+          (217)                                                                8 (203)
+                                                        4 ¼ (108)
+                                                         Splashguard        10 ¼
+                                                                            (261)            20 ¾
+                                                                                             (529)
+
+                                                      4 ¾ (120)                                         70 ¼
+                                          Waste
+                                                                                                        (1784)
+                                          Outlet                                    70 ¼
+               64 ½                                                                 (1784)
+               (1638)                                  29 ½
+                                  Electrical
+                                                       (750)                                                     72
+                                Stub Up Area                                                     59 ¾         (1829)
+                                    6x6                                                          (1515)
+                                 (152 x 152)
+                                                                                                                      80 ⅝
+                                      Waste Outlet                                                                    (2046)
+           Electrical
+           Field               Wireway
+           Connection
+                                             26 ½ (673)   Splashguard
+                                                     138 ⅛ (3508)
+                                                                                Refrigeration
+                                                         FRONT                     Outlet
+
+                                                    12 Foot Model
+
+                                     96 ⅜ (2448)
+                                                           84 ⅜ (2143)
+                                          79 ⅜ (2010)
+                                                                                    12 ⅛ (307)
+                                    41 ½                         43 ⅞               4 ½ (115)
+             8½                     (1054)                         (1114)
+             (217)                                                                  8 (203)
+                                                            4 ¼ (108)
+                                                            Splashguard        10 ¼
+                                                                               (261)            20 ¾
+                                                                                                (529)
+
+                                                        4 ¾ (120)                                         70 ¼
+                                             Waste
+                                                                                                          (1784)
+                                             Outlet                                    70 ¼
+                     64 ½                                                              (1784)
+                     (1638)                              29 ½
+                                     Electrical
+                                                           (750)                                                   72
+                                   Stub Up Area                                                      59 ¾        (1829)
+                                       6x6                                                           (1515)
+                                    (152 x 152)
+                                                                                                                        80 ⅝
+                                            Waste Outlet                                                                (2046)
+                  Electrical
+                  Field           Wireway
+                  Connection
+                                                   26 ½ (673)    Splashguard
+                                                             90 (2286)
+                                                                                    Refrigeration
+                                                               FRONT                   Outlet
+
+                                                         8 Foot Model
+
+4 of 11             U.S. & CANADA 1-800-922-1919 • MEXICO 1-800-890-2900                 FWGH-L Merchandiser Data Sheet
+                                                                                              Excel   FWGH-L
+                                                                                                                Frozen
+
+
+
+
+              ENDS or PARTITIONS                                                       PHYSICAL DATA
+Each standard end and each insulated partition                                Merchandiser Drip Pipe (in.)       1 1/4
+adds 2 in. (38 mm) to case line up.                                                 Schedule 40 PVC
+                                                                              Merchandiser Liquid Line (in.)       3
+                                                                                                                       /8
+                                                                              Merchandiser Suction Line (in.)      5
+                                                                                                                       /8
+
+
+                                              ESTIMATED SHIPPING WEIGHT †
+
+Case                                                              Solid End
+		                                   8 ft               12 ft      (each)
+lb (kg)                          1590 (722)         1880 (855)     75 (34)
+
+† Actual weights will vary according to optional kits included.
+
+
+
+
+P/N 0540997_E              HUSSMANN CORPORATION • BRIDGETON, MO 63044-2483 U.S.A. • WWW.HUSSMANN.COM            5 of 11
+ ExcelFWGH-L
+ Frozen
+
+
+Electrical Data
+Number of Fans			                                        8 ft   12 ft
+ 4W Evaporator			                                         4      4
+
+                                                         Amperes                    Watts
+Evaporator Fan 		                                       8 ft 12 ft		             8 ft   12 ft
+ 120V 50/60Hz Energy Efficient		                        0.48 0.48		              32      32
+
+Anti-sweat Heaters (on fan circuit)
+ 120V 50/60Hz Standard		                                1.22     1.84		         144     218
+
+Minimum Circuit Ampacity
+ 120V 50/60Hz Standard Energy Efficient		               1.90     2.52
+
+Maximum Over Current Protection 120V		                   20      20
+
+Return Glass Anti-sweat Heaters
+ 120V 50/60Hz Standard		                                0.18     0.24		          20      28
+
+208V Electric Defrost		                                 15.38 23.07		           3200    4800
+
+120V Koolgas Defrost		                                  3.33     6.66		         400     800
+
+Standard Lighting
+  None
+
+Optional Lighting
+ LED (2’ lid opening) 120V 50/60Hz		                    0.70     0.98		          84     118
+ LED (4’ lid opening) 120V 50/60Hz		                    0.83     1.25		         100     150
+
+
+
+
+6 of 11             U.S. & CANADA 1-800-922-1919 • MEXICO 1-800-890-2900   FWGH-L Merchandiser Data Sheet
+ Excel    FWGH-L
+ Frozen
+
+
+                                                       Replacement Parts List
+Part #                     Description                                    Part #               Description
+
+Fan Assemblies                                                            Heaters (Cont.)
+4W Standard Fan Assembly                                                  		 208V Evaporator Defrost Heaters
+8 Ft & 12 Ft                                                              		 0462159      8 ft case
+                                                                          		 0444058      12 ft case
+		 0521165                 7.0-in. Fan Assembly
+		 0521166                 Fan Blade                                      		 208V Drip Pan Defrost Heaters, Electric
+                                                                          		 0462160     8 ft case
+Thermostats                                                               		 0444296     12 ft case
+		 0398557                 Defrost Termination Thermostat				
+			                        (Front/Electric Defrost only)                  		       120V Drip Pan Defrost Heaters, Koolgas
+			                                                                       		       0465907 8 ft case
+		 0398558                 Defrost Termination Thermostat                 		       0465908 12 ft case
+			                        (Rear/Electric Defrost only)
+			                                                                       		       Nosing Anti-sweat Heaters
+                                                                          		       0495007 8 ft case
+Heaters                                                                   		       0495008 12 ft case
+		 0481370                 Heater Switch
+			                        (Koolgas Defrost only)                         		       Return Grille Anti-sweat Heaters
+			                                                                       		       0464785 8 ft case, Inside
+                                                                          		       0464786 8 ft case, Outside
+                                                                          		       0464787 12 ft case, Inside
+                                                                          		       0464788 12 ft case, Outside
+
+                                                                          		       Return Glass Anti-sweat Heaters
+                                                                          		       0474785 8 ft case
+                                                                          		       0474786 12 ft case
+
+                                                                          Optional led fixtures and power supply
+
+                                                                          		 0554964           Power Supply
+
+NOTE: For LED lighting parts contact your Hussmann
+service representative at 1-800-922-1919. Please have
+your model and serial number available.
+
+
+
+
+For additional parts information, visit
+http :// www . hussmann . com / en /P ages /A ftermarket -P arts . aspx
+
+
+
+
+P/N 0540997_E                  HUSSMANN CORPORATION • BRIDGETON, MO 63044-2483 U.S.A. • WWW.HUSSMANN.COM              7 of 11
+Fan Wiring                                                                                       Excel   FWGH-L
+Electrical Defrost - Standard                                                                                 Frozen
+
+
+                                                                                             120V Neutral
+                                                                                          Brown Band
+             120V Power                    1                    8                9
+                        Brown Band
+
+
+
+
+                                                                                          Brown Band
+                                           1                    8                9
+                        Brown Band
+
+
+
+
+                                         Fans                 Nosing         Return Grille
+                                                             Anti-Sweat       Anti-Sweat
+                                                               Heater           Heater
+
+
+
+
+  2      Refrigeration Thermostat (Optional)
+
+         Light Blue       To
+                          Condensing
+                          Unit                                      L1            208V Power From                 L2
+                                                                                  Defrost Contactors
+
+   3       Defrost Termination Thermostat                                                    6
+                                                                          Red                               Red
+
+            Dark Blue             To                                                 Drip Pan Heater
+                                  Condensing                                                 5
+                                  Unit
+
+                                                                                Electric Defrost Heaters
+
+                                                                                             6
+           Return Class Anti-Sweat Heater
+                                                                          Red                               Red
+          Purple                           White
+                                                                                     Drip Pan Heater
+                             10
+                                                                                             5
+
+          Purple                           White
+                                                                                Electric Defrost Heaters
+                             10
+
+ 120V                                               120V
+ Power                                             Neutral
+
+
+                                                             WARNING
+           All components must have mechanical ground, and the merchandiser must be grounded.
+                                Circled Number = Parts List Item Numbers
+
+8 of 11               U.S. & CANADA 1-800-922-1919 • MEXICO 1-800-890-2900        FWGH-L Merchandiser Data Sheet
+Excel         FWGH-L
+Frozen
+
+
+
+Optional Gas Defrost
+
+                                    120V Drip Pan Heater — Koolgas Only
+
+
+              Yellow                      Yellow                              Yellow                   Yellow
+
+                             7                                                               7
+  Dark Blue
+
+
+
+
+                                                                  Dark Blue
+               4   Heater Switch                                               4   Heater Switch
+  Dark Blue
+
+
+
+
+                                                                  Dark Blue
+
+ 120V                                               120V         120V                                            120V
+ Power                                             Neutral       Power                                          Neutral
+
+
+
+
+                                                    WARNING
+    All components must have mechanical ground, and the merchandiser must be grounded.
+                         Circled Number = Parts List Item Numbers
+                         Grayed components in 12 foot models only.
+
+
+
+
+P/N 0540997_E              HUSSMANN CORPORATION • BRIDGETON, MO 63044-2483 U.S.A. • WWW.HUSSMANN.COM            9 of 11
+Optional LED Lighting                                                                            Excel   FWGH-L
+Wiring Diagrams                                                                                                Frozen
+
+
+
+
+                                                                                                  LED Cable Tray
+    Light Switch
+
+
+
+
+                                                                Red
+
+                                                                      Blue
+                      Black
+
+
+
+
+                                                       Output
+                                           Power Supply
+                                   Input
+
+                                             24VDC
+                      White
+  120 VAC from
+    Wireway                                                                           LEDs
+
+
+                                                                Red
+                                                       Output
+
+                                           Power Supply
+                                   Input
+
+
+
+
+                                             24VDC                      Blue
+                                                                                                  LED Cable Tray
+
+
+
+
+                                                                                      LEDs
+
+
+
+                         FW12GL LED Wiring Diagram
+
+
+
+
+                                                                                              LED Cable Tray
+   Light Switch
+                                                         Red
+
+                                                                 Blue
+
+
+
+
+                    Black
+                                                    Output
+
+
+
+
+                                       Power Supply
+                                   Input
+
+
+
+
+                                         24VDC
+                        White
+  120 VAC from
+    Wireway                                                                    LEDs
+
+
+
+
+                                     FW8GL
+                                LED Wiring Diagram
+
+
+
+
+10 of 11           U.S. & CANADA 1-800-922-1919 • MEXICO 1-800-890-2900               FWGH-L Merchandiser Data Sheet
+ Excel   FWGH-L
+ Frozen
+
+
+
+Estimating Refrigeration and Electrical Load (for comparison purposes only)
+
+Case Btu
+To determine Btu for a case, refer to the performance data chart on Page 2. Select lit or unlit shelves, then select the type of
+remote refrigeration system (parallel or conventional), which will give Btu/hr/ft. Multiply this number by the length of the case to
+determine Btu per hour.
+
+Case Electrical
+Refer to store legend to determine number of circuits. Lighting should be specified in store legend.
+
+Fan electrical load for a case is computed by selecting the case length and fan voltage on Page 6. For example, a 12 ft case
+uses 3 fans. The store legend specifies fans on a 230V circuit. In this instance, fans use 0.39 Amps and the MCA is 0.59.
+When applied, ambient fans, anti-sweat heaters, controllers, etc. must be included in the MCA. Include lights in the MCA if
+lights are on same circuit.
+
+Lights may be on a separate circuit. To estimate lighting load: select case length (12 ft), canopy lighting [standard or optional]
+(here 0.70 for standard), and shelf lighting [maximum for which case is wired] (1.53 for six shelves); then add together
+[0.70 + 1.53 = 2.23 amps for 120V] (for 230V, multiply 2.23 * 0.52 = 1.16).
+
+
+
+
+Line Sizing — Refer to store legend.
+Hussmann Line Sizing Charts are engineered for use with Hussmann refrigeration equipment.
+
+
+
+
+Revision History
+
+Revision A: June 2014: Original Issue.
+
+Revision B: August 2015: Added Optional Lighting Electrical Data on Page 6 and updated
+Power Supply part number on Page 7.
+
+Revision C: January 2016: Updated fan assembly part numbers Page 7.
+
+Revision D: May 2016: Added note on page 2.
+
+Revision E: June 2016: Updated refrigeration data and updated AHRI Total Display Area on
+page 2.
+
+
+
+P/N 0540997_E              HUSSMANN CORPORATION • BRIDGETON, MO 63044-2483 U.S.A. • WWW.HUSSMANN.COM                    11 of 11
+

@@ -1,0 +1,1642 @@
+The boundary between random and non-random passenger arrivals:
+      Robust empirical evidence and economic implications
+         Ramandeep Singh∗, Daniel J. Graham, Daniel Hörcher, Richard J. Anderson
+              Transport Strategy Centre, Department of Civil and Environmental Engineering
+                                Imperial College London, United Kingdom
+
+
+
+
+Abstract
+    In this paper, we investigate the influence of train headways on passenger platform wait
+times using automated data from the London Underground metro system. For high fre-
+quency services, the literature suggests that passenger arrivals are random and that under
+perfectly random conditions with all other factors held constant, wait times are equivalent
+to half of the headway between trains. We test this hypothesis using large-scale smart card
+and vehicle location data, which enables the extraction of access times from total passenger
+journey times as well as the precise measurement of train headways. Using a semipara-
+metric regression modelling framework, we generate non-linear estimates of the relationship
+between access times and headway while conditioning for other service supply and demand
+factors. Marginal platform wait times are then derived numerically via an exposure-response
+model framework which accounts for potential confounding between the walking and waiting
+components of access times, thus enabling quantification of the unbiased impact of headways
+on wait times. For three lines in central London, we observe that marginal wait times tran-
+sition from greater than half of the headway to approximately one third of the headway as
+train frequencies decrease. The transition occurs in the range between 2-3 minute headways,
+lower than earlier estimates in the literature. A series of numerical simulations illustrate the
+importance of waiting time sensitivity in the optimisation of public transport services. In
+comparison with the standard wait time assumption, our exercise reveals that the degree of
+density economies is milder than what the literature suggests, and this may neutralise some
+of the economic justifications of high public transport subsidies.
+Keywords: Platform wait times, AFC data, AVL data, Revealed preference,
+Semiparametric regression
+
+
+1. Introduction
+   The time spent waiting at a station platform prior to boarding is considered by passengers
+to be one of the most inconvenient phases of a transit journey. In terms of the generalised
+
+  ∗
+      Corresponding author
+      Email address: ramandeep.singh13@imperial.ac.uk (Ramandeep Singh)
+Preprint submitted to Transportation Research Part C: Emerging Technologies              June 15, 2021
+cost of travel, the value of platform wait time is typically weighted at least twice as much
+as the value of uncrowded in-vehicle time (Wardman et al., 2016). Transport for London
+applies a higher weighting of 2.5 for wait time, compared to a base weighting of 1 allocated
+for in-vehicle time in uncrowded conditions (TfL, 2013). Wait time therefore incurs at least
+double the amount of disutility to passengers as when they are travelling on empty trains.
+Since wait times are such an influential component of passenger perceptions of transit travel,
+understanding and quantifying passenger wait time patterns is essential.
+    Train frequency is a primary determinant of passenger wait time (Newell, 1982; Osana
+and Newell, 1972). In the literature, the consensus is that passenger arrival patterns are
+influenced by train frequency levels as follows: (i) when train frequencies are high, passengers
+arrive in a random manner, resulting in an average wait time equivalent to half of the
+headway between trains, and (ii) at lower service frequencies, passengers tend to arrive in
+a non-random manner in order to minimise their wait times. In the most recent empirical
+work on rail transit covering both high frequency metro and low-frequency suburban rail
+modes, the transition from random to non-random passenger arrivals is reported to occur
+in the range between 5 and 11 minute headways (Berggren et al., 2019; Ingvardson et al.,
+2018; Fan and Machemehl, 2009; Luethi et al., 2007). With increasing access to advanced
+train arrival information available through open source data online and via mobile phone
+applications, the transition to timed passenger arrivals may occur at shorter headways.
+    In this paper, the prevailing hypothesis that passenger wait times transition from ran-
+dom to non-random as headways increase is tested, using the London Underground metro
+system as a case study. Automated fare collection (AFC) data from the Oyster card system
+and automated vehicle location (AVL) data on train movements are used, and these data
+combined provide a revealed preference framework with a very large sample size. Three
+parts of analysis are undertaken to establish the effect of headways on passenger wait times
+at the origin station as follows:
+
+  1. Total passenger journey times are decomposed via a probabilistic passenger to train
+     assignment algorithm to calculate passenger access time, i.e, the time taken from
+     passenger tap-in to train boarding at the origin station.
+  2. Semiparametric regression modelling is undertaken to quantify the relationship be-
+     tween headways and access times while conditioning on other service supply and pas-
+     senger demand characteristics.
+  3. The effect of headways on marginal passenger wait times is then isolated and quantified
+     via an exposure-response model framework.
+
+   Marginal passenger wait times with respect to train headways are calculated in a two-
+step process. First, expected values of access time at different values of train headway
+are calculated from the outputs of the semiparametric regression model of access times.
+This generates a relationship which can be considered analogous to a exposure-response
+function, a model framework commonly applied in the medical toxicology literature (Haschek
+et al., 2013; Wang, 2015). In this case, access time is the response and headway is the
+exposure. Second, the derivative of access time with respect to headway is calculated via
+
+                                               2
+finite differencing. This quantity is used to infer marginal wait time with respect to headway.
+Through this process, passenger arrival patterns are able to be characterised and the point
+at which arrivals transition from random to non-random across three high frequency lines
+in central London is established.
+    In the literature, the majority of models exploring the relationship between wait times
+and headway rely on direct measurement of wait times through the observation of samples
+of boarding passengers at station platforms or from passenger stated preference survey data.
+Parametric functional forms are assigned to the wait time data, and inferences are then
+made regarding passenger arrival and wait time patterns (Luethi et al., 2007; Nygaard and
+Torset, 2016). Separate analyses may then be undertaken to quantify the effect of different
+supply and demand factors; linear regression modelling and analysis of variance (ANOVA)
+statistical testing methods are the most prevalent analysis techniques (Fan and Machemehl,
+2009; Tavassoli et al., 2018; Berggren et al., 2019).
+    In comparison with the existing empirical literature on wait times, the methodological
+contribution of the present paper is threefold. First, we use large-scale automated data sets
+from which access times are derived in a passenger-to-train assignment framework. This
+makes data collection more feasible from a time and cost perspective, while the potential
+bias of small-scale manual sampling is eliminated. Second, the application of semiparametric
+regression rather than the conventional linear regression methods enables more robust esti-
+mation of parameter coefficients which have a greater degree of fidelity to the data. Third,
+the paper contributes with the derivation of a novel exposure-response functional framework
+to infer marginal wait times with respect to headway. Within this framework, we quantify
+the unbiased impact of headways on wait times via the derivation of marginal wait times to
+account for potential confounding between the walking and waiting components of access
+times. Our study demonstrates that the numerical approximation of marginal wait times
+generates valid results for the London Underground metro system, and so the method can
+be readily applied to other systems to analyse wait time patterns from routinely collected
+automated data.
+    Our study also investigates the application of wait time modelling at the supply side
+of public transport provision. Far-reaching conclusions are derived regarding the economic
+implications of replacing the standard assumption of random passenger arrivals with ro-
+bust econometric estimates of the marginal wait time–headway relationship. We show that
+the simplifying assumption of random arrivals leads to the underestimation of the socially
+optimal frequency in high-demand periods and overestimation in the off-peak. Moreover,
+with our new estimates, density economies in the operator costs of service provision tend
+to disappear, thus neutralising some of the economic justifications for high public transport
+subsidies.
+    In terms of the applicability of this study on the demand side of public transport, a
+number of studies suggest that the provision of real-time information improves passenger
+perceptions of wait times at transit stops (Dziekan and Kottenhoff, 2007; Watkins et al.,
+2011; Brakewood et al., 2014a,b). The results of this study reveal the instances where real-
+time information on train arrivals might be the most useful for passengers. Around the
+critical headway (approx 2-3 mins), such information is decisive in whether passengers are
+                                              3
+willing to risk a non-random arrival. This information could be communicated to passengers,
+and could ultimately improve passenger perceptions of service quality.
+    The remainder of the paper is structured as follows: a literature review of work on the
+estimation of transit platform wait times is presented in Section 2. The study area and
+data are briefly summarised in Section 3. The methods for the passenger to train assign-
+ment algorithm, the semiparametric regression modelling framework, and the estimation
+of marginal wait times are detailed in Section 4, followed by the results and discussion in
+Section 5. Conclusions and suggestions for future work are given in Section 6.
+
+2. Literature review
+2.1. Fundamental properties of transit wait times
+    The earliest work on estimating wait times for rail transit was based on work undertaken
+for bus transit, where researchers made the assumption that passengers arrive randomly, and
+the resulting wait times follow a uniform distribution (Holroyd and Scraggs, 1966; Osana
+and Newell, 1972; Abkowitz and Tozzi, 1987).
+    The seminal formula for platform wait time is:
+
+     E[w] = 0.5E[h](1 + cv 2h ),                                                         (1)
+
+where w denotes wait time, h is train headway between consecutive services, and cvh is the
+coefficient of variation of headway (Newell, 1982; Osana and Newell, 1972). The formula
+expects that passengers tend to arrive randomly, and so wait times are a function of half of
+the headway between trains including an adjustment for the regularity of headways.
+   O’Flaherty and Mangan (1970), Seddon and Day (1974), Jolliffe and Hutchinson (1975),
+Turnquist (1978), and Bowman and Turnquist (1981) were among the first researchers to
+observe that although some passengers do indeed arrive randomly, others use knowledge of
+schedules via published timetables or experience to adjust their arrival to minimise wait
+times. In subsequent work on wait times, researchers generally adopt the two-category
+typology of passenger wait times proposed by Turnquist (1978):
+
+  1. Passengers arrive randomly when service frequencies are high and resulting expected
+     wait times are low.
+  2. Passengers arrive non-randomly and time their arrival to minimise wait time when
+     service frequencies are low and train schedule information is known.
+
+   When passenger arrivals are perfectly random with a uniform distribution, the expected
+wait time E[w] is half of the headway, i.e. E[w] = 0.5h. When passenger arrivals are a
+mix of random and non-random, it follows that the expected wait time can be assumed
+to be less than half of the headway. Fosgerau (2009) and Fosgerau and Engelson (2011)
+document the theoretical foundations of the boundary between random and non-random
+passenger arrivals. In terms of empirical estimates of the transition point, the US Transit
+Capacity and Service Quality Manual currently quotes the transition at 10 minute headways
+(Kittelson & Associates Inc et al., 2013). Other empirical research on bus and rail modes
+                                             4
+quote values as low as 5 minutes; a brief review of relevant studies are presented in the
+following sections.
+    O’Flaherty and Mangan (1970) characterise bus wait times in Leeds, UK, as a linear
+function of headway, where the expected wait time is defined as E[w] = 1.79 + 0.14h.
+Substituting E[w] = 0.5, the distinction between random and non-random arrivals occurs
+at 5 minute headways. Seddon and Day (1974) analyse bus wait times in Manchester,
+UK, and also observe a linear function where E[w] = 2.34 + 0.26h and the transition from
+random to non-random arrivals occurs at approximately 10 minute headways. In more recent
+work, Nygaard and Torset (2016) study bus travel in Trondheim, Norway and observe non-
+random arrivals behaviour for bus services with 10, 15, and 20 minute headways. For the
+10 minute headway service, the authors specify a linear model for the expected wait time,
+where E[w] = 0.32h. In their study of bus wait times in Austin, Texas, Fan and Machemehl
+(2009) analyse services with headways ranging from 8 to 60 minutes and also specify a linear
+model for wait times, where E[w] = 2 + 0.3h. The transition from random to non-random
+arrivals behaviour is reported to occur at 11 minute headways, and it is reported that after
+a headway of 38 minutes, all arrivals can be considered as non-random.
+    Two of the most recent studies on rail travel by Luethi et al. (2007) and Ingvardson
+et al. (2018) use two-part mixture distributions to represent the random and non-random
+arrivals. Luethi et al. (2007) analyse platform wait times for bus, tram, and rail in Zurich
+Switzerland, and propose a mixed uniform and Johnson SB distribution. The transition from
+random to non-random arrivals is observed to occur at approximately 5 minute headways.
+Ingvardson et al. (2018) study wait times for metro and regional rail lines in Copenhagen with
+headways ranging from 2 to 60 minutes, and propose a mixed uniform and beta distribution
+of passenger arrivals. This distribution is tested against the Luethi et al. (2007) mixed
+uniform and Johnson SB function, and is found to provide a better fit to the wait time data.
+In terms of the passenger arrivals process, the authors find that the proportion of passengers
+that exhibit non-random arrival behaviour is estimated at 43% at 5 minute headways, and
+52% at 10 minute headways, and so it can be inferred that the transition between random
+and non-random arrivals occurs between 5 and 10 minute headways. Berggren et al. (2019)
+observe passenger wait times through the use of a mobile phone application for rail and
+bus trips in Lund and Malmö, Sweden. The study finds that passengers show evidence of
+non-random arrival behaviour at 5 minute headways.
+
+2.2. Factors that influence wait times
+    In line with the seminal formula for wait times for high frequency services widely adopted
+by operators (refer to equation 1), empirical research verifies that the degree of headway
+regularity also impacts wait times. Most studies report that waiting times become longer
+as services become more irregular. Furth and Muller (2006) evaluate waiting costs for short
+and long headway scenarios while incorporating an allowance for headway reliability, and
+establish the transition between random and non-random arrivals by equating short headway
+waiting cost with long headway waiting cost. Using six different operational scenarios, it is
+shown that waiting costs tend to increase as headways become more irregular. Bowman and
+Turnquist (1981) further confirm that for observed bus wait times in Chicago, passengers
+                                              5
+are more sensitive to the regularity of headways rather than headway itself. Frumin and
+Zhao (2012) assess wait times on the London Overground rail lines, and find that passengers
+arrive more randomly when the schedule deviation of the service is high. Nygaard and Torset
+(2016) assess bus wait times in Trondheim, Norway, and show that passengers experience
+longer wait times as the deviation between actual and scheduled arrivals increases.
+    In addition to the influence of headway and headway regularity, empirical work shows
+that passenger wait times are also influenced by the availability of train timetable infor-
+mation, and other passenger-specific behaviours. Here a brief summary of the some of the
+recent work in this area is presented.
+    Ingvardson et al. (2018), Luethi et al. (2007), Frumin and Zhao (2012), and Csikos and
+Currie (2007) directly and indirectly investigate the impact of passenger information on
+wait times. Ingvardson et al. (2018) assess rail travel in Copenhagen, Luethi et al. (2007)
+study bus, tram, and rail modes in Zurich, Frumin and Zhao (2012) study the London
+Overground rail lines, and Csikos and Currie (2007) investigate rail travel in Melbourne,
+Australia. The four studies investigate the impact of the time of day and all four report that
+a higher proportion of passengers arrive randomly in off-peak hours than during the peak.
+It is argued that those who travel in the peak are more likely to be regular travellers who
+have knowledge of the train departures, and are therefore more likely to time their arrivals.
+Ingvardson et al. (2018) also find that a greater proportion of passengers arrive randomly
+for the metro service, which operates to a set service frequency rather than to a scheduled
+timetable. In comparison to the random metro arrivals, they observe that passengers time
+their arrival to minimise wait times for the rail lines where published timetables are available.
+This illustrates the direct impact of passenger information on wait times; where available,
+passengers will consult information to time their arrivals in order to reduce wait times.
+    Passenger-specific behaviours are found to influence wait times in a number of studies.
+Fan and Machemehl (2009) analyse wait time for buses in Austin, Texas, and perform a
+linear regression analysis using OLS fitting to investigate the influence of headway, headway
+regularity, time of day, and individual-specific characteristics including gender, ethnicity, and
+access mode. The variables found to be significant at 95% are headway, headway regularity,
+the dummy variable for the off-peak period, and the dummy variable for ethnicity type. All
+significant variables have positive coefficients and so increases in the value of all variables
+lead to longer wait times. Berggren et al. (2019) perform linear regression and ANOVA
+tests on wait times for bus and rail modes in Sweden and observe that individual-specific
+traits including gender, access mode, trip purpose influence passenger arrival times. Another
+passenger-specific arrival preference is explored by Leurent and Xie (2018). It is asserted
+that passengers opt to have longer wait times at the origin station in order to optimally
+position themselves on the train such that their walking distance at the destination platform
+is minimised. The method is applied to the Paris metro system using a similar maximum
+likelihood optimisation algorithm as presented in Xie and Leurent (2017).
+    Csikos and Currie (2008) investigate passenger-specific behaviours in more depth by
+observing and categorising passengers according to their arrival preferences. The authors
+extend on their earlier work on rail wait times in Melbourne, Australia (Csikos and Currie,
+2007) and conduct a longitudinal study to analyse the arrival behaviour of regular passengers
+                                               6
+who complete the same route for at least 10 weekdays. Four types of arrivals behaviour is
+defined: 1) those who have the greatest consistency in arrival time and arrive within a
+narrow window (1-3 minutes before scheduled service), 2) those who arrive randomly but
+within a consistent wider window of arrival time, 3) those who arrive consistently within a
+given window, but also display outlying arrival times, and 4) random arrivals. The authors
+find that passengers with the most consistent and narrow arrival window also exhibit the
+shortest offset to the train arrival time (i.e. passenger arrival coincides very closely to train
+arrival), and these passengers also tend to travel earlier in the peak period of the day.
+    Tavassoli et al. (2018) investigate the impact of a wide range of different factors on
+passenger wait times for rail travel in Brisbane, Australia. Using a log-logistic accelerated
+failure time model framework, wait times are assumed to follow a log-logistic distribution
+and model parameter estimates are assigned a linear form. Model covariates found to be
+significant include: the time of day (AM peak, PM peak, and other times), operational
+factors such as headway, the volume of passenger boardings and alightings, the number
+of platforms, the location of the station, demographic characteristics including population
+counts and employment, and trip characteristics such as transfer details (if applicable), and
+if an alternative route is available.
+    With the exception of Ingvardson et al. (2018), Tavassoli et al. (2018) and Frumin and
+Zhao (2012), the majority of work on the characterisation of wait time patterns involves col-
+lecting wait time data through stated preference surveys or through observation of passengers
+at stations. Distribution fitting or linear regression methods are then typically adopted to
+investigate the relationship between wait times and train headways. Studies that assess the
+impact of additional supply and demand factors aside from headway predominately involve
+the application of linear regression analysis methods.
+    In this paper, rather than measuring or obtaining wait time estimates from stated pref-
+erence sources, the impact of headways on passenger wait times is numerically derived
+using revealed preference data. A probabilistic passenger to train assignment algorithm is
+applied to first calculate the access time component of passenger trips from the revealed
+preference data on total passenger journey times and train movements on the London Un-
+derground. The non-linear semiparametric regression method is then applied to estimate
+access times conditional on headways and other supply and demand characteristics of the
+system. Marginal wait times as a function of headway are then numerically derived, enabling
+an analysis of passenger wait time patterns at different train service frequencies.
+
+2.3. Applications of wait time modelling
+    In various fields of transport science, the standard assumption that wait time is equivalent
+to half of the headway is typically applied, and so replacing this standard assumption has
+a number of implications. Demand prediction and policy appraisal is among the most
+straightforward applications. Interventions that affect the frequency of service provision
+have an impact on waiting times as well, and empirical evidence shows that public transport
+demand is highly sensitive to this journey attribute (Paulley et al., 2006). The unit value
+of waiting time is significantly higher than the value of standard in-vehicle travel time; the
+corresponding multipliers reach 1.4–1.8 in the literature (Wardman, 2004). If the impact
+                                               7
+of increased frequency on demand is significantly higher (lower) than the standard wait
+time assumption predicts, then the corresponding response on the demand side might be
+substantially underestimated (overestimated) by demand models. This implies that the
+benefit side of such interventions is also underestimated (overestimated) in policy appraisal,
+thus leading to biased recommendations in project ranking.
+    A similarly influential application of wait time models is in short-run supply optimisation.
+Waiting time is one of the key cost components responding to the frequency of service. The
+trade-off between the operator costs on the one hand and the waiting time savings on the
+benefit side is in the heart of supply modelling since the seminal contribution of Mohring
+(1972). The marginal waiting time saving has an especially relevant role here, as even the
+most recent literature still relies on the assumption that it equals to one half (for example,
+Jara-Dı́az and Gschwender (2003); Hörcher and Graham (2018)).
+    Let us consider the simple example of frequency optimisation in the original model of
+Mohring (1972). The social cost of service provision is the sum of waiting time and operating
+costs:
+
+      C(f ) = Q · γw(f ) + o(f ),                                                           (2)
+
+where Q is the number of users, γ is the value of waiting time, and o(f ) is a frequency-
+dependent operating cost. Thus, the first-order condition of cost minimising optimal fre-
+quency provision is
+                                      ∂w −2
+      o0 (f ) = −γQ · w0 (f ) = Q ·      f .                                                (3)
+                                      ∂h
+That is, the marginal operator cost equals the marginal waiting time benefit with respect
+to frequency. Now, let us consider the relationship between waiting time and headway, and
+the fact that h = f −1 . This implies that
+                  ∂w ∂h    ∂w
+      w0 (f ) =         = − f −2 .                                                          (4)
+                  ∂h ∂f    ∂h
+This amends the first-order frequency condition in equation (3) to
+                       ∂w −2
+      o0 (f ) = γQ ·      f ,                                                               (5)
+                       ∂h
+and, after rearrangement, the optimal frequency becomes
+           s
+             ∂w γQ
+      f=                .                                                                   (6)
+             ∂h o0 (f )
+
+    Mohring as well as subsequent contributions in the literature assume w = 0.5h, so that
+∂w/∂h in the frequency formula is a constant, 0.5. However, if the assumption of random
+arrivals does not hold any more, and the marginal waiting time benefit is a function of
+frequency itself, then equation (6) above, often mentioned as the square root principle,
+                                               8
+becomes an implicit function of frequency. With the false assumption of random arrivals,
+this analytical result suggests that the optimal frequency is downward biased if ∂w/∂h is in
+fact higher than 0.5, and upward biased if ∂w/∂h < 0.5.
+    In section 5.3 we investigate the impact of the present paper’s wait time estimates on
+optimal frequency provision and subsidisation.
+
+3. Study area and data
+    Selected sections of the Central, Jubilee, and Victoria lines on the London Underground
+are analysed as follows: the entire length of the Victoria line (16 stations); West Acton to
+Oxford Circus on the Central line (12 stations); and Bond Street to North Greenwich on
+the Jubilee line (10 stations). The experimental area is depicted in Figure 1. We select
+origin-destination pairs on each line that represent single-line trips only, excluding transfers,
+and the line sections are chosen such that route choice decisions do not need to be made
+under regular operating conditions. Since the line sections cover some of the busiest routes
+in central London, the passenger data capture a mix of regular work commuters, school
+children, tourists, and others.
+    Passenger trip data and train movement data over a period of 7 weeks from October to
+December in 2013 are used, focusing on weekday travel (Monday to Friday) only. The pas-
+senger trip data are recorded via the Oyster smart card system, and include the timestamps
+and locations of each trip between the origin and destination stations. The train movement
+data are recorded by the internal TfL NetMIS system and include departure timestamps and
+locations of each train movement at each station platform. The train movement data are
+used to calculate the headways associated with each train trip; headways are calculated as
+the difference between departure timestamps of consecutive train services at a given station
+platform.
+
+
+
+
+                                               9
+             Figure 1: Study area, London Underground (adapted from TfL, 2014)
+
+
+4. Methods
+   The analysis involves three main parts. First, journey times from the AFC data set
+report the total journey times only, and so to enable the journey times to be split into parts,
+passengers must be allocated to trains. This is achieved by merging the AFC trip data with
+the AVL train movement data and applying a probabilistic train assignment algorithm,
+as presented in section 4.1. Second, a semiparametric regression model is developed to
+quantify the relationship between access times and headway while conditioning for other
+potentially influential supply and demand factors, as detailed in section 4.2. Third, the
+unbiased relationship between access times and headway as previously quantified is used
+to generate an average exposure-response model of access times, with headway as the sole
+exposure variable. Two exposure-response models are generated: (i) environmental which
+represents the relationship between access times and headway including the effect of all
+other supply/demand covariates, and (ii) base which represents the relationship between
+access time and headway only. The exposure-response models are then used to compute the
+derivative of access times with respect to headway, and this quantity represents marginal
+platform wait times. Environmental and base models of marginal platform wait times with
+respect to headway are derived, as presented in section 4.3. For clarity, a summary of the
+modelling framework including references to relevant equations is illustrated in Figure 2
+
+
+
+
+                                              10
+                            Figure 2: Outline of modelling framework
+
+4.1. Passenger to train assignment
+    Full details of the assignment method applied in this analysis are available in Singh
+(2019). The following section provides a summary of the algorithm.
+    Let tentry
+         i     and texit
+                    i    denote the entry and exit times of passenger i as recorded by the
+passenger trip AFC data. DToj is the departure time of train j at the origin station o, and
+DTdj is the departure time of train j at the destination station d as recorded by the train
+movement AVL data. For train j to be considered as a feasible itinerary for passenger i:
+   1. Passenger i must enter the system before train j departs at the origin: tentry
+                                                                                i      ≤ DToj .
+   2. Passenger i must exit the system after train j departs at the destination: texit
+                                                                                  i    ≥ DTdj .
+    The total number of feasible train itineraries is nj , where j = 1, .., nj denote the feasible
+train itineraries. By applying the passenger entry and exit conditions, the passenger trips
+are categorised as follows:
+                                               11
+   1. Unambiguous trips: Train j is the only feasible train for passenger i, i.e. tentry
+                                                                                      i  ≤
+              exit
+      DToj & ti ≥ DTdj , nj = 1. The set of unambiguous trips is referred to as U.
+   2. Ambiguous trips: Passenger i can feasibly board more than one train, i.e. tentryi  ≤
+      DToj & texit
+              i    ≥ DT dj , n j > 1. The set of ambiguous trips is referred to as A.
+
+   The set of ambiguous trips A are allocated by calculating the Bayesian probabilities of
+the egress times associated with each feasible train itinerary yijeg as follows:
+
+
+          eg eg      P (rkeg |yijeg )P (yijeg )
+      P (yij |rk ) =                            ,     i, j ∈ A, k ∈ Uop,od                    (7)
+                            P (rkeg )
+
+    where yijeg is the egress time for passenger i and train itinerary j = 1, ..nj in the set
+of ambiguous trips, i.e. i, j ∈ A, rkeg is a randomly sampled egress time from the set of
+unambiguous trips in the off-peak period for the given OD pair, i.e. k ∈ Uop,od where
+Uop,od = Uod (tentry
+               i     < 7am or 10am < tentry
+                                       i    < 4pm or tentry
+                                                        i    > 7pm). P (yijeg ) is the probability
+of observing the egress time for the itinerary of interest, as generated via the kernel density
+probability function of the egress times of unambiguous trips, P (rkeg ) is the probability of
+observing the randomly sampled egress time, as generated via the kernel density probability
+function of the egress times of unambiguous trips, and P (rkeg |yijeg ) is the probability of ob-
+serving the randomly sampled egress time, as generated via the kernel density probability
+function of the egress times of unambiguous trips in the off-peak period.
+    The passenger is then assigned to the train itinerary with the highest probable egress
+time as per equation (8):
+
+      P (yijeg∗ ) = max (P (yijeg |rkeg )),         i, j ∈ A, k ∈ Uop,od ,                    (8)
+                    1≤j≤nj
+
+
+where yijeg∗ is the egress time of the passenger for the assigned to train j ∗ .
+
+4.2. Access time regression model
+    Semiparametric regression is undertaken to quantify the relationship between access
+times and headway. To ensure that the headway covariate is not acting as a proxy for
+other factors, we also condition for a number of potentially influential supply and demand
+characteristics. This model then enables the isolation of the sole impact of headways on
+access times, which is then subsequently used to quantify the impact of headways on arrival
+patterns.
+    The advantage of the semiparametric regression method is that the relationships between
+the independent and dependent variables are defined via basis functions generated from the
+data, therefore enabling non-linearities and potential discontinuities to be modelled (Wood,
+2006). The basis functions are penalised thin plate regression splines, which are interpolation
+functions that are assigned to match the observed data points with a penalty applied to
+capture the trade-off between the degree to which the spline functions match the data and
+the degree of smoothness. The modelling is undertaken using the R statistical software
+package ‘mgcv’. The models are fitted using penalised iteratively reweighted least squares
+                                                        12
+(PIRLS) and the restricted maximum likelihood (REML) technique is used to estimate the
+model parameters (Wood et al., 2015; Wood, 2006).
+     For each passenger trip i assigned to train itinerary j, an access time regression model can
+be formulated as a function of headway hij and other service supply and demand covariates
+Vij , and estimated model parameters θ.  b The headway and other service supply and demand
+covariates are modelled by applying the following forms: continuous variables are modelled
+with either a parametric or non-parametric form, and categorical factors are modelled with
+group-specific fixed effects. The general form of the access time regression model is as
+follows:
+
+
+      yijac = m(hij , Vij , θ)
+                            b + ij
+                            K
+                            X                                                                (9)
+          = α + XijT β +          fk (Xij∗ ) + ZijT u + ij
+                            k=1
+
+    where yijac is the access time, α is the model constant, β are the parameter coefficient
+estimates for the covariates Xij modelled parametrically, fk , k = 1..K are the smooth basis
+functions based on penalised thin plate regression splines of the covariates Xij∗ modelled
+non-parametrically, u is a vector of estimated group-specific fixed effects for the categorical
+factors Zij , and ij is the random error term, assumed to be independently and identically
+distributed with mean 0 and given variance σ2 , such that ij ∼ N (0, σ2 ).
+    The data set for the regression model consists of all trips within the defined study area.
+The resulting error term therefore captures the residual variance across all trips, after con-
+ditioning for the covariates and fixed effects in the model. The dependent and independent
+variables are defined further in the following sections.
+    Access time is the dependent variable yijac in equation 9 and is defined as the time from
+passenger tap-in at the origin station to the departure of the assigned train from the origin
+station platform, as per equation 10. It should be noted that access time is measured in
+minutes.
+
+
+      yijac = DToj − tentry
+                      i                                                                     (10)
+
+    The independent variables in the model can be categorised into those relating to supply
+characteristics and those relating to demand characteristics, and are discussed in more detail
+in the following sections. In terms of notation mapping to equation 9, the parametric and
+non-parametric continuous covariates denoted by Xij and Xij∗ , respectively, are headway, the
+coefficient of variation (COV) of headway, headway normalised by mean headway, passenger
+volumes, passenger trip frequency, and the paired time component. It should be noted
+that the continuous covariates are all initially modelled with non-parametric forms, and
+are subsequently assigned parametric forms if appropriate; this is discussed further in the
+modelling results. The categorical variables denoted by Zij are time of day, station and line
+effects, and passenger card based categories.
+                                                        13
+4.2.1. Supply side covariates
+    Headway - To accommodate differing demand levels, the headways between trains vary
+across times of the day and across locations. As discussed in the literature review, headway
+is the primary determinant of platform wait times, and in turn, passenger access times. In
+the model, the headway for each trip corresponds to the train the passenger boarded as
+assigned via the passenger to train assignment algorithm, and is measured in minutes.
+    Coefficient of variation of headway - In line with the seminal formula for platform wait
+times presented in the literature review, the COV of headway is included in the access time
+model to capture headway regularity. The COV of headway is calculated over a 15 minute
+period for each OD pair.
+    Headway normalised by mean headway - This covariate is included to capture potential
+effects of train bunching. Train bunching refers to the condition where headways become
+shorter as a result of longer train dwell times at stations. Bunching is more likely to occur
+under congested conditions, where longer dwell times are required for higher volumes of
+passenger boardings and/or alightings. The value is calculated as the headway associated
+with the given trip normalised by the mean value of headways over the corresponding 15
+minute period for each OD pair.
+    Time of day - This covariate captures any unobserved temporal variation in the model.
+A total of 72 categories are modelled to represent four 15 minute intervals per hour over
+the operating period from 6am to 12am. A fixed effects form is assigned to accommodate
+potential correlation with the other dynamic covariates in the model.
+    Station and line effects - A set of static covariates capture any unobserved group-specific
+effects of lines and stations. There are 35 stations and 6 combinations of the three lines in
+two directions of travel. These effects are modelled as fixed effects, thus accommodating
+potential correlation with the other station and line-based covariates in the models.
+
+4.2.2. Demand covariates
+    Passenger volumes - Passenger density indicators are included to capture the effects of
+passenger congestion on access times. It is estimated that trips made using the Oyster card
+represented 70% of all trips in 2013 with the reminder undertaken using alternate ticketing
+modes, such as paper tickets and travel cards (Uniman, 2009; Paul, 2010). Therefore to
+represent total passenger volumes including non-Oyster trips, the TfL Rolling Origin and
+Destination survey (RODs) database is used to calculate the passenger density indicators.
+    Two passenger volume indicators are included in the regression model: platform loading
+at the origin station, and inter-station line loading. The general equation is given in 11,
+where dqt denotes the passenger density indicator for the location of interest q i.e. platform
+loading, or line loading, nqt is the number of trips during time period t, normalised by the
+average number of trips Nqt,day per 15 minute period t over the day.
+              nqt
+     dqt =                                                                                (11)
+             Nqt,day
+   Passenger trip frequency - As discussed in the literature review, route familiarity can
+have an effect on walking and waiting times, with regular commuters who are more familiar
+                                              14
+with their route typically having shorter journey times. To capture this potential effect, the
+number of repeat trips a passenger makes on a given OD route is included in the models.
+    Passenger card-based categories - The Oyster card records for each trip include informa-
+tion on passenger age, ticket type, and discount type. As mentioned in the literature review,
+individual-specific characteristics may have an effect on journey times, and so the aforemen-
+tioned characteristics are included in the access time model. There are 4 age categories, 13
+ticket types, and 4 discount types. The passenger categories are modelled as fixed effects to
+accommodate potential correlation between the multiple covariates representing passenger
+characteristics.
+    Paired time component - In the literature it is hypothesised that passengers may deliber-
+ately position themselves at the origin platform such that they reduce their egress distance
+and walk time to the exit of the platform at the destination station (Leurent and Xie, 2018).
+To account for the potential dependency between access and egress times, the paired egress
+time component for each trip is included in model.
+    The selection of the fixed effects structure for time, station, line, and passenger attributes
+is further verified in the discussion of the access time model results in section 5.1.
+
+4.3. Derivation of marginal platform wait times
+    As defined in the previous section, access time is the time taken from passenger tap-in
+at the origin station to the point where the train departs from the origin station platform.
+There are two distinct phases of passenger movements during this time: (i) the time taken
+to walk from the ticket gates to the platform, zi and (ii) the wait time at the platform before
+boarding, wij . Based on this, access time can therefore be expressed as per equation (12).
+
+      yijac = DToj − tentry
+                      i     = wij + zi                                                       (12)
+
+    Since we are interested in interpreting the impact of headways on wait times, we can
+further break down the wait time and walk time components to consist of a base component
+and an adjustment for differing environmental conditions arising from changes in headway.
+                                        b
+The base component of wait times (wij     ) can be considered as solely being a function of
+                                                    e
+headway, while the environmental component (wij       ) captures wait time effects that may
+arise at the platform due to headway regularity, passenger volumes, and individual passenger
+behaviours. It would be reasonable to assume that the environmental component of wait
+time is a function of headway, for example, we expect higher degrees of passenger loading
+and headway irregularity during peak times when headways are shorter. The walk time
+component can be similarly broken down to consist of the base time for a passenger to walk
+from the entry gates to the platform in uncongested conditions (zib ), plus as an adjustment
+to account for differing environmental conditions due to passenger volumes and individual
+passenger behaviours en route to the platform (zie ). The base component of walk time can
+be considered independent of headway, since this component is solely dependent on the fixed
+distance between the entry gates and platform. As for the environmental component of wait
+time, it would be reasonable to assume that it is a function of headway.
+
+
+                                               15
+   For calculation purposes, equation (12) can be expressed in terms of the expectations of
+the variables, and the wait and walk time components can be further expanded into base
+and environmental components as described:
+
+      E[yijac ] = E[wij ] + E[zi ] = E[wij
+                                        b         e
+                                           ] + E[wij ] + E[zib ] + E[zie ]                        (13)
+
+Considering the sole influence of headways hij on access times, the derivative of access time
+with respect to headway is expressed as:
+      ∂E[yijac ]        b
+                   ∂E[wij        e
+                          ] ∂E[wij ] ∂E[zib ] ∂E[zie ]   ∂E[wij ] ∂E[zie ]
+                 =         +        +        +         =         +                                (14)
+       ∂hij         ∂hij     ∂hij     ∂hij     ∂hij       ∂hij     ∂hij
+    Since the base component of passenger walk time is independent of the headway between
+                                                                                  ∂E[z b ]
+trains, the rate of change in base passenger walk time with respect to headway ∂hiji in
+equation (14) is omitted. The derivative of access time with respect to headways therefore
+                                                                                    b
+                                                                                 ∂E[w ]       e
+                                                                                          ∂E[w ]
+                                                                       ∂E[wij ]
+primarily represents the marginal wait time at the platform             ∂hij
+                                                                                = ∂hijij + ∂hijij along
+                                                         ∂E[z e ]
+with the environmental component of walk time ∂hiji . In the analysis, our primary interest
+is to quantify marginal wait time with respect to headway. However, from the regression
+model of access times, it is difficult to isolate the marginal wait time component from the
+marginal environmental walk time component. As such, we instead present two functions
+for marginal wait time from the predicted values of the access time regression model: (i)
+environmental marginal wait times, and (ii) base marginal wait times.
+    The environmental model is generated by using the predicted values of access times at
+the scale of the response with respect to all covariates. In this case, the predicted values of
+access time are extracted as follows:
+
+      ybijac = m(hij , Vij , θ),
+                             b                                                                    (15)
+
+where ybijac is the predicted value of the access time regression function with respect to all
+covariates i.e. headway, and the supply and demand covariates denoted collectively by Vij ,
+and model parameter estimates θ.   b The derivative of this quantity with respect to headway
+is equivalent to the marginal wait time and marginal environmental walk time as specified in
+equation 14, and therefore includes the impact of environmental conditions such as differing
+levels of congestion and individual-specific behaviours, which can result in faster or slower
+access times.
+    The base model is generated by extracting the partial predicted values of access times
+at the scale of the linear predictor with respect to the headway covariate only, i.e.:
+
+      ybijach = m(hij , θbh ),                                                                    (16)
+
+in which ybijach is the partial predicted value of the access time regression function with respect
+to headway and the model parameter estimates associated with the headway covariate are
+denoted by θbh . The derivative of this quantity with respect to headway is the base component
+                           ∂E[wb ]
+of marginal wait time ∂hijij , which represents the sole impact of headway only.
+                                                    16
+    Finite differences between each pair of sequential data points are then required to be
+taken in order to compute the derivative of access times with respect to headways. Due
+to the large number of observations and high levels of dispersion in the predicted values
+generated from the access time model, the finite differences between a set of two consecutive
+individual points contain extreme outlying values which tend to artificially skew the results.
+In order to smooth out the outliers, the mean of the predicted values is calculated for a fixed
+value of headway at 1 second intervals. The 1 second interval corresponds to the equivalent
+level of accuracy in the train movement data timestamps. Repeating this calculation for the
+range of headways observed allows the generation of an exposure-response function, where
+headway is the exposure variable and the expected value of access time is the response.
+    Two steps are involved to compute the derivative of access times with respect to head-
+ways. The first step is the calculation of the exposure-response function of expected access
+times with respect to headway, which is given in general terms by
+                      h+∆   n
+          ac     1 X X ac
+      E[y (h)] =            pb (hc ),                                                        (17)
+                 n h =h ij=1 ij
+                       c
+
+
+where E[y ac (h)] is the expected value of access times with respect to headway h in minutes.
+The term pbac
+            ij (hc ) represents predicted values of access times at a given point value of headway
+hc . The summations refer to the summation of access times across all n number of passenger
+and train itinerary combinations ij over a 1 second interval (∆) of headways. The bounds for
+headway are defined from h = 1 to h = 9 minutes 59 seconds, which represents approximately
+99% of observations in the raw data set after excluding upper and lower outlying values of
+headway.
+     The second step is the estimation of the derivative of access times with respect to head-
+ways. The derivative is estimated through a discrete approximation by computing finite
+differences between the average predicted values calculated in equation 17. This process is
+undertaken for the total data set, and separately for peak and off-peak periods. Four models
+are estimated, segmented by time period: (1) all time periods, (2) peak of the AM peak, (3)
+inter-peak, and (4) peak of the PM peak. That is,
+
+      ∂E[y ac (h)]   E[y ac (h + a)] − E[y ac (h)]
+                   =                               ,                                         (18)
+         ∂h                  (h + a) − h
+
+where E[y ac (h)] is the expected value of access time with respect to headway h according to
+equation 17, and a is a small finite increment.
+
+5. Results
+5.1. Access time regression model
+    The following sections present the results of the access time regression model. First, the
+data cleaning process is summarised, second, the modelling process to reach the final model
+form is presented, and third, the results of the significant covariate elasticities are discussed.
+                                                  17
+5.1.1. Data
+    The raw data set including all outliers was initially modelled, and for a number of
+covariates, outlying values were observed at the extremities. The outliers were therefore
+discarded, and the resulting ranges of the data set are summarised in Table A.7 in Appendix
+A.
+    Due to the numerous covariates in the model, the filtered data set is tested for the
+presence of linear and monotonic correlations through the Pearson and Spearman correlation
+tests, respectively. The maximum values of the correlation coefficients are observed between
+headway and normalised headway. The Spearman correlation coefficient has a maximum
+value of 0.76 and the Pearson correlation coefficient has a maximum value of 0.71. In
+correlation testing, the interpretation of the degree of association between two variables is
+context dependent; a correlation coefficient of 0.85-0.90 would indicate a strong correlation in
+cases where there are many data points (Kutner et al., 2005; Aldrich, 1995). In this analysis,
+there are approximately 5 million data points, and so we can infer that the correlations are
+not strong. It is therefore appropriate to include all covariates in the model. Moreover, we
+highlight that potential collinearity issues would be detected in the regression modelling,
+but no such issues are observed in the final model output.
+
+5.1.2. Model form
+    As previously presented in the regression model framework, the continuous covariates
+can be modelled as either non-parametric smooth terms or as parametric terms, and the
+categorical factors are modelled with group-specific effects. All continuous variables are ini-
+tially modelled with non-parametric smooths, and if the functions are found to approximate
+known parametric forms, a parametric form is assigned for tractability and model parsimony.
+For the categorical factors capturing group effects, either a fixed or random effects structure
+can be assigned. The fixed effects structure allows for the group effects to be correlated with
+the other covariates in the model, while the random effects do not allow for correlation with
+other covariates (Searle et al., 1992). From a theoretical standpoint, a fixed effects structure
+is most appropriate for the group effects as there are many covariates concurrently capturing
+similar characteristics of the system, and this could result in a degree of correlation between
+covariates. For verification purposes, however, a random effects structure is also trialled.
+    The results of five model forms are presented in Table A.8 in Appendix A to demonstrate
+the model selection process. Model 1 represents a basic reference model with access time
+as the response and headway as the sole covariate, which is modelled with non-parametric
+smooths. The remaining models trialled include all additional supply/demand covariates
+as follows: Model 2 - All continuous covariates modelled with non-parametric smooths
+and fixed group effects, Model 3 - All continuous covariates modelled with non-parametric
+smooths and random group effects, Model 4 - All continuous covariates modelled with linear
+relationships and fixed group effects, and Model 5 - Final model form with parametric
+and smooth continuous covariates and fixed group effects. To evaluate the performance of
+the models, four criteria are used (Wood, 2006): the adjusted coefficient of determination
+   2
+(Radj. ), the percentage of explained model deviation (Dexplained ), the Akaike Information
+Criterion (AIC), and the restricted maximum likelihood (REML) score. It should be noted
+                                              18
+that the Hausman test is conventionally used to compare the fixed and random effects
+structures for simple linear panel models, however, this test is not able to be applied to the
+semiparametric models generated here. As such, the performance of the fixed and random
+effects are evaluated through the goodness-of-fit indicators.
+    According to the goodness-of-fit results, all models with additional supply/demand co-
+variates outperform the reference model with headway only, as expected, thus indicating the
+benefit of including additional supply/demand covariates alongside headway. The difference
+between the fixed and random effects structures (models 2 and 3) is not perceptible, and so
+in keeping with the theoretical justification, a fixed effects structure is used. In models 2 to
+5, for the form of the continuous covariates, the goodness-of-fit of the fully non-parametric
+model form 2 is best while the linear model form 4 performs worst. In developing the fi-
+nal model form, a balance between maximising the goodness-of-fit while maintaining model
+parsimony and tractability is desired. As such, the final model form 5 performs better than
+the simple linear model form 4, and in line with the fully non-parametric model form 2.
+    To verify that the relationship between access times and headway is robust to model form,
+we illustrate the relationship for each trialled model form 1 to 5 in Figure A.10 in Appendix
+A. In Table A.8, headway is significant at a level of α = 0.001 in all models. As shown
+in Figure A.10, all models illustrate an approximately monotonically increasing relationship
+between access time and headway. Models 2, 3, and 5 (final form), which include additional
+supply/demand covariates, all generate equivalent forms, thus indicating the robustness of
+the access time and headway relationship when other covariates are assigned different forms.
+As discussed previously, the linear model form (model 4) oversimplifies the relationship;
+Figure A.10 shows that it does not capture the slight flattening of the slope at higher values
+of headway. In model 1 (headway as the sole covariate), there is a plateau at headway
+values of 1.6-2.0 minutes, while models 2, 3, and 5 do not have the same form. The highest
+scheduled operating frequency of trains within the study area is 35 trains per hour on the
+Central line, and this corresponds to a minimum headway of approximately 1.67 minutes
+between trains. Approximately 15% of all trips in the data set are undertaken when trains
+operate at headways less than 1.67 minutes, and so the plateau in model 1 is most likely
+representing the transition from bunched train operations in highly congested conditions at
+headways shorter than the published minimum, to regular train operations in line with the
+published schedules. Considering this, it is likely that the addition of covariates representing
+headway regularity and passenger volumes in models 2, 3, and 5 has addressed potential
+confounding with headway, and corrected the plateau observed in model 1.
+    For the final model form 5, the explanatory power of the model is relatively low as
+                    2
+indicated by the Radj.  and Dexplained values of 0.16. Though we have included 10 additional
+covariates that are most likely to have a confounding effect on the relationship between access
+times and headways, there may be additional missing covariates that explain the additional
+variation in waiting and walking times. It should be noted that though the explanatory
+power of the model is relatively low, this does not impact the primary motive of the model,
+which is to quantify the relationship between access times and headways. As mentioned,
+the headway covariate is significant at a level of α = 0.001, furthermore, we have included
+10 additional supply/demand covariates that are most likely to have a confounding effect
+                                              19
+on headway, and we have demonstrated that the relationship between headway and access
+time is robust to the model forms trialled. Therefore, we can infer that the model results
+are robust for further analysis.
+    It should be noted that another reason for the relatively low explanatory power may be
+a consequence of the Oyster card timestamp precision. The Oyster timestamps are accurate
+to one minute only. As information on the magnitude of the inaccuracy for each timestamp
+is unknown, the inaccuracy can be assumed to follow a uniform random distribution between
+0 and 59 seconds, and this is captured by the random error term of the access time regres-
+sion model. Furthermore, any random error in the passenger to train assignment algorithm
+would also be captured in the random error term of the model. It is worth highlighting that
+potential impacts on the random error term do not impact the magnitude of the param-
+eter estimates, and so the relationship between access times and headways would remain
+robust. We acknowledge that if there are systematic errors in the timestamp precision and
+assignment, this would result in biased estimates.
+
+5.1.3. Covariate significance and elasticities
+    The results presented in this section refer to the final model form (model form 5, Table
+A.8) for the access time regression model as discussed in the previous section. For the
+covariates measured on a continuous scale, the form, significance, and mean elasticity values
+are given in Table 1. For the fixed effects terms, the significance and maximum and minimum
+values of the fixed effects are given in Table 2. Due to the large number of observations in
+the model (approximately 5 million points), a minimum significance level of α = 0.01 (99%)
+is adopted.
+    All terms except all passenger card types, some categories of passenger discount type,
+and some time intervals are insignificant at a level of α = 0.01 (99%). For the passenger card
+types and the insignificant categories of passenger discount type, it is likely that passenger
+ages and significant discount types capture these effects. The insignificant time intervals are
+likely captured by the other time-varying covariates in the model.
+
+
+
+
+                                              20
+       Table 1: Results for continuous model covariates
+
+Covariate                       Form           Sig.   Mean elasticity
+Service capacity covariates - dynamic
+Headway                         splines        ***         0.37
+COV headway                     poly deg 3     ***          0.06
+Normalised headway              splines        ***         -0.19
+Demand covariates - demand volumes
+Origin platform loading         poly deg 2     ***         0.05
+Line loading                    poly deg 3     ***         0.09
+Demand covariates - passenger characteristics
+Passenger trips                 splines        ***         -0.07
+Egress time                     poly deg 2     ***         -0.20
+Mean access time (mins)         3.49
+Sig. notation: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Note: Covariate elasticities are unit-less
+
+
+
+                 Table 2: Results for fixed effects
+
+  Fixed effect            Sig.         Min. value      Max. value
+  Service characteristics
+  Time                    Variable           -0.62         0.43
+  Station                 ***                -2.22         0.77
+  Line/direction          ***                -0.66         1.15
+  Demand - passenger characteristics
+  Passenger age           ***                0.00          1.24
+  Passenger discount      Variable           0.00          0.07
+  Passenger type                               -             -
+  Model intercept         ***                4.69
+  Mean access time                           3.49
+  Sig. notation: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+  Note: Fixed effects are measured in minutes
+
+
+
+
+                                  21
+                          Access time deviation from mean (mins)
+                                                                    2
+
+
+
+
+                                                                    1
+
+
+
+
+                                                                    0
+
+
+
+
+                                                                   −1
+                                                                        2.5      5.0           7.5   10.0
+                                                                              Headway (mins)
+
+                          Figure 3: Access time with respect to headway
+
+    The purpose of the analysis is to investigate the relationship between headway and
+platform wait times, and so headway is the primary covariate of interest in the access time
+regression model. As shown in Table 1, headway is significant at a level of α = 0.001.
+Furthermore, out of all significant dynamic covariates in the access time model, headway is
+the most influential, with an average elasticity of 0.37. The positive elasticity implies that
+as headways increase, access times also tend to increase, and Figure 3 shows that access
+times tend to increase monotonically with headway.
+    In terms of the covariates that capture the regularity of headways, both the COV of
+headway and the measure of headway normalised by mean headways are significant in the
+model. This aligns with the findings in the literature; the COV of headway is included in
+the seminal formula for passenger wait times (Newell, 1982; Osana and Newell, 1972) and
+the degree of consistency in headways is further found to influence wait times in empirical
+studies by Frumin and Zhao (2012) and Nygaard and Torset (2016). The COV of headway
+is monotonically positive, suggesting that as COV increases, access times also increase with
+an average elasticity value of 0.06. The covariate capturing normalised headways has a
+monotonically negative elasticity, with an average value of -0.19. The indicator represents
+the degree of train bunching, and can be interpreted as capturing the degree of congestion
+in the system; low values of the indicator (< 1) imply congested train operations, while high
+values (> 1) imply less congested conditions. Therefore, the negative elasticity plausibly
+indicates that as train congestion alleviates, access times tend to decrease.
+    The covariates that represent passenger demand indicate congestion levels at the platform
+and line loading. Both covariates have monotonically increasing elasticity values, which
+plausibly suggests that access times tend to increase as passenger volumes increase. In
+terms of the average elasticity values, the line loading indicator has a value of 0.09 and the
+platform indicator has a value of 0.05, which suggests that line loading is more influential
+on access times.
+    The passenger trip frequency covariate illustrates the impact of route familiarity. The
+elasticity monotonically decreases as trip frequency increases with an average elasticity of
+                                                                                 22
+-0.07. This suggests that passengers who complete more repeat trips on a given route are
+likely to have faster access times. Another passenger-specific behavioural characteristic is
+the paired egress time for each trip. As mentioned previously, there may be a propensity for
+passengers to minimise their egress times at the destination station by trading off their access
+time at the origin station, thereby inducing some dependence between the two components
+(Leurent and Xie, 2018). The results show that there is evidence of an inverse interaction
+between the components; access times decrease monotonically as egress times increase with
+an average elasticity of -0.20.
+    In terms of the group-specific fixed effects in the model, the fixed effects for stations
+range from -2.22 to 0.77 minutes, and the line/direction effects range from -0.66 to 1.15
+minutes (refer to Table 2). The static characteristics of individual stations therefore tend
+to be more influential on access times, rather than the static characteristics specific to lines
+and directions. The effects of the stations seem to reflect the complexity of station layouts.
+For example, the station with the lowest effect (thus quickest access times) is White City,
+which has one of the shortest average walking paths to the platform, while Euston has one
+of the longest average walking paths to the platform and also has the highest effect (thus
+slowest access times).
+    The fixed effects for time are also significant, indicating that there are residual time
+effects in addition to the time-varying impacts captured by the other dynamic covariates
+in the model. Figure 4 illustrates the magnitude of the fixed effects in each 15 minute
+time interval. The majority of the effects are negative, resulting in a reduction in access
+times. The fixed effects for only two intervals in the AM peak between 8:15 and 8:45am
+are positive and result in longer access times. The time effects appear to capture demand
+and operational patterns; the effects tend to increase in the AM and PM peak periods and
+at the extremities of the day, and tend to be lower during the midday and evening off-peak
+periods. The time periods between 5:45pm and 6:30pm are not significant at a level of 99%
+in the model.
+
+
+
+                                                  0.25
+                           Fixed effect (mins)
+
+
+
+
+                                                  0.00
+
+
+
+
+                                                 −0.25
+
+
+
+
+                                                 −0.50
+
+
+
+                                                              10             15           20
+                                                         Time (15 minute intervals, 24 hour format)
+
+                                                   Figure 4: Fixed effects for time (mins)
+
+
+                                                                        23
+                        Table 3: Fixed effects for passenger characteristics
+
+                      Category               % Obs.    Effect (mins)
+
+                      Passenger age
+
+                      Non-concession child   3E-4      1.24
+                      Child                  0.5       0.44
+                      16-17                  0.7       0.13
+                      Adult                  98.8      0.00
+
+                      Passenger discount
+
+                      None                   98.6      0.07
+                      Other                  0.2       0.00
+                      Note: Obs. refers to observations. Only those categories
+                      that are significant at a minimum significance level
+                      of α = 0.01 (99%) are reported.
+
+
+    The most common user demographic in the data set are passengers with adult Oyster
+cards and no discounts; this combined group represents 97% of all trips. Table 3 summarises
+the fixed effects for each significant passenger age and discount category. All four age
+categories are significant at a level of 99% in the model, however, only two out of the four
+discount types are significant at a level of 99%. The results show that children with non-
+concession cards (3E-4% of trips) and children with under 11 cards (0.5% of trips) have the
+highest age effects. These groups have relatively slower access times compared to the other
+groups in the data set. Those holding adult age cards and unspecified “Other” discount
+cards travel fastest. These groups are more likely to capture regular commuters who have a
+higher degree of route familiarity.
+
+5.2. Marginal platform wait times
+    The following sections present the results to estimate marginal platform wait time with
+respect to headway beginning with a discussion of the modelling process and followed by
+the presentation of the results.
+
+5.2.1. Model form
+    In order to understand the underlying trends in the environmental and base models of
+marginal wait time, regression modelling is undertaken with the derivative of access times set
+as the response and headway as the independent variable. Initially, non-parametric splines
+were fitted, however, it was found that this form resulted in over-fitting with a high degree
+of oscillation in the functions. To improve tractability, parametric forms were investigated
+and an exponential decay form was found to provide the best fit. The general form of the
+exponential decay function is
+
+      ∂E[y ac (h)]
+                   = α + ke−h + ,                                                       (19)
+         ∂h
+                                                24
+where the left hand side is defined by equation (18), while k is a parametric coefficient, α is
+the model constant, and  is the random error term.
+   As detailed in the literature review, many studies characterise wait times as a linear
+function of headway. For demonstrative purposes, the goodness of fit statistics for all eight
+models are presented in Appendix B where headway is modelled with a linear relationship
+(model form 1) and with the final exponential decay form (model form 2). As shown in the
+table, the exponential decay models perform better than the linear models across all criteria,
+indicating that this model form is more appropriate for the data.
+
+5.2.2. Results
+    To begin with, it is important to understand the context of the operating conditions
+within the defined study area. Figure 5 shows the kernel density distribution of headways by
+time period. The headways between trains accommodate for the different levels in demand
+over the day; analysing entry frequencies by tap-in timestamps, the PM peak is the busiest
+time of the day, followed by the AM peak, and relatively fewer trips are undertaken in the
+inter-peak. Aligning with demand, headways are shortest in the PM peak with an average
+value of 2.40 minutes, those in AM peak are slightly longer with an average value of 2.44
+minutes, and headways are longest in the inter-peak with an average of 2.94 minutes between
+trains.
+                                     1.00                            Time period
+                                                                          All
+                                                                          Peak of AM peak
+                                                                          Inter−peak
+                                     0.75
+                                                                          Peak of PM peak
+                           Density
+
+
+
+
+                                     0.50
+
+
+
+
+                                     0.25
+
+
+
+
+                                     0.00
+                                            0.0   2.5          5.0       7.5           10.0
+                                                        Headway (mins)
+
+                      Figure 5: Distribution of headways by time period (mins)
+
+
+    The results refer to those for the final exponential decay form established in section 5.2.1
+(model form 2 in Table B.9, Appendix B) and the regression modelling results are given
+in Tables 4 and 5. The environmental and base models of marginal wait times for all time
+periods and by time period are plotted in Figures 6 and 7, respectively, and key attributes
+of the functions are summarised in Table 6.
+
+
+
+                                                          25
+    Table 4: Regression results - derivative of access times with respect to headway, base models
+
+                           Model                 Intercept    exp(-headway)
+                           All                   0.34***      1.16***
+                                                 (0.005)      (0.05)
+                           AM peak of peak       0.33***      1.24***
+                                                 (0.01)       (0.06)
+                           Inter-peak            0.33***      1.22***
+                                                 (0.01)       (0.06)
+                           PM peak of peak       0.33***      1.20***
+                                                 (0.01)       (0.06)
+                           Sig.: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                           Standard errors in parenthesis
+
+
+
+Table 5: Regression results - derivative of access times with respect to headway, environmental models
+
+                           Model                 Intercept    exp(-headway)
+                           All                   0.27***      2.45***
+                                                 (0.02)       (0.18)
+                           AM peak of peak       0.23***      3.22***
+                                                 (0.01)       (0.16)
+                           Inter-peak            0.26***      2.00***
+                                                 (0.02)       (0.17)
+                           PM peak of peak       0.19***      6.15***
+                                                 (0.03)       (0.28)
+                           Sig.: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                           Standard errors in parenthesis
+
+
+
+
+                  Figure 6: Derivative of access time vs headway - all time periods
+
+
+
+                                                   26
+                                                                 2.5                     Model
+
+
+
+
+                        Derivative of access time wrt. headway
+                                                                                            Environmental−Peak of AM peak
+                                                                                            Environmental−Interpeak
+                                                                 2.0                        Environmental−Peak of PM peak
+                                                                                            Base−Peak of AM peak
+                                                                                            Base−Interpeak
+                                                                 1.5                        Base−Peak of PM peak
+                                                                                            Wait time=0.5h
+
+
+                                                                 1.0
+
+
+
+                                                                 0.5
+
+
+
+                                                                       2.5         5.0                7.5
+                                                                               Headway (mins)
+
+                  Figure 7: Derivative of access time vs headway - by time period
+
+
+
+                    Table 6: Key attributes of derivative of access time functions
+
+  Model           Time period                                          Derivative function       Headway at 0.5             Proportion trips < 0.5
+                                                                       Max. Mean < 0.5              (mins)                           (%)
+  Base            All                                                  0.76       0.36                       1.95                   72%
+                  Peak of AM peak                                      0.79       0.36                       2.02                   53%
+                  Inter-peak                                           0.78       0.36                       2.00                   82%
+                  Peak of PM peak                                      0.78       0.36                       1.98                   51%
+  Environmental   All                                                  1.17       0.30                       2.35                   55%
+                  Peak of AM peak                                      1.42       0.27                       2.50                   31%
+                  Inter-peak                                           0.99       0.29                       2.10                   78%
+                  Peak of PM peak                                      2.45       0.24                       2.98                   21%
+
+
+    Comparing the results of the two sets of models, it can be seen that the effects of the
+different time periods present in the environmental models in Figure 7 are not observed in
+the base models, and across all models, the maximum values of the environmental models
+are greater than the corresponding maximum values of the base models. The results from
+the environmental and base models can therefore be considered plausible. The base models
+are not influenced by differing levels of congestion across the peak and off-peak time periods
+as the functions represent the sole influence of headway on base wait times (please refer to
+equation 16). The maximum values of the environmental models are higher during the AM
+and PM peak periods compared to the inter-peak period, and the functions cross 0.5 at longer
+headways during the peak periods compared to the inter-peak, implying a lower proportion
+of non-random arrivals during the peaks. The results for the environmental models therefore
+represent the differences in the environmental components of marginal wait times and walk
+times, including congestion and individual-specific behaviours, at different times of the day.
+    We now turn our attention to the form of the environmental and base models in repre-
+senting marginal wait time patterns. As discussed in the literature review, the prevailing
+                                                                                  27
+consensus is that for high frequency services, passengers arrive randomly with a uniform
+random distribution. Under perfectly random conditions, the average passenger wait time
+(w) is equivalent to half of the headway between trains, i.e. w = 0.5h = 0.5f −1 , where h
+is train headway and f is the frequency of services. Under such conditions the marginal
+impact of headway on waiting time should remain 0.5, no matter what the initial frequency
+is. As shown in both the environmental and base models, when headways are less than
+approximately 2-3 minutes, the impact of a change in headways is much greater than half of
+the headway. This outcome could be a consequence of station congestion and the possibility
+of denied boarding during these high frequency operating periods.
+    In low frequency periods, the literature suggests that passenger wait times are less than
+half of the headway between trains i.e. w < 0.5h. In both the environmental and base
+models, when headways are longer than approximately 2-3 minutes, the models predict that
+the average passenger saves less time than half of the headway. This finding is in line with
+the literature for wait times at long headways, albeit at lower values of headway compared
+to the conventional rule of thumb of a 10 minute headway transition value. Across all time
+periods, passengers arrivals tend to become non-random at a headway between a lower bound
+of 1.95 minutes and an upper bound of 2.35 minutes. As a result, 55%-72% of passengers
+experience marginal wait times less than half of the headway. For those passengers that
+experience marginal wait times less than 0.5, the average marginal wait time lies between
+0.30-0.36, or approximately one third of the operating headway.
+    Wait times below half of the headway are likely to be caused by the fact that, on average,
+passengers do not arrive at the station randomly. A potential explanation for this could be
+that when the system is operating at longer headways, the system is also less congested,
+and this enables passengers to move more freely through stations. The reduced levels of
+congestion may better enable passengers to speed up when they are aware of an approaching
+train, and then board the train with minimal wait time at the platform. Awareness may
+arise from real-time train arrival information on digital information display boards at the
+station prior to entry, from mobile phone applications, and/or from hearing and seeing the
+train approach en route to the platform.
+    The maximum values of the functions represent the maximum marginal wait time of
+passengers, and for all functions, this occurs when trains operate at the shortest headways.
+In this region, travel conditions are most likely to be congested with high levels of passen-
+ger demand possibly resulting in denied boarding and/or issues with train reliability with
+possible train bunching. For the base models, the maximum value across all time periods
+is 0.76 while for the environmental models the maximum values across all time periods is
+1.17. The interpretation of this estimate is that if the operator manages to reduce the peak
+headway by one second, it leads to between 0.76-1.17 times savings in waiting time for the
+average passenger.
+
+5.3. Implications for optimal supply
+    Section 2.3 in our literature review concluded that the marginal impact of headways
+on waiting time can be a crucial determinant of optimal supply, i.e. the frequency of public
+transport services. Given the marginal wait time estimates presented above, we are now able
+                                             28
+to re-calibrate equation (6) and solve for the social cost minimising frequency. With the
+exponential specification of ∂w/∂h, the optimal frequency rule of (6) becomes the following
+implicit function:
+           s
+                               γQ
+      f=       α̂ + k̂ · e−60/f 0 .                                                    (20)
+                                o (f )
+
+Notation: α̂ and k̂ are the parameter estimates provided in Tables 4 and 5.
+    Our aim in this section is to illustrate in a numerical simulation the impact that the esti-
+mated wait time model has on optimal frequency, in comparison with the usual assumption
+that the average wait time is half of the headway. Figure 8 plots the solution of (20) in func-
+tion of the equilibrium demand level that we vary exogenously between 1 and 20 thousand
+passengers an hour. The remaining parameters are as follows: the value of waiting time is
+set to γ = $30/h, and the unit cost of frequency provision is a constant, o0 (f ) = $200/h.
+For α̂ and k̂, we substitute the ‘all day’ estimates: α̂ = 0.27 and k̂ = 2.45 in case of the
+‘environmental’ model and α̂ = 0.34 and k̂ = 1.16 as ‘base’.
+
+
+
+
+                                              29
+Figure 8: Properties of optimal service provision assuming (i) random arrivals, i.e. wait time set
+equal to half of the headway, or (ii) marginal wait time estimates of the present paper.
+
+    Panel (a) of Figure 8 reveals immediately that the replacement of the wait time assump-
+tion has striking consequences on the optimal frequency. In Section 2.3 our literature review
+concluded that the optimal frequency is underestimated when, in reality, ∂w/∂h > 0. Figure
+8 shows that this is the case when headways are short, i.e. when the operator faces relatively
+high demand. According to Panel (a), the degree of underestimation can be very significant:
+with the environmental estimates of the marginal waiting time, the optimal frequency can
+be around 50% higher, compared to Mohring’s original square root result. However, the
+updated frequency curve is not always higher than the original one. At low demand and
+long headways, supply optimisation results in lower frequencies than before. The two curves
+cross each other in the range of 8,500 passengers an hour. At this equilibrium demand level,
+the selection of wait time model does not play an important role, as the predicted marginal
+
+                                                30
+wait time is in line with the standard assumption: ∂w/∂h ≃ 0.5. The base estimates do
+not diverge from the ‘random arrivals’ curve so much, but the deviation is not negligible.
+This curve crosses the square root function at a higher demand level, in the range of 12,000
+passengers per hour.
+    Note that frequency is unconstrained in this exercise. In reality, technological constraints
+often impose an upper bound on the range of feasible frequencies. This may limit the
+practical relevance of non-random passenger arrivals for very-high-frequency operations.
+    Panels (b) and (c) are derived after straightforward transformations of the optimal fre-
+quency. The social cost minimising headway, in minutes, is simply h(Q) = 60/f (Q). The
+average waiting time is half of the headway in Mohring’s approach, while in case of this
+paper’s model, it is the integral of the estimated marginal wait time function:
+               Z h(Q)                 
+                                     0
+      w(Q) =            α̂ + k̂ · e−h dh0 ,                                                 (21)
+                0
+
+where h(Q) represents the dependency of the optimal headway on equilibrium demand. Once
+again, we observe in panel (b) the cut-off demand levels where the two methods produce
+the same headway as we would get with the random arrival assumption. At higher demand,
+headway should be set lower than the Mohring rule suggests, thus delivering lower waiting
+times for the average passenger. Interestingly, the gap in terms of average wait times with
+random and non-random arrivals is almost constant throughout the range of demand levels
+considered. The intuition is simple: headways can be allowed to increase at low demand,
+because passengers tend to consult the timetable, and therefore the average wait time grows
+less than proportionally with the headway.
+    The bottom-right panel of Figure 8 compares the total social cost of service provision,
+as defined by equation (2), with and without the assumption of random arrivals. More
+specifically, we compute the increase in social cost when one optimises frequency with the
+simplifying assumption of random arrivals, and compare it to the minimum social cost that
+can be achieved with the correct wait time model. The welfare loss is indeed negligible when
+the two approaches predict the same marginal wait time effect. However, the inefficiency
+induced by the oversimplified wait time assumption intensifies as we diverge from the corre-
+sponding demand level: wrong frequency setting causes welfare losses, no matter if demand
+is somewhat lower or significantly higher than 8,500 (environmental model estimates) or
+12,500 (base model estimates) passengers per hour. With the current set of parameters and
+within the demand interval considered, the inaccurate assumption of random arrivals might
+be responsible for up to 3.5% or 1.5% increase in social costs with the environmental and
+base estimates, respectively. The welfare loss is typically but not necessarily higher when
+passenger behaviour is best described by the environmental model.
+    Finally, even in this simple model with inelastic demand, some conclusions can be derived
+about pricing and the optimal degree of subsidisation as well. Mohring’s original model fea-
+tures very strong density economies with respect to demand, in both operating and waiting
+time costs. The operational cost elasticity can derived analytically directly from frequency
+                 ∂f Q
+rule (6): η = ∂Q    f
+                      = 0.5, independent of the equilibrium level of demand. This implies
+density economies in the Mohring model, which provides justification for public subsidies
+                                              31
+under welfare maximising pricing. By contrast, from panel (a) of Figure 8 it is immediately
+visible that the f (Q) function is closer to a linear relationship with the updated wait time
+model.
+
+
+                                                  Operating cost elasticity
+                           1.2
+
+
+
+
+                                 Random arrivals
+                                 Random  arrivals
+                                 Environmental
+                                 Upper         model
+                                       bound estimate
+                                 Base model
+                                 Lower bound estimate
+                           1.0
+              elasticity
+
+                           0.8
+                           0.6
+
+
+
+
+                                       5000               10000               15000   20000
+
+                                                          pax / hour
+
+
+
+Figure 9: Elasticity of operating cost with respect to demand. As the operating cost is assumed to
+be linear in frequency, the values in these figure coincide with the elasticity of f w.r.t. demand.
+
+    More can be learned about the degree of density economies from the operator cost elastic-
+ities plotted separately for both models in Figure 9. The values presented here are numerical
+approximations of the derivative of the optimal frequency f (Q). We find that the degree of
+density economies is milder in the entire range of demand, compared to the original model
+with random arrivals. Moreover, in case of the environmental estimates, there is even a
+demand interval in which we observe diseconomies of density in operating costs with respect
+to the final output, as η > 1 between around 7,500 and 13,000 passengers an hour. The
+curve of the base model does not cross the grey line of neutral scale economies, but it re-
+mains substantially higher than 0.5. This preliminary insight indicates that the prevalence
+of strong density economies is questionable when waiting time is modelled appropriately,
+and thus optimal pricing should also bring service provision closer to full self-financing. The
+exact value of the cost recovery ratio with a more complete micro-economic characterisation
+of the public transport system is an attractive subject for future research.
+
+
+
+                                                          32
+6. Conclusions
+    In this paper, the impact of headways on passenger wait times for urban metro systems is
+derived. The analysis is undertaken for single-line trips excluding route choice and transfer
+options on three lines of the London Underground metro system. First, passengers are
+assigned to trains to enable the total journey times recorded by the AFC data on passenger
+trips to be decomposed into components. After assignment, the access time component is
+calculated, and a semiparametric regression analysis is then performed with access time set
+as the response variable. Headway is specified as an explanatory variable, and additional
+explanatory variables are included to capture the effects of headway variance, static station
+and network characteristics, passenger demand, and individual passenger characteristics.
+    Accounting for potential confounding between the walk and wait time components of
+access time, we isolate the unbiased effect of headways on marginal passenger wait times via
+an exposure-response model framework. The results show that wait times are more impacted
+by changes to service frequency during high frequency operating periods, compared to low
+frequency operating periods. The results indicate that passenger arrival patterns transition
+from random to non-random as headways increase, and that marginal wait times for non-
+random arrivals are equivalent to approximately one third of the headway between trains.
+This observed behaviour could be a result of passengers consulting train arrival information
+prior to boarding, and if so, this would demonstrate that generalised travel time savings can
+be achieved through providing improved passenger information.
+    The empirical results are then applied in a numerical exercise of supply optimisation to
+show that the assumption behind the headway-wait time relationship has crucial impact on
+the socially optimal frequency. The evidence on non-random arrivals implies that the existing
+literature might underestimate the optimal peak service frequencies and overestimate those
+in low demand periods. Under welfare maximising service provision, the new evidence on
+non-random arrivals questions the prevalence of density economies in operating costs with
+respect to the final output (i.e. ridership), and thus also the justification for high public
+transport subsidies.
+    The exposure-response relationship of marginal wait times and headway presented here
+can be applied in other contexts in future work. For example, the data could be segmented
+at route, station, and line levels or by passenger demographics to obtain wait time patterns
+at a more disaggregate level. At a wider spatial scale, the analysis could be undertaken at
+a whole-of-network level to enable comparisons of passenger arrival patterns and wait times
+across different transit networks.
+
+Acknowledgements
+    The authors thank Transport for London (TfL) for providing the data used in the anal-
+ysis, and also thank three anonymous reviewers for their helpful suggestions to improve the
+manuscript.
+
+
+
+                                             33
+Funding
+   This research was jointly funded by Transport for London (TfL) and the Transport
+Strategy Centre at Imperial College London.
+
+Disclaimer
+   Any opinions, findings, and conclusions or recommendations expressed in this material
+are those of the authors and do not necessarily reflect the views of Transport for London
+(TfL).
+
+References
+Abkowitz, M., Tozzi, J., 1987. Research contributions to managing transit service reliability. Journal of
+   Advanced Transportation 21, 47–65.
+Aldrich, J., 1995. Correlations genuine and spurious in Pearson and Yule. Statistical Science 10 (4), 364–376.
+Berggren, U., Johnsson, C., Svensson, H., Wretstand, A., 2019. Exploring waiting times in public transport
+   through a semi-automated dedicated smartphone app survey. Travel Behaviour and Society 15, 1–14.
+Bowman, L. A., Turnquist, M. A., 1981. Service frequency, schedule reliability and passenger wait times at
+   transit stops. Transportation Research Part A: General 15, 465–471.
+Brakewood, C., Barbeau, S., Watkins, K., 2014a. An experiment evaluating the impacts of real-time transit
+   information on bus riders in Tampa, Florida. Transportation Research Part A: Policy and Practice 69,
+   409–422.
+Brakewood, C., Rojas, F., Zegras, C., Watkins, K., Robin, J., 2014b. An analysis of commuter rail real-time
+   information in Boston. Journal of Public Transport 18 (1), 1–20.
+Csikos, D., Currie, G., 2007. The impacts of transit reliability on wait time: insights from automated fare
+   collection system data. 86th Annual meeting of the Transportation Research Record.
+Csikos, D., Currie, G., 2008. Investigating consistency in transit passenger arrivals: insights from longitudinal
+   automated fare collection data. Transportation Research Record 2042, 12–19.
+Dziekan, K., Kottenhoff, K., 2007. Dynamic at-stop real-time information displays for public transport:
+   effect on customers. Transportation Research Part A 41, 489–501.
+Fan, W., Machemehl, R. B., 2009. Do transit users just wait for buses or wait with strategies? Some
+   numerical results that transit planners should see. Transportation Research Record 2111, 169–176.
+Fosgerau, M., 2009. The marginal social cost of headway for a scheduled service. Transportation Research
+   Part B: Methodological 43 (8-9), 813–820.
+Fosgerau, M., Engelson, L., 2011. The value of travel time variance. Transportation Research Part B:
+   Methodological 45 (1), 1–8.
+Frumin, M., Zhao, J., 2012. Analysing passenger incidence behaviour in heterogeneous transit services using
+   smart card data and schedule based assignment. Transportation Research Record 2274, 52–60.
+Furth, P. G., Muller, T. H. J., 2006. Service reliability and hidden waiting time: insights from AVL data.
+   Transportation Research Record 1955, 79–87.
+Haschek, W. M., Rousseaux, C. G., Wallig, M. A., Bolon, B., Ochoa, R., Mahler, B. W. (Eds.), 2013.
+   Haschek and Rousseaux’s Handbook of Toxicologic Pathology, 3rd Edition. Academic Press, Elsevier,
+   London, UK.
+Holroyd, E. M., Scraggs, D. A., 1966. Waiting time for buses in Central London. Traffic Engineering and
+   Control 8, 156–160.
+Hörcher, D., Graham, D. J., 2018. Demand imbalances and multi-period public transport supply. Trans-
+   portation Research Part B: Methodological 108, 106–126.
+Ingvardson, J. B., Nielsen, O. A., Raveau, S., Nielsen, B. F., 2018. Passenger arrival and waiting time
+   distributions dependent on train service frequency and station characteristics: a smart card data analysis.
+   Transportation Research Part C: Emerging Technologies 90, 292–306.
+                                                       34
+Jara-Dı́az, S., Gschwender, A., 2003. Towards a general microeconomic model for the operation of public
+   transport. Transport Reviews 23 (April 2013), 453–469.
+Jolliffe, J. K., Hutchinson, T. P., 1975. A behavioural explanation of the association between bus and
+   passenger arrivals at bus stops. Transportation Science 9, 248–282.
+Kittelson & Associates Inc, Parsons Brinckerhoff, KFH Group, Texas A&M Transportation Institute, Arup,
+   2013. TCRP Report 165: Transit Capacity and Quality of Service Manual, 3rd Edition. Transit Cooper-
+   ative Research Program, Transportation Research Board, Washington, D.C.
+Kutner, M. H., Nachtsheim, C. J., Neter, J., Li, W., 2005. Applied linear statistical models, 5th Edition.
+   McGraw-Hill/Irwin, New York, N.Y.
+Leurent, F., Xie, X., 2018. On individual repositioning distance along platform during train waiting. Journal
+   of Advanced Transportation 2018, 1–18.
+Luethi, M., Weidmann, U. A., Nash, A., 2007. Passenger arrival rates at public transport stations. 86th
+   Annual meeting of the Transportation Research Board.
+Mohring, H., 1972. Optimization and scale economies in urban bus transportation. The American Economic
+   Review 62 (4), 591–604.
+Newell, G. F., 1982. Applications of queueing theory, 2nd Edition. Chapman and Hall, New York, NY.
+Nygaard, M. F., Torset, T., 2016. Waiting time strategy for public transport passengers. Proceedings from
+   the annual transport conference at Aalborg University.
+O’Flaherty, C. A., Mangan, D. O., 1970. Bus passenger waiting times in central areas. Traffic Engineering
+   and Control 11 (9), 419–421.
+Osana, E. E., Newell, G. F., 1972. Control strategies for an idealised public transport system. Transportation
+   Science 6, 52–72.
+Paul, E. C., 2010. Estimating train passenger load from automated data systems: application to London
+   Underground. Master’s thesis, Massachusetts Institute of Technology.
+Paulley, N., Balcombe, R., Mackett, R., Titheridge, H., Preston, J., Wardman, M., Shires, J., White, P.,
+   2006. The demand for public transport: The effects of fares, quality of service, income and car ownership.
+   Transport policy 13 (4), 295–306.
+Searle, S. R., Casella, G., McCulloch, C. E., 1992. Variance components. John Wiley & Sons, Inc., Hoboken,
+   New Jersey.
+Seddon, P. A., Day, M. P., 1974. Bus passenger waiting times in Greater Manchester. Traffic Engineering
+   and Control 15, 442–445.
+Singh, R., 2019. Decomposing journey time variance on urban rail transit systems. Ph.D. thesis, Imperial
+   College London.
+Tavassoli, A., Mesbah, M., Shobeirinejad, A., 2018. Modelling passenger waiting time using large-scale auto-
+   matic fare collection data: An Australian case study. Transportation Research Part F: Traffic Psychology
+   and Behaviour 58, 500–510.
+TfL, 2013. Business Case Development Manual. Tech. Rep. V101.2013.05, Transport for London.
+TfL, 2014. Geographically accurate representation of London Tube and rail lines. Tech. rep., Transport for
+   London, accessed online at tfl.gov.uk/corporate/publications-and-reports/london-connections-map.
+Turnquist, M., 1978. A model for investigating the effects of service frequency and reliability on bus passenger
+   wait times. Transportation Research Record 663, 70–73.
+Uniman, D. L., 2009. Service reliability measurement framework using smart card data: application to the
+   London Underground. Master’s thesis, Massachusetts Institute of Technology.
+Wang, J., 2015. Exposure-Response Modelling: Methods and practical implementation. CRC Press, Taylor
+   and Francis Group, Boca Raton, FL.
+Wardman, M., 2004. Public transport values of time. Transport policy 11 (4), 363–377.
+Wardman, M., Chintakayala, V., de Jong, G., 2016. Values of travel time in Europe: Review and meta-
+   analysis. Transportation Research Part A: Policy and Practice 94, 93–111.
+Watkins, K., Ferris, B., Borning, A., Rutherford, G., Layton, D., 2011. Where is my bus? Impact of mobile
+   real-time information on the perceived and actual wait time of transit riders. Transportation Research
+   Part A: Policy and Practice 45 (8), 839–848.
+
+                                                      35
+Wood, S. N., 2006. Generalized additive models: an introduction with R. Chapman & Hall, Boca Raton,
+  FL.
+Wood, S. N., Goude, Y., Shaw, S., 2015. Generalised additive models for large data sets. Journal of the
+  Royal Statistical Society: Series C Applied Statistics 64 (1), 139–155.
+Xie, X., Leurent, F., September 2017. Comparison of passenger walking speed distribution models in mass
+  transit stations. In: 20th EURO Working Group on Transportation Meeting. Vol. 27 of Transportation
+  Research Procedia. Budapest, Hungary, pp. 696–703.
+
+
+Appendix A. Access time regression modelling
+
+                                     Table A.7: Discarded model outliers
+
+                                                         Raw                          Filtered
+    Covariate                 Unit                Min.     Max.      Min.     Max.     Mean SD        COV
+    Time period               15 min intervals    06:00    00:00     06:00    00:00    15:37   4.30   28%
+    Headway                   mins                0.00     352.40    1.00     9.98     2.77    1.29   47%
+    COV headway               mins                0.00     3.22      0.05     1.10     0.29    0.16   56%
+    Norm. headway             mins                0.00     21.31     0.05     5.31     1.00    0.31   32%
+    Entry platform loading    number              0.01     72.00     0.30     3.00     1.40    0.69   49%
+    Line loading              number              0.06     4.16      0.30     3.00     1.19    0.64   54%
+    Passenger trips           number              1.00     793.00    1.00     35.00    8.30    9.59   116%
+    Access time               mins                0.00     85.87     0.10     81.47    3.49    2.04   58%
+    Note: SD refers to the sample standard deviation, COV refers to coefficient of variation
+
+
+
+                         Table A.8: Access time models goodness-of-fit statistics
+
+                               Model 1     Model 2    Model 3       Model 4            Model 5
+       Continuous form          splines     splines     splines      linear      parametric/splines
+       Group specific form        NA         fixed     random         fixed            fixed
+       n                        4.96E6      4.96E6       4.96E6     4.96E6              4.96E6
+         2
+       Radj.                     0.04        0.16         0.16       0.15                0.16
+       Dexplained                0.04        0.16         0.16       0.15                0.16
+       AIC                      2.09E7      2.03E7       2.03E7     2.03E7              2.03E7
+       REML                     1.05E7      1.01E7       1.01E7     1.02E7              1.01E7
+       Headway significance       ***         ***          ***        ***                 ***
+       Sig.: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+                                                     2
+       Note: n is the number of observations, Radj.       is the adjusted coefficient of determination
+       Dexplained is the proportion of deviance explained,AIC is the Akaike Information Criterion,
+       REML is the restricted maximum likelihood score
+
+
+
+
+                                                      36
+                                                         3
+
+               Access time deviation from mean (mins)
+
+                                                         2
+                                                                                               Model
+                                                                                                  Model 1
+                                                                                                  Model 2
+                                                         1
+                                                                                                  Model 3
+                                                                                                  Model 4
+                                                                                                  Model 5
+
+                                                         0
+
+
+
+
+                                                        −1
+                                                             2.5       5.0        7.5   10.0
+                                                                   Headway (mins)
+
+Figure A.10: Model comparison of access time vs headway relationship.
+Note: model numbers refer to those in Table A.8.
+
+
+
+
+                                                                             37
+Appendix B. Derivative of access time with respect to headway regression mod-
+            elling
+
+           Table B.9: Derivative of access times vs headway models goodness-of-fit statistics
+
+Model            Indicator    Model form      All        AM peak of peak   Inter-peak   PM peak of peak
+Base                n             All         511              511            511                511
+                    2
+                   Radj.           1          0.43             0.41           0.41               0.42
+                                   2          0.47             0.48           0.47               0.47
+                 Dexplained        1          0.43             0.41           0.41               0.42
+                                   2          0.47             0.48           0.47               0.47
+                    AIC            1        -892.35          -825.54        -824.79            -853.30
+                                   2        -932.46          -891.49        -884.20            -904.50
+                   REML            1        -439.28          -406.01        -405.64            -419.83
+                                   2        -462.70          -442.30        -438.67            -448.78
+Environmental       n             All        511               511           511                 511
+                    2
+                   Radj.           1         0.06              0.10          0.04               0.11
+                                   2         0.27              0.43          0.22               0.49
+                 Dexplained        1         0.06              0.10          0.04               0.11
+                                   2         0.28              0.43          0.22               0.49
+                    AIC            1        395.44           426.63         325.94             1019.24
+                                   2        264.00           190.61         222.23             739.22
+                   REML            1        202.09           217.62         167.48             512.77
+                                   2        133.18            96.64         112.39             369.86
+                                          2
+Note: n is the number of observations, Radj.  is the adjusted coefficient of determination,
+Dexplained is the proportion of deviance explained, AIC is the Akaike Information Criterion,
+and REML is the restricted maximum likelihood score
+Model forms as follows: 1) Linear, 2) Final form - Exponential decay.
+
+
+
+
+                                                    38
+

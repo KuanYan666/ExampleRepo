@@ -1,0 +1,246 @@
+[weather] Phoenix median 13-17h summer-2025: {'To': 40.9, 'RH': 13.0, 'U10': 2.31, 'Idir': 601.0, 'Idif': 142.0, 'GHI': 754.0, 'alt': 55.67, 'city': 'Phoenix'}
+[weather] Houston median 13-17h summer-2025: {'To': 31.5, 'RH': 60.0, 'U10': 2.44, 'Idir': 399.0, 'Idif': 180.0, 'GHI': 614.0, 'alt': 67.54, 'city': 'Houston'}
+
+[0] Nested check: zone model in bus-stop configuration, 43 C / 12 %, no people, no sun
+   evap_nm   delivered dT = 4.79 C (COMAP claim 5), phi = 0.255
+   big_nm    delivered dT = 8.21 C (COMAP claim 8), phi = 0.438
+   evap      delivered dT = 4.56 C (COMAP claim 5), phi = 0.255
+   evap_big  delivered dT = 7.85 C (COMAP claim 8), phi = 0.438
+
+[1] Limiting cases (Phoenix weather, adiabatic roof, no sun, no people, large cooler, motor heat OFF and ON)
+   big_nm    A=0.001 m2 -> Tz = 23.27 C ; A=10^4 m2 -> Tz = 40.80 C
+   evap_big  A=0.001 m2 -> Tz = 24.10 C ; A=10^4 m2 -> Tz = 40.80 C
+   supply temperature Ts = 23.27 C; outdoor To = 40.90 C; motor offset P/(rho cp Qs) = 0.83 C
+
+[2] Heat & moisture budget, large cooler mode O (kW). ASHRAE-fixed = 75 W sens / 55 W lat per person
+       city    N  people_sens  people_lat   roof  motor  cool_cap   s_pp    l_pp     Tz    RHz    SET  Tz_none  RH_none  SET_none   phi    Qn    tau  ashrae_sens  ashrae_lat
+0   Phoenix    0         0.00        0.00  12.60    2.5     53.21   0.00    0.00  36.42  23.33  33.39    43.01    11.63     35.65  0.35  4.54  59.62         0.00        0.00
+1   Phoenix   50        -2.72        8.49  12.74    2.5     53.21 -54.45  169.73  36.18  24.60  33.37    42.26    14.42     35.76  0.35  4.65  58.76         3.75        2.75
+2   Phoenix  100        -5.31       16.84  12.88    2.5     53.21 -53.08  168.38  35.97  25.85  33.35    41.41    18.88     36.03  0.35  4.74  57.99         7.50        5.50
+3   Phoenix  200       -10.11       33.18  13.13    2.5     53.21 -50.54  165.89  35.57  28.27  33.34    39.68    24.14     36.04  0.34  4.91  56.68        15.00       11.00
+4   Phoenix  400       -18.48       64.65  13.54    2.5     53.21 -46.20  161.61  34.90  32.90  33.35    37.89    30.62     36.08  0.33  5.18  54.69        30.00       22.00
+5   Phoenix  600       -25.54       94.83  13.88    2.5     53.21 -42.57  158.05  34.35  37.29  33.41    36.70    36.86     36.14  0.32  5.39  53.23        45.00       33.00
+6   Houston    0         0.00        0.00   8.11    2.5     16.37   0.00    0.00  30.57  67.24  31.99    33.20    54.51     33.16  0.49  2.60  82.27         0.00        0.00
+7   Houston   50         0.97        4.85   8.03    2.5     16.37  19.46   96.95  30.69  67.99  32.24    33.25    56.13     33.40  0.50  2.50  83.99         3.75        2.75
+8   Houston  100         1.88        9.76   7.95    2.5     16.37  18.75   97.64  30.82  68.81  32.51    33.31    57.72     33.64  0.51  2.40  85.76         7.50        5.50
+9   Houston  200         3.49       19.78   7.81    2.5     16.37  17.44   98.92  31.05  70.68  33.08    33.40    60.80     34.14  0.53  2.19  89.53        15.00       11.00
+10  Houston  400         6.05       40.46   7.56    2.5     16.37  15.13  101.14  31.45  75.43  34.44    33.56    66.70     35.20  0.59  1.77  98.36        30.00       22.00
+11  Houston  600         8.39       61.36   7.32    2.5     16.37  13.98  102.26  31.83  77.87  35.02    33.69    72.27     36.34  0.55  2.07  91.83        45.00       33.00
+
+[3] Efficiency vs crowd size
+        city       dev mode    N      Tz     RHz  SET_base  SET_dev   dSET     dD   eta_deg  eta_deg_old   eta_D    ok
+0    Phoenix       fan    O    0  43.055  11.608    35.647   35.296  0.351  0.011     0.000        0.000   0.000  True
+1    Phoenix       fan    O   10  42.910  12.093    35.663   35.309  0.355  0.011    14.190       14.052   0.460  True
+2    Phoenix       fan    O   25  42.688  12.875    35.692   35.332  0.360  0.012    36.022       35.129   1.156  True
+3    Phoenix       fan    O   50  42.307  14.363    35.757   35.387  0.371  0.012    74.121       70.259   2.325  True
+4    Phoenix       fan    O   75  41.905  16.197    35.856   35.472  0.384  0.012   115.168      105.388   3.488  True
+5    Phoenix       fan    O  100  41.469  18.686    36.025   35.620  0.405  0.012   162.093      140.518   4.617  True
+6    Phoenix       fan    O  150  40.443  23.118    36.161   35.777  0.384  0.010   230.160      210.777   6.191  True
+7    Phoenix       fan    O  200  39.724  24.215    36.041   35.623  0.418  0.012   334.011      281.035   9.480  True
+8    Phoenix       fan    O  250  39.168  25.777    36.018   35.581  0.436  0.013   436.221      351.294  12.540  True
+9    Phoenix       fan    O  300  38.698  27.407    36.026   35.575  0.451  0.013   541.160      421.553  15.553  True
+10   Phoenix       fan    O  400  37.917  30.647    36.085   35.609  0.475  0.013   760.540      562.071  21.466  True
+11   Phoenix       fan    O  500  37.271  33.805    36.174   35.678  0.496  0.014   992.108      702.589  27.157  True
+12   Phoenix       fan    O  600  36.722  36.873    36.142   35.651  0.491  0.014  1178.720      843.106  32.637  True
+13   Phoenix      evap    O    0  38.814  18.719    35.647   35.002  0.645  0.022     0.000        0.000   0.000  True
+14   Phoenix      evap    O   10  38.723  19.084    35.663   34.976  0.687  0.024     5.724        5.378   0.198  True
+15   Phoenix      evap    O   25  38.591  19.621    35.692   34.942  0.751  0.026    15.642       13.446   0.541  True
+16   Phoenix      evap    O   50  38.382  20.494    35.757   34.890  0.867  0.030    36.127       26.892   1.248  True
+17   Phoenix      evap    O   75  38.184  21.343    35.856   34.846  1.010  0.035    63.106       40.339   2.161  True
+18   Phoenix      evap    O  100  37.997  22.171    36.025   34.808  1.218  0.041   101.469       53.785   3.398  True
+19   Phoenix      evap    O  150  37.650  23.776    36.161   34.745  1.416  0.047   176.956       80.677   5.859  True
+20   Phoenix      evap    O  200  37.333  25.323    36.041   34.698  1.343  0.046   223.764      107.570   7.637  True
+21   Phoenix      evap    O  250  37.042  26.824    36.018   34.663  1.354  0.047   282.116      134.462   9.736  True
+22   Phoenix      evap    O  300  36.774  28.286    36.026   34.638  1.388  0.048   346.876      161.354  12.013  True
+23   Phoenix      evap    O  400  36.290  31.115    36.085   34.612  1.473  0.051   490.851      215.139  16.914  True
+24   Phoenix      evap    O  500  35.866  33.842    36.174   34.612  1.562  0.053   650.857      268.924  22.086  True
+25   Phoenix      evap    O  600  35.489  36.486    36.142   34.632  1.510  0.051   755.022      322.709  25.658  True
+26   Phoenix      evap    R    0  38.908  19.321    35.647   35.128  0.519  0.017     0.000        0.000   0.000  True
+27   Phoenix      evap    R   10  38.824  19.728    35.663   35.112  0.551  0.019     4.594        4.321   0.155  True
+28   Phoenix      evap    R   25  38.702  20.325    35.692   35.090  0.603  0.020    12.561       10.803   0.423  True
+29   Phoenix      evap    R   50  38.507  21.294    35.757   35.057  0.701  0.023    29.188       21.606   0.976  True
+30   Phoenix      evap    R   75  38.322  22.233    35.856   35.030  0.826  0.027    51.640       32.408   1.706  True
+31   Phoenix      evap    R  100  38.147  23.148    36.025   35.007  1.018  0.033    84.872       43.211   2.732  True
+32   Phoenix      evap    R  150  37.819  24.915    36.161   34.973  1.188  0.038   148.468       64.817   4.695  True
+33   Phoenix      evap    R  200  37.518  26.614    36.041   34.953  1.088  0.035   181.387       86.422   5.885  True
+34   Phoenix      evap    R  250  37.241  28.261    36.018   34.942  1.075  0.035   223.970      108.028   7.312  True
+35   Phoenix      evap    R  300  36.984  29.862    36.026   34.941  1.085  0.035   271.137      129.633   8.841  True
+36   Phoenix      evap    R  400  36.521  32.959    36.085   34.961  1.124  0.036   374.536      172.844  12.036  True
+37   Phoenix      evap    R  500  36.113  35.942    36.174   35.006  1.168  0.037   486.715      216.055  15.256  True
+38   Phoenix      evap    R  600  35.750  38.836    36.142   35.071  1.071  0.033   535.582      259.266  16.664  True
+39   Phoenix  evap_big    O    0  36.418  23.329    35.647   33.387  2.260  0.106     0.000        0.000   0.000  True
+40   Phoenix  evap_big    O   10  36.370  23.587    35.663   33.382  2.281  0.107     9.124        9.041   0.427  True
+41   Phoenix  evap_big    O   25  36.299  23.970    35.692   33.376  2.316  0.108    23.163       22.603   1.079  True
+42   Phoenix  evap_big    O   50  36.184  24.604    35.757   33.367  2.390  0.110    47.809       45.205   2.209  True
+43   Phoenix  evap_big    O   75  36.073  25.231    35.856   33.359  2.497  0.114    74.905       67.808   3.414  True
+44   Phoenix  evap_big    O  100  35.966  25.851    36.025   33.352  2.673  0.119   106.925       90.411   4.754  True
+45   Phoenix  evap_big    O  150  35.761  27.074    36.161   33.342  2.819  0.123   169.129      135.616   7.380  True
+46   Phoenix  evap_big    O  200  35.568  28.275    36.041   33.336  2.705  0.120   216.363      180.822   9.626  True
+47   Phoenix  evap_big    O  250  35.387  29.455    36.018   33.334  2.683  0.120   268.319      226.027  11.985  True
+48   Phoenix  evap_big    O  300  35.215  30.618    36.026   33.336  2.690  0.120   322.804      271.233  14.396  True
+49   Phoenix  evap_big    O  400  34.898  32.895    36.085   33.348  2.736  0.121   437.839      361.644  19.306  True
+50   Phoenix  evap_big    O  500  34.612  35.116    36.174   33.372  2.802  0.121   560.306      452.055  24.262  True
+51   Phoenix  evap_big    O  600  34.353  37.287    36.142   33.407  2.735  0.118   656.482      542.466  28.379  True
+52   Phoenix  evap_big    R    0  36.437  24.390    35.647   33.491  2.156  0.099     0.000        0.000   0.000  True
+53   Phoenix  evap_big    R   10  36.401  24.698    35.663   33.498  2.165  0.099     8.661        8.624   0.396  True
+54   Phoenix  evap_big    R   25  36.348  25.158    35.692   33.509  2.184  0.099    21.837       21.560   0.993  True
+55   Phoenix  evap_big    R   50  36.260  25.917    35.757   33.527  2.230  0.100    44.603       43.120   2.001  True
+56   Phoenix  evap_big    R   75  36.175  26.670    35.856   33.546  2.310  0.102    69.286       64.680   3.050  True
+57   Phoenix  evap_big    R  100  36.093  27.415    36.025   33.566  2.459  0.105    98.376       86.239   4.201  True
+58   Phoenix  evap_big    R  150  35.933  28.885    36.161   33.607  2.554  0.106   153.225      129.359   6.355  True
+59   Phoenix  evap_big    R  200  35.781  30.332    36.041   33.651  2.390  0.100   191.179      172.479   8.013  True
+60   Phoenix  evap_big    R  250  35.637  31.756    36.018   33.698  2.320  0.097   231.992      215.599   9.673  True
+61   Phoenix  evap_big    R  300  35.499  33.160    36.026   33.747  2.279  0.094   273.511      258.718  11.282  True
+62   Phoenix  evap_big    R  400  35.242  35.916    36.085   33.852  2.233  0.089   357.234      344.958  14.302  True
+63   Phoenix  evap_big    R  500  35.006  38.611    36.174   33.968  2.206  0.085   441.234      431.197  17.023  True
+64   Phoenix  evap_big    R  600  34.790  41.252    36.142   34.093  2.049  0.078   491.685      517.436  18.602  True
+65   Houston       fan    O    0  33.244  54.379    33.158   32.643  0.516  0.039     0.000        0.000   0.000  True
+66   Houston       fan    O   10  33.255  54.704    33.206   32.689  0.517  0.039    20.686       20.627   1.543  True
+67   Houston       fan    O   25  33.270  55.189    33.278   32.759  0.519  0.038    51.932       51.567   3.802  True
+68   Houston       fan    O   50  33.296  55.990    33.398   32.875  0.523  0.037   104.577      103.134   7.417  True
+69   Houston       fan    O   75  33.321  56.783    33.519   32.993  0.526  0.036   157.913      154.701  10.836  True
+70   Houston       fan    O  100  33.345  57.569    33.641   33.111  0.530  0.035   211.918      206.268  14.053  True
+71   Houston       fan    O  150  33.391  59.119    33.888   33.351  0.536  0.033   321.856      309.402  19.866  True
+72   Houston       fan    O  200  33.435  60.643    34.139   33.596  0.543  0.031   434.227      412.536  24.828  True
+73   Houston       fan    O  250  33.476  62.144    34.395   33.846  0.549  0.029   548.863      515.671  28.934  True
+74   Houston       fan    O  300  33.516  63.623    34.656   34.101  0.555  0.027   665.585      618.805  32.193  True
+75   Houston       fan    O  400  33.590  66.525    35.195   34.630  0.565  0.023   904.464      825.073  36.285  True
+76   Houston       fan    O  500  33.658  69.358    35.760   35.185  0.574  0.019  1148.932     1031.341  37.467  True
+77   Houston       fan    O  600  33.721  72.102    36.343   35.764  0.579  0.015  1389.808     1237.609  36.205  True
+78   Houston      evap    O    0  31.842  61.451    33.158   32.970  0.189  0.014     0.000        0.000   0.000  True
+79   Houston      evap    O   10  31.867  61.702    33.206   33.019  0.187  0.013     1.556        1.572   0.111  True
+80   Houston      evap    O   25  31.905  62.073    33.278   33.093  0.185  0.013     3.847        3.930   0.269  True
+81   Houston      evap    O   50  31.964  62.683    33.398   33.214  0.184  0.012     7.650        7.860   0.517  True
+82   Houston      evap    O   75  32.020  63.283    33.519   33.334  0.185  0.012    11.565       11.790   0.756  True
+83   Houston      evap    O  100  32.073  63.874    33.641   33.452  0.189  0.012    15.723       15.720   0.992  True
+84   Houston      evap    O  150  32.171  65.035    33.888   33.686  0.202  0.012    25.198       23.580   1.477  True
+85   Houston      evap    O  200  32.260  66.172    34.139   33.918  0.221  0.012    36.817       31.441   1.999  True
+86   Houston      evap    O  250  32.343  67.290    34.395   34.149  0.246  0.012    51.199       39.301   2.565  True
+87   Houston      evap    O  300  32.419  68.392    34.656   34.380  0.276  0.013    68.892       47.161   3.174  True
+88   Houston      evap    O  400  32.557  70.559    35.195   34.847  0.349  0.013   116.212       62.881   4.479  True
+89   Houston      evap    O  500  32.680  72.682    35.760   35.321  0.438  0.014   182.634       78.602   5.800  True
+90   Houston      evap    O  600  32.789  74.771    36.343   35.808  0.534  0.014   267.217       94.322   6.898  True
+91   Houston      evap    R    0  32.035  61.696    33.158   33.150  0.008  0.001     0.000        0.000   0.000  True
+92   Houston      evap    R   10  32.077  61.969    33.206   33.217 -0.011 -0.001    -0.089        0.068  -0.006  True
+93   Houston      evap    R   25  32.137  62.373    33.278   33.315 -0.037 -0.002    -0.764        0.171  -0.052  True
+94   Houston      evap    R   50  32.229  63.032    33.398   33.473 -0.075 -0.005    -3.118        0.342  -0.203  True
+95   Houston      evap    R   75  32.314  63.676    33.519   33.627 -0.108 -0.007    -6.735        0.514  -0.421  True
+96   Houston      evap    R  100  32.392  64.309    33.641   33.778 -0.137 -0.008   -11.377        0.685  -0.683  True
+97   Houston      evap    R  150  32.534  65.550    33.888   34.072 -0.184 -0.010   -23.050        1.027  -1.271  True
+98   Houston      evap    R  200  32.660  66.764    34.139   34.361 -0.222 -0.011   -37.072        1.370  -1.871  True
+99   Houston      evap    R  250  32.774  67.958    34.395   34.648 -0.253 -0.012   -52.714        1.712  -2.426  True
+100  Houston      evap    R  300  32.878  69.136    34.656   34.934 -0.278 -0.012   -69.428        2.055  -2.903  True
+101  Houston      evap    R  400  33.061  71.453    35.195   35.508 -0.313 -0.011  -104.416        2.740  -3.560  True
+102  Houston      evap    R  500  33.222  73.702    35.760   36.047 -0.287 -0.008  -119.563        3.425  -3.299  True
+103  Houston      evap    R  600  33.385  75.369    36.343   36.446 -0.103 -0.002   -51.551        4.110  -1.170  True
+104  Houston  evap_big    O    0  30.566  67.242    33.158   31.987  1.172  0.096     0.000        0.000   0.000  True
+105  Houston  evap_big    O   10  30.592  67.385    33.206   32.037  1.169  0.094     4.675        4.686   0.378  True
+106  Houston  evap_big    O   25  30.631  67.605    33.278   32.114  1.164  0.092    11.644       11.715   0.925  True
+107  Houston  evap_big    O   50  30.694  67.987    33.398   32.243  1.155  0.089    23.110       23.430   1.780  True
+108  Houston  evap_big    O   75  30.756  68.387    33.519   32.374  1.145  0.085    34.343       35.145   2.562  True
+109  Houston  evap_big    O  100  30.817  68.807    33.641   32.509  1.132  0.082    45.284       46.861   3.267  True
+110  Houston  evap_big    O  150  30.934  69.703    33.888   32.787  1.100  0.074    66.022       70.291   4.430  True
+111  Houston  evap_big    O  200  31.046  70.677    34.139   33.080  1.059  0.066    84.718       93.721   5.251  True
+112  Houston  evap_big    O  250  31.153  71.732    34.395   33.388  1.006  0.057   100.630      117.152   5.718  True
+113  Houston  evap_big    O  300  31.256  72.872    34.656   33.716  0.940  0.049   112.836      140.582   5.831  True
+114  Houston  evap_big    O  400  31.450  75.427    35.195   34.438  0.758  0.031   121.202      187.442   5.038  True
+115  Houston  evap_big    O  500  31.652  76.833    35.760   34.782  0.978  0.035   195.601      234.303   6.900  True
+116  Houston  evap_big    O  600  31.833  77.868    36.343   35.016  1.327  0.040   318.502      281.164   9.667  True
+117  Houston  evap_big    R    0  30.842  68.617    33.158   32.523  0.635  0.049     0.000        0.000   0.000  True
+118  Houston  evap_big    R   10  30.916  68.944    33.206   32.669  0.537  0.040     2.147        2.541   0.161  True
+119  Houston  evap_big    R   25  31.035  69.496    33.278   32.914  0.364  0.026     3.640        6.351   0.261  True
+120  Houston  evap_big    R   50  31.268  70.698    33.398   33.441 -0.043 -0.003    -0.858       12.703  -0.056  True
+121  Houston  evap_big    R   75  31.544  72.070    33.519   34.042 -0.523 -0.031   -15.685       19.054  -0.922  True
+122  Houston  evap_big    R  100  31.666  72.203    33.641   34.076 -0.435 -0.025   -17.389       25.406  -0.997  True
+123  Houston  evap_big    R  150  31.886  72.618    33.888   34.194 -0.306 -0.017   -18.360       38.109  -0.993  True
+124  Houston  evap_big    R  200  32.080  73.155    34.139   34.353 -0.214 -0.011   -17.099       50.812  -0.864  True
+125  Houston  evap_big    R  250  32.254  73.768    34.395   34.537 -0.142 -0.007   -14.183       63.514  -0.665  True
+126  Houston  evap_big    R  300  32.411  74.433    34.656   34.738 -0.082 -0.004    -9.872       76.217  -0.427  True
+127  Houston  evap_big    R  400  32.686  75.865    35.195   35.179  0.016  0.001     2.537      101.623   0.092  True
+128  Houston  evap_big    R  500  32.922  77.387    35.760   35.660  0.099  0.003    19.881      127.029   0.591  True
+129  Houston  evap_big    R  600  33.128  78.791    36.343   36.121  0.221  0.005    53.134      152.435   1.287  True
+
+[3b] Peaks and overwhelm points
+   Phoenix  fan      mode O: SET(empty, no device) = 35.65; N_overwhelm(felt) = 459; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 1500
+   Phoenix  evap     mode O: SET(empty, no device) = 35.65; N_overwhelm(felt) = 1660; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 1500
+   Phoenix  evap     mode R: SET(empty, no device) = 35.65; N_overwhelm(felt) = 1108; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 975
+   Phoenix  evap_big mode O: SET(empty, no device) = 35.65; N_overwhelm(felt) = 2611; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 1500
+   Phoenix  evap_big mode R: SET(empty, no device) = 35.65; N_overwhelm(felt) = 1484; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 975
+   Houston  fan      mode O: SET(empty, no device) = 33.16; N_overwhelm(felt) = 110; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 500
+   Houston  evap     mode O: SET(empty, no device) = 33.16; N_overwhelm(felt) = 38; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 1500
+   Houston  evap     mode R: SET(empty, no device) = 33.16; N_overwhelm(felt) = 1; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 1500
+   Houston  evap_big mode O: SET(empty, no device) = 33.16; N_overwhelm(felt) = 213; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 1500
+   Houston  evap_big mode R: SET(empty, no device) = 33.16; N_overwhelm(felt) = 38; deg-currency peak at N = 1500 (edge of grid: no interior peak); comfort-currency peak at N = 1475
+
+[3c] Closed-form crowd at which the cooled zone's AIR is back to outdoor temperature (mode O)
+   Phoenix  evap    : cooling capacity 23.4 kW, roof 9.8 kW, motor 1.2 kW, sensible per person at T_out -79 W -> N_air = -158 (negative s: crowd never overwhelms air temperature)
+            with ASHRAE fixed 75 W: N_air = 166
+   Phoenix  evap_big: cooling capacity 53.2 kW, roof 9.8 kW, motor 2.5 kW, sensible per person at T_out -81 W -> N_air = -505 (negative s: crowd never overwhelms air temperature)
+            with ASHRAE fixed 75 W: N_air = 545
+   Houston  evap    : cooling capacity 7.2 kW, roof 7.5 kW, motor 1.2 kW, sensible per person at T_out 14 W -> N_air = -108 
+            with ASHRAE fixed 75 W: N_air = -20
+   Houston  evap_big: cooling capacity 16.4 kW, roof 7.5 kW, motor 2.5 kW, sensible per person at T_out 16 W -> N_air = 402 
+            with ASHRAE fixed 75 W: N_air = 85
+
+[4] How much of the large cooler's benefit is just its outdoor airflow? (mode O, pad dry eps=0)
+   Phoenix  N=  0: dSET full = 2.26, airflow-only = 0.69 -> ventilation share 31%
+   Phoenix  N=200: dSET full = 2.70, airflow-only = 0.55 -> ventilation share 20%
+   Phoenix  N=400: dSET full = 2.74, airflow-only = 1.12 -> ventilation share 41%
+   Houston  N=  0: dSET full = 1.17, airflow-only = 0.86 -> ventilation share 73%
+   Houston  N=200: dSET full = 1.06, airflow-only = 1.34 -> ventilation share 126%
+   Houston  N=400: dSET full = 0.76, airflow-only = 1.86 -> ventilation share 245%
+
+[5] Train surges: ODE vs quasi-steady (large cooler, mode O)
+   city=Phoenix, N_mean=100, headway=3, tau_s=57.99, T_ode_min=35.73, T_ode_max=36.11, T_qs_min=35.59, T_qs_max=36.42, T_steady_mean=35.97, SET_steady_mean=33.35, SETpw_ode=33.35, SETpw_qs=33.35, SET_at_4over3=33.35
+   city=Phoenix, N_mean=100, headway=8, tau_s=57.99, T_ode_min=35.63, T_ode_max=36.22, T_qs_min=35.58, T_qs_max=36.42, T_steady_mean=35.97, SET_steady_mean=33.35, SETpw_ode=33.35, SETpw_qs=33.35, SET_at_4over3=33.35
+   city=Phoenix, N_mean=100, headway=15, tau_s=57.99, T_ode_min=35.60, T_ode_max=36.28, T_qs_min=35.57, T_qs_max=36.42, T_steady_mean=35.97, SET_steady_mean=33.35, SETpw_ode=33.35, SETpw_qs=33.35, SET_at_4over3=33.35
+   city=Phoenix, N_mean=200, headway=3, tau_s=56.68, T_ode_min=35.14, T_ode_max=35.83, T_qs_min=34.93, T_qs_max=36.42, T_steady_mean=35.57, SET_steady_mean=33.34, SETpw_ode=33.33, SETpw_qs=33.34, SET_at_4over3=33.33
+   city=Phoenix, N_mean=200, headway=8, tau_s=56.68, T_ode_min=34.98, T_ode_max=36.05, T_qs_min=34.91, T_qs_max=36.42, T_steady_mean=35.57, SET_steady_mean=33.34, SETpw_ode=33.33, SETpw_qs=33.34, SET_at_4over3=33.33
+   city=Phoenix, N_mean=200, headway=15, tau_s=56.68, T_ode_min=34.94, T_ode_max=36.16, T_qs_min=34.91, T_qs_max=36.42, T_steady_mean=35.57, SET_steady_mean=33.34, SETpw_ode=33.33, SETpw_qs=33.34, SET_at_4over3=33.33
+   city=Houston, N_mean=100, headway=3, tau_s=85.76, T_ode_min=30.76, T_ode_max=30.91, T_qs_min=30.57, T_qs_max=31.03, T_steady_mean=30.82, SET_steady_mean=32.51, SETpw_ode=32.49, SETpw_qs=32.64, SET_at_4over3=32.69
+   city=Houston, N_mean=100, headway=8, tau_s=85.76, T_ode_min=30.70, T_ode_max=30.99, T_qs_min=30.57, T_qs_max=31.04, T_steady_mean=30.82, SET_steady_mean=32.51, SETpw_ode=32.55, SETpw_qs=32.68, SET_at_4over3=32.69
+   city=Houston, N_mean=100, headway=15, tau_s=85.76, T_ode_min=30.66, T_ode_max=31.01, T_qs_min=30.57, T_qs_max=31.04, T_steady_mean=30.82, SET_steady_mean=32.51, SETpw_ode=32.60, SETpw_qs=32.69, SET_at_4over3=32.69
+   city=Houston, N_mean=200, headway=3, tau_s=89.53, T_ode_min=30.95, T_ode_max=31.22, T_qs_min=30.57, T_qs_max=31.43, T_steady_mean=31.05, SET_steady_mean=33.08, SETpw_ode=33.05, SETpw_qs=33.38, SET_at_4over3=33.50
+   city=Houston, N_mean=200, headway=8, tau_s=89.53, T_ode_min=30.83, T_ode_max=31.35, T_qs_min=30.57, T_qs_max=31.44, T_steady_mean=31.05, SET_steady_mean=33.08, SETpw_ode=33.17, SETpw_qs=33.47, SET_at_4over3=33.50
+   city=Houston, N_mean=200, headway=15, tau_s=89.53, T_ode_min=30.76, T_ode_max=31.40, T_qs_min=30.57, T_qs_max=31.45, T_steady_mean=31.05, SET_steady_mean=33.08, SETpw_ode=33.29, SETpw_qs=33.50, SET_at_4over3=33.50
+
+[6] One-at-a-time sensitivity of dSET at N=200 (large cooler, mode O)
+       city                         param      lo      hi   y_lo   y_hi     y0  elasticity
+0   Phoenix   C_w single-sided wind coeff   0.010   0.050  2.802  2.594  2.705      -0.048
+1   Phoenix            Cd discharge coeff   0.500   0.650  2.628  2.739  2.705       0.165
+2   Phoenix      Opening area A_open (m2)  20.000  80.000  2.793  2.645  2.705      -0.036
+3   Phoenix         Wind reduction factor   0.400   1.000  2.778  2.639  2.705      -0.060
+4   Phoenix  Roof alpha/h_o (light->dark)   0.013   0.052  2.490  3.188  2.705       0.172
+5   Phoenix      Roof U (insulated->bare)   0.500   7.000  2.607  2.834  2.705       0.067
+6   Phoenix          Metabolic rate (met)   1.000   1.400  2.631  1.877  2.705      -0.766
+7   Phoenix           Ceiling view factor   0.100   0.300  2.716  2.700  2.705      -0.006
+8   Phoenix      Cooler airflow Qs (m3/s)   1.750   3.250  2.032  3.251  2.705       0.751
+9   Phoenix            Pad efficiency eps   0.700   0.900  2.443  2.788  2.705       0.542
+10  Houston   C_w single-sided wind coeff   0.010   0.050  0.713  1.713  1.059       0.590
+11  Houston            Cd discharge coeff   0.500   0.650  1.107  1.048  1.059      -0.225
+12  Houston      Opening area A_open (m2)  20.000  80.000  1.518  0.821  1.059      -0.439
+13  Houston         Wind reduction factor   0.400   1.000  0.754  1.376  1.059       0.685
+14  Houston  Roof alpha/h_o (light->dark)   0.013   0.052  1.504  0.931  1.059      -0.361
+15  Houston      Roof U (insulated->bare)   0.500   7.000  1.850  0.679  1.059      -0.885
+16  Houston          Metabolic rate (met)   1.000   1.400  1.093  0.698  1.059      -1.025
+17  Houston           Ceiling view factor   0.100   0.300  0.966  1.149  1.059       0.173
+18  Houston      Cooler airflow Qs (m3/s)   1.750   3.250  0.307  2.064  1.059       2.765
+19  Houston            Pad efficiency eps   0.700   0.900  0.613  1.180  1.059       2.277
+
+[7] Same station but open at both ends (cross-ventilated) vs single-sided, N=200, large cooler
+   Phoenix  single: Qn = 4.91 m3/s, phi = 0.34, tau = 57 s, dSET = 2.70
+   Phoenix  cross : Qn = 14.52 m3/s, phi = 0.15, tau = 25 s, dSET = 0.90
+   Houston  single: Qn = 2.19 m3/s, phi = 0.53, tau = 90 s, dSET = 1.06
+   Houston  cross : Qn = 14.54 m3/s, phi = 0.15, tau = 25 s, dSET = 0.62
+
+[8] Per-person split from the two-node model (v=0.2, RH 50 %, tr=T, met 1.1, clo 0.35)
+   T=24 C: sensible   93.9 W, latent   25.4 W, total  119.3 W
+   T=26 C: sensible   83.1 W, latent   33.8 W, total  116.9 W
+   T=28 C: sensible   66.2 W, latent   50.6 W, total  116.8 W
+   T=30 C: sensible   49.1 W, latent   67.7 W, total  116.8 W
+   T=32 C: sensible   31.6 W, latent   85.0 W, total  116.6 W
+   T=34 C: sensible   13.7 W, latent  102.7 W, total  116.3 W
+   T=36 C: sensible   -4.9 W, latent  120.9 W, total  116.0 W
+   T=38 C: sensible  -24.1 W, latent  139.6 W, total  115.6 W
+   T=40 C: sensible  -38.3 W, latent  134.9 W, total   96.6 W
+   T=42 C: sensible  -53.6 W, latent  124.1 W, total   70.5 W

@@ -1,0 +1,624 @@
+Aalborg Universitet
+
+
+
+
+An active defrost scheme with a balanced energy consumption and food quality loss in
+supermarket refrigeration systems
+
+
+Cai, Junping; Stoustrup, Jakob; Rasmussen, Bjarne Dindler
+
+Published in:
+Elsevier IFAC Publications / IFAC Proceedings series
+
+
+
+
+Publication date:
+2008
+
+
+Document Version
+Early version, also known as pre-print
+
+
+Link to publication from Aalborg University
+
+
+
+
+Citation for published version (APA):
+Cai, J., Stoustrup, J., & Rasmussen, B. D. (2008). An active defrost scheme with a balanced energy
+consumption and food quality loss in supermarket refrigeration systems. Elsevier IFAC Publications / IFAC
+Proceedings series, (1). http://www.ifac-papersonline.net/Detailed/37278.html
+
+
+
+
+General rights
+Copyright and moral rights for the publications made accessible in the public portal are retained by the authors and/or other copyright owners
+and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with these rights.
+
+        - Users may download and print one copy of any publication from the public portal for the purpose of private study or research.
+        - You may not further distribute the material or use it for any profit-making activity or commercial gain
+        - You may freely distribute the URL identifying the publication in the public portal -
+Take down policy
+If you believe that this document breaches copyright please contact us at vbn@aub.aau.dk providing details, and we will remove access to
+the work immediately and investigate your claim.
+
+
+Downloaded from vbn.aau.dk on: 11 05, 2026
+Proceedings of the 17th World Congress
+The International Federation of Automatic Control
+Seoul, Korea, July 6-11, 2008
+
+
+
+
+                            An Active Defrost Scheme with a Balanced Energy
+                                Consumption and Food Quality Loss in
+                                  Supermarket Refrigeration Systems
+                                            J. Cai, J. Stoustrup ∗ B. D. Rasmussen ∗∗
+                              ∗ Automation and Control, Department of Electronic Systems, Aalborg
+                                   University, 9220 Aalborg, Denmark. (e-mail: jc@es.aau.dk,
+                                                        jakob@es.aau.dk)
+                            ∗∗ Business Unit Industry and Water Services, Grundfos Management A/S,
+                                8850 Bjerringbro, Denmark. (e-mail: brasmussen@grundfos.com )
+
+             Abstract: This paper introduces food quality as a new parameter, together with energy, to determine
+             an optimal cooling time between defrost cycles. A new defrost-on-demand scheme is proposed. It
+             uses a feedback loop consisting of on-line model updating and estimation as well as a model based
+             optimization. This scheme automatically adjusts the time interval between defrost cycles with varying
+             operating conditions, continuously seeking an optimal time interval, featuring either an energy optimal
+             time, or a trade-off between energy consumption and food quality loss. This adaptive approach is
+             compared with traditional defrost schemes, found to be able to reduce energy consumption significantly.
+
+                     1. INTRODUCTION                               quality. Simulation results are presented in Section 5. Gains by
+                                                                   the new defrost-on-demand control scheme is demonstrated in
+Supermarkets are one of the most energy-intensive types of         Section 6. Finally some discussions and conclusions are given
+commercial buildings. Refrigeration is the largest component       in Section 7.
+of their electric energy usage, accounting for half or more of
+the store total. Among others, energy associated with defrosts         2. SIMPLE INTRODUCTION OF REFRIGERATION
+and anti-sweat heaters in supermarkets may exceed 30% of                          SYSTEM AND DEFROST
+the total energy requirement, see Howell et al. [1999]. Thus,
+from an energy point of view, determining how often to defrost
+                                                                   2.1 Refrigeration of foodstuffs in a supermarket
+is an important issue. From a food quality point of view,
+it is also important. During defrosting, the air temperature
+inside a display cabinet will normally increase, and so will the   The display cabinet depicted in Fig. 1 consists of a food
+food temperature. Depending on the defrost method, the food        container and an air tunnel. The evaporator inside the air tunnel
+temperature will stay out of the usually controlled range for a    cools the passing air, which circulates around the food container
+period of time, which is harmful to the food quality, see Cai      and creates an air blanket on the top of foodstuffs.
+et al. [2006].                                                     To control properly the temperature inside a cabinet, one or
+Defrost approaches can be classified in two major schemes:         more thermal sensors are required in the system. The number
+one is scheduled defrost, another is defrost-on-demand. Fahlen     and function of those sensors differ from one application to
+[1996] studied and compared these two schemes, and found           another. For example in our system, there are 3 sensors: S3 , S4 ,
+that both of them have some excellent features, but various        S5 . S3 and S4 are used to measure the temperature of air inlet
+limitations and drawbacks. Food quality has never been used        Ta,i and outlet Ta,o respectively, S5 is a defrost stop sensor.
+as an active decision factor in either of these schemes.           To increase sales, any physical obstacles between the products
+Biotechnology provides us the knowledge of food quality            and customers should be avoided. As a consequence, for most
+change during the refrigerated storage. Research on frost for-     display cabinets, one or more forced air blankets (for horizontal
+mation enables us to predict the system performance degrada-       display) or air curtains (for vertical display) are the only barrier
+tion under frosting conditions.                                    between the refrigerated foodstuffs and warm ambient air. Due
+                                                                   to the disturbance of air flow, a more or less significant amount
+This paper introduces food quality as a new parameter, together    of warm ambient air is always entrained, which introduces the
+with energy, to determine an optimal time between defrost          frost formation, reduces the temperature control capabilities
+cycles depending on ambient parameters. Based on this, a new       and increases energy consumption.
+defrost-on-demand scheme is proposed.
+The paper starts with a simple introduction to supermarket         2.2 Requirements on food storage temperature
+refrigeration systems and the most commonly used defrost
+methods, defrost schemes, which is in Section 2. We propose a      In supermarkets, there are general requirements regarding the
+new defrost-on-demand control scheme in Section 3. In Section      storage temperature for different foodstuffs in display cabinets.
+4, we discuss the problem connected with traditional defrost       For example in Denmark, according to Announcement [2004]
+schemes by using three models, two for energy and one for food     and DSK et al. [2004].
+
+978-3-902661-00-5/08/$20.00 © 2008 IFAC                       9374                        10.3182/20080706-5-KR-1001.1934
+17th IFAC World Congress (IFAC'08)
+Seoul, Korea, July 6-11, 2008
+
+
+
+                                    Tstore , RH store                         stop temperature while with a maximum defrost time as a
+                                                                              security.
+                                                    Infiltration            • Defrost-on-demand: Initiating the defrost cycle only when
+                                                                              necessary, see Llewelyn [1984]. This approach normally
+                                                                S3            uses one parameter to initiate and terminate the defrost
+                                                                              process, such parameters could be: air pressure difference
+                                                        Ta ,i                 across the evaporator, fan power sensing etc.
+                            Food storage
+                                                                        Features and shortcomings of the current defrost schemes are:
+                                                                            • Scheduled defrost is simple and uses a low cost controller,
+                    S4        S5                                              so it is the most commonly used defrost scheme in today’s
+                                                         .                    supermarkets, but the time schedule is normally deter-
+                    Ta ,o                                Va                   mined based on experience and observation, most cases,
+                                                                              based on worst case conditions. It is configured during
+                                                                              the commission stage and can not automatically adapt to
+                                                                              the varying shop conditions under which the system is
+                                                                              working, so the time between two defrost cycles may be
+Fig. 1. A simplified display cabinet in a supermarket                         either too long or too short.
+                                                                            • Existing defrost-on-demand schemes typically involve the
+   • Frozen food, the max. temperature is -18◦ C.                             installation of an additional sensor to detect frost build-
+   • Fresh fish and fish products, the max. temperature is +2◦ C.             up, and use one parameter to initiate and terminate the
+   • Milk, the max. temperature is +5◦ C.                                     defrost cycle. The threshold of this detected parameter is
+Usually, the legally constrained temperature is the air tempera-              determined mainly to ensure a safe operation, or maintain
+ture.                                                                         the performance degradation of the system within fixed
+                                                                              limits over the whole range of operating conditions. No
+2.3 Frost formation and defrost methods                                       energy optimality is guaranteed.
+                                                                            • None of the existing schemes have used food quality as a
+Frosting is a well known and undesirable phenomenon on                        decision factor.
+evaporator coils. It happens whenever the surface temperature
+of the evaporator is below 0◦ C and humid air passes by. Frost                      3. DEFROST CONTROLLER DESIGN
+decreases the performance of the heat exchanger. In order to
+maintain a satisfactory performance, defrosting needs to be             To overcome the shortcomings of the current defrost schemes,
+done regularly.                                                         and realize an objective with a balanced system energy con-
+                                                                        sumption and food quality loss, we propose a new defrost-on-
+The most common defrost methods for medium and low tem-                 demand control scheme, see Fig. 2. It uses a feedback loop
+perature applications are:                                              consisting of an on-line model updating and estimation by
+   • Off-cycle defrost: This is the simplest defrost methods:           an Extended Kalman Filter (EKF), as well as a model based
+     refrigeration is stopped, evaporator fans continue to move         optimization (see below). zm is the measured output. It could
+     room air over the frosted coil surface, which warms and            advantageously use some extra sensors, but this scheme would
+     melts the frost.                                                   also work just with the existing sensors in the system. For
+   • Hot/cool gas defrost: During a hot/cool gas defrost, the           example, for the refrigeration system in Fig. 1, if S3 is the
+     normal supply of cold refrigerant is stopped. The former           controlled temperature by the normal controller, S4 could be
+     involves the circulation the hot gas from the compressor           a good candidate for on-line measurement. Here we assume
+     discharge manifold directly to the display cabinet, and            that the store temperature Tstore and relative humidity RHstore
+     the latter utilizes cooler gas from the liquid receiver. The       are measured, such as at every half or at every full hour, de-
+     cool or hot gas condenses in the evaporator, releasing heat        pending on the stability of store indoor conditions. d f r,opt,ave
+     which melts the ice from the coil.                                 is the average optimal frost thickness for defrosting generated
+   • Electric defrost: This approach uses the electric heater           by the optimization, but defrost will only be initiated when
+     embedded on the fin surface to supply heat, warm and melt          the estimated frost thickness d f r from the EKF is equal to or
+     the frost.                                                         larger than d f r,opt,ave . This initiating signal is sent to the normal
+                                                                        defrost controller, defrosting starts, and it is terminated in a
+Normally, for medium temperature applications, the cheapest             normal way. After the defrost is complete, a reset signal is sent
+and least energy consuming means of defrost is off-cycle.               to the EKF, and the process for the next defrost cycle starts
+For low temperature applications, electric defrost is the most          again.
+commonly used.
+                                                                        3.1 Model based optimization
+2.4 Defrost schemes
+                                                                        The optimization objective is described as the following:
+In a simple taxonomy, there are the following two classes of
+defrost schemes.                                                                          min E(t) + k · Q f ood,loss (t)                   (1)
+                                                                                             topt
+
+   • Scheduled defrost: Initiating the defrost cycle by a timer,        Where E(t) is the system energy consumption, which includes
+     normally with a fixed number of defrost cycles per day.            two parts, one is the energy used direct for defrosting, another
+     Defrost is terminated either based on a fixed time or on a         is the extra energy used for compensating the degraded system
+
+                                                                     9375
+17th IFAC World Congress (IFAC'08)
+Seoul, Korea, July 6-11, 2008
+
+
+
+                                                                                           • It increases the thermal resistance between the fin and
+                                                                                             airflow, and decreases the cooling capacity of heat ex-
+                                       RH store , Tstore                                     changers.
+      Reset signal                                                                         • It substantially reduces the airflow through heat exchang-
+                                                                                             ers, and increases the air pressure drop through heat ex-
+       Defrost                        Refrigeration           zm              EKF            changers. Depending on the characteristic of the fan, sev-
+      Controller                        System                                               eral hours later, the airflow path may be nearly or com-
+                    Yes
+                               d fr                                                          pletely blocked.
+                                                             Update state:
+      d fr >= d fr ,opt ,ave
+                                                            frost thickness            Frost build up is a complex process even on a flat plate. It
+                                      Optimization             Update                  is affected by many factors, such as air flow velocity, air and
+                d fr ,opt ,ave           Q/E               Model parameters
+                                                                                       plate temperature, air humility ratio etc. Frost growth on a
+                                                                                       real evaporator becomes even more complex, limited modeling
+                                                                                       exists, see Yang et al. [2006].
+Fig. 2. On line new defrost-on-demand control scheme
+                                                                                       This paper is not aiming at developing a detailed model to
+efficiency due to frost build-up. Q f ood,loss (t) is the quality loss                 predict the frost formation under varying conditions. Instead
+of foodstuffs, k is a weighing factor based on costs or shop                           it uses energy correlations to calculate how much water is
+owners’ priorities, topt is the optimal cooling time between                           condensed on the surface of evaporator as frost. The purpose of
+defrosting.                                                                            modeling here is for controlling, so the model itself is extremely
+To determine an optimal frost thickness threshold under dy-                            simple but still captures the main dynamical features seen from
+namic situations is not easy; a simple method is proposed,                             an input / output point of view.
+d f r,opt,ave is approximated by the average value of optimal                          Frost growth rate estimation: The nominal cooling demand
+frost thickness under the whole working range. Simulation re-                          Qnom for a display cabinet can be calculated as follows (without
+sults under the following conditions: [20◦ C, 25◦ C] [50%, 60%]                        special notification, all the units are standard SI units):
+showed that by using the average to initiate defrosting, the
+                                                                                                                         4
+maximal energy loss compared with using the true optimal                                                   Qnom = Q0 ∑ (Gi · Xi ·Yi )                    (2)
+value is less than 4%. The alternative using a detailed model for                                                       i=1
+determining the value given by Eq. (1) has from a control point                        Where Q0 is the standard cooling demand, can be calculated
+of view a serious lack of robustness, and realistic modeling                           according to cabinet category and dimension. Gi is the correc-
+errors could easily cause larger deviations than 4%. Moreover                          tion factor for the difference between testing conditions and
+this 4% in worst-case is insignificant relative to the potential                       measured actual operating conditions, Xi is the load distribution
+savings demonstrated below.                                                            factor, Yi is the load reduction factor related to the covering of
+                                                                                       the display case, if no physical covering Yi = 1. i indicate the
+3.2 Features and advantages of the new controller
+                                                                                       load type, 1 for the load from heat conduction, 2 for infiltration,
+   • Adaptivity: The approach suggested uses real time dis-                            3 for radiation and 4 for the load from electric equipments, such
+     turbance measurements (store temperature and humidity)                            as light, fan, anti-sweat etc.
+     for on-line model updating, estimation and optimization,
+                                                                                       The correction factor for the infiltration and the infiltration load
+     continually seeking an optimal time for defrosting under
+                                                                                       can be calculated as follows:
+     dynamic conditions.
+                                                                                                                     Istore,m − Icab,m
+   • Optimality: The approach suggested is based on an op-                                                  G2 =                                         (3)
+     timality condition which is a weighted function between                                                       Istore,test − Icab,test
+     system energy consumption and food quality loss, so                                                  Qin f = Q0 · (G2 · X2 ·Y2 )                    (4)
+     the resulting closed-loop system will always operate on                           Where I are specific enthalpy, which can be calculated based on
+     the Pareto-optimal trade-off curve between system energy                          temperature and RH. Subscript store, cab represent store and
+     consumption and food quality loss.                                                cabinet respectively, test and m refer to test and measurement.
+   • Feasibility: The proposed method is a model based control                         Parameters and details see Holm et al. [1996].
+     method, and introduction of an EKF can avoid some spe-
+     cial sensors. Those sensors are normally expensive, and                           Infiltration is caused by an amount of hot humid air from the
+     often some reliability and feasibility problems are asso-                         store entrained in the display cabinet. The load of infiltration
+     ciated with the complex and unreliable sensing methods.                           can also be calculated in another way:
+     The EKF can infer those values of interest from some                                                Qin f = ṁa,ent (Istore,m − Icab,m )       (5)
+     available measurements. Thus the new controller can be                            From the above correlation, we can calculate the mass flow rate
+     implemented directly on the top of existing systems, no                           of air entrained ṁa,ent .
+     physical rearrangements or extra components installations
+     are required.                                                                     Infiltration is the only source of water condensates on the
+                                                                                       surface of evaporator and eventually becomes frost. As time
+             4. ENERGY AND QUALITY MODELING                                            goes, it will increase both the thickness and density of frosts.
+                                                                                                           ṁ f r = ṁa,ent (xstore − xcab )          (6)
+4.1 Extra energy to compensate for the reduced performance
+under frosting                                                                                             ṁ f r = ρ f r · δ̇ f r · A f r                (7)
+                                                                                       Where x is the specific humidity or humidity ratio of air, based
+Frosting of the heat exchanger surface affects its thermal per-                        on temperature and RH, ṁ f r is the frost mass growth rate. ρ f r
+formance in the following ways, see Chen et al. [2003]:                                and A f r are the frost density, frosting area respectively. δ̇ f r is
+
+                                                                                    9376
+17th IFAC World Congress (IFAC'08)
+Seoul, Korea, July 6-11, 2008
+
+
+
+the frost thickness growth rate. Here we assume the density of                                        fresh fish products as an example, according to the requirements
+frost is a constant. A review on frost properties and modeling                                        from food authorities, the maximum storage temperature is
+was given by Iragorry et al. [2004].                                                                  +2◦ C. It uses electric defrost. Details see Cai [2007].
+Frosted fin efficiency: Frosted fin efficiency η f according to                                       Power and extra energy consumption: In this system, we focus
+Barrow [1985] can be calculated as follows. Eq. (8) and (9)                                           on two power consuming components: compressor and evap-
+applies to both dry and frosted conditions.                                                           orator fan (the power consumption of the condenser fan has
+                     η f = tanh mL/(mL)                     (8)                                       no direct relation with frosting). Extra energy means that if we
+                           s                                                                          do not defrost, the efficiency of the system will degrade with
+                                          ha                                                          frosting, in order to meet the same cooling demand, more power
+                      m=                                    (9)
+                              k f r δ f r + k f t f /2                                                is needed compared with frost free conditions.
+Where L is the effective length of fin, m is a fin parameter, k is                                                        Wtot (t) = Wcomp (t) +W f an (t)          (15)
+used for conductivity, h for heat transfer coefficient, δ and t for                                                    Wextra (t) = Wtot (t) −Wtot (0)              (16)
+thickness, subscript a, f r and f refer to air, frost and fin.                                        Where 0 is the frost free time, t is the time for frost growth.
+The overall heat transfer coefficient U based on the total air side                                   4.2 Direct energy use for defrosting
+area is given by:
+ 1      Aa
+               µ µ ¶
+                     Af
+                                 µ
+                                        ha k f r
+                                                    ¶µ
+                                                          Af
+                                                             ¶¶−1                                     In order to maintain a satisfactory performance of heat exchang-
+    =        + ha          ηf +                        1−                                             ers, a periodic defrosting is required to remove frost. During
+ U     hr Ar         Aa            k f r + ha δ f r       Aa
+                                                                                                      a defrost cycle, the cooling system is shut down, and heat is
+                                                               (10)
+                                                                                                      supplied to the heat exchanger to raise its temperature well
+Where A is used for area, subscript r refer to refrigerant.                                           above freezing.
+Evaporator fan: In refrigeration systems, axial fans or centrifu-                                     Energy distribution in a defrost cycle is:
+gal fans are commonly used. The operating point of the fan
+installed in a system is established at the intersection of the fan                                       • Energy used to warm and melt frost Ed f , f r .
+and device curve. Fig. 3 shows a system and fan interaction.                                              • Energy used to heat the coil of heat exchanger Ed f ,coil .
+                                                                                                          • Energy used to heat the refrigerant Ed f ,r .
+                                  shut off pressure
+                                                                                                          • Energy wasted (the defrosting efficiency).
+                                                            normal operating range
+         Static Pressure P [Pa]
+
+
+
+
+                                                                                                      4.3 Food quality loss under defrosting
+
+                                                                                                      Food quality decay is determined by its composition factors and
+                                                      fan                 operating point
+                                                          cu
+                                                            rve                                       many environmental factors, such as temperature, relative hu-
+                                                                                                      midity, light etc. Of all the environmental factors, temperature
+                                                                                                      is the most important.
+                                        system resistant curve                max. free delivery
+                                                                                                      Food temperature T f ood is determined by the cabinet air temper-
+                                                                                                      ature Tair . For simple calculations, we can lump the food into
+                                                                               3
+                                                        Volume flow rate V [ m / s]                   one thermal mass.
+                                                                                                                                dT f ood
+                                                                                                                    (mCp) f ood          = UA(T f ood − Tcab )     (17)
+                                                                                                                                  dt
+Fig. 3. Fan and system interaction
+                                                                                                      Food quality loss Q f ood,loss can be calculated as follows:
+                                                                                                                           Z tf
+COP (Coefficient Of Performance): System COP and compres-                                                                                          T f ood − Tre f
+                                                                                                            Q f ood,loss =      100 · DT,re f exp(                 )dt (18)
+sor power WC can be calculated as follow:                                                                                   t0                             z
+                   ηc,nom = Z(C + D · V̇r )          (11)                                             Where DT,re f , Tre f , Z are quality parameters, see Cai et al.
+                             Te + 273.15                                                              [2006]. UA is the heat transfer coefficient and area from air
+                       εc =                          (12)                                             to products, mCp f ood is the thermal mass and properties of
+                                Tc − Te                                                               foodstuffs. Here we assume Tcab is the same as Ta,i , during
+                    COP = ηc,nom εc                  (13)                                             normal operation, T f ood and Tcab are equal, UA/(mCp) f ood =
+                      WC = Qnom /COP                 (14)                                             3.97 · 10−4 .
+where Z,C, D are constants for compressors. V̇r is the volume
+flow rate of refrigerant, Te is the evaporating temperature.                                                             5. SIMULATION RESULT
+Tc is the condensing temperature, assumed to be a constant.
+Parameters and details see Holm et al. [1996].                                                        We are aiming at finding an optimal time interval between
+                                                                                                      defrost cycles to meet our optimization objective, which is a
+Overall calculation procedure: Here we use the heat ex-                                               weighted function between system energy consumption and
+changer from Blundell [1977] as an e example. It has wavy                                             food quality loss. Regarding the energy consumption, we need
+continuous fins on circular tubes, with a staggered array. Slight                                     to consider two aspects: extra energy and energy for defrosting.
+modifications have been made on the dimension to meet our
+cooling demand. The overall calculation procedure includes 2                                          5.1 Extra energy
+loops: one is the time integration loop for frost growth, another
+is an internal iterative loop for finding the operating point of fan.                                 Simulation is carried out for 11 hours under frost formation,
+Here we use an island site medium temperature display case for                                        with a store temperature of 25◦ C and RH of 55%. Fig. 4
+
+                                                                                                   9377
+17th IFAC World Congress (IFAC'08)
+Seoul, Korea, July 6-11, 2008
+
+
+
+shows the operating points of the fan as a function of time,           frequent defrost. More precisely, it is the specific enthalpy and
+due to frosts build up. When the evaporator is clean, the              humidity ratio that determine the frost formation rate.
+fan provides a reasonable high air flow. As pressure drop
+increases, the air flow is dramatically decreased. After 11 hours,     From Fig. 11, focusing on the energy aspect, we can see that
+the fan is already working out of its normal operating range.          if we configure the defrosting of the system at an optimal
+When the air flow rate decreases, the overall heat transfer            time interval of 9 hours, according to one initial condition of
+coefficient between the air and evaporator will decrease. In           20◦ C, 50% RH, when the store temperature rises up to 25◦ C,
+order to meet the same cooling demand, the temperature drop            same RH, this 9 hours scheme will lead to a daily energy
+of the air across the coil must increase. This, in turn requires       consumption of 229.8 kJ. Compared with its actual energy
+a lower evaporating temperature, see Fig. 5. The drop in the           optimal point of 101.5 kJ at 6 hours, an extra 126.4% of energy
+evaporating temperature will cause a lower COP and increased           is wasted.
+power consumption. Fig. 6 shows the compressor and fan power
+consumption for the same cooling demand as a function of time                     7. DISCUSSION AND CONCLUSION
+under frosting.
+                                                                       This paper discussed the problems related to the traditional
+                                                                       defrost schemes. Through the analysis on both system energy
+5.2 Defrost energy
+                                                                       and food quality, we propose a new way of determining the opti-
+                                                                       mal time between defrost cycles, and a new defrost-on-demand
+Fig. 7 shows the energy used to warm the coil and to melt frost        control scheme. It on-line adjusts the cooling time between
+as a function of time between defrosting. From the figure we           defrost cycles, according to the varying operation condition,
+can see that the longer time we wait for initiating the defrost, the   continuously seeking an optimal time interval, featuring either
+more energy is needed both for melting the frost and warming           an energy optimal point, or a trade-off between system energy
+the coil. This is because, on one hand, frost accumulates with         consumption and food quality loss.
+time. On the other hand, the coil will become colder when the
+evaporating temperature goes down, it needs more energy to be
+                                                                                               REFERENCES
+warmed up.
+                                                                       Announcement. Announcement 1271 of 13/12/2004 con-
+5.3 Food quality loss                                                     cerning hygiene of foodstfuffs by Danish authorities,
+                                                                          http://www.foedevarestyrelsen.dk. 2004.
+Fig. 8 shows the daily food quality loss under different defrost       H. Barrow. A note on frosting of heat pump evaporator surfaces.
+frequencies.                                                              Heat Recovery Systems, 5(3):195– 201, 1985.
+                                                                       C. J. Blundell. Optimising heat exchangers for air-to-air space-
+5.4 Energy vs. Quality                                                    heating heat pumps in the united kingdom. Energy Research,
+                                                                          1:69– 94, 1977.
+                                                                       J. Cai. Model based control of refrigeration systems. PhD
+We use one day as an example, and assume we defrost the
+                                                                          thesis, Automation and Control, Department of Electronic
+system 2, 3... up to 6 times, then the cooling time between two
+                                                                          Systems, Aalborg University, Denmark, 2007.
+defrost cycles will be 12, 8... 4 hours (defrost time is ignored),
+                                                                       J. Cai, J. Risum, and C. Thybo. Quality model of foodstuffs in
+this is also the time that we allow frost to grow and the system
+                                                                          a refrigerated display cabinet. Purdue, USA, 2006. 11th Int.
+performance to degrade. We plot the daily energy consumption
+                                                                          Refrigeration and Air Condition Conference.
+and daily food quality loss in Fig. 9. From the figure, we can
+                                                                       H. Chen, L. Thomas, and R. W. Besant. Fan supplied heat
+conclude that from an energy point of view, we should select an
+                                                                          exchanger fin performance under frosting conditions. Int. J.
+optimal cooling time of 5 hours. But from the food quality point
+                                                                          Refrigeration, 26(1):140– 149, 2003.
+of view, we should defrost at a longer interval, such as 11 hours.
+                                                                       DSK, Danish Supermarket Group, and COOP. Hygiene and Self
+This is a conflicting requirement to supermarket owners. It is up
+                                                                          Control, Regulation for Supermarkets. 2004.
+to them to make the final decision, based on their preference on
+                                                                       P. Fahlen. Frosting and defrost of air coils - results from
+quality, or cost, or a trade-off.
+                                                                          laboratory testing. 1996.
+                                                                       H. V. Holm, P. O. Danig, and B. D. Rasmussen. Energy saving
+     6. GAINS FROM NEW DEFROST-ON-DEMAND                                  for remote refrigeration and frozen equipments in trading
+                CONTROL SCHEME                                            and service sector, calculations of norm energy consumption,
+                                                                          report nr. 3 (danish). 1996.
+The above simulation is based on one specific situation, where         R. H. Howell, L. Rosario, D. Riiska, and M. Bondoc. Potential
+the store has a constant temperature and relative humidity,               saving on display case energy with reduced supermarket rel-
+which is more or less true for a store with air conditioning              ative humidity. Sydney, Australia, 1999. 20th Int. Congress
+systems, while in some European countries, such as Denmark,               of Refrigeration, IIR/IIF.
+this is not the case. The indoor environment will normally vary        J. Iragorry, Y. X. Tao, and S. Jia. Review article: A critical
+with outdoor condition, staff and customers’ activities. The              review of properties and models for frost formation analysis.
+fixed optimal cooling time which is determined off-line and               Int. J. Refrigeration, 10(4):393– 420, 2004.
+configured at the commissioning phase, as conditions change,           D. S. Llewelyn. A significant advance in defrost control. Int. J.
+may not be the best choice any more.                                      Refrigeration, 7(5):334– 335, 1984.
+Fig. 10 shows the energy optimal cooling time under different          D. K. Yang, K. S. Lee, and S. Song. Modeling for predicting
+store conditions. Generally speaking, a high store temperature            frosting behavior of a fin tube heat exchanger. Int. J. Heat
+and RH gives more load to the system, a faster frost growth,              and Mass Transfer, 49:1472– 1479, 2006.
+and a quicker performance degradation, which requires more
+
+                                                                  9378
+17th IFAC World Congress (IFAC'08)
+Seoul, Korea, July 6-11, 2008
+
+
+
+
+                                                           60
+                                                                                                                                                                                                                           40
+                                                                                                                                   Fan curve
+
+                                                                                                                                                                                                                           35                                defrost 4 times
+                                                           50
+                                                                                 after 11hrs frosting
+
+                                                                                                                                                                                                                           30
+                                                                                                                                                                                                                                                  Defrost 2 times
+                                                           40
+                                    Static Pressure [Pa]
+
+
+
+
+                                                                                                                                                                                                   Food Quality Loss [%]
+                                                                                                                                                                                                                           25
+                                                                                                        after 7 hrs frosting
+                                                           30
+                                                                                                                                                                                                                           20                                                     No defrost
+
+                                                           20                                                                                                                                                              15
+
+                                                                                                                               clean coil
+                                                                                                                                                                                                                           10
+                                                           10
+                                                                                                                                                                                                                            5
+
+                                                            0
+                                                                0       200              400            600         800        1000            1200                                                                         0
+                                                                                                                                                                                                                                0       4            8          12          16             20    24
+                                                                                           Volume flow rate [m3/h]                                                                                                                                           Time [hr]
+
+
+
+Fig. 4. Operating point of fan as a function of time under frost                                                                                         Fig. 8. Food daily quality loss under defrosting frequencies
+     build-up
+                                                                                                                                                                                                             1400                                                                                 21.8
+                                                           −2
+                                                                                                                                          Ta,o
+                                                                                                                                          Te                                                                 1200                                                                                 21.6
+                                                           −4
+
+
+
+
+                                                                                                                                                                   Daily energy consumption [kJ]
+                                                                                                                                                                                                             1000                                                                                 21.4
+
+
+
+
+                                                                                                                                                                                                                                                                                                         Daily food quality loss [%]
+                                                           −6
+                       Temperature [C]
+
+
+
+
+                                                                                                                                                                                                                     800                                                                          21.2
+
+                                                           −8
+                                                                                                                                                                                                                     600                                                                          21
+
+
+                                                     −10
+                                                                                                                                                                                                                     400                                                                          20.8
+
+
+                                                     −12                                                                                                                                                             200                                                                          20.6
+
+
+                                                                                                                                                                                                                            0                                                                     20.4
+                                                     −14                                                                                                                                                                        4   5            6          7        8          9           10   11
+                                                                0   1      2         3      4      5      6        7      8    9      10         11
+                                                                                                                                                                                                                                            Cooling time between two defrost cycles [hr]
+                                                                                                   Time [hr]
+
+
+
+
+Fig. 5. Evaporation and air outlet temperature as a function of                                                                                          Fig. 9. Daily Energy consumption and Food quality loss as a
+     time under frost build-up                                                                                                                                function of cooling time between defrosting
+
+                                                      600
+                                                                                                                                                                                                             1400
+                                                                                                                                                                                                                                        Tstore=25 C, RHstore=55%
+                                                      500                                                                                                                                                                               Tstore=25 C, RHstore=50%
+                                                                                                                                                                                                             1200
+                                                                                                                                                                   Daily energy consumption [KJ]
+
+
+
+
+                                                      400
+           Power consumption [W]
+
+
+
+
+                                                                                                                                                                                                             1000
+
+                                                                                                                                   Wcomp
+                                                      300
+                                                                                                                                   Wfan                                                                              800
+                                                                                                                                   Wtot
+                                                      200                                                                          Wextra                                                                            600
+                                                                                                                                                                                                                                    Energy optimal point
+
+                                                      100
+                                                                                                                                                                                                                     400
+
+
+                                                            0
+                                                                                                                                                                                                                     200
+
+
+                                           −100
+                                                                0   1      2         3      4      5      6        7      8    9      10         11                                                                         0
+                                                                                                                                                                                                                                4   5            6          7        8          9           10   11
+                                                                                                   Time [hr]
+                                                                                                                                                                                                                                            Cooling time between two defrost cycles [hr]
+
+
+
+Fig. 6. Power consumption for compressor, fan, total and extra                                                                                           Fig. 10. Energy optimal time under different store RH
+     as a function of time as frost build-up
+                                                                                                                                                                                                                     600
+                                                      160
+                                                                        Edf,fr                                                                                                                                                      Tstore=25 C, RHstore=50%
+
+                                                      140               Edf,coil                                                                                                                                                    Tstore=20 C, RHstore=50%
+                                                                                                                                                                                                                     500
+                                                                        Edf,tot
+                                                                                                                                                                                   Daily energy consumption [KJ]
+
+
+
+
+                                                      120
+                       Energy consumption [KJ]
+
+
+
+
+                                                                                                                                                                                                                     400
+                                                      100
+
+                                                                                                                                                                                                                                                  Energy optimal point
+                                                                                                                                                                                                                     300
+                                                           80
+
+
+                                                           60                                                                                                                                                        200
+                                                                                                                                                                                                                                                                                   δJ
+                                                           40
+                                                                                                                                                                                                                     100
+                                                           20
+
+                                                                                                                                                                                                                            0
+                                                            0                                                                                                                                                                   4   5            6          7        8          9           10   11
+                                                                0   1      2         3      4      5       6      7       8    9      10         11
+                                                                                                                                                                                                                                            Cooling time between two defrost cycles [hr]
+                                                                                           Time for frost growth [hr]
+
+
+
+
+Fig. 7. Energy consumption for melting frost, warming coil and                                                                                           Fig. 11. Potential gains on energy by the new defrost-on-
+     the total as a function of time                                                                                                                          demand control scheme
+
+
+                                                                                                                                                      9379
+

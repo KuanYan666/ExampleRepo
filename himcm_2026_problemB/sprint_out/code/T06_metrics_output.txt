@@ -1,0 +1,63 @@
+====================================================================================================
+CALIBRATION
+  per kg store air: sensible 42.3 kJ, latent 26.7 kJ -> latent share 39%
+  infiltration mass flow 27.2 g/s (23 L/s)
+  baseline T_evap -28 C; Carnot(refrigerant -28->35 C) = 3.89 -> machine 2nd-law quality 0.44
+  Carnot COP team: -18 -> 35 C                             = 4.81
+  Carnot COP refrigerant: -28 -> 35 C                      = 3.89
+  Carnot COP reservoirs: product -18 -> outdoor 25 C       = 5.93
+  Carnot COP reservoirs: product -18 -> store 24 C         = 6.07
+  Carnot COP reservoirs: product -18 -> winter outdoor 0 C = 14.17
+  Eurovent REC implied COP at T0=-28 C, Tc=35 C: 1.32; AHRI 1200-2023 Table 1 EER at -20 F = 6.88 Btu/Wh -> COP 2.02
+  MT validation: model predicts RH 55->35 % cuts total load by 19.9% (Faramarzi et al. 2000 measured 20.7-20.8 %)
+
+====================================================================================================
+PHYSICS PER SCENARIO
+                                      Q_tot  Q_inf  Q_inf_lat  P_aux  T_evap    COP       E  hours_safe         S  store_net
+scenario                                                                                                                    
+Baseline (24 C/55 %, summer)          2.500  1.875      0.726  0.325 -28.000  1.700  43.094       24.00  7200.000    -52.200
+Switched off                          2.500  1.875      0.726  0.325 -28.000    NaN   0.000        0.23    68.966     -0.000
+Empty case                            2.500  1.875      0.726  0.325 -28.000  1.700  43.094       24.00     0.000    -52.200
+Doors fitted                          1.052  0.375      0.145  0.415 -22.210  1.916  23.142       24.00  7200.000    -15.300
+Night cover 12 h                      2.081  1.472      0.570  0.309 -26.323  1.758  35.812       24.00  7200.000    -42.525
+Winter store (21 C/30 %, Tcond 25 C)  1.915  1.359      0.292  0.280 -25.662  2.134  28.264       24.00  7200.000    -39.246
+Very humid store (24 C/75 %)          2.824  2.169      1.020  0.355 -29.296  1.657  49.432       24.00  7200.000    -59.247
+Air-curtain fan +50 % flow            3.322  2.438      0.944  0.585 -31.290  1.594  64.067       24.00  7200.000    -65.700
+Extra 0.3 kW lights inside            2.800  1.875      0.726  0.625 -29.200  1.660  55.481       24.00  7200.000    -52.200
+Aisle draft: infiltration x1.3        3.085  2.438      0.944  0.348 -30.340  1.623  53.946       24.00  7200.000    -65.700
+Draft x1.3, oversized coil            3.085  2.438      0.944  0.348 -28.000  1.700  51.893       24.00  7200.000    -65.700
+
+====================================================================================================
+METRICS PER SCENARIO
+scenario                                    Baseline (24 C/55 %, summer)  Switched off  Empty case  Doors fitted  Night cover 12 h  Winter store (21 C/30 %, Tcond 25 C)  Very humid store (24 C/75 %)  Air-curtain fan +50 % flow  \
+1 Energy/day (kWh/d)                                              43.094         0.000      43.094        23.142            35.812                                28.264                        49.432                      64.067   
+2a COP machine                                                     1.700           NaN       1.700         1.916             1.758                                 2.134                         1.657                       1.594   
+2b Heat removed per kWh (system COP)                               1.392           NaN       1.392         1.092             1.394                                 1.626                         1.371                       1.245   
+3 2nd-law eff. (system COP / Carnot)                               0.235           NaN       0.235         0.184             0.235                                 0.210                         0.231                       0.210   
+4 kWh/d per m2 TDA                                                14.365         0.000      14.365         7.714            11.937                                 9.421                        16.477                      21.356   
+5 Service kg.h per kWh                                           167.076           inf       0.000       311.124           201.049                               254.739                       145.655                     112.383   
+6 Capture phi = 1 - Q_inf/Q_tot                                    0.250           NaN       0.250         0.644             0.293                                 0.290                         0.232                       0.266   
+7 Benchmark E_doors/E                                              0.537           inf       0.537         1.000             0.646                                 0.677                         0.489                       0.530   
+10a CO2e kg/day                                                   44.257        29.104      44.257        20.390            36.816                                32.237                        50.257                      61.207   
+10b Cost $/day (electricity)                                       5.762         0.000       5.762         3.094             4.788                                 3.779                         6.609                       8.566   
+9 Net benefit $/day (vs. losing the stock)                        -5.762     -1800.000      -5.762        -3.094            -4.788                                -3.779                        -6.609                      -8.566   
+
+scenario                                    Extra 0.3 kW lights inside  Aisle draft: infiltration x1.3  Draft x1.3, oversized coil  
+1 Energy/day (kWh/d)                                            55.481                          53.946                      51.893  
+2a COP machine                                                   1.660                           1.623                       1.700  
+2b Heat removed per kWh (system COP)                             1.211                           1.372                       1.427  
+3 2nd-law eff. (system COP / Carnot)                             0.204                           0.231                       0.240  
+4 kWh/d per m2 TDA                                              18.494                          17.982                      17.298  
+5 Service kg.h per kWh                                         129.775                         133.467                     138.747  
+6 Capture phi = 1 - Q_inf/Q_tot                                  0.330                           0.210                       0.210  
+7 Benchmark E_doors/E                                            0.623                           0.461                       0.512  
+10a CO2e kg/day                                                 52.105                          54.883                      54.161  
+10b Cost $/day (electricity)                                     7.418                           7.213                       6.938  
+9 Net benefit $/day (vs. losing the stock)                      -7.418                          -7.213                      -6.938  
+
+  DOE cap (VOP.RC.L) at TDA 3.0 m2: 77.9 kWh/d; doored cap (VCT.RC.L): 18.4 kWh/d; ratio 4.23
+  EU SAE (vertical freezer L1) at TDA 3.0 m2: 65.4 kWh/d -> baseline EEI 66%
+  baseline E = 43.1 kWh/d = 55% of DOE cap
+  store heat balance (remote condenser): case pulls 52.2 kWh/d of heat OUT of the store
+  annual CO2e: electricity 5.5 t; R-404A leakage 5.3 t (advanced charge) to 10.6 t (conventional ~2x)
+  charge allocated to case: 6.8 kg (advanced) / 13.5 kg (conv.)

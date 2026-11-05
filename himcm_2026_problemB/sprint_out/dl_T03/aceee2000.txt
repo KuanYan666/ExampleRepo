@@ -1,0 +1,660 @@
+ Assessment of Indoor Relative Humidity Variations on the Energy Use
+and Thermal Performance of Supermarkets’ Refrigerated Display Cases
+
+   Ramin Faramarzi, Southern California Edison, Refrigeration Technology & Test Center
+    Rafik Sarhadian, Southern California Edison, Refrigeration Technology & Test Center
+                       Richard S. Sweetser, EXERGY Partners Corp.
+
+
+
+ABSTRACT
+
+         Each year supermarkets consume about 55 billion kWh of the United States’ electrical
+energy. Refrigeration and air conditioning can contribute up to 75% of this usage. A large portion
+of this energy is utilized to satisfy the cooling load of refrigerated display cases. Furthermore, the
+cooling load of display cases is strongly dependent on the store’s relative humidity. While
+transferring the moisture load from refrigerated fixtures to the air conditioning system can save
+energy, the additional energy cost of dehumidification must be closely evaluated. A reliable
+approach to quantifying the adverse impact of the relative humidity on the energy use of the
+refrigerated display cases can assist supermarket operators in performing such evaluations.
+Additionally, it can provide a robust premise to better evaluate the impact of energy efficiency
+opportunities on the defrost and anti-condensate energy and demand savings.
+         This paper presents the results of laboratory testing of four different display cases commonly
+found in supermarkets, under various indoor conditions. Tests specifically focused on evaluating the
+impact of indoor relative humidity reductions on the cooling load and refrigeration energy use of
+display cases. Due to the variation of electricity rates across the nation and different costs of
+dehumidification options, the economic analysis of the trade-off between refrigeration savings and
+air conditioning penalties in achieving lower indoor humidity was left outside the scope of this
+project.
+         The results showed open vertical case coil loads were considerably more vulnerable to
+changes in indoor humidity than coffin and reach-in fixtures, since infiltration constituted about 80%
+of the total cooling load of open vertical cases. Lowering the relative humidity from 55% to 35%
+reduced the latent load and compressor kW demand of the open vertical dairy case by 74.0% and
+19.6%, respectively. It also reduced the defrost duration by 40.0%.
+
+Introduction
+
+         This project investigated the effects of decreasing indoor ambient relative humidity on the
+performance and energy use of four different types of refrigerated display cases. The four tested
+cases represent fixtures commonly found in supermarkets for storage and merchandising of medium
+and low temperature products. The test results established a correlation between decreasing indoor
+relative humidity and the following key parameters:
+         •       Mass of frost formed on the evaporator coil
+
+
+
+                                Commercial Buildings: Technologies, Design, and Performance Analysis - 3.125
+                 •      Defrost cycle length and power
+                 •      Anti-sweat heater power
+                 •      Discharge air velocity
+                 •      Product temperature
+                 •      Compressor power
+                 •      Display case cooling load
+                 •      Refrigerant mass flow rate
+                 •      Discharge air temperature
+                 •      Frost formation pattern and uniformity
+                 •      Reach-in case door fog refresh rate
+                 The performance of these fixtures was evaluated under equal indoor conditions. Southern
+        California Edison’s (SCE’s) Refrigeration Technology and Test Center (RTTC) was utilized to
+        conduct various tests in the project. The controlled environment chamber of the RTTC was
+        maintained at a fixed dry bulb temperature of 75oF, while its relative humidity was changed from
+        55% to 35% -- in 5% increments -- for all tests. The results of this study indicate a direct
+        correlation between the indoor relative humidity and:
+                 1.     The weight of moisture removed from the air during the process of refrigeration
+                 2.     The fog removal time on freezer glass case doors with equal anti-sweat heater
+                        power (refresh rate)
+
+        Test Scenarios
+
+        Each display case was tested under five scenarios as shown in Table 1.
+
+        Table 1. Test Runs
+
+                                Test Scenario              Room Condition
+
+                                                (Dry Bulb Temp. / Relative Humidity)
+                                      1                      75oF / 35%
+                                      2                      75oF / 40%
+                                      3                      75 oF / 45%
+                                      4                      75 oF / 50%
+                                      5                      75 oF / 55%
+
+
+                The main control parameter for all test scenarios was the suction pressure based on
+        manufacturer’s specifications. Additionally, other parameters such as saturated evaporator and
+        discharge air temperatures were monitored closely. For each fixture, the target suction pressure (as
+        defined by the manufacturer) was maintained constant while the relative humidity inside the
+        controlled environment room varied. All of the tests were conducted with a constant room
+        temperature set at 75°F dry bulb while the relative humidity was varied in 5% increments, from
+        55% to 35%.
+
+
+3.126
+Test Design and Setup
+
+        The most important goal of this project was to capture the effects of indoor relative humidity
+on the power and energy use of four different types of refrigerated display cases. A specification
+summary of these fixtures is given in Table 2. These four tested display cases’ classifications
+represent the largest categories of fixtures found in a typical supermarket.
+
+Table 2. Specification Summary of Tested Fixtures
+
+                                                                DISCHARGE                          HEIGHT
+                                                                 AIR TEMP.                          W/O
+ DISPLAY CASE TYPE      MAKE         MODEL        APPLICATION     (DEG. F)      CAP.        LENGTH WHEELS
+   OPEN - 2 SHELF                   IMPACT M3       MEAT                        1,120
+  FRONT LOADING       HUSSMANN        w/ E-Coil     (M.T.)           28       Btu/hr-ft      8FT      73 15/16"
+   OPEN -5 SHELF                       L6DL8      DAIRY/DELI                    1,492
+  FRONT LOADING         TYLER      ADVANTAGE        (M.T.)          N/A       Btu/-hr-ft     8FT         79"
+  NARROW ISLAND          HILL                      FROZEN                        369
+      COFFIN           PHOENIX       ONIZ(F)        FOOD            -12       Btu/-hr-ft       8FT    34 31/32"
+    GLASS DOOR           HILL                      FROZEN                       1,400       3 DOOR
+     REACH IN          PHOENIX       ORZ(F)         FOOD             -8      Btu/-hr-door     (90")    81 5/8"
+
+
+         All fixtures, with the exception of the coffin case, were tested with their shelf lights on. The
+refrigeration system was charged with a hydroflurocarbon refrigerant (R-404A). The refrigeration
+system’s controller maintained a fixed saturated condensing temperature of 95°F (+ 0.5°F) for all
+tests. For each group of 5 test scenarios, the suction pressure was maintained at a fixed setting
+according to the case manufacturer’s specifications throughout the entire test. This approach
+reasonably captured the effects of relative humidity variations on product temperature as well as
+system energy use. The product temperatures were monitored at the top shelf front right corner,
+top shelf rear center, bottom shelf front left corner, and bottom shelf front center.
+         The American Society of Heating, Refrigerating and Air-conditioning Engineers’
+(ASHRAE) standard 72-83 dictates that in the testing of display cases, the “food product zones
+shall be filled with test packages and dummy products” to simulate the presence of food product in
+the cases. According to ASHRAE standard 72-83, section 7.2.1, food products are composed of
+80% to 90% water, fibrous materials, and salt. Plastic containers completely filled with a sponge
+material that is soaked in a brine solution of salt and water were used to simulate the product during
+the tests. These test packages, or product simulators, were placed in the locations where product
+temperature maintenance was most critical. The spaces in the test fixture where temperature
+measurement was not required were stocked with dummy products to add mass and stabilize the
+temperature in the case.
+         The effects of shopper traffic were also simulated on the open and reach-in fixtures. For the
+reach-in display case, each of the three glass doors was opened manually in sequence using a pulley
+system for 16 seconds, every four minutes, during 8 hours of a 24-hour test. For the vertical cases,
+a low-speed, oscillating, propeller-type fan blew air perpendicularly into their air curtain planes.
+The same fan agitated the horizontal air curtain of the coffin case by blowing air into it at a 45°angle.
+
+
+
+
+                                 Commercial Buildings: Technologies, Design, and Performance Analysis - 3.127
+        A timer was used to turn on the fan for one minute, and turn it off for one minute and 50 seconds.
+        Each test scenario was conducted for a period of 24 hours. Prior to each test, the controlled
+        environment room and the refrigeration system underwent 8 hours of equalization interval to
+        establish steady-state conditions.
+
+        Instrumentation
+
+                 Prior to the test, all temperature and pressure instruments were calibrated. With the
+        objective of minimizing instrument error and maintaining a high level of repeatability and accuracy in
+        the data, careful attention was paid to the design of the monitoring system. The instrumentation
+        system has special grade type-T thermocouples accurate to ± 0.1°C, precision 100Ω platinum
+        resistance temperature device inputs accurate to ± 0.01°C, analog inputs from pressure
+        transducers, dew point sensors, flow meters, and CT-transducers. An RS-232 link communicated
+        instantaneous values of all data points every ten seconds. The dew point sensors located inside the
+        frozen food narrow island coffin case and frozen food reach-in case malfunctioned during the test.
+        Their failure was caused by low operating temperatures of the frozen food cases, which were below
+        sensor tolerance levels. Several alternative approaches were attempted in order to utilize the
+        sensors, but they all failed eventually. After these failures, it was concluded that new dew point
+        sensors with lower temperature tolerance were needed to capture the humidity variation inside the
+        freezer fixtures. It was finally decided to continue the test without this information, due to the high
+        cost of the sensors and the relatively long lead time required to obtain them.
+                 The capturing of the fog refresh rates on glass doors was achieved by the use of an analog
+        video camera system. The camera’s lens was placed at approximately 5 feet away from the glass
+        doors, zooming at a 25” x 20” area at the center of the middle door. The video camera system
+        recorded the entire test scenarios of the reach-in freezer. The camera system was equipped with an
+        8mm lens on a single charged couple device and a VHS Sanyo 40-hour time-lapse tape recorder
+        that allowed the estimation of fog recovery duration.
+                 Every ten seconds, the data acquisition system sampled the scanned data and created time-
+        stamped two-minute averages. The two-minute data were then saved to a file that was closed at
+        the end of each 24-hour period. Edison engineers reviewed the initial data on site at the RTTC to
+        ensure the key control parameters were within acceptable ranges. In the event that any of the
+        control parameters fell outside acceptable limits, the problem was flagged. In such cases, test runs
+        were repeated until correction of the problem. Once the data passed the initial screening process,
+        they were downloaded remotely to SCE’s Irwindale office for further screening and processing.
+                 The weight of condensate during each test scenario and for each display case was measured
+        using a high precision digital scale with + 0.1 gram accuracy. The data acquisition system received
+        the exact condensate weight measurements from the digital scale every two minutes. Therefore, it
+        became possible to closely monitor and distinguish between the moisture removal from the air during
+        refrigeration cycle and defrost periods. At the end of each test period, the condensate data were
+        also aggregated into hourly and daily values.
+
+
+
+
+3.128
+Controlled Environment Room Condition
+
+          The display cases were tested in the controlled environment room of the RTTC. The
+controlled environment room is an isolated thermal zone served by independent cooling, heating and
+humidification systems. This allowed simulation of various indoor conditions of a supermarket. The
+sensible cooling load representing people and other heat gain sources was provided by a constant
+volume direct expansion system reclaiming the waste refrigeration heat via a six-row coil. Auxiliary
+electric heaters located down-stream of the heat reclaim coils provided additional heating when
+required. While the air was conditioned to a desired thermostatic set point, an advanced ultrasonic
+humidification unit introduced precise amounts of moisture to the air surrounding the display cases,
+representing the latent load due to outside air and people.
+          Three rectangular laminar diffusers supplied approximately 1,100 cubic feet per minute of
+air into the room. The intensity of ambient lighting in the controlled environment room, as measured
+from the center of the test fixture opening at a distance of 1 foot from the air curtain, was 115 foot-
+candles. This complied with ASHRAE standard 72-83, which requires the lighting intensity not to
+be less than 75 foot-candles at this location.
+
+Discussion of Results
+
+        Figure 1 shows the weight of moisture in the form of condensate collected at the end of
+each test. Clearly, open vertical meat and dairy fixtures demonstrated more vulnerability to humidity
+variations, and removed more moisture from the air than the coffin and reach-in units. In other
+words, the mass of condensate collected at the end of each test indicated that frost formation on the
+evaporator coil of all fixtures increased as relative humidity inside the controlled environment room
+was raised (Figure 1). The increase in frost accumulation on the evaporator coil, and resultant
+increase in condensate weight, was greatest for open vertical cases. The lowering of indoor
+humidity from 55% to 35% reduced the weight of condensate collected from the meat and dairy
+cases by 61.7% and 73.2%, respectively.
+
+
+
+
+                                Commercial Buildings: Technologies, Design, and Performance Analysis - 3.129
+                                   90
+                                                                                                                                                             79.4       80.4
+                                   80
+                                                                                                                                        67.1
+         Condensate Mass (lbs)
+
+                                                                                                                                67.1
+                                   70
+                                   60                                                              52.8     52.9
+                                   50
+                                                                        39.3
+                                   40
+                                             30.4                                36.6
+                                   30               21.6
+                                                                                                                                               14.3
+                                   20                                            11.4                              11.9
+                                                           9.7                                                                                        4.9                          6.3
+                                   10                            3.0                    4.0                               4.5
+                                       0
+                                                    35%                        40%                          45%                          50%                            *55%
+                                                                                                      Test Scenarios
+
+                                                           Meat Case                                                            Dairy/Deli Case
+                                                           Frozen Food Case (Reach-In)                                          Frozen Food Case (Coffin)
+                                           * Results of 55% test for frozen food case (reach-in) is not shown due to the corruption of post processed data
+
+        Figure 1. Comparison of Total Collected Condensate vs. Relative Humidity (All Four
+        Tested Display Cases)
+
+                  The cooling load of open vertical meat and dairy/deli fixtures proved to be more sensitive to
+        the humidity fluctuations than coffin and reach-in units. Coupling the experimental data with heat
+        transfer and thermodynamic equations, provided a sound approach for determining the individual
+        cooling load components for all the fixtures. The cooling load analyses of three of the fixtures
+        confirmed that infiltration makes up roughly 80% of the open vertical cases’ load. The role of
+        infiltration relatively diminishes for the coffin case while radiation takes over (Figure 2). The extreme
+        vulnerability of open vertical cases’ performance and energy use to indoor humidity variations is
+        mainly due to their large infiltration loads.
+
+                         100%
+                                             6%                                               7%                                                                             7%
+                                             3%                                                                                 % Pull-Down-                                 4%
+                                 90%                                                          2%                                Defrost                                      5%
+                                 80%
+                                                                                                                                % Anti-Sweat
+                                                                                                                                Heaters                                      24%
+                                 70%
+                                                                                                                                % Lights
+                                 60%
+
+
+                                 50%         81%                                         78%                                    % Evap-Fans
+
+                                 40%                                                                                                                                         43%
+                                                                                                                                % Infiltration
+                                 30%
+
+                                                                                                                                % Radiation
+                                 20%
+
+
+                                 10%                                                                                            % Conduction                                 18%
+                                              8%                                         10%
+                                              3%                                          3%
+                                 0%
+                                                Meat Case (open vertical)                     Dairy/Deli Case (open vertical)                         Frozen Food (Coffin)
+
+
+
+
+        Figure 2. Refrigeration Load Percentage Breakdown for Meat, Dairy/Deli and Frozen
+        Food (Coffin) at 75oF Dry Bulb and 55% Relative Humidity
+
+
+
+
+3.130
+         The decrease in indoor relative humidity had an immediate impact on the latent load of all
+fixtures. As shown in Figure 2, the infiltration accounts for approximately 80% of the cooling load
+of open vertical cases. This factor brought about a considerable latent load penalty for open vertical
+display cases (Figure 3). The growth in mass of condensate at higher indoor relative humidity levels
+is a clear indication of the increase in refrigeration systems’ latent load. Lowering the indoor
+humidity from 55% to 35% resulted in 62.0% and 74.0% reduction in latent loads of the meat and
+dairy cases, respectively.
+
+                              4,500                                                                                             4,198
+                                                                                                                                        4,041
+                              4,000
+                                                                                                           3,587
+ Total Latent Load (Btu/hr)
+
+
+
+
+                              3,500                                                                                  3,376
+                              3,000                                             2,786        2,636
+                              2,500
+                                                               2,057
+                              2,000                                     1,807
+                                       1,594
+                              1,500
+                                               1,050
+                              1,000                                     599                      621                     748
+                                                   510                                                                                           328
+                               500                       159                    211                      234                   257
+                                 0
+                                                35%                    40%                   45%                   50%                  *55%
+                                                                                        Test Scenarios
+
+                                                   Meat Case                                               Dairy/Deli Case
+                                                   Frozen Food Case (Reach-In)                             Frozen Food Case (Coffin)
+
+                                      * Results of 55% test for frozen food case (reach-in) is not shown due to the corruption of post processed data
+
+Figure 3. Comparison of Total Latent Load vs. Relative Humidity (All Four Tested
+Display Cases)
+
+         The effect of decreasing latent load, as a result of lowering indoor humidity, was reflected
+directly on the power consumption of the test compressor (Figure 4).1 As expected, open vertical
+meat and dairy cases showed the highest increase in their compressor power demand as indoor
+relative humidity increased. Lowering of relative humidity from 55% to 35% for these two fixtures
+resulted in 17.7% and 19.6% reduction in compressor power, respectively.
+
+
+
+
+                                  1
+          The test compressor and its rack system were not designed specifically for the subject casework and
+therefore will have certain inefficiencies that would appear in actual system design. Therefore, refrigerant
+cooling load is a preferred measure of system performance.
+
+
+                                                                 Commercial Buildings: Technologies, Design, and Performance Analysis - 3.131
+                                                             1.6
+                                                                                                                                                                                   1.45                                   1.53
+                                                                                                                                                   1.38                                                      1.37
+                                                             1.4
+                                                                                                                   1.30                     1.26                            1.31
+                                                                               1.23
+                                                                       1.13                  1.30          1.19               1.30                                                             1.29
+                          Normalized Compressor Power (kW)
+
+
+
+
+                                                             1.2
+                                                                                                                                                              1.18
+                                                                                                                                                                                                                              0.93
+                                                             1.0
+
+
+                                                             0.8
+                                                                                                    0.77                             0.79                            0.85                             0.87
+
+                                                             0.6
+
+                                                             0.4
+
+                                                             0.2
+                                                                                  35%                                40%                             45%                               50%                             *55%
+
+                                                                                                                                              Test Scenarios
+
+                                                                          Meat Case                  Dairy/Deli Case                 Frozen Food Case (Reach-In)                             Frozen Food Case (Coffin)
+
+                                                                        * Results of 55% test for frozen food case (reach-in) is not shown due to the corruption of post processed data
+
+        Figure 4. Comparison of Normalized Compressor Power Consumption vs. Relative
+        Humidity (All Four Tested Display Cases)
+
+               Figure 5 shows that lowering of relative humidity from 55% to 35% for the open vertical
+        meat and dairy cases resulted in 20.7% and 20.8% reduction in the total cooling loads, respectively.
+
+                                                             2,000
+                                                                                                                                                                                          1,675                          1,779
+                                                             1,800
+                                                                                                                           1,493                          1,594                1,527                           1,631
+                                                             1,600
+         Total Cooling Load (Btu/hr-ft)
+
+
+
+
+                                                                              1,293         1,409                                              1,453
+                                                                                                                  1,368
+                                                             1,400
+
+                                                             1,200
+
+                                                             1,000
+
+                                                              800
+                                                              600
+
+                                                              400
+
+                                                              200
+
+                                                                   0
+                                                                                      35%                             40%                              45%                             50%                             *55%
+                                                                                                                                              Test Scenarios
+
+                                                                                                            Meat Case                                                       Dairy/Deli Case
+
+
+        Figure 5. Comparison of Total Cooling Load vs. Relative Humidity (Meat and Dairy/Deli
+        Cases)
+
+                 Results of testing the four different refrigerated display case types under various indoor
+        relative humidity conditions clearly indicate that the energy use of these cases is dependent on
+        humidity. Except for some anomalies observed in the results of low temperature fixtures tests, all
+        other tests showed an increase in compressor energy use as indoor relative humidity increased
+
+
+
+
+3.132
+(Figure 6). Compressor energy use of open vertical fixtures seemed more vulnerable to humidity
+variation than the reach-in and coffin units. The inconsistencies in reach-in display case test results
+were consequence of human errors introduced in the test during door opening and closing sessions.
+The increase in compressor energy demand of all tested fixtures under more humid conditions was a
+direct result of the evaporator heat transfer and rise in air pressure drop across the coil.
+
+                                       35
+                                                          29.9                         29.9                                                                               30.5
+                                                                                                                                        29.0         29.8
+                                       30
+                                                                                                               27.6    27.2                                        27.4
+                                                                               26.0                                              26.2
+                                                   24.5                                                 25.1
+  Normalized Compressor Energy (kWh)
+
+
+
+
+                                       25
+                                            22.6                        23.9                                                                                                       21.3
+                                                                                              18.3                        19.5                              20.0
+                                       20
+                                                                 17.6
+
+                                       15
+
+
+                                       10
+
+                                       5
+
+                                       0
+                                                      35%                             40%                        45%                           50%                          *55%
+
+                                                                                                           Test Scenarios
+
+                                                Meat Case               Dairy/Deli Case              Frozen Food Case (Reach-In)                     Frozen Food Case (Coffin)
+
+                                            * Results of 55% test for frozen food case (reach-in) is not shown due to the corruption of post processed data
+
+Figure 6. Comparison of Normalized Compressor Energy Consumption vs. Relative
+Humidity (All Four Tested Display Cases)
+
+         The thermal performance and energy use of the low temperature reach-in case was severely
+impacted by the door opening frequencies and their intervals. Coupled with their electric defrost
+and anti-sweat heaters, the reach-in case had the highest total system energy use during the 24 hour
+test period. Figure 7 reconfirms that, of the four display cases tested, the total system energy use of
+open vertical meat and dairy/deli fixtures was most vulnerable to relative humidity changes. The
+growth in total system energy use of open vertical cases is dictated by the increase in compressor
+power use under more humid conditions. The total system energy use results depicted in Figure 7
+include compressor, fixture lights, evaporator fan motors, electric defrost, and anti-sweat heaters.
+The condenser energy use was not included in these results.
+
+
+
+
+                                                                                Commercial Buildings: Technologies, Design, and Performance Analysis - 3.133
+                                      60
+                                                          53.4                            53.3                                                       53.2
+                                                                                                                         50.4
+                                      50
+
+                                                                                                                 37.2                                                       40.2
+                                                                                                                                              38.6
+          Total System Energy (kWh)
+
+
+
+
+                                      40                                          35.6
+                                                  34.1                                                                                 33.7                          34.9
+                                                                           31.4                           32.6
+                                           30.1                                                                                                                                      27.0
+                                      30
+                                                                                                                                25.1                          25.8
+                                                                 23.3                            23.9
+
+                                      20
+
+
+                                      10
+
+
+                                       0
+                                                         35%                             40%                            45%                      50%                          *55%
+
+                                                                                                             Test Scenarios
+
+                                            Meat Case                   Dairy/Deli Case                 Frozen Food Case (Reach-In)                         Frozen Food Case (Coffin)
+
+                                           * Results of 55% test for frozen food case (reach-in) is not shown due to the corruption of post processed data
+
+        Figure 7. Comparison of Total System Energy Consumption vs. Relative Humidity (All
+        Four Tested Display Cases)
+
+                 The fogging effect on the reach-in display case under different indoor relative humidities was
+        evaluated. Fogging of the reach-in glass doors has an adverse impact on the merchandising
+        capability of the display case, and its quick recovery may require additional power consumption by
+        the anti-sweat heater. Figures 8 (a) and (b) clearly illustrate the visual effect of fogging before and
+        after the middle glass door was opened in the test environment of 75oF dry bulb and 50% relative
+        humidity.
+
+
+
+
+                                                                          (a)                                                                                (b)
+
+        Figure 8. Comparison of Visibility Due to Fogging Effect on the Middle Glass Doors for
+        75oF Dry Bulb and 50% Relative Humidity Test Scenario
+
+                 It then became one of the objectives of this investigation to determine the potential impact of
+        reduced indoor relative humidity on the length of time required to clear the fogging. Additionally, a
+        sensitivity test was conducted to determine the fog clearance time required for the fixture at lowest
+        indoor relative humidity of 35% while the anti-sweat heater was turned off.
+
+
+
+
+3.134
+        Quantification of the impact of reduced indoor relative humidity on the length of time
+required for the fogging to be cleared was determined using a time calibrated analog video camera.
+Figure 9 compares the fog recovery time requirements under various indoor relative humidity
+conditions. Clearly, the fog recovery time increased as a function of indoor relative humidity.
+Lowering the relative humidity from 50% to 35% resulted in 69.2% reduction in fog recovery time.
+Additionally, operating the fixture at 35% relative humidity with anti-sweat heaters off yielded
+equivalent results to running the display case with anti-sweat heaters on, under indoor relative
+humidity conditions between 45% and 50%.
+
+
+
+
+                               90
+
+                                                                                78
+                               80
+
+                                                                                                    69
+                               70
+
+                                                               60
+ Fog Recovery Time (seconds)
+
+
+
+
+                               60
+                                            55
+
+                               50
+
+
+                               40
+
+
+                               30
+                                    24
+
+                               20
+
+
+                               10
+
+
+                                0
+                                    35%    40%                 45%              50%           35% without ASH
+
+
+                                                           Test Scenarios
+
+
+
+
+Figure 9. Fog Recovery Time and Actual Fog Image on Middle Glass Door for Each Test
+Scenario
+
+Conclusions and Recommendations
+
+         The results of this study indicate that there is a direct relation between the indoor relative
+humidity and the weight of moisture removed from the air during the process of refrigeration.
+Clearly, open vertical meat and dairy fixtures demonstrated more vulnerability to humidity variations,
+and removed more moisture from the air than the coffin and reach-in units. Decreasing indoor
+relative humidity had an immediate impact on the latent load of all fixtures. Since infiltration
+accounted for approximately 80% of the cooling load of open vertical cases, decreasing relative
+humidity caused a significant latent load reduction for these fixtures. The effect of latent load
+reduction, as a result of lowering indoor humidity, was reflected directly on the evaporator coil load
+and consequently the power consumption of the test compressor. As expected, open vertical meat
+
+
+
+
+                                          Commercial Buildings: Technologies, Design, and Performance Analysis - 3.135
+        and dairy case showed the largest reduction in evaporator coil load and, subsequently, in test
+        compressor power demand as indoor relative humidity fell.
+                 This study also provides important quantification of the impact of reduced indoor relative
+        humidity on the length of time required for the reach-in freezer glass door fogging to be cleared.
+        Clearly, the fog recovery time increased as a function of indoor relative humidity. Lowering the
+        relative humidity from 50% to 35% resulted in 69.2% reduction in fog recovery time. Additionally,
+        operating the fixture at 35% relative humidity with anti-sweat heaters off yielded equivalent results to
+        running the display case with anti-sweat heaters on, under indoor relative humidity conditions
+        between 45% and 50%.
+                 Supermarket designers and operators should reexamine various cost-effective means to
+        maintain reasonably low relative humidity levels in stores. The trade-off between refrigeration
+        savings and air conditioning penalties in achieving lower indoor humidity must be closely evaluated.
+        Additionally, the use of smart defrost and anti-sweat heater control technologies could bring about
+        more energy saving opportunities under low indoor humidity conditions.
+                 It also seems important to investigate the design of more effective air curtain systems for
+        reducing the infiltration load of open vertical cases. This load component was the only factor in
+        introducing indoor moisture to these display cases. Also, researching the effects of evaporator
+        configuration and arrangement on the frost formation density and pattern, as well as on defrost
+        efficiency, could result in valuable energy efficiency opportunities.
+
+        References
+
+        [EPRI] Electric Power Research Institute (EPRI). December 1992. Field Testing of High-
+               Efficiency Supermarket Refrigeration. EPRI TR-100351.
+
+        [ASHRAE] American Society of Heating, Refrigerating and Air-conditioning Engineers. 1993.
+             Fundamentals. Handbook, I-P Edition.
+
+
+
+
+3.136
+

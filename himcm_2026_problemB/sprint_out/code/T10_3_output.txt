@@ -1,0 +1,75 @@
+============================================================================================
+A. 'Air 5 C / 8 C cooler' -> how much cooler does it FEEL?  (v fixed at 0.5 m/s)
+   felt drop in each index, degC.   tr = mean radiant temperature
+============================================================================================
+Houston 32.5/56    dT=8: IMPOSSIBLE (wet-bulb depression only 7.3 C)
+Singapore 31.3/62  dT=8: IMPOSSIBLE (wet-bulb depression only 6.0 C)
+             case  dT_air           radiant  RH_new  dW_gkg  SET  UTCI   AT   HI  Humidex  WBGT
+     design 43/12       5      tr fixed = T   20.40    1.98 1.00   3.5 3.96 3.86     3.23  1.60
+     design 43/12       5 tr falls with air   20.40    1.98 2.38   4.7 3.96 3.86     3.23  1.60
+     design 43/12       5   tr fixed = T+10   20.40    1.98 0.72   3.4 3.96 3.86     3.23  1.60
+     design 43/12       8      tr fixed = T   27.40    3.17 1.67   5.7 6.34 6.45     5.17  2.56
+     design 43/12       8 tr falls with air   27.40    3.17 4.09   7.7 6.34 6.45     5.17  2.56
+     design 43/12       8   tr fixed = T+10   27.40    3.17 1.21   5.5 6.34 6.45     5.17  2.56
+  Phoenix 41.3/13       5      tr fixed = T   22.23    1.98 1.11   3.5 3.96 4.10     3.23  1.60
+  Phoenix 41.3/13       5 tr falls with air   22.23    1.98 2.57   4.8 3.96 4.10     3.23  1.60
+  Phoenix 41.3/13       5   tr fixed = T+10   22.23    1.98 0.82   3.5 3.96 4.10     3.23  1.60
+  Phoenix 41.3/13       8      tr fixed = T   29.94    3.18 1.87   5.6 6.34 6.66     5.16  2.56
+  Phoenix 41.3/13       8 tr falls with air   29.94    3.18 4.40   7.7 6.34 6.66     5.16  2.56
+  Phoenix 41.3/13       8   tr fixed = T+10   29.94    3.18 1.37   5.5 6.34 6.66     5.16  2.56
+  Seville 36.2/21       5      tr fixed = T   34.71    1.99 1.50   3.4 3.96 4.13     3.22  1.60
+  Seville 36.2/21       5 tr falls with air   34.71    1.99 3.19   4.7 3.96 4.13     3.22  1.60
+  Seville 36.2/21       5   tr fixed = T+10   34.71    1.99 1.13   3.3 3.96 4.13     3.22  1.60
+  Seville 36.2/21       8      tr fixed = T   46.20    3.20 2.52   5.1 6.33 6.25     5.14  2.55
+  Seville 36.2/21       8 tr falls with air   46.20    3.20 5.49   7.3 6.33 6.25     5.14  2.55
+  Seville 36.2/21       8   tr fixed = T+10   46.20    3.20 1.90   5.0 6.33 6.25     5.14  2.55
+  Houston 32.5/56       5      tr fixed = T   83.13    2.03 1.92   2.3 3.97 5.72     3.19  1.60
+  Houston 32.5/56       5 tr falls with air   83.13    2.03 4.26   3.5 3.97 5.72     3.19  1.60
+  Houston 32.5/56       5   tr fixed = T+10   83.13    2.03 1.27   2.3 3.97 5.72     3.19  1.60
+Singapore 31.3/62       5      tr fixed = T   91.96    2.04 2.15   2.1 3.97 7.10     3.18  1.60
+Singapore 31.3/62       5 tr falls with air   91.96    2.04 4.71   3.4 3.97 7.10     3.18  1.60
+Singapore 31.3/62       5   tr fixed = T+10   91.96    2.04 1.40   2.0 3.97 7.10     3.18  1.60
+
+Felt fraction f = (felt drop in SET) / (air drop):
+   design 43/12       dT=5:  tr fixed = T: 0.20   tr falls with air: 0.48   tr fixed = T+10: 0.14
+   design 43/12       dT=8:  tr fixed = T: 0.21   tr falls with air: 0.51   tr fixed = T+10: 0.15
+   Phoenix 41.3/13    dT=5:  tr fixed = T: 0.22   tr falls with air: 0.51   tr fixed = T+10: 0.16
+   Phoenix 41.3/13    dT=8:  tr fixed = T: 0.23   tr falls with air: 0.55   tr fixed = T+10: 0.17
+   Seville 36.2/21    dT=5:  tr fixed = T: 0.30   tr falls with air: 0.64   tr fixed = T+10: 0.23
+   Seville 36.2/21    dT=8:  tr fixed = T: 0.32   tr falls with air: 0.69   tr fixed = T+10: 0.24
+   Houston 32.5/56    dT=5:  tr fixed = T: 0.38   tr falls with air: 0.85   tr fixed = T+10: 0.25
+   Singapore 31.3/62  dT=5:  tr fixed = T: 0.43   tr falls with air: 0.94   tr fixed = T+10: 0.28
+
+============================================================================================
+B. ONE SCALE: how big an AIR drop does an evaporative cooler need to match a fan that
+   truly gives CE = 3 C (still air reference)?  (tr fixed = T, v fixed)
+============================================================================================
+   design 43/12       air must drop 13.16 C to feel 3 C cooler (SET)
+   Phoenix 41.3/13    air must drop 12.02 C to feel 3 C cooler (SET)
+   Seville 36.2/21    air must drop 9.29 C to feel 3 C cooler (SET)
+   Houston 32.5/56    even saturating the air (drop 7.3 C) gives only 2.98 C felt
+   Singapore 31.3/62  even saturating the air (drop 6.0 C) gives only 2.67 C felt
+
+============================================================================================
+C. THE ONE SCALE: felt temperature drop FTD (ambient-equivalent degC, same unit as the
+   ASHRAE cooling effect in which the fan's '3 C' is written).
+============================================================================================
+case               dT_air   v0 | FTD surfaces hot FTD surfaces cool | humidity cost  radiant cost
+design 43/12            5  0.5 |             1.68              3.94 |     1.06 C       2.26 C
+design 43/12            5  1.0 |             2.19              4.06 |     0.94 C       1.88 C
+design 43/12            8  0.5 |             2.79              6.58 |     1.42 C       3.80 C
+design 43/12            8  1.0 |             3.63              6.77 |     1.23 C       3.14 C
+Phoenix 41.3/13         5  0.5 |             1.78              4.05 |     0.95 C       2.27 C
+Phoenix 41.3/13         5  1.0 |             2.29              4.16 |     0.84 C       1.87 C
+Phoenix 41.3/13         8  0.5 |             2.95              6.76 |     1.24 C       3.80 C
+Phoenix 41.3/13         8  1.0 |             3.81              6.95 |     1.05 C       3.14 C
+Seville 36.2/21         5  0.5 |             2.01              4.26 |     0.74 C       2.25 C
+Seville 36.2/21         5  1.0 |             2.53              4.39 |     0.61 C       1.86 C
+Seville 36.2/21         8  0.5 |             3.36              7.22 |     0.78 C       3.86 C
+Seville 36.2/21         8  1.0 |             4.25              7.45 |     0.55 C       3.20 C
+Houston 32.5/56         5  0.5 |             1.68              3.84 |     1.16 C       2.16 C
+Houston 32.5/56         5  1.0 |             2.29              4.17 |     0.83 C       1.88 C
+Singapore 31.3/62       5  0.5 |             1.79              4.06 |     0.94 C       2.26 C
+Singapore 31.3/62       5  1.0 |             2.45              4.43 |     0.57 C       1.98 C
+
+saved figs/T10_evap_felt_vs_air.png

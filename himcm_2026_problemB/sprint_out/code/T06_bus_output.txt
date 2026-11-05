@@ -1,0 +1,12 @@
+fan air speed implied by 'feels 3 C cooler' at 43 C/12 %: 1.17 m/s
+Dry design hour 43 C / 12 % RH   Fan 0.25 kW  P=0.25 kW  dSET= 1.82 C  felt relief= 3.00 C   eta = 12.00 person.C.h per kWh (per person served)
+Dry design hour 43 C / 12 % RH   Evap 1.2 kW  P=1.20 kW  dSET= 0.77 C  felt relief= 1.29 C   eta =  1.08 person.C.h per kWh (per person served)
+Dry design hour 43 C / 12 % RH   Evap 2.5 kW  P=2.50 kW  dSET= 1.37 C  felt relief= 2.28 C   eta =  0.91 person.C.h per kWh (per person served)
+Humid hour 34 C / 60 % RH        Fan 0.25 kW  P=0.25 kW  dSET= 2.83 C  felt relief= 2.23 C   eta =  8.91 person.C.h per kWh (per person served)
+Humid hour 34 C / 60 % RH        Evap 1.2 kW  P=1.20 kW  dSET= 0.33 C  felt relief= 0.25 C   eta =  0.21 person.C.h per kWh (per person served)
+Humid hour 34 C / 60 % RH        Evap 2.5 kW  P=2.50 kW  dSET= 0.57 C  felt relief= 0.44 C   eta =  0.17 person.C.h per kWh (per person served)
+sensitivity: if the cooled air also cooled the shelter surfaces (tr = mixed air T):
+   Dry design hour 43 C / 12 % RH   Evap 1.2 kW: felt relief 3.79 C
+   Dry design hour 43 C / 12 % RH   Evap 2.5 kW: felt relief 6.73 C
+   Humid hour 34 C / 60 % RH        Evap 1.2 kW: felt relief 0.76 C
+   Humid hour 34 C / 60 % RH        Evap 2.5 kW: felt relief 1.35 C

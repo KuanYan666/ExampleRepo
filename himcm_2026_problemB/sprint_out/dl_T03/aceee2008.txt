@@ -1,0 +1,603 @@
+                       Cool Retrofit Solutions in Refrigerated Display Cases
+               Devin Rauss, Scott Mitchell, and Ramin Faramarzi, Southern California Edison
+
+
+       ABSTRACT
+
+                Supermarkets consume roughly 50 kWh per square foot in electricity—one of the highest
+       energy use intensities of all building types. Refrigeration accounts for nearly 50% of electrical
+       energy use and 30-40% of that is utilized by refrigerated display cases. Historically, display case
+       manufacturers have not invested much in energy-efficiency improvements of their products. This
+       has primarily been due to the lack of energy efficiency standards and the fact that electricity
+       accounts for a small portion, only 2%, of total supermarket operating costs. (SCE RTTC 2007)
+                Retrofitting display cases can significantly improve the energy use of refrigeration
+       equipment. This paper presents laboratory tests results of several energy-efficient retrofit
+       technologies for refrigerated reach-in display cases. These measures are intended to impact
+       energy use of display cases due to improved lighting, the use of anti-fog film, and reduced
+       infiltration from improved door gaskets.
+
+       Fiber Optic, LED, and Cold Cathode Lighting
+
+               Standard T-8 fluorescent lighting was compared with LED, fiber optic and cold cathode
+       lighting in a low temperature display case. Lighting quality, direct lighting power consumption,
+       and secondary effects on refrigeration system (due to heat dissipation) were examined. Total
+       estimated annual energy savings in California Climate Zone (CTZ) 9 were 314 kWh for LED,
+       556 kWh for fiber optic, and 444 kWh for cold cathode, each savings on a per door basis. CTZ 9
+       was selected to represent an “average” climate.
+
+       Anti-Fog Film for Glass Doors
+
+              This technology is applied to the inner surface of glass doors to prevent fog formation
+       when the door opens. Manufacturers claim that the need for anti-sweat heaters can be greatly
+       reduced or eliminated, saving over 900 kWh per door annually (RTTC 2007).
+
+       Door Gasket
+
+               Gaskets often wear out due to the harsh treatment they receive in the store environment.
+       However, there is very little research quantifying the effects of the resulting air leakage on
+       refrigeration energy consumption. This study quantified the cooling load impact of improperly
+       maintained glass door gaskets, and the resulting compressor demand implications. Annual
+       energy savings ranged from 4 to 22 kWh per foot of gasket replaced, depending on climate zone
+       and application.
+               Lessons learned from these projects will enhance Southern California Edison (SCE)
+       energy efficiency incentives and could provide meaningful data to reformulate both state and
+       federal codes and standards.
+
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                    9-233
+       Test Methodology
+               A series of laboratory experiments was conducted by SCE’s Refrigeration and Thermal
+       Test Center (RTTC) on a 3-door reach-in low temperature (LT), or “freezer”, display case. Tests
+       were conducted at the RTTC according to ASHRAE Test Method 72-2005 “Methods of Testing
+       Commercial Refrigerators and Freezers” (ASHRAE 2005). This standard requires monitoring
+       certain key variables within the display case, as well as ambient conditions inside the test
+       chamber. A LabVIEW-based data acquisition system was used to record measurements every
+       minute over the 24-hour test period. One deviation from the test method was made for the
+       lighting and door gasket tests, in that, the glass doors were not opened according to the specified
+       schedule. The intent was to remove inconsistencies in cooling load caused by infiltration and to
+       focus solely on the effects of these technologies. For the anti-fog film test, doors were opened as
+       required due to the interest in fog formation and clearing time.
+               In addition to testing the lighting systems under ASHRAE Test Method 72-2005, a series
+       of light quality tests was performed. These tests were designed to assess the lighting technologies
+       for luminance, uniformity, and glare. The analysis from these tests and a more thorough
+       description of the test setup are included in the lighting technologies section.
+
+       Lighting Technologies
+
+       Background
+
+               Typical display cases use fluorescent lighting systems that introduce a significant amount
+       of heat into the cold space. New lighting technologies, such as the Light Emitting Diode (LED),
+       Fiber Optic (FO), and Cold Cathode (CCFL) systems, claim to consume less power and provide
+       improved light quality for merchandising while reducing the amount of heat introduced to the
+       cold space.
+               In 2006, the RTTC conducted a series of tests to compare the performance of T8, LED,
+       and FO systems (SCE RTTC 2007). Due to rapid technological advances, some of the products
+       tested in this project have been superceded with newer, better performing models, especially in
+       the LED system. Though not included in the laboratory tests, supplemental information is also
+       provided for CCFL systems based on a very limited investigation.
+
+       T8 fluorescent. For many years, T12 lamps with magnetic ballasts were the standard lighting
+       system in refrigerated display cases. T12s have essentially been phased out of new equipment.
+       Today, the industry standard lighting system is T8 fluorescent with electronic ballast. The 3-door
+       display case used for testing was equipped with four 5-foot T8 high-output (HO) lamps mounted
+       vertically behind the door frame and two electronic ballasts, each serving two lamps. These
+       lamps are special HO lamps designed for low temperature applications. Unfortunately, in stores
+       they are often replaced with standard, low efficiency, 40W T8 lamps, which are less expensive.
+               The cold temperatures of refrigerated cabinets cause fluorescent lamps to flicker and have
+       reduced life. To improve performance of fluorescent lamps, a rounded plastic lens houses the
+       lamp. The dissipated lamp heat is then trapped within the lens assembly, resulting in higher
+       operational temperature for the lamp. However, these lens assemblies can not trap all of the heat
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                    9-234
+       generated by the lamps. The heat that can not be sequestered is dispersed into the refrigerated
+       cabinet, creating more work for the compressor.
+
+       LED lighting. Today, the refrigeration industry is very interested in LED lighting systems. LED
+       manufacturers have claimed many benefits for their products which have caught the attention of
+       display case manufacturers and case operators. Some of their claims include:
+
+       •       Lower power demand.
+       •       Less heat into the case, resulting in compressor energy savings.
+       •       Longer operating life.
+       •       Even distribution of light across the shelves.
+       •       Invisible light source so merchandise is highlighted.
+       •       Dimmability and programmability to reduce demand and energy consumption during
+               low-traffic periods.
+       •       Impact resistant so the worry of potentially-hazardous lamp breakage is avoided.
+
+               LEDs are semiconductor devices that emit light when there is a proper amount of current
+       in the semiconductor material. An LED driver is required to properly regulate the current to the
+       LED, similar to a ballast for a fluorescent system. LED light can vary in color and, for white
+       light, color quality as well. There are two ways to achieve white light with LEDs. One way is to
+       use a mix of red, green, and blue LEDs. The other, more popular method, which is used in this
+       project, uses blue LED with a phosphor to produce white light. Like all semiconductor materials,
+       LEDs generate heat which causes their performance to degrade as the surrounding temperature
+       increases. This heat is typically dissipated through a heat sink. Some products have integrated
+       heat sinks that use the fixture itself as the heat sink material.
+               The LED lighting system used in this study was chosen because it was commercially
+       available from the display case manufacturer. At the onset of this project, the LED system under
+       study was believed to be the most advanced market-ready LED system for display case
+       applications. However, since the inception of this project, rapid advances in LED technology
+       have led to superior performing products. The tested technology is comprised of a linear strip of
+       LEDs mounted on a reflective background separated by reflective diffraction housings. In order
+       to create even light distribution throughout the display case, each center fixture has 32 individual
+       LEDs and the two side fixtures have 16 LEDs. Two power supplies installed in the electrical
+       raceway drove the four LED fixtures.
+
+       Fiber optic lighting. FO lighting is another innovative solution, but has not yet experienced the
+       same degree of popularity as LED. Manufacturers of FO lighting systems have offered the
+       following claims of supremacy over T8 fluorescent:
+
+       •       Reduced power demand.
+       •       Removed heat generating light source from cold space, resulting in compressor energy
+               savings.
+       •       Longer operating life.
+       •       Even distribution of light across the shelves.
+       •       Improved directional control, greatly reducing light spillage into the aisle.
+       •       Easier lamp change-out.
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                     9-235
+       •       Less potential for hazardous lamp breakage because the light bulb is moved to an out-of-
+               reach location.
+
+       The basic premise of FO lighting systems is that a remote light source feeds light into a fiber
+       distribution system which is then dispersed by a light delivery fixture. This setup allows the light
+       to reach the products, but moves the heat generating light source outside the refrigerated space;
+       thus reducing work of the compressor. Figure 1 is a collection of photographs taken of the
+       installed FO lighting system, showing the various components.
+
+                          Figure 1. FO Lighting System Overview and Lamp Detail
+
+
+
+
+                 Light                          Light
+
+
+
+
+               Typically, heat generated from the FO light source is dissipated to the surrounding
+       environment of the display case. This heat will slightly increase the thermal load imposed on the
+       HVAC system that provides comfort cooling in supermarkets. From a previous study (RTTC
+       2006), the estimated added thermal load in the HVAC system from a FO light source is roughly
+       85 Btu/hr per door.
+               The system studied here is commercially available for display case retrofit applications
+       and claims to provide better light quality than other FO products on the market. As with LEDs,
+       there is rapid development in this technology (including using LED light sources) and several
+       manufacturers with competing products. The performance of these systems should also be re-
+       evaluated on a recurring basis.
+               In this particular system, the light source was a 68 W dual-parabolic cloverleaf metal
+       halide lamp. The unique configuration of this lamp allows all light to be focused in two
+       directions, as indicated in Figure 1. Light is then fed into three large diameter fibers butting up to
+       each end of the lamp. The light travels through a flexible fiber into the refrigerated space, where
+       it is connected to a luminaire mounted on the inside of the door frame. The rigid fiber luminaire
+       has an array of reflective media on one side which controls how and where light is emitted from
+       the rod. One benefit of the reflective media is it can be used to expel extra light at the top of the
+       rod in order to properly illuminate the top shelf. Two luminaire rods are required for each door,
+       for a total of six in this three-door cabinet. Each illuminator feeds light to six fibers, allowing it
+       to provide light to three doors.
+
+       Cold cathode fluorescent lighting. Cold cathode fluorescent (CCFL) lighting systems are
+       relatively new and were not included in the original scope of this project. However, they are
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                       9-236
+       presented here to raise awareness of the technology and provide some comparison of expected
+       performance. The basic premise of CCFL systems is similar to the baseline T8 systems, in that
+       both apply a high voltage to ionize a gas, thereby producing light. Also, like the T8 system,
+       CCFLs are installed vertically between the glass doors of a reach-in display case. However, in a
+       typical 8 foot long 3 door case, four fixtures will be served by one ballast. Another difference
+       between the two systems is that CCFL relies on cathode technology. Unlike T8 systems that rely
+       on a heated filament to produce light, CCFLs do not require heat to generate light. This
+       difference in principle of operation between the two technologies leads to three distinct
+       advantages for CCFLs in display cases:
+
+       •       Reduced power consumption. A study done by the California Lighting Technology
+               Center (CLTC) on the 32W CCFL showed the power to be approximately 53% of the T8
+               system (Graeber 2008). However, test data from the RTTC shows 35% and 70% of the
+               T8 system for the 16W and 32W CCFLs, respectively.
+       •       Reduced heat dissipation into the refrigeration system.
+       •       Extended life. The same CLTC study showed 80,000 hour lifetime for the CCFLs, or
+               approximately eight times that of a T8 system. (Graeber 2008)
+
+       Analysis
+
+               Laboratory tests were conducted to capture the performance of these lighting systems.
+       Tests were designed to address lighting quality in terms of luminance, uniformity, and glare.
+       Additionally the tests were designed to address the demand and energy impacts attributed to both
+       the lighting power and thermal effects on the refrigeration system. The CCFL system was only
+       tested for electrical and power usage because it was not included in the original scope of the
+       project and time constraints did not permit the full range of testing.
+
+       Lighting quality. Judging lighting quality for this type of application is inherently difficult due
+       to the subjectivity in the perception of a viewer. Digital cameras also hinder the ability to
+       compare images because many include algorithms which auto-correct for light and color balance.
+               The two metrics used in this project included the overall brightness and distribution
+       pattern of light on the product face. To quantify these values, a digital camera that has been
+       specially calibrated to capture luminance data was used. This process required taking a series of
+       fourteen images using a standard set of aperture sizes and shutter speeds. These images were
+       then fed into analysis software which determines the luminance of each pixel and produces a
+       false-color luminance plot based on the measured values. This process was repeated for each
+       different viewpoint or camera position. The case remained at its normal operating conditions for
+       taking pictures. However, room humidity was reduced to 40% in order to inhibit fog formation
+       on the outer surface of the glass doors.
+               For this project, the main focus was on the product face as it would be viewed by a
+       shopper standing directly in front of the doors. The light distribution pattern was difficult to
+       capture without a uniform background to project the light on to. To address this, uniform gray
+       poster board was hung inside the case at the front edge of the shelving. Additionally, since the
+       LED and FO manufacturers claim that less stray light is emitted into the aisle, this was an area of
+       interest. In all, a set of images was captured from three viewpoints for each lighting technology;
+       each repeated with and without ambient lighting.
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                    9-237
+              Luminance plots were created for each lighting system for all six different images,
+       however, the main focus was on the analysis of the front view using the uniform gray card
+       background without ambient lighting. Figure 2 shows the luminance plot for each lighting
+       system with the uniform background.
+
+             Figure 2. Luminance Plots of T8 (Left), LED (Center), and FO Lighting Systems
+
+
+
+
+                 Uniformity of lighting systems can be characterized by plotting the luminance values
+       across the product face. To compare the luminance values of each lighting system, the luminance
+       plots were divided into three analysis areas; entire door, center of door, and sides of door.
+                 Luminance software was used to calculate average luminance for each of the selected
+       areas (note luminance is a logarithmic value). Figure 3 shows the results of this luminance
+       analysis for the three areas of interest. The T8 system was brighter than the other technologies
+       across the board, but had much higher light output towards the sides in comparison to the center
+       of the door. The LED system maintained lower overall light levels with more even distribution,
+       still slightly skewed toward the sides of the door. The fiber optic system provided slightly lower
+       light levels than LED with similar even distribution, but focused more towards the center of the
+       door rather than the sides. Unfortunately, since there are no industry standards dictating
+       appropriate light levels or requirements for even distribution, interpretation of this data is purely
+       subjective.
+
+            Figure 3. Luminance Analysis Areas (Left – Entire Door, Center – Sides of Door,
+           Right – Center of Door) and Average Luminance of the Three Lighting Technologies
+
+                                                           1000
+                                                                                                  T8 Fluores cent
+                                                                                                  LED
+                                                                                       197        Fiber Optic
+                               Average Luminance (cd/m2)
+
+
+
+
+                                                                  163
+                                                                                                                    110
+                                                            100         72                   77                           64
+                                                                                  40                                             47
+                                                                                                     36
+
+
+
+                                                             10
+
+
+
+
+                                                              1
+                                                                    Entire Door         Sides of Door                Center of Door
+
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                                             9-238
+               Glare is a measure of the visibility of light sources in a display case to an observer
+       walking down the aisle. Low levels of glare make the product stand out and look more attractive
+       to customers. High levels of glare tend to distract shoppers from the products on display and also
+       waste energy because the light generated is not focused on the products. Fluorescent lamps
+       exhibit high glare because they are completely visible at full brightness to an observer looking
+       down the aisle. The LED and FO manufacturers both claim to reduce glare. Quantification of
+       glare is difficult, but FO provided significantly less glare than fluorescent and LED nearly
+       eliminated it. A pronounced difference in the amount of light spilling onto the floor between the
+       fluorescent and other technologies was also observed.
+
+       Power savings. For this type of retrofit measure savings are typically calculated on a “per door”
+       basis. However, each of the different technologies has a slightly different configuration, which
+       complicates direct comparison of power performance. In order to circumvent this issue, each
+       system was analyzed and the results were normalized based on a 5-door display case. This is the
+       most popular size display case and also provides a conservative estimate of savings since the
+       reportable savings per door decreases as the number of doors increases.
+               On top of the direct lighting savings, there are savings on the refrigeration system due to
+       decreased cooling load on the case. The refrigeration compressor power and energy savings
+       depend on ambient conditions as well as other factors. A combination of numerical modeling and
+       test results was used to calculate these savings (SCE 2008). The calculations performed
+       considered the refrigeration system to be a multi-plex unit, commonly found in large grocery
+       stores. Figure 4 depicts the direct lighting power savings and compressor power savings over T8
+       fluorescent for California Climate Zone (CTZ) 9 for all three technologies. In this figure, the
+       direct lighting power savings are shown as the lower portion of the bar and the compressor
+       power savings as the upper portion.
+
+            Figure 4. Power Consumption of the Three Lighting Technologies (at Full Output)
+
+                                                       0.080                0.075
+                      Power Savings vs. T8 (kW/door)
+
+
+
+
+                                                               Compressor           0.065
+                                                       0.070
+                                                               Lighting
+                                                       0.060                0.034
+                                                       0.050
+                                                                 0.041              0.037
+                                                       0.040
+                                                                 0.015
+                                                       0.030
+                                                       0.020                0.041
+                                                                 0.026              0.028
+                                                       0.010
+                                                       0.000
+                                                                  LED        FO      CC
+
+
+
+       Energy savings. Direct lighting energy consumption is calculated by multiplying the measured
+       power by the lighting on time. The anticipated annual lighting energy consumption was
+       calculated assuming 24-hour operation at full power. Compressor energy savings is estimated
+       using the calculation methodology and assumption previously stated. Figure 5 gives the annual
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                    9-239
+       energy savings over T8 for each technology, with the two areas of savings presented the same as
+       in Figure 4.
+
+                Figure 5. Estimated Annual Lighting and Compressor Energy Consumption
+
+                       Energy Savings vs. T8 (kWh/door)   600                556
+                                                                Compressor
+                                                          500
+                                                                Lighting     198   444
+                                                          400
+                                                                 314               199
+                                                          300
+                                                                  90
+                                                          200
+                                                                             358
+                                                                 224               245
+                                                          100
+
+                                                           0
+                                                                 LED         FO    CC
+
+
+
+       Anti-Fog Film
+
+       Background
+
+              A persistent problem with putting glass doors on refrigerated display cases has been
+       maintaining visibility through the doors. Temperature and humidity differences between the
+       inside of the case and the ambient conditions tend to cause fogging or sweating on the glass
+       surface as condensation builds up. If shoppers can not clearly view products, sales of those
+       products are likely to be reduced. In addition to hampering sales and increasing the energy
+       consumption of the display case, condensation dripping to the floor can cause a slip hazard for
+       shopper traffic. The following technologies address energy efficiency opportunities that are
+       intended to mitigate fog formation on reach-in glass doors.
+
+       Anti-Sweat Heater (ASH). To prevent condensation on the glass, display cases typically have
+       three types of electric resistance ASHs ranging from 100-200 W/door:
+
+       •       Case mullion heaters – located inside the case frame to keep the doors from freezing shut.
+       •       Door frame heaters – located in the door frame to keep the doors from freezing shut and
+               provide some heat to the glass.
+       •       Glass heaters – located on the glass itself to raise its surface temperature and prevent
+               condensation.
+
+       Anti-Fog Film (AFF). AFF is applied to the inner surface of glass doors to prevent condensation
+       and fog formation. By installing this film, some portion of the glass and/or door mullion heaters
+       can be removed while maintaining fog-free operation. Removal of ASHs also reduces the
+
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                   9-240
+       amount of heat added to the case, resulting in lower compressor run time and energy
+       consumption.
+               A project was conducted to investigate the energy savings potential and fog-clearance
+       implications of using AFF to replace ASH. It involved laboratory testing of several different
+       door construction/ASH/AFF combinations. In addition to the ASHRAE-prescribed test
+       conditions, data was also collected at room conditions of 75°F and 60% Rh Table 1 details the
+       different door constructions, AFF, and ASH scenarios investigated in this project.
+
+                                                          Table 1. Summary of AFF Test Scenarios
+                                                                                                        Glass Door       Door Frame
+         Scenario                          Door Construction          AFF               Mullion Heat
+                                                                                                           Heat             Heat
+             1                                 Baseline              None                    Low           Yes               No
+             2                                 Baseline          Field Installed             Low           No               No
+             3                                 Advanced              None                    High          No               No
+             4                                 Advanced         Factory Installed            High          No               No
+
+       Analysis
+
+               The total ASH power measured for each scenario is shown in Figure 6. These heaters are
+       typically on 24 hours per day, 7 days per week. Much of the heat generated by the ASHs ends up
+       as a cooling load on the refrigeration system, but the magnitude is relatively small compared to
+       the total cooling load. This can significantly increase the power and energy consumption
+       required by the refrigeration compressors.
+
+                                               Figure 6. Anti-Sweat Heater Power for Each Test Scenario
+                                                                      Anti-Sweat Heater Power
+                                     450
+                                     400
+                                     350
+                 ASH Power (Watts)
+
+
+
+
+                                     300
+                                     250
+                                     200
+                                     150
+                                     100
+                                     50
+                                      0
+                                                    1                     2                         3                4
+                                                                                   Test Scenario
+
+
+
+             Following ASHRAE 72 standards, the doors were opened, allowing moisture to enter and
+       condense on the doors. A video camera was set up to allow a comparison of fog clearance times
+       between the various scenarios. Table 2 lists the fog clearance times for each test scenario and
+       room condition. A fog clearance time of 0:00 means that no detectable fog formed on the glass.
+
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                                             9-241
+                                             Table 2. Fog Clearance Times
+                                       Room           Fog Clearance         Room            Fog Clearance
+                     Scenario
+                                     Condition            Time            Condition             Time
+                     Scenario 1     75°F / 55%Rh          1:35           75°F / 60%Rh           1:56
+                     Scenario 2*    75°F / 55%Rh          Failed         72°F / 40%Rh            0:00
+                     Scenario 3     75°F / 55%Rh           2:40          75°F / 60%Rh            3:18
+                     Scenario 4      75°F / 55%Rh            0:00          75°F / 60%Rh            0:00
+        Note: for scenario 2 severe sweating occurred on the outside of the door at the 75°F/55%Rh condition. Rather than
+        continue to 60% humidity, it was decided to run the second test at 72°F/40% humidity which is more representative
+                                of supermarket conditions. No sweating occurred at this condition.
+
+               A significant discovery of these tests was that the AFFs are highly susceptible to damage
+       after returning to room temperature. After being cycled from freezer temperatures to room
+       temperature and back to freezer temperatures, both the field-installed and factory-installed AFF
+       technologies began to delaminate from the glass. This is believed to be due to moisture migrating
+       underneath the coating, then freezing and separating it from the glass surface. The resulting
+       delamination permanently obscured the view of the products worse than any fogging observed.
+
+       Door Gaskets
+       Background
+
+                Gaskets on glass doors of reach-in display cases often become damaged due to the harsh
+       treatment by shoppers. Tight-fitting gaskets inhibit infiltration of warm and moist air from the
+       surrounding environment into the cold refrigerated space, thereby reducing the cooling load.
+       They also prevent moisture that enters the refrigerated space from ending up as frost on the
+       cooling coils, reducing heat transfer effectiveness. As a result of these two factors, compressor
+       run time and energy consumption are reduced with “good” gaskets. Although decreased
+       infiltration load will reduce defrost energy, this study does not take such a reduction into
+       account. Additionally, the increased infiltration can cause fog to form on the glass surface, with
+       similar problems as detailed in the AFF section.
+                The nature of door gaskets is such that part of the gasket will wear out or become
+       damaged before other parts. However, a single gasket is designed to fit a specific-sized door,
+       requiring the entire gasket, including some parts which are functioning properly, to be replaced
+       at the same time. Therefore, a correlation must be made between the length of gasket replaced
+       and the length of gasket which was actually in need of repair.
+                Unfortunately, there is very little survey data on the amount and degree of damaged
+       gaskets in the field today. To conduct the laboratory test comparison, the “damaged” gasket
+       condition was created by completely removing one foot of gasket (Figure 7), out of 45 total feet
+       for the 3-door case, and comparing it to the display case with all gaskets in “normal” condition.
+       The damaged condition was based on field observations of refrigeration service personnel and
+       field auditors. Greater lengths of missing gasket were also attempted, but frost built up on the
+       coil to the point that the case could not properly operate. The analysis includes both LT and MT
+       applications and provides estimates of energy and demand savings on a “per linear-foot (ln ft) of
+       door gasket replaced” basis.
+
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                                   9-242
+              Figure 7. One Foot of Missing Gasket Used in Testing LT Display Case Leakage
+
+
+
+
+       Analysis
+
+               The amount of infiltration through the missing one foot of door gasket was calculated
+       using ASHRAE psychrometric software based on the difference in case cooling capacity
+       between the damaged and normal test results, 973 Btu/hr. Gaskets are only effective when the
+       door is actually closed. During normal use, doors are open for a certain percentage of time where
+       poor gaskets will not affect the amount of infiltration into the cabinet. ASHRAE 72-2005
+       requires doors of display cases to be opened 6 times per hour during 8 hours of a 24-hour test,
+       equating to 99.12% closed time. A field study conducted by RTTC in a supermarket measured
+       average door closed time of 99.5% over a 3-month period. Therefore, using 99.12% as required
+       by the ASHRAE method will provide a slightly conservative estimate of the door closed time
+       when compared with field-monitored data.
+               Once the gasket infiltration load was determined, the resulting compressor power and
+       energy requirements to provide this additional amount of cooling could be calculated. Again, a
+       combination of numerical modeling and test results was used to perform compressor analysis in
+       deriving the savings values (SCE 2007). Likewise, the retrofit case was again assumed to be
+       served by a multi-plex system. Several additional factors are taken into account, including
+       weather and compressor over sizing, to arrive at the expected savings value.
+               Figure 8 displays the energy savings associated with the replacement of a “damaged”
+       door gasket on a reach-in display case, for both LT and MT applications. These savings range
+       from a high of 22 kWh/yr/ln ft for CTZ 15 for a LT case, to a low of 4 kWh/yr/ln ft in CTZ 1 for
+       a MT case. Demand savings are not shown, but follow the same trend. The demand savings
+       range from 0.78 W/ln ft in CTZ 1 (MT case) to 4.09 W/ln ft in CTZ 15 (LT case).
+
+           Figure 8. Door Gasket Replacement Projected Annual Energy Savings for All 16 CA
+                               Climate Zones in a Reach-In Display Case
+                  Energy Savings (kWh/ln ft)
+
+
+
+
+                                               25
+                                                                        MT
+                                               20                       LT
+
+                                               15
+                                               10
+                                               5
+                                               0
+                                                    1   2   3   4   5   6    7   8    9   10 11 12 13 14 15 16
+                                                                             CA Climate Zone
+
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                        9-243
+       Conclusion
+               Each technology examined in the laboratory tests was found to have a beneficial impact
+       on electric demand and energy consumption of refrigerated display cases. Annual savings for the
+       lighting technologies are estimated to be 314 to 556 kWh per door. For AFF technologies,
+       demand savings are more than 90 W/door, with additional improvements in fog clearing time.
+       Maintaining proper door gaskets is estimated to save between 4 and 22 kWh/ln ft depending on
+       climate zone and application. Though these tests revealed that there may be some areas for
+       improvement, especially for anti-fog films, all of the technologies are promising solutions to
+       improve the performance of display cases. Supermarket operators should further investigate
+       these technologies to determine which ones fit their needs and should also be cognizant of
+       advances in the performance of the various technologies. Additionally, case manufacturers
+       should be encouraged to adopt these technologies into production models.
+
+       References
+       [ASHRAE] American Society of Heating, Refrigerating and Air-Conditioning Engineers. 2005.
+            Methods of Testing Commercial Refrigerators and Freezers. Atlanta, Geo.: ASHRAE.
+
+       Graeber, K. and E. Page 2007. “Shelf Control Preliminary Evaluation.” Davis, Calif.:CLTC
+
+       [RTTC] SCE Refrigeration and Thermal Test Center. 2006. Fiber Optic Lighting in Low
+            Temperature Reach-in Refrigerated Display Cases. Irwindale, Calif.:RTTC
+
+       [RTTC] SCE Refrigeration and Thermal Test Center. 2007. Evaluation of Fluorescent, LED, and
+            Fiber Optic Lighting Systems in Low Temperature Reach-in Refrigerated Display Cases.
+            Irwindale, Calif.: RTTC
+
+       [SCE] Southern California Edison. 2007. WPSCNRRN0013 – Door Gaskets for Glass Doors of
+             Medium and Low Temperature Reach-in Display Cases & Solid Doors of Reach-in
+             Coolers       and       Freezers.     Irwindale,   Calif.:     Published      at
+             http://www.sce.com/AboutSCE/Regulatory/eefilings/
+
+       [SCE] Southern California Edison. 2008. WPSCNRMI0104 – T8 Fluorescent to Cold Cathode
+             Fluorescent Retrofits in Low Temperature Reach-in Display Cases. Irwindale, Calif.: To
+             be published at http://www.sce.com/AboutSCE/Regulatory/eefilings/
+
+
+
+
+2008 ACEEE Summer Study on Energy Efficiency in Buildings                                                9-244
+

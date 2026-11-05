@@ -1,0 +1,71 @@
+==============================================================================
+1) Store test conditions used by the standards, and what 1 kg of infiltrated air costs
+==============================================================================
+ASHRAE 72 / DOE (24.0 C db, 18.0 C wb)       RH=56.0%  W=10.43 g/kg | to -18C: sens  42.3 lat  28.2 tot  70.5 kJ/kg (latent 40.0%) | to +2C: tot  37.7 (latent 40.8%)
+ISO 23953 class 0 (20 C, 50 %)               RH=50.0%  W= 7.26 g/kg | to -18C: sens  38.3 lat  18.9 tot  57.2 kJ/kg (latent 33.0%) | to +2C: tot  25.6 (latent 28.7%)
+ISO 23953 class 3 = EU Set 1 (25 C, 60 %)    RH=60.0%  W=11.90 g/kg | to -18C: sens  43.3 lat  32.5 tot  75.8 kJ/kg (latent 42.8%) | to +2C: tot  42.4 (latent 45.1%)
+EU Set 2 (30 C, 55 %) ice-cream freezers     RH=55.0%  W=14.67 g/kg | to -18C: sens  48.4 lat  40.7 tot  89.1 kJ/kg (latent 45.7%) | to +2C: tot  54.7 (latent 48.1%)
+Team's store (24 C, 55 %)                    RH=55.0%  W=10.24 g/kg | to -18C: sens  42.3 lat  27.6 tot  70.0 kJ/kg (latent 39.5%) | to +2C: tot  37.2 (latent 40.1%)
+Freezer load per kg infiltrated air, ISO class 3 vs ASHRAE 72: 1.075x (+7.5%)
+Same, ISO class 0 vs ASHRAE 72: 0.811x
+
+==============================================================================
+2) What COP each rating convention ASSUMES for the compressor rack
+==============================================================================
+Team's Carnot (evap = case air -18 C)          Carnot(35C) 4.81 | ISO 0.34*Carnot 1.64 | AHRI table 2.54
+Freezer, evap -30 C                            Carnot(35C) 3.74 | ISO 0.34*Carnot 1.27 | AHRI table 1.88
+Freezer, evap -35 C                            Carnot(35C) 3.40 | ISO 0.34*Carnot 1.16 | AHRI table 1.65
+Chilled, evap -8.3 C (=17 F, ORNL baseline)    Carnot(35C) 6.11 | ISO 0.34*Carnot 2.08 | AHRI table 3.39
+Measured compressor-only COP, ORNL baseline chilled case (SET 17 F, SCT 95 F): 2.61
+
+==============================================================================
+3) Worked example: one 2.5 m freezer case under the US and EU metrics
+==============================================================================
+TDA = 3.25 m2 = 35.0 ft2 (assumed Dh = 1.3 m)
+US DOE limit, open (VOP.RC.L):   83.8 kWh/day  = 25.8 kWh/day per m2
+US DOE limit, glass door (VCT.RC.L):  19.8 kWh/day  =  6.1 kWh/day per m2
+  -> DOE lets an open freezer use 4.2x a doored one of the same TDA
+EU reference SAE/365 for ANY vertical freezer cabinet, open or doored:  70.2 kWh/day
+  EU ecodesign cap from 1 Sep 2023: EEI <= 80 %  ->  E_daily <=  56.2 kWh/day
+  a case measuring 40 kWh/day -> EEI  57.0 %  label class E
+  a case measuring 60 kWh/day -> EEI  85.4 %  label class G
+  a case measuring 80 kWh/day -> EEI 113.9 %  label class G
+Team case 2.5 kW load, dew -30 C: AHRI EER 6.41 -> CEC 30.6 kWh/day (compressor only)
+   same case, ISO 23953 REC with T0 = -30 C: 45.2 kWh/day
+Team case 2.5 kW load, dew -35 C: AHRI EER 5.64 -> CEC 34.8 kWh/day (compressor only)
+   same case, ISO 23953 REC with T0 = -35 C: 49.7 kWh/day
+
+==============================================================================
+4) Store humidity -> case load (SCE/Faramarzi et al. ACEEE 2000, Fig. 5, 75 F dry bulb)
+==============================================================================
+Meat (open vertical, MT)         slope  16.7 Btu/hr-ft per %RH (16.1 W/m per %RH); elasticity at 55% RH = 0.57; 55->35% drop 20.7%
+Dairy/deli (open vertical, MT)   slope  18.4 Btu/hr-ft per %RH (17.7 W/m per %RH); elasticity at 55% RH = 0.57; 55->35% drop 20.8%
+
+==============================================================================
+5) Doors: why -72 % compressor became only -18 % total (Fricke & Becker 2010, field, 24 ft each)
+==============================================================================
+comp    open  42.20  doored  11.70 kWh/day
+lights  open   5.18  doored  11.93 kWh/day
+fans    open   5.69  doored   4.58 kWh/day
+ash     open   0.00  doored  15.50 kWh/day
+total   open  53.07  doored  43.71 kWh/day -> saving 17.6% ; compressor saving 72.3%
+if doored case had no anti-sweat heat and same lights as open: 21.46 kWh/day -> saving 59.6%
+
+==============================================================================
+6) Shares computed from ORNL/TM-2004/292 Table ES-1 (baseline 8 ft chilled open multideck)
+==============================================================================
+infiltration 82.2% | radiation 7.8% | conduction 4.0% | lights+fans 6.0%
+load per metre: 1561 W/m ; electric power: compressor 1460 W of 1687 W = 87% ; fans 6.8% ; lights 6.6%
+DAG flow 280 cfm, mean jet speed 186 fpm = 0.94 m/s -> implied DAG width 57 mm
+DAG flow 280 cfm, mean jet speed 292 fpm = 1.48 m/s -> implied DAG width 37 mm
+DAG flow 280 cfm, mean jet speed 350 fpm = 1.78 m/s -> implied DAG width 30 mm
+Re = 4200 with width w and speed v=q/w gives v*w = 0.0559 m2/s vs measured q = 0.0542 m2/s
+
+==============================================================================
+7) Indicative daily energy split, Hillphoenix O2MZD 8 ft frozen-food single deck (tech sheet)
+==============================================================================
+compressor (AHRI calc)         15.70 kWh/day  76.2%
+defrost heaters 2400 W          2.40 kWh/day  11.7%
+anti-condensate heaters 82 W    1.97 kWh/day   9.6%
+fans 22 W                       0.53 kWh/day   2.6%
+total                          20.59 kWh/day ; EER used 6.88 Btu/Wh (COP 2.02)

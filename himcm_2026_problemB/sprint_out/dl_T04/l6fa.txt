@@ -1,0 +1,509 @@
+   Installation & Service
+           Manual
+
+
+
+
+                                                          L6FA
+            MULTI-SHELF FROZEN FOOD MERCHANDISER
+             Low Temperature Self Serve Display Cases
+This manual has been designed to be used in conjunction with the General
+                     Installation & Service Manual.
+      Save the Instructions in Both Manuals for Future Reference!!
+This merchandiser conforms to the Commercial Refrigeration Manufacturers Association Health and Sanitation standard CRS-S1-96.
+ PRINTED IN Specifications subject to REPLACES                      ISSUE                        PART
+ IN U.S.A.  change without notice. EDITION               7/99       DATE         1/00            NO.    9027522        REV.      D
+                                       Tyler Refrigeration Corporation * Niles, Michigan 49120
+Installation & Service Manual                                                                              L6FA
+
+                                              CONTENTS
+                                                                                                      Page
+      Specifications
+             L6FA Specification Sheets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+      Pre-installation Responsibilities . . . . . . . . . . . (See General I&S Manual)
+      Installation Procedures
+             Carpentry Procedures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+             Case Pull-Up Locations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+             Electrical Procedures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+             Plumbing Procedures . . . . . . . . . . . . . . (See General I&S Manual)
+             Refrigeration Procedures . . . . . . . . . . . (See General I&S Manual)
+             Defrost Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+             Defrost Control Chart . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+             Installation Procedure Check Lists . . . . (See General I&S Manual)
+      Wiring Diagrams . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+             L6FA Domestic & Export (50Hz) Case Circuits with Electric Defrost 8
+             L6FA Domestic & Export (50Hz) Case Circuits with Gas Defrost . . 10
+      Cleaning and Sanitation . . . . . . . . . . . . . . . . . . (See General I&S Manual)
+      General Information
+             Night Curtains and Strip Doors . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+             Case Shelving Information . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+      Service Instructions
+             Preventive Maintenance . . . . . . . . . . . . (See General I&S Manual)
+             Ballast and Lighting Locations . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+             Fan Locations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+             Checking Air Velocities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+             Cleaning Honeycomb . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+             Anti-Sweat Heater Replacement . . . . . . . . . . . . . . . . . . . . . . . . 14
+             Defrost Heater Replacement . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+             Ambient Air Filter Replacement . . . . . . . . . . . . . . . . . . . . . . . . . 15
+      Parts Information
+             Cladding and Optional Trim Parts List . . . . . . . . . . . . . . . . . . . . 16
+             Operational Parts List . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+      TYLER Warranty . . . . . . . . . . . . . . . . . . . . . . . (See General I&S Manual)
+
+
+  The following Low Temperature, Multi-Shelf Frozen Food Merchandiser models are covered
+  in this manual:
+  MODEL           DESCRIPTION
+  L6FA            6’, 8’ & 12’ MULTI-SHELF FROZEN FOOD MERCHANDISER
+
+
+
+
+July, 1999                                                                                                  Page 3
+L6FA                                         Tyler Refrigeration
+
+SPECIFICATIONS
+L6FA Multi-Shelf Frozen Food Merchandiser Specification Sheets
+
+
+
+
+Page 4                                                   January, 2000
+Installation & Service Manual               L6FA
+
+L6FA Multi-Shelf Frozen Food Merchandiser
+
+
+
+
+July, 1999                                  Page 5
+L6FA                                                          Tyler Refrigeration
+
+INSTALLATION PROCEDURES                           Electrical Procedures
+Carpentry Procedures                              Electrical Considerations
+
+Case Pull-Up Locations                                             CAUTION
+                                                  Make sure all electrical connections at
+                                                  components and terminal blocks are tight.
+                                                  This will prevent burning of electrical ter-
+                                                  minals and/or premature component fail-
+                                                  ure.
+                                                                     NOTE
+                                                  • Lower raceway cover will be shipped
+                                                    loose. See the “General I&S Manual”
+                                                    for raceway cover installation and
+                                                    removal instructions.
+                                                  • Since 208V defrost wiring enters the
+                                                    rear of the case through the outer air
+                                                    band, the exterior and interior access
+                                                    holes must be caulked to maintain air
+                                                    band separation.
+                                                  Case Fan Circuit
+                                                  This circuit has three sets of fans (primary,
+                                                  secondary and ambient) that are supplied by
+                                                  an uninterrupted, protected 120V circuit. The
+                                                  case fan circuit is not cycled, except when
+                                                  equipped for gas defrost. On gas defrost
+All L6FA models have four pull-ups at each end    cases the primary fans are controlled by a
+of the case. Pull-ups A, B, C and D are located   60/30 klixon.
+as shown and should be installed and tight-
+ened starting with A and finishing with D.                           NOTE
+See “General I&S Manual” for line-up              With gas defrost, the primary fans will not
+assembly instructions.                            restart until the coil temperature reaches
+                                                  30°F at the fan delay thermostat.
+                                                  Fluorescent Lamp Circuit
+                                                  The standard case lighting system is T-8 elec-
+                                                  tronic lamps. The standard lighting is 2-row
+                                                  of horizontal canopy lights and 1-row of nose
+                                                  lights.
+
+
+
+
+Page 6                                                                              July, 1999
+Installation & Service Manual                                                            L6FA
+Defrost Information
+                                                 given rack should defrost at one time
+See “General I&S Manual” for operational         because the defrosting cases become a con-
+descriptions for each type of defrost control.   denser during the defrost period and the
+                                                 other refrigerated cases must provide enough
+Defrost Control Chart                            heat load to keep a compressor operating.
+                      Defrost                    Do not defrost more than 24 feet of the L6FA
+Defrost      Defrosts Duration       Term.       at one time to limit the amount of refrigerant
+Type         Per Day   (Min)         Temp.       used in that circuit during the defrost.
+Electric       2-3      35            55°F
+Gas            3-4     22-25         60°F*
+                                                 Insulated partitions must be used between
+*Use 70°F with electronic defrost sensor.        cases in the same lineup that have differ-
+                                                 ent defrost times.
+
+
+                                                 Defrosts are initiated by a multi-circuit defrost
+                                                 clock or an electronic defrost controller. At
+                                                 the beginning of gas defrost the refrigeration
+                                                 is stopped and the gas is diverted in a
+                                                 reverse direction through the suction line to
+                                                 the display case. The refrigeration should be
+                                                 set to remain off for the complete failsafe time
+                                                 plus a 5 minute drain off or clear time period.
+                                                 This type of defrost operation allows the
+The diagram shows the location for each          problem areas in the case to completely clear
+defrost type that uses a klixon.                 without subjecting the refrigerated product to
+                                                 excessive warm up.
+                    NOTE
+• The termination thermostat (55/35
+  Settings) for electric defrost is located in   A defrost termination “klixon type” open on
+  the right hand end of the upper electrical     rise thermostat is mounted (on the left hand
+  raceway.                                       side) next to the rear coil check valve that
+                                                 bypasses defrost refrigerant flow around the
+• The termination thermostat for gas
+                                                 expansion valve. The defrost termination
+  defrost is located next to the rear coil
+                                                 device along with the mechanical or electron-
+  bypass check valve.
+                                                 ic defrost control should be set up to cycle or
+                  CAUTION                        pulse the hot gas valve during the defrost
+If electronic sensors are used in place of the   time period. If you use a mechanical clock,
+klixons, the sensors must be located in the      you should wire it in parallel with the hot gas
+same location as the klixons for that defrost    valve. If the return liquid temperature rises to
+type. Any other locations will effect the        70°F, the hot gas valve should be closed until
+refrigeration efficiency of the case.            the return liquid temperature cools to 40°F
+                                                 and then the hot gas valve will reopen and
+L6FA Optional Hot Gas Defrost                    provide additional heat. This cycling will con-
+Operation Requirements.                          tinue until the total defrost time has elapsed.
+                                                 Note that the “klixon type” thermostat has a
+When reverse cycle gas defrosting option is      time lag associated with it’s operation so its
+used, it should only be applied to multiple      actual setting is 60°F, but if an electronic
+compressor systems (Parallel racks). A maxi-     sensor is used for termination, it should be
+mum of not more than 25% of the load on a        set at 70°F termination temperature
+
+January, 2000                                                                            Page 7
+L6FA                                                              Tyler Refrigeration
+because it is faster reacting. Also, if used with   Adjusting the Defrost Limit Switch
+an electronic controller, cycle the hot gas
+valve when the lowest sensor temperature
+(minimum) has reached 70°F.
+
+
+In addition the primary air band fans on the
+L6FA are cycled off during the defrost cycle
+with a limit “klixon type” thermostat that is
+mounted to a coil return bend on the right
+hand end of the case. It will cycle the primary
+fans off at 60°F and on at 30°F. This helps         Remove the fiberboard (1) from the end of
+minimize the product temperature warmup             the control (2) . Turn the brass adjustment
+during the defrost. All other fans, both sec-       screw (3) clockwise to raise, or counterclock-
+ondary and ambient airband, continue to run         wise to lower the termination temperature.
+during defrost.                                     One turn changes temperature setting
+                                                    approximately 5°F.
+Electric Defrost Limit Switch
+                                                    WIRING DIAGRAMS
+                                                        ELECTRICIAN NOTE - OVERCURRENT
+                                                                  PROTECTION
+                                                    120V circuits should be protected by 15 or 20 Amp
+                                                    devices per the requirements noted on the cabinet
+                                                    nameplate or the National Electrical Code, Canadian
+                                                    Electrical Code - Part 1, Section 28. 208V defrost
+                                                    circuits employ No. 10 AWG field wire leads for field
+                                                    connections. On remote cases intended for end to
+                                                    end line-ups, bonding for ground may rely upon the
+                                                    pull-up bolts.
+                                                    The following wiring diagrams on pages 9
+                                                    thru 12 will cover the L6FA case circuits with-
+The Defrost Limit Switch is located in the top      electric defrost and gas defrost. The canopy
+raceway with its sensing bulb in the primary        lighting circuit is covered in the case circuit
+air band. The limit switch is factory preset for    diagrams.
+52°F. If defrost is too long, the thermostat is
+set too high.
+
+
+
+
+Page 8                                                                                     July, 1999
+                A
+
+
+
+
+July, 1999   Page 9
+                       A
+
+
+
+
+Page 10   July, 1999
+                 A
+
+
+
+
+January, 2000   Page 11
+                          A
+
+
+
+
+Page 12   January, 2000
+Installation & Service Manual                                                            L6FA
+
+GENERAL INFORMATION
+Night Curtains and Strip “Doors”
+Night curtains and strip “doors” are available
+from several souces. They promote energy
+savings by partially closing off the front of the
+case. TYLER does not promote these
+products, but accepts that they are used by
+some.
+Night curtains are to be pulled down each
+night. They considerably cut the refrigeration
+load during the night by cycling the compres-
+sor more frequently. If gas or electric defrost
+occurs when the curtains are down, a surplus
+of moisture laden air will be trapped in the
+refrigerated area, and deposit on product.
+For this reason, defrosts must be scheduled
+to occur when the case is open.
+Plastic strip “doors” are permanently hung
+over the face of the case. The ambient air
+band is disconnected and plugged during
+installation. The refrigeration load reduction      Shelf Loading
+alters the system drastically. The compressor
+and suction line become oversized and the           Observe all the LOAD LINE stickers when
+need for defrost time and frequency are             stocking the shelves with product.
+reduced. Follow the suppliers recommenda-           • Do not let the product spill over or go
+tions for best results.                               beyond these lines.
+Case Shelving Information                           • Do not let the product cover up or block any
+                                                      of the air ducts.
+Case Shelving Limitations
+Low temperature multi-shelf cases are partic-                         CAUTION
+ularly sensitive to air pattern changes. These      Use of large signage can interfere with the
+changes occur if shelves are not installed or       proper air movement in the case. Improper
+used properly.                                      air movement will alter the case temperature
+Four full rows of shelving must be used in this     and could cause product loss.
+case. The bottom row of shelving must be no
+more than 24” above the bottom tray.
+Shelving can consist of four rows of 22” wide
+shelves or three rows of 22” wide shelves and
+one bottom row of 18” wide shelves. Do not
+use any other shelving combinations.
+
+
+
+
+July, 1999                                                                              Page 13
+L6FA                                                         Tyler Refrigeration
+
+SERVICE INSTRUCTIONS
+See “General I&S Manual” for T-8 and
+800MA T-12 lamp, canopy ballast, fan
+blade and motor, and color band and
+bumper replacement instructions.
+
+Ballast and Lighting Locations
+
+
+
+
+                                                 Checking Air Velocities
+                                                                    NOTE
+                                                 • Be sure area above the case is clear!
+                                                 • Conditioned air must circulate above the
+                                                   case for the ambient air band intake!
+                                                 • Do not block top ambient air band filter!
+                                                 Check air velocities with an Alnor, Jr. Model
+                                                 8100 Velometer with airscoop modification.
+The canopy light ballasts are located under      Further information on the Velometer can be
+the canopy on the top of the canopy light        obtained from the TYLER Service Department.
+channel. The nose light ballasts are under
+                                                 L6FA case air velocities should be as fol-
+the upper front cladding. The canopy light(s)
+are under the canopy light channel in the top
+of the case. The nose light(s) are behind the
+bumper retainer/hand rail.
+
+Fan Locations
+Fan assemblies are located in three locations
+in the L6FA. The primary fans (1) are located
+under the bottom trays and behind the prima-
+ry condensing coil. The secondary fans (2)
+are located on the top rear of the case in the   lows:
+secondary air band. The ambient fans (3) are     Ambient Air -   400 fpm
+located on the top front of the case in the      Secondary Air - 500 fpm
+ambient air band. The ambient fans are           Primary Air -   620 fpm (before defrost)
+under the filters.                                               720 fpm (after defrost)
+
+Page 14                                                                           July, 1999
+Installation & Service Manual                                                        L6FA
+
+
+
+
+Cleaning Honeycomb                             Anti-Sweat Heater Replacement
+The inner honeycomb (primary) should not                       WARNING
+require cleaning. The outer honeycomb
+(ambient/secondary) will require cleaning.     Always shut off electricity to the entire
+How often will depend on the amount of dust    case before replacing an anti-sweat heater.
+and lint in the store air.                     Electrical power to wire ends could cause
+                                               personal injury and/or death.
+Need for cleaning can be determined by
+comparing clean honeycomb air velocities                          NOTE
+with what velocities are being produced when
+they are checked.                              Anti-sweat heater wires will be still be
+                                               attached. Tag and cut wires to remove
+Ambient/Secondary Honeycomb Cleaning           front molding.
+1. Remove screws (1), lower light channel      1. Remove the screws (4) and front molding
+   (2) and remove outer honeycomb (3).            (5) and inner honeycomb (6) from the
+                                                  interior top of the case.
+2. Clean outer honeycomb (3) away from the
+   case with high pressure air or water.       2. Tag and cut defective anti-sweat wire (7)
+                                                  and remove aluminum tape and wire from
+3. Replace the outer honeycomb (3) and
+                                                  front molding (5). Discard aluminum
+   secure the light channel (2).
+                                                  tape.
+                                               3. Install new anti-sweat wire (7) in grooves
+                                                  in front molding (5) and cover with new
+                                                  aluminum tape.
+
+
+July, 1999                                                                          Page 15
+L6FA                                                         Tyler Refrigeration
+
+4. Splice the anti-sweat heater wire (7) to    Ambient Air Filter Replacement
+   wire leads from the case.
+                                               Ambient air filters are located on top front of
+                  CAUTION                      the case above each ambient fan. Replace all
+Make sure wire leads do not get pinched        ambient air filters at intial start-up. Routinely
+by the front molding during installation.      inspect and replace all ambient air filters.
+Pinched wires could short out the anti-        1. To remove and inspect the air filter, slide
+sweat heater wire.
+5. Install inner honeycomb (6) and front
+   molding (5) and secure with screws (4).
+6. Restore electrical power to the case.
+
+Defrost Heater Replacement
+                WARNING
+Always shut off electricity to the entire
+case before replacing a defrost heater.
+Automatic cycling of fans or electrical
+power to wire ends could cause personal
+injury and/or death.                               out ambient air filter (1) from air filter
+                                                   retainer (2). Inspect the ambient air filter.
+                                               2. To replace the air filter, slide new ambient
+                                                  air filter (1) in the air filter retainer (2). Use
+                                                  10’ X 24” X 1” fiberglass air filters.
+                                                                     NOTE
+                                               Do not clean and/or reuse old filters. Poor
+                                               ambient air flow will result.
+
+
+
+
+1. Remove bottom trays (1) from case (2).
+2. Disconnect defective defrost heater (3)
+   and remove from the defrost heater sup-
+   port (4) and case (2).
+4. Install new defrost heater (3) in reverse
+   order.
+5. Restore electrical power to the case.
+
+
+
+
+Page 16                                                                               July, 1999
+     Installation & Service Manual                                                                      L6FA
+
+PARTS INFORMATION
+Cladding and Trim Parts List
+Item     Description                       6’                         8’                          12’
+1        Screw (per cover)            5183536 (3)               5183536 (3)               5183536 (3)
+2        Pull-Up Angle Cover          5611559 (2)               5611559 (2)               5611559 (2)
+3        Screw                        5183536 (8)               5183536 (8)               5183536 (8)
+4        Canopy Backer, Painted       9025983 (4)               9025983 (6)               9025983 (8)
+5        Canopy Hood, Painted           9025222                   9025223                   9025224
+6        Hand Rail Backer               9025316                   9025316                   9025316
+7        Hand Rail/Bumper Retainer              --------------- color per order ---------------
+8        Bumper Backer                          --------------- color per order ---------------
+9        Bumper                                 --------------- color per order ---------------
+10       Color Band Backer, Painted     9040223                   9040223                   9040223
+11       Color Band, Painted            9023795                   9023798                   9023800
+12       Bumper End Trim                        --------------- color per order ---------------
+13       Upper Front Cladding, Painted 9025643                    9025473                   9025474
+14       Lower Front Cladding, Painted 9025644                    9025475                   9025476
+15       Screw                        5183536 (4)               5183536(4)                5183536 (6)
+16       Raceway Cover Backer                   --------------- color per order ---------------
+17       Raceway Cover End Trim                 --------------- color per order ---------------
+18       Kickplate                              --------------- color per order ---------------
+         Kickplate Backer               9041790                   9041790                   9041790
+19       Shoulder Screw               9025833 (6)               9025833 (8)               9025833 (8)
+20       Kickplate Support Assy.      9042341 (3)               9042341 (4)               9042341 (4)
+21       Raceway Cover Retainer       9023841 (3)               9023841 (4)               9023841 (5)
+         Screw                        5183536 (9)              5183536 (12)              5183536 (15)
+22       Raceway Cover                          --------------- color per order ---------------
+23       Raceway Support              9041326 (4)               9041326 (6)               9041326 (8)
+24       Screw                        5183536 (8)              5183536 (12)              5183536 (16)
+25       LH End Close-off, Painted      9022463                   9022463                   9022463
+         RH End Close-off, Painted      9022464                   9022464                   9022464
+26       Raceway                        9300242                   9300243                   9300244
+27       Screw, Shoulder              9025833 (12)             9025833 (18)              9025833 (24)
+28       Screws                       5205439 (4)               5205439 (5)               5205439 (6)
+
+
+     July, 1999                                                                                         Page 17
+L6FA                                            Tyler Refrigeration
+
+Item   Description                6’            8’            12’
+29     Horizontal End Trim     5190028       5190028       5190028
+30     Tray Joint Trim         5187950       5187950       5187950
+31     Top Shelf Duct Joint    5629694       5629694       5629694
+32     Screw                  5205439 (4)   5205439 (4)   5205439 (4)
+
+
+
+
+Page 18                                                        July, 1999
+    Installation & Service Manual                                                                L6FA
+Operational Parts List
+Case Usage                                     Domestic                          Export
+Electrical Circuit                          115 Volt 60 Hertz            220 Volt 50 Hertz
+Case Size                            6’            8’           12’       8’              12’
+Fan Motors (ambient)               5125532      5125532     5125532    5202538       5202538
+                                    5 Watt       5 Watt      5 Watt     5 Watt        5 Watt
+   (secondary)                     5125532      5125532     5125532    5202538       5202538
+                                    5 Watt       5 Watt      5 Watt     5 Watt        5 Watt
+   (primary)                       5146520      5146520     5146520    5223696       5223696
+                                   23 Watt      23 Watt     23 Watt    18.3 Watt     18.3 Watt
+Fan Motor Brackets (ambient)       5120098      5213132     5120098    5213132       5120098
+   (secondary)                     5120098      5120098     5120098    5120098       5120098
+   (primary)                       5205112      5205112     5205112    5205112       5205112
+
+
+Fan Blades
+  (amb.)(7.75” 22° 5B)             9040680         ----         ----      ----       9040680
+   (amb.)(6” 27° 5B)                 ----       9023762         ----      ----            ----
+   (amb.) (7.75” 20° 5B)             ----          ----     9023760       ----            ----
+   (amb.)(6” 30° 5B)                 ----          ----         ----   9023766            ----
+   (sec.)(7.75” 15° 5B)            9301932      9301932     9301932       ----            ----
+   (sec.) (7.75” 18° 5B)             ----          ----         ----   9023761       9023761
+   (prim.)(8.75” 25° 5B)           5984399      5984399         ----   5984399            ----
+   (prim.)(8.75” 30° 5B)             ----          ----     9407319       ----       9407319
+   Fan Guard (ambient)             5063030      5063030     5063030    5063030       5063030
+T-8 Electronic Ballast (canopy)    5966635      5966635     5991030    9028439       9028438
+   (nose)                          5991029      5991029     5991030    9028437       9028438
+Opt. 800MA Ballast (can./2-row) 5049140         5204769     5049140    5204859       5204859
+T-8 Lampholder                     5232279      5232279     5232279    5232279       5232279
+800MA Lampholder (telescoping) 5614628          5614628     5614628    5614628       5614628
+   (stationary)                    5614629      5614629     5614629    5614629       5614629
+Light Switch                       5100565      5100565     5100565    5100565       5100565
+Electric Defrost Heater (3/case)   5216523      5199301     5199302    5199301       5199302
+Special Contactor for Defrost     5109383&     5109383&     5109383&   5109383&      5109383&
+w/Aux. Pilot Circuit - 3 Pole 40A 5638229       5638229      5638229    5638229       5638229
+Electric Def. Termination T’stat   5058480      5058480     5058480    5058480       5058480
+Anti-Sweat Heater Wire
+  (between sec./prim. air bands)5216522         5088067     5088068    5088691       5088692
+   (in primary air band)           5216522      5124216     5124217    5124216       5124217
+For information on operational parts not listed above contact the TYLER Service Parts Department.
+
+    July, 1999                                                                                   Page 19
+

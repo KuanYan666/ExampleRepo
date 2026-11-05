@@ -1,0 +1,1923 @@
+  On the Effective Thermal Conductivity of Frost Considering Mass Diffusion
+
+                                   and Eddy convection
+
+             (Running Head: Effective Thermal Conductivity of Frost)
+
+                                         Max Kandula
+
+             ASRC Aerospace, John F. Kennedy Space Center, FL 32899, USA
+
+                         E-mail address: max.kandula-l@nasa.gov
+
+
+
+   Abstract
+
+   A physical model for the effective thermal conductivity of water frost is proposed for
+
+application to the full range of frost density. The proposed model builds on the Zehner-
+
+Schlunder one-dimensional formulation for porous media appropriate for solid-to-fluid
+
+thermal conductivity ratios less than about 1000. By superposing the effects of mass
+
+diffusion and eddy convection on stagnant conduction in the fluid, the total effective
+
+thermal conductivity of frost is shown to be satisfactorily described. It is shown that the
+
+effects of vapor diffusion and eddy convection on the frost conductivity are ofthe same
+
+order. The results also point out that idealization ofthe frost structure by cylindrical
+
+inclusions offers a better representation of the effective conductivity of frost as compared
+
+to spherical inclusions. Satisfactory agreement between the theory and the measurements
+
+for the effective thermal conductivity of frost is demonstrated for a wide range of frost
+
+density and frost temperature.
+
+
+
+Key Words: Water frost, effective thermal conductivity, Zehner-Schlunder model, porous
+
+media, vapor diffusion, eddy convection
+
+
+
+                                                                                              1
+Nomenclature
+
+A Is       interface area in Zehner-Schlunder model, m 2
+
+D mass diffusion coefficient, m 2/s
+
+hsv        latent heat of sublimation, J/kg
+
+k      thermal conductivity, W/m.K
+
+kef        effective thermal conductivity of frost, W/m.K
+
+M molecular weight, kg/mol
+
+p      pressure, Pa
+
+Pv partial pressure of water vapor at temperature T , Pa
+
+Pvo        partial pressure of water vapor at temperature To, Pa
+
+Pr        Prandtl number
+
+Ii universal gas constant, J/mol.K
+
+Ra        gas constant for air, J/kg.K
+
+Rv gas constant for water vapor, J/kg.K
+
+r      radial coordinate, m
+
+T      temperature, K
+
+Tf frost temperature, K
+
+Too freestream temperature, K
+
+U 00      freestream velocity, mls
+
+z axial coordinate, m
+
+
+
+
+                                                                   2
+".
+     Greek Symbols
+
+     ¢ solids fraction
+
+     lJf   porosity (void fraction)
+
+     v     kinematic viscosity, m 2/s
+
+     A solid-to-fluid thermal conductivity ratio, k2 / kl
+
+                                     3
+     Pf        frost density, kg/m
+
+     ~     fluid-to-solid thermal conductivity ratio, kl / k2
+
+     OJ    humidity ratio of moist air, kg (water vapor)/kg(dry air)
+
+     I1T       temperature difference in the enclosure for natural convection, K
+
+
+
+     Subscripts
+
+     1     continuous medium (stagnant gas)
+
+     2     solid particle (dispersed)
+
+     00    ambient
+
+     a dry air
+
+     c     eddy convection
+
+     d diffusion
+
+     e effective medium
+
+     f     frost
+
+     s     frost surface
+
+     t     total (ambient)
+
+     v water vapor
+
+
+
+
+                                                                                   3
+1. Introduction
+
+    Frost formation represents an important consideration in cryogenics, refrigeration,
+
+aerospace, meteorology and various process industries. Processes involving simultaneous
+
+heat transfer and frost formation are occasioned in gas coolers, refrigerators, regenerators,
+
+freeze-out purification of gases, cryopumping, and the storage of cryogenic liquids.
+
+   In most technical applications frosting is undesirable, except in situations such as
+
+freeze-drying of foods. Frost offers significant thermal resistance to heat transport in heat
+
+exchangers, and increases the pressure drop by flow restriction. For example, under certain
+
+circumstances frost formation can result in 50 to 75% decrease in heat transfer and a
+
+substantial increase in pressure drop (Emery and Siegel, 1990). Nocturnal frost/icing on
+
+aircraft wings causes significant aerodynamic penalties in lift and drag (Sahin, 2000),
+
+leading to a decrease in lift and an increase in drag. Frost/ice formation on cold
+
+fuel/oxidizer tanks and other components may cause debris concerns when it is shed on
+
+critical components. A fundamental understanding of the nature of frost formation and
+
+simultaneous heat and mass transfer during frost growth is thus of great practical interest.
+
+   Frost forms when moist (humid) air comes in contact with a cold surface whose
+
+temperature is less than the freezing temperature of water (273 K), and is less than the dew
+
+point temperature, so that water vapor directly passes from a gaseous state to solid state
+
+(see Burghardt, 1972). The thermodynamic process of frost nucleation is represented with
+
+the aid of a psychrometric chart (Piucco et aI., 2008).
+
+   Among the transport properties of frost (regarded as a porous medium), the effective
+
+thermal conductivity of frost primarily governs the heat transport through the frost layer
+
+and its growth rate. Measurements by various investigators suggest that the effective
+
+
+
+
+                                                                                             4
+thermal conductivity of frost depends on a number of parameters such as frost density, frost
+
+temperature, plate surface temperature, and environmental parameters (air temperature Too,
+
+humidity 0)00' velocity U 00' etc.), the frost density and frost temperature being the most
+
+important variables. As frost grows on the cold surface and densifies, both the thermal
+
+conductivity and density increase by an order of magnitude. Several empirical correlations
+
+have been proposed for the effective thermal conductivity of frost (as a function of frost
+
+density/or temperature), and form the basis for many theoretical models for predicting frost
+
+growth.
+
+   An accurate description of the effective frost conductivity is exceedingly difficult. This
+
+is evident from the nonhomogeneous character of the porous medium, comprised of ice
+
+particles of various shapes and sizes distributed in moist air, and their interaction involving
+
+heat and mass transfer. The structure of frost, regarded as a porous medium, consisting of
+
+different grain (pore) sizes and geometries, thus results in the effective thermal
+
+conductivity that is far from isotropic. Many models are therefore based on the assumption
+
+of uniform-sized particles of relatively simple geometry with periodic (regular) structures,
+
+such as simple cubic (SC), face-centered cubic (FCC) and body-centered cubic (BCC), and
+
+are generally limited to a narrow range of frost density (solids fraction). For example, the
+
+maximum values of solid fraction that is possible in a packed bed of uniform spherical
+
+particles are 0.5236,0.68 and 0.74 for SC, BCC and FCC types of packing respectively
+
+(Tien and Vafai 1979). Tien and Vafai (1979) have shown that the SC packing and FCC
+
+packing respectively yield lower and upper bounds for the effective thermal conductivity of
+
+a random packed bed. For cylindrical particles, the SC packing yields the limit of
+
+rjJ = 0.7854 .
+
+
+
+
+                                                                                              5
+    Woodside (1958) proposed a model for the thermal conductivity of snow by
+
+considering the medium to be composed of a cubic lattice of uniform solid spherical
+
+particles suspended in a gas, and including the effect of mass diffusion. This model
+
+considered a unit cube containing one-eighth of a sphere of radius less than or equal to
+
+unity. Woodside's equation when compared to the thermal conductivity of Pitman and
+
+Zuckerman (1967) for snow at -88°C, -27 °C, and _5°C suggest that it predicts
+
+considerably steep variation with density for densities in excess of about 400 to 50p kg/m3 .
+
+The model is limited to solids fraction of ¢ = 0.5236 (touching spheres) as a result of the
+
+unit cube considered.
+
+    Dietenberger (1983) developed a semi-theoretical expression for the frost conductivity
+
+for the whole range of frost density by postulating a complicated frost structure. A random
+
+mixture model was proposed with ice cylinders and spheres immersed in moist air at low
+
+densities, and with ice planes and moist air bubbles at high densities. Mass diffusion is also
+
+included, and the frost conductivity is shown to depend on both frost density and frost
+
+temperature. The predicted frost conductivity at high densities undergoes steep variation,
+
+and considerably (rather unrealistically) exceeds the measurements.
+
+   Le Gall et al. (1987) considered the model of Auracher (1986) for modeling the
+
+conductivity of frost as a function of both temperature and density. The model is
+
+applicable for the full range of solids fraction. Apparently unreasonably large values of
+
+mass diffusion rates (relative to molecular diffusion rates) were postulated to match the
+
+model with measurements.
+
+    Sahin (2000) developed a model of the effective thermal conductivity of frost during
+
+the initial crystal growth period, by regarding the frost as formed of cylindrical frost
+
+
+
+
+                                                                                            6
+columns (normal to the cold surface) surrounded by moist air, and taking into account mass
+
+diffusion. Although the model seems to be physically realistic and consistent with observed
+
+frost structure, its application is limited to early stages of frost formation.
+
+    In most of the theoretical models, the contributions of radiation and convection to the
+
+effective thermal conductivity of frost have been ignored, and only vapor diffusion
+
+contribution is considered. While the neglect of thermal radiation and natural convection is
+
+justified, the role of turbulent eddy convection is open to question. An investigation by
+
+Biguria and Wenzel (1970) suggest that the turbulent eddy conductivity becomes
+
+important, and increases in proportion to the freestream velocity.
+
+    In recent times, fractal geometry has been widely applied to predict the thermal
+
+conductivity of porous media. Yu and Cheng (2002) considered fractal models for the
+
+effective thermal conductivity ofbi-dispersed porous media. The theoretical predictions
+
+based on fractal models are shown to agree well with experimental data, and the lumped
+
+parameter models (see Hsu et al. 1994, and Cheng and Hsu, 1999) based on unit cell
+
+approach. Feng et al. (2007) applied fractal geometry for investigating the effective thermal
+
+conductivity of unsaturated porous media (3-phases including a solid, a wetting phase such
+
+as water, and a non-wetting phase such as air) on the basis of self-similarity.
+
+    It is the purpose of this article to propose a theoretical model applicable for the
+
+effective thermal conductivity of frost over the full range of frost density. The model starts
+
+from a well-established porous media model devoid of mass diffusion and thermal
+
+convection effects, and superposes the effect of vapor diffusion and turbulent eddy
+
+convection on pure conduction in the fluid. The validity of the proposed model will be
+
+
+
+
+                                                                                            7
+assessed by comparison with existing correlations and measurements for the frost thermal
+
+conductivity over an extended range of frost density and frost temperature.
+
+2. Frost Structure and Mechanism of Frost Formation
+
+    An understanding of the frost structure and the mechanism of frost formation is helpful
+
+in developing models for the frost conductivity. The frost growth (formation) period can be
+
+broadly divided into three periods (Cheng and Wu, 2003): 1) a crystal growth period, 2)
+
+developing frost layer growth period, and 3) fully developed frost layer growth period (Fig.
+
+1a). In the crystal growth period representing early stage of frost formation, one-
+
+dimensional type ice columns grow out of nucleation sites. In the frost layer growth
+
+periods, three dimensional growth of ice crystals produce a porous structure of the frost
+
+layer. The full growth period may be further classified into monotonic and cyclic growth
+
+periods (Cheng and Wu, 2003).
+
+   Very little is known about the fundamental nature of the nucleation or initial stages of
+
+frost formation phenomenon; i.e. crystal structure during early stage of frost formation.
+
+The rapid frost growth rates during the initial stages of frost formation corresponds to the
+
+crystal growth period. Crystal structure may be classified as columns, plates and dendrites
+
+(Sahin, 2000), as shown in Fig. lb. Transitions from a plate growth to prism growth, and
+
+back to a plate structure and then to prisms again have been observed as the temperature
+
+decreases. In the crystal growth period of frost formation, the frost is well represented by
+
+cylindrical frost columns (normal to the surface) surrounded by moist air (Sahin, 2000).
+
+   As frost forms, the frost surface temperature increases above the temperature of the
+
+cold surface. When the frost surface (air-frost interface) temperature approaches the
+
+freezing temperature, repeated cycles of melting and freezing occur (Sami and Duong,
+
+
+
+
+                                                                                            8
+1989). This results in structural changes in the frost layer that tend to increase both the
+
+density and thennal conductivity with time without a proportional (corresponding) increase
+
+in thefrost thickness. This phenomenon is more likely to occur in high humidity and/or
+
+high temperature environments than in low humidity and low temperature environments. In
+
+the latter case, the frost surface temperature will rise to a steady value below the melting
+
+point, such that the rate of frost deposition is balanced by the rate of sublimation from the
+
+frost. Fig. lc displays a general representation of heat and mass transport by diffusion and
+
+convection in the frost layer. Vapor transport by diffusion is known to be the main
+
+mechanism by which the temperature dependence of the thennal conductivity is manifested
+
+(Stunn et ai. 1997).
+
+   Frost structure and density exert significant effect on the effective thennal conductivity
+
+of frost, and depend on frost surface temperature and the surrounding hydrodynamic
+
+(flow) conditions (Brian et aI., 1970). In the low density region when the crystals
+
+commence to branch out, the convective heat transfer by eddies within the air space is a
+
+significant contributor to the frost thennal conductivity (Biguria and Wenzel, 1970). For
+
+example, natural convection frosts fonned at low temperatures are usually light and fluffy
+
+(densities between 10 and 50 kg/m3). Forced convection frosts fonned at relatively high
+
+temperatures (248 - 247 K) have densities ranging from 300 to 500 kg/m3, and are
+
+characterized by relatively high conductivities (Coles, 1954).
+
+    Strictly speaking, the frost conductivity and density are not unifonn across the frost
+
+thickness. In view of the resulting complexity, most of the models proposed for frost
+
+growth prediction are based on the assumption that the frost density and thennal
+
+conductivity are unifonn throughout the entire frost layer (Le Gall et aI., 1997).
+
+
+
+
+                                                                                               9
+3. Correlations for Frost Thermal Conductivity
+
+    The first measurements on thermal conductivity of snow were reported by Andrews
+
+(1886). Since then many investigators reported data on the effective thermal conductivity
+
+of frost. Unfortunately, there is considerable scatter in the conductivity data arising
+
+primarily from the differences in the microstructure of snow, with differences in grain
+
+characteristics (grain size and grain type) and inter-granular bonding (connectivity), leading
+
+to an order of magnitude range in the conductivity at a given density (Sturm et ai., 1997).
+
+These measurements were presented in the form of correlations of thermal conductivity as
+
+a function of density and/or temperature.
+
+    A detailed list of various correlations proposed for the effective thermal conductivity of
+
+frost along with the density limit has been presented in Shin et ai. (2003) and Yang and Lee
+
+(2004). These correlations express the conductivity in terms of frost density and frost
+
+surface temperature. Most of these correlations are limited to P f < 600 kg/m3 .
+
+    Van Dusen (1929) proposed the following correlation for the effective thermal
+
+conductivity of frost:
+
+                                                    3
+                          kef = 0.029 + 0.403xlO- P f + 0.2367xlO-
+                                                                        8
+                                                                            p}                (la)
+
+                                            3
+where kef is in W/(m.K), and Pf in kg/m . This correlation was based on the data from six
+
+other investigators. It does not have a restriction on the range of frost density, but is
+
+restricted to the average frost temperature to be between 243 K and 273 K. No data on the
+
+range of air velocities and air humidity is available to the author. This correlation is
+
+generally known to provide a lower bound for the frost conductivity. Eq. (la) is based on the
+
+correlation of data of six other investigators.
+
+
+
+
+                                                                                            10
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+                    Yonko and Sepsy (1967) suggest the following correlation for the effective frost
+
+                 conductivity:
+
+                                        kef =0.024248+0.731xI0-3 Pf +0.1183xlO- 5 PJ                         (Ib)
+
+                                                        3
+                 where kef is in W/(m.K), and P fin kg/m . This equation is valid for frost density P f < 573
+
+                 kg/m3, with no lower limit. The data cover a range of humidity wooof 0.0075-0.015
+
+                 (vapor)/kg (dry air), air stream velocity U 00 of 1.3-5.3 mis, and ambient temperature Too of
+
+                 295 K.
+
+                    Ostin and Anderson (1991) proposed the following correlation for the frost thermal
+
+                 conductivity:
+
+                                         kef = -8.7IxlO-3 + 4.39xlO-4 P f + 1.05xlO-6 PJ                            (1 c)
+
+                                                         3
+                 where kef is in W /(m.K), and P fin kg/m . This equation is valid for frost density Pf in the
+
+                 range 50-680 kg/m3 , Tf =253-258 K, and V =3 mls.
+
+                    Other familiar correlations for the frost thermal conductivity as a function of frost density
+
+                 were reported by Abels (1893), Jansson (1901), Devaux (1933), Kamei et al. (1950),
+
+                 Kandrateva (1954), and Schropp (1935). These correlations have limited range of frost
+
+                 density, and are indicated in Yonko and Sepsy (1967), O'Neal and Tree (1985) and Sahin
+
+                 (2000). Brian et al. (1970), among others, proposed a correlation for the frost thermal
+
+                 conductivity as function of frost density and frost surface temperature, but is limited to Pf
+
+                 <130 kg/m3 .
+
+
+
+
+                                                                                                           II
+   The frost density appearing in the correlations for the conductivity is generally correlated
+
+with frost surface temperature T fs . For examp ie, Hayashi et al. (1977) proposed the
+
+following correlation for the frost density:
+
+                                 Pf = 650explO.227(Tft - 273.15)J                              (2)
+
+                     3
+where Pf is in kg/m , and Tft is in degrees Kelvin. Eq. (3) is widely considered for frost
+
+growth modeling. Eq. (3) is applicable for -25 °C<Tft <0 °c, air stream velocities in the
+
+range of2-6 mis, and at an airstream humidity ratio of 0.0075 kg (vapor)/kg (dry air).
+
+4. Recent Investigations on Frost Thermal Conductivity
+
+   Since the publication of Woodside (1958) model and the measurements of Pitman and
+
+Zuckerman (1967), many investigators studied the thermal conductivity of snow. Most
+
+notable among recent experimental work is that of Sturm et al. (1997), which is arguably the
+
+standard reference for snow thermal conductivity measurements. The correlation proposed by
+
+Sturm et al. (1997) is expressed by
+
+                                          3
+                 kef = 0.138-1.01xl0- Pf +3.233xl0-
+                                                           6
+                                                               p} 156 ~ Pf ~ 600
+                                                                                               (3)
+                      = 0.023 + 0.234xl0- 3 Pf                 Pf   ~ 156
+
+                     3
+where P f is in kg/m , and kef in W/m.K. This correlation is based on very detailed and
+
+consistent set of data (488 measurements) obtained by the transient method (short test
+
+duration) with cylindrical samples (of various types of snow) placed in an environmental
+
+chamber (to control the sample temperature).
+
+   Recently, the thermal conductivity of snow has been modeled by Kaempfer et al. (2005)
+
+as a complex porous media with the aid of three-dimensional geometries of snow structure.
+
+Kaempfer et al. (2005) also compared their model thermal conductivity with a single point
+
+
+
+                                                                                          12
+measurement at a density of 268 kg/m3 (¢ = 0.29 ). More complex snow geometries were
+
+incorporated in the models of Aron and Colbeck (1995, 1998).
+
+    In this manner, much work has been done to improve the models of thermal conductivity
+
+through microstructure, well beyond assuming a simplified geometry of spheres.
+
+5. Proposed Model
+
+    In the proposed theory, we regard the frost as a porous medium. We consider as a starting
+
+point the model of Zehner and Schlunder (1970) established for packed beds, which is known
+
+to be valid for the full range of void fractions and for solid-to-fluid conductivity ratio less
+
+than 1000 (Cheng and Hsu, 1999; see also Kaviany 1995). As the ice to air thermal
+
+conductivity ratio is about 100, the choice of Zehner-Schlunder model is justified for our
+
+current purposes. Vapor mass diffusion and forced convection effects are then taken into
+
+account to arrive at the effective frost thermal conductivity.
+
+    The following physical assumptions are made:
+
+(a) Heat transfer in the frost layer is primarily one-dimensional.
+
+(b) Frost density and thermal conductivity are independent of frost thickness.
+
+(c) Thermal radiation within the frost layer is negligible This is so considering that the frost
+
+temperatures are low. Dietenberger (1983) has shown that for ice crystals the radiation
+
+effective conductivity is negligible for the size of ice crystals and the temperature levels of
+
+the frost layer (an order of magnitude less than the thermal conductivity of air).
+
+(d) The gas spaces in the frost layer are small enough that heat transfer by natural
+
+convection within the frost layer is negligible. The effect of natural convection in porous
+
+frost layers is manifest on account of convective currents (Benard convection represented by
+
+a pattern of hexagonal cells) set up in enclosed spaces under certain conditions of unstable
+
+
+
+
+                                                                                             13
+configuration. Natural convection becomes significant only when the gas-filled spacing is of
+
+the order of 1 cm (Woodside, 1958).
+
+(e) The total gas pressure is constant within the frost layer, and is equal to the atmospheric
+
+pressure (Le Gall et ai., 1997).
+
+(f) Soret and Dufour effects are negligible (Le Gall et ai., 1997).
+
+(g) The local humidity of air in the frost layer corresponds to saturation humidity at that
+
+temperature (thermodynamic equilibrium).
+
+   A description of the various components of the effective thermal conductivity is provided
+
+below.
+
+5.1. Packed Bed Stagnant Thermal Conductivity
+
+    Many theoretical models for the effective thermal conductivity of porous packed beds
+
+were developed since the classical work of Maxwell (1873) and of Lord Rayleigh (1892),
+
+which were limited to relatively small solids fraction.
+
+   Zehner and Schlunder(1970) arrived at an analytical expression for the effective stagnant
+
+thermal conductivity of a packed bed. They considered for the unit cell one-eighth of a
+
+cylinder (inner cylinder of unit radius and outer cylinder of radius R), see Fig 2. Fluid is
+
+filled between the inner and outer cylinders while the inner cylinder consists of both the solid
+
+phase (shaded area) and the fluid phase with the interface area Afs described by (Cheng and
+
+Hsu'1999)
+
+                                                      2
+                                        2         z
+                                      r +                   =1                                 (4a)
+                                            [B -(B -1)z]2
+
+where rand z refer to the cylindrical coordinates (Fig. 2), andB is the shape factor
+
+characterizing the geometrical effect of the solid particle. For B ---+ 0, the boundary becomes
+
+
+
+
+                                                                                          14
+-----   -   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+                      the z axis with no solid volume; for B = 1 the solid becomes a sphere, and for B ~ 00 the
+
+                      solid occupies the entire inner cylinder. In the cylindrical geometry, the cylinders are
+
+                      oriented vertically in the direction of heat flux.
+
+                         In their analysis, Zehner and Sch1under(1970) assume that one-dimensional heat
+
+                      conduction in the unit cell (Fig. 2) follows two parallel paths: the first path is through the
+
+                      fluid in the outer concentric cylinder (of inner radius of unity and outer radius R), and the
+
+                      second path is through the inner cylinder (of unit radius), which is comprised of both the
+
+                      solid and the fluid phases. Thus the effective thenna1 conductivity of the unit cell is
+
+                      expressed by
+
+
+                                                                                                                       (4b)
+
+
+                      The quantity k ei is the equivalent thenna1 conductivity of the inner cylinder, and depends on
+
+                      the shape of the solid-fluid interface Afs given by (Eq. 4a). Based on an analogy with mass
+
+                      transfer experiments, a relation for the unknown R in tenns of the porosity is considered as
+
+                                                                                                                       (4c)
+
+                      For a more detailed derivation of the effective thenna1 conductivity, the reader is referred to
+
+                      the work ofHsu et al. (1994).
+
+                          The effective thenna1 conductivity of a porous packed bed is finally expressed by
+
+
+                                        ke =1-~I-1f/ +
+                                        kl
+                                                           2h[ (1-~)B
+                                                            1-r;B (1-r;B?
+                                                                              1n(_1 )_(B+l)_ B-1]
+                                                                                 r;B    2    l-r;B
+                                                                                                                       (5a)
+
+
+                      where the shape factor B is related to the porosity If/ by the relation
+
+
+
+                                                                                                                       (5b)
+
+
+
+
+                                                                                                                  15
+and
+
+                                                                                               (Sc)
+
+In the above equations, kI and k2 denote the thermal conductivity of the stagnant fluid and
+
+the solid respectively. The porosity If/ appearing in Eqs. (Sa) and (Sb) is defined by
+
+                                        If/ == (P2 - P)/(P2 -   pd                             (Sd)
+
+where P stands for the density of the packed bed (frost in our case), PI is the density of the
+
+fluid (air-vapor in our case), and P2 the density of the solid (ice in our case). It is related to
+
+the solids fraction ¢ by the relation
+
+                                                1f/=1-¢                                        (Se)
+
+      It was suggested by Zehner and Schlunder(1970) that Eq. (Sb) can be approximated by
+
+
+
+                                            B~ c('~V'     r                                       (Sf)
+
+
+with m =10/9. The constant C depends on the shape of the particle. Zehner and Schlunder
+
+(1970) suggest that C = 1.2S,I.40 and 2.S for spheres, broken (irregular particles) and
+
+cylinders respectively.
+
+      Cheng and Hsu (1999) point out that the Zehner-Schlunder model (1970) agrees well with
+
+the experimental data ofNozad et al. (198S) atlf/ = 0.4, involving spherical inclusions for
+
+
+k2 / k} < 10 3 . For k2 / k} > 10 3 , the Zehner-Schlunder model underpredicts the effective
+
+
+stagnant thermal conductivity substantially. Hsu et al. (1994) postulated that for k2 / k} > 10 3
+
+solid-solid conduction through the finite contact area between the spherical particles (arising
+
+from flattening of spheres due to external loads or the weight of the bed itself) becomes the
+
+main mechanism of heat transfer, and that the reason for this underprediction of data for
+
+
+
+                                                                                             16
+                                                                                        ----------------- -
+
+
+
+
+k2 / k J > 10 3 is the assumption of point contacts between spheres. For values of k2 / k J < 10 3 ,
+
+heat conduction through the finite contact area is of lesser importance, and heat transport is
+
+primarily controlled by the partic1e-fluid-partic1e conduction. A detailed comparison of
+
+Zehner-Schlunder model with data for k2 / kl ranging from 8 to 1200 and for various values
+
+of solids fraction was recently presented by the author (2010).
+
+5.2. Effect of Mass Diffusion
+
+   The effective thermal conductivity of air in the presence of vapor diffusion can be
+
+expressed as
+
+                                                                                                   (6)
+
+where kd is the contribution of mass diffusion to the effective thermal conductiyity of air.
+
+The contribution of thermal radiation to the effective conductivity of air is neglected relative
+
+to the effects of diffusion (Dietenberger' 1983).
+
+   The mass diffusion contribution kd is determined from (Sahin 2000)
+
+
+                                                                                                   (7)
+
+
+where mdenotes the local humidity ratio of moist air in the frost layer (assuming
+
+equilibrium), hsv the latent heat of sublimation, D the mass diffusivity of water vapor. We
+
+can rewrite Eq. (7) in the form
+
+
+                                                                                                   (8)
+
+
+where
+
+                                                                                                   (9)
+
+
+
+
+                                                                                              17
+                                                  Pa = Pt - P v                              (10)
+
+   In the above equations, Pt is the ambient (total) pressure (taken as 1 atm here), P v is the
+
+partial pressure of water vapor, and P a the partial pressure of dry air. The mass diffusivity is
+
+determined from (Pruppachar and Eklett, 1978) as
+
+                                                                                             (11)
+
+
+where Tf is the frost temperature in degrees Kelvin, and To the reference temperature
+
+
+(273.15 K). The partial pressure Pvat temperature Tf is given by the Clasius-Clapeyron
+
+equation
+
+
+                                        P v = Pvo exp -hSV ( -
+                                                     [ Rv
+                                                              1 --
+                                                                 1
+                                                             To Tf
+                                                                    Jl                       (12)
+
+
+
+where Pvo stands for the partial pressure of water vapor at reference temperature To, and Rv
+
+the gas constant for water vapor. Noting that
+
+                                                                                             (13)
+
+
+we express Eq. (8) in the form
+
+
+                         k       = h 2 D(Ma / Mv)                  (_1 __
+                                                             ex [hsv     1 Jl                (14)
+                             d     sv        2 3       PvO     P R T.   T
+                                           Rv T                    v 0   f
+
+where M a' M f denote the molecular weights of air and water vapor respectively.
+
+5.3. Effect of Eddy Convection
+
+   Most of the data on frost thermal conductivity measurements were obtained for flow of
+
+moist air under forced convection, while the remainder belong to natural convection. At
+
+relatively higher densities the frost becomes a mesh of dendrites with enclosed air pockets
+
+
+
+
+                                                                                           18
+(Biguria and Wenzel 1970). It is therefore plausible that a component of this air flow is
+
+directed transverse to the frost layer composed of surface roughness elements, thus randomly
+
+penetrating the voids and enhancing the energy transport by turbulent eddy convection.
+
+   In the presence of mass diffusion and eddy convection, the effective thermal conductivity
+
+of air may be expressed as
+
+                                                                                              (15)
+
+where kc denotes the contribution of eddy convection to the effective conductivity of air.
+
+   By a comparison of their experimental data for frost conductivity and analysis, Biguria
+
+and Wenzel (1970) have arrived at a correlation for the turbulent (eddy) conductivity of air as
+
+a function of freestream velocity U 00 as follows:
+
+                                     kc =0.00568Uoo W/(m.K)                                   (16)
+
+where U 00 is expressed in rn/s. According to the data of various investigators compiled by
+
+Yang and Lee (2004), forced convection measurements were obtained for freestream
+
+velocities ranging from ito 12 rn/s. The data compiled by O'Neal and Tree (1985) for
+
+cylinders, flat plates, annuli, and parallel plates suggest that the freestream velocities ranged
+
+from 0.2 to 17 rn/s.
+
+    Equation (16) indicates that kc / kl =1.2,2.4 and 3.5 for U 00 =5, 10 and 15 rn/s
+
+respectively, considering kl ~ 0.024 W/(m.K). This consideration represents the significance
+
+of eddy convection in enhancing the effective thermal conductivity of frost by increasing the
+
+effective stagnant conductivity of air. This observation explains the considerable scatter in
+
+many of the correlations proposed for the effective thermal conductivity of frost as a function
+
+of frost density alone.
+
+
+
+
+                                                                                            19
+      From a more fundamental consideration, the eddy convection in porous media is
+
+intimately related to the phenomenon of thermal dispersion (see Cheng and Vortmeyer,
+
+1988; Hsu and Cheng, 1990). Thermal dispersion is manifested on account of microscopic
+
+fluid velocity and temperature deviations from the corresponding average values, and results
+
+in enhanced heat transport. Thus fluid flow in the pore channels of porous media my be
+
+regarded as pseudo-turbulence. Many correlations were proposed for transverse and
+
+longitudinal thermal dispersion conductivity, and substantial variation prevails between the
+
+various correlations (Du et aI., 2003). Experiments on forced convection through porous
+
+media suggest that the magnitude of transverse thermal dispersion conductivity is often much
+
+larger than that of molecular diffusion, and that the axial thermal dispersion conductivity is
+
+negligible relative to the bulk convection (Yu and Li 2004). Measurements also reveal that
+
+thermal dispersion increases as the porosity decreases (Du et aI., 2003).
+
+      Hsu and Cheng (1990) proposed correlations for the transverse thermal dispersion
+
+conductivity for high and low Reynolds number (Re f) flows in porous media as:
+
+
+
+
+                                                                                           (17a)
+
+
+
+
+where                                                                                      (17b)
+
+
+and                                                                                        (17c)
+
+
+with the subscript denoting the fluid phase. The quantities Prf ,Pef denote respectively the
+
+Prandtl number and Peclet number of the fluid, urn the mean axial velocity of the fluid, and
+
+d p the particle diameter. The constants D1 , D2 are evaluated by comparison of the model
+
+
+
+                                                                                          20
+with measurements. The effect of tortuous flow paths on the constant DI for high Reynolds
+
+number flow was reported by Yu and Li (2004) with the aid of a fractal model. Transverse
+
+thermal dispersion and wall channeling effects (existence of peak velocity in a region close to
+
+the external boundary) were treated by Cheng and Vortmeyer (1988). Convection in variable
+
+porosity media, including channeling effects, were considered by Vafai (1984).
+
+   In the present context of frost growth, the external flow is on the top of the frost layer
+
+instead of streaming through the interior of the frost layer in the axial direction transverse to
+
+the frost thickness, and only a portion of this external flow is directed into the interior of the
+
+frost layer in longitudinal and transverse directions, leading to low Reynolds number flow
+
+regime. Thus existing information on the thermal dispersion effects in the traditional packed
+
+beds cannot be directly applied to the circumstances of frost formation. Much work remains
+
+to be undertaken before quantitative effects of thermal dispersion in frost layers can be
+
+addressed with regard to the effective thermal conductivity of frost. A detailed account of
+
+thermal dispersion effects in frost layers is beyond the scope of the present work.
+
+5.4. Thermophysical Properties
+
+   In the present analysis, the properties are taken as follows. The thermal conductivity of
+
+air is calculated as (Rohsenow and Hartnett' 1973; Dietenberger, 1983)
+
+
+                        kl = kair = 2.646xlO-
+                                                13          TII2
+                                                     [ 1+(245IT)1O
+                                                                       1
+                                                                       W
+                                                                   12/--                        (18)
+                                                                    T m.K
+
+where T is in degrees Kelvin. The thermal conductivity of ice is obtained from the relation
+
+(Dillard and Timmerhaus, 1969; also Dietenberger, 1983)
+
+                                    k2 = k ice = 630lT W/(m.K)                                  (19)
+
+where T is the absolute temperature (degrees K).
+
+
+
+                                                                                            21
+    The latent heat of sublimation of ice is detennined from (Mago et ai., 2004)
+
+                         hjv = {-o. 1083[1.8(T-273.16)+ 32]+ 2833} kJ/kg                         (20)
+
+where T is in degrees Kelvin.
+
+6. Results and Comparison
+
+6.1 Comparison with Correlations
+
+    In the evolving frost layer, the actual structure of the ice particles is very complex, and
+
+far from being that of spheres. In an effort to understand the sensitivity of the effective
+
+conductivity of porous media on particle shape, calculations with Eq. (5) have been made for
+
+spheres, cylinders and irregular particles with k2 I k} == 100 in the absence of mass diffusion
+
+and eddy convection, and the predicted effective thennal conductivity is compared with the
+
+correlations of frost thennal conductivity to density due to Y onko and Sepsy (1967) and of
+
+Van Dusen (1929). The results suggest that cylinders lead to the highest effective·
+
+conductivity with the irregular particles producing slightly higher values than the spheres,
+
+and that the cylinder results are closer to the experimental data (correlations) of frost relative
+
+to those of spheres and irregular-shaped particles. In view of these considerations, we
+
+hypothesize here that the frost particles are better represented by cylinders, and thus we
+
+consider only cylinders in our subsequent results.
+
+   In the case of cylindrical geometry referred to in the Zehner-Schlunder model, the
+
+cylinders are oriented vertically (nonnal to the plate surface) in the direction of heat flow.
+
+This choice of cylinders points to a very real effect in the fonnation of frost, which can
+
+develop anisotropically, with a preferred direction of growth. This consideration might
+
+explain why the cylindrical geometry is better suited over spheres in describing the frost
+
+thennal conductivity.
+
+
+
+                                                                                              22
+   The role of mass diffusion on the frost thermal conductivity is illustrated in Fig. 3, with
+
+the aid ofEqs. (5), (6), and (14), with kl in Eq. (5a) replaced by kId' The mass diffusion
+
+effect is shown for three different frost temperatures of250 K, 260 K, and 273 K (the latter
+
+representing the maximum possible value). The conductivity contribution due to mass
+
+diffusion increases with an increase in temperature. There is seen a crossover of the curves at
+
+large value of ¢. At Tf = 273K, the mass diffusion contribution improves the agreement
+
+with data; but even with mass diffusion, there still exists considerable underprediction of the
+
+data. Thus additional mechanisms for enhancing the frost conductivity seem to exist.
+
+   Figure 4 presents the predictions of kef with mass diffusion and eddy convection on the
+
+basis ofEqs. (5) and (14-15), with ki in Eq. (5a) replaced by k idc ' The diffusion
+
+contribution is taken at Tf = 273K, and an eddy convection factor kc / ki = 1 is considered.
+
+The increase in the conductivity due to eddy convection is of the same order as that due to
+
+mass diffusion. In the Yonko and Sepsy 's data, the air velocities range of 1.3 to 5.3 mls
+
+roughly correspond to kc / ki of about 0.3 to 1.25 (an average of about 0.8) in accordance
+
+with Eq. (16). With the inclusion of eddy convection effect, the agreement between the
+
+theory and the data has improved. In particular, the theory accounting for combined diffusion
+
+and convection matches closely with Van Dusen's correlation up to about ¢ = 0.4, but still
+
+significantly underpredicts the conductivity expressed by the Yonko-Sepsi correlation. A
+
+frost temperature of 273 K is slightly unrealistic in terms of experimental considerations, and
+
+so are the conditions of natural convection in the experiments.
+
+   The effect of eddy convection levels on the effective thermal conductivity of frost, as
+
+computed from Eqs. (5) and (14-15), is demonstrated in Fig. 5. The comparisons are shown
+
+
+
+                                                                                          23
+for kc / kl =1,2 and 3, and at T = 273 K. It is observed that with increasing value of the eddy
+
+convection, the effective frost conductivity increases, as is to be expected. Recall that the
+
+Yonko-Sepsy correlation constitute data for which kc / kl ranges from 0.3 to l.25. For
+
+¢ < 0.6, better agreement is achieved between the prediction and the Yonko-Sepsy
+
+correlation with a choice of kc / kl = 3. In the case of Van Dusen correlation, the condition
+
+of kc / kl = 1 affords better accord between the theory and the correlation up to ¢ = 0.4 . It
+
+appears that a mean value of kc / kl = 2 may be regarded as reasonable considering the full
+
+range of frost density. It appears that the value of kc / kl = 3 represent the high end of free
+
+stream velocity values, and are not as realistic as kc / kl = 1 or 2.
+
+    A comparison of the present theory, according to Egs. (5) and (14-15), with the
+
+correlation of Sturm et al. (1997) is depicted in Fig. 6. The data are obtained for mean
+
+temperature of about 258 K cover various types of snow, having different microstructure, and
+
+as a result show considerable scatter. The results from Van Deusen (1929) correlation and
+
+from Ostin and Anderson (1991) correlation are also shown for comparison purposes. For
+
+solid fractions ¢ between 0.2 and 0.5, the theory is closer to Van Deusen and Ostin and
+
+Anderson correlations, whereas for ¢ > 0.5 the theory agrees better with the correlation of
+
+Sturm et al. (1997) and of Os tin and Anderson correlation, which extends up to the farthest
+
+value of ¢ ~ 0.74.
+
+6.2 Comparison with Measurements
+
+    Figure 7a illustrates a comparison of the present theory, given by Egs. (5) and (14-15),
+
+with the data for the frost conductivity obtained by Pitman and Zuckerman (1967) and
+
+Kaempfer et al. (2005). Eg. (18) is used to obtain the thermal conductivity of air.       Both the
+
+
+
+                                                                                            24
+measurements correspond to an average temperature of 246 K. With regard to the data of
+
+Pitman and Zuckerman (1967), the snow used in the experiments was composed of vapor
+
+grown crystals having length of 3 to 5 mm. The estimated uncertainty in the measured
+
+conductivity is about 10 percent. In the measurements of Kaempfer et al. (2005) the snow
+
+sample is 2 cm high and 4.8 cm in diameter, with the data taken at a single density of 268
+
+kg/m3. The measured conductivity is 0.18 ± 0.02 Mlm.K. The snow microstructure was
+
+imaged by X-ray micro-tomography. The predicted snow conductivity                     from their
+
+microstructural numerical model (based on some assumed structural parameters, and
+
+accounting for conduction mechanism only) was found to be 0.15 ± 0.01 W/m.K.
+
+   The comparisons suggest that the present theory, accounting for mass diffusion and an
+
+eddy convection factor kc / kl = 1, matches the data satisfactorily over a broad range of solid
+
+fraction up t;b = 0.45 (density of 450 kg/m3). Only at t;b = 0.54 the theory with kc / kl = 2
+
+offers a better agreement with the data. The relatively close agreement between the two sets
+
+of data at t;b = 0.29 (density of 268 kg/m3) should serve as a testament to the reliability of the
+
+data over the particular range of frost density. These comparisons suggest the importance of
+
+mass diffusion and eddy convection phenomena in governing the effective thermal
+
+conductivity of frost.
+
+    Figure 7b shows a comparison of the predicted frost conductivity, provided by Eqs. (5)
+
+and (14-15), with the data of Pitman and Zuckerman (1967) for temperatures of 185 K, 246
+
+K and 268 K. These data are the most widely cited data, and were obtained with an artificial
+
+snow (freezer frost) with a steady state measuring method. Note that in the ordinate the
+
+dependence of air thermal conductivity with temperature kl (T)is taken into account. The
+
+results suggest that the data for thermal conductivity at different temperatures (covering a
+
+
+
+                                                                                           25
+wide temperature range) when presented in dimensionless form nearly collapse up to ifJ of
+
+about 0.45, and in this range excellent agreement between the theory and the data is noticed.
+
+For ifJ> 0.5, the measured conductivity at the highest temperature of 268 K considerably
+
+exceeds the predictions. According to Sturm et al. (1997), the reliability of the measurements
+
+of Pitman and Zuckerman (1967) is questionable.
+
+   The comparisons presented in Figs. 7a and 7b, suggesting that the model underpredicts
+
+the data for the effective frost thermal conductivity for ifJexceeding about 0.5, reveal that
+
+thermal dispersion effect likely increases with solids fraction in this region. This is
+
+qualitatively consistent with the measurements on packed beds suggesting that thermal
+
+dispersion effect increases as the porosity decreases (Du et aI., 2003).
+
+   A comparison of the model predictions from Eqs. (5) and (14-15) with the experimental
+        ~
+
+
+data of Brian et al. (1970) for the average thermal conductivity at Tf     = 175 K is shown in
+
+Fig. 8. Thermal conductivity of air is obtained from Eq. (18). The data are limited to
+
+relatively low density frost having density ranging from 50 to 130 kg/m3 , The conductivity
+
+data are obtained from transient measurements. The average thermal conductivity of the frost
+
+layer was determined from the measured values of the heat flux, the average temperature
+
+difference across the frost, and the frost thickness (Fourier's law). The scatter in the data is
+
+believed to be due to structural differences in the frosts of the same density, and due to
+
+differences in the freestream velocity and humidity. The present theory based on mass
+
+diffusion and an eddy convection factor of one agrees favorably with the measurements.
+
+These comparisons, although restricted to a relatively lower range of frost density, appear to
+
+be consistent with those presented in Fig. 7, and serve to support the validity and usefulness
+
+of the proposed model.
+
+
+
+                                                                                         26
+7. Discussion
+
+   The present results suggest that cylindrical inclusions may better represent the frost inner
+
+structure. As the heat transfer in frost is anisotropic, the model presented here is not expected
+
+to be applicable to the prediction of the effective thermal conductivity of frost in the direction
+
+perpendicular to the main axes of the cylindrical inclusions. However in most of the one-
+
+dimensional formulations of heat and mass transfer during frost growth, it is the effective
+
+thermal conductivity of frost in the direction of heat flow that is required. A detailed account
+
+of two-dimensional thermal conduction in frost layers is beyond the scope of the present
+
+investigation.
+
+s. Conclusions
+   The Zehner-Schlunder model for the effective thermal conductivity of porous media has
+
+been extended to describe the effective thermal conductivity of frost. By superposing the
+
+physical effects of mass diffusion and eddy convection on the molecular thermal conductivity
+
+of air, as expressed by Eqs. (14) and (15), the proposed model yields estimates for the
+
+effective thermal conductivity of frost, given by Eq. (5), as a function of frost density and
+
+temperature over the full range of frost density. Comparisons of the model predictions with
+
+the well-known correlations and measurements for frost conductivity suggest that the frost
+
+may be better represented by an assemblage of cylinders rather than spheres. The proposed
+
+model reveals that both mass diffusion and eddy convection effects have significant effect
+
+on the frost thermal conductivity, and are of the same order.
+
+Acknowledgments
+
+     The author is grateful to the reviewers for their valuable suggestions and criticism in
+
+improving the manuscript.
+
+
+
+
+                                                                                           27
+References
+
+Abels, H., Rep. Meteor., Vol. 16, No.1, 1893.
+                                                   I
+Andrews, T., Observations on pure ice and snow, Proc. R. Soc., London, Vol. 40, pp. 544-
+
+549, 1886.
+
+Arons, E.M. and Colbeck, S.C., Geometry of heat and mass transfer in dry snow: a review of
+
+theory and measurement, Reviews of Geophysics, Vol. 33, pp. 463-493, 1995.
+
+Arons, E.M., and Colbeck, S.C., Effective medium approximation for the conductivity of
+
+sensible heat in dry snow, In. J. Heat Mass Transfer, Vol. 41, pp. 2653-2666, 1998.
+
+Auracher, H., Effective thermal conductivity of frost, in: Proceedings of the International
+
+Symposium of Heat and Mass Transfer in Refrigeration Cryogenics, Dubrovnik, pp. 285-
+
+302, 1986.
+
+Biguria, G. and Wenzel, L.A., Measurement and correlation of water frost conductivity and
+
+density, I&EC Fundamentals 9 (1970) 129-138.
+
+Brian, P.L.T., Reid, R.C., Y.T. Shah, Y.T., Frost deposition on cold surfaces, I&EC
+
+Fundamentals, Vol. 9, pp. 375-380, 1970.
+
+Burghardt, M.D., Engineering Thermodynamics with Applications, second ed., Harper &
+
+Row Publishers, New York, 1972.
+
+Cheng, P. and Hsu, C-T., The effective stagnant thermal conductivity of porous media with
+
+periodic structures, J. of Porous Media, Vol. 2, pp. 19-38,1999.
+
+Cheng, P. and Vortmeyer, D., Transverse thermal dispersion and wall channeling in a packed
+
+bed with forced convective flow, Chern. Engng. Sci., Vol. 9, pp. 2523-2532, 1988.
+
+Cheng, C-H and Wu, K-K, Observations of early-stage frost formation on a cold plate in
+
+atmospheric air flow, ASME 1. of Heat Transfer, Vol. 125., pp. 95-102,2003.
+
+
+
+
+                                                                                         28
+Coles, W.D., Experimental dett<rmination of thermal conductivity of low density ice, NACA
+
+Technical Note 3143, 1954.
+
+Deveaux, J., Radiothermic economy of fields of snow and glaciers, Science Abstracts Series
+
+A, Vol. 36, pp. 980-981, 1933; abstracted from Ann. d. Physics, Vol. 20, pp. 5-67, 1933.
+
+Dietenbeger, M.A., Generalized correlation of the water frost thermal conductivity, Int. J. of
+
+Heat Mass Transfer, Vol. 26. pp. 607-619, 1983.
+
+Dillard, D.S., and Timmerhaus, K.D., Low temperature thermal conductivity of selected
+
+dielectric crystalline solids, in Thermal Conductivity, in: by C.T. Ho and R.E. Taylor (Ed.),
+
+Proceedings of the 8th Conference, Plenum Press, New York, 1969, pp. 949-967.
+
+Du, J., Hu, X., and Wang, B-X, Thermal dispersion model for single phase flow in porous
+
+media, Heat transfer- Asian Research, Vol. 32, pp. 545-552,2003.
+
+Emery, E.F., and Siegel, B.L., Experimental measurements of the effects of frost formation
+
+on heat exchanger performance, Proceedings of AlANASME Thermophysics and Heat
+
+Transfer Conference, Heat and Mass Transfer in Frost and Ice Packed Beds and
+
+Environmental Discharges, in: R.B.V. Annili, D.E., S. Sengupta, S. (Eds.), ASME HTD-
+
+l39, pp. 1-7, 1990.
+
+Feng, Y., Yu, B., Zou, M., and Xu, P., A generalized model for t he effective thermal
+
+conductivity of unsaturated media based on self-similarity, J. Porous Media, Vol. 10, pp.
+
+551-568,2007.
+
+Hayashi, Y., Aoki, A., Adachi, S., and Hori, K., Study of frost properties correlating with
+
+frost formation types, ASME J. of Heat Transfer, Vol. 99, pp. 239-245, 1977.
+
+Hertz, H., J. Math. (Crelle's Journal), Vol. 92, 1988.
+
+
+
+
+                                                                                         29
+Hsu, C.T., Cheng, P., and Wong, K.W., Modified Zehner-Schlunder models for stagnant
+
+thermal conductivity of porous media, Int. J. of Heat Mass Transfer, Vol. 37, pp. 2751-2759,
+
+1994.
+
+Hsu, C. T. and Cheng, P., Thermal dispersion in a porous medium, Int. J. of Heat and Mass
+
+Transfer, Vol. 33, pp. 1587-1597, 1990.
+
+Jansson, l, Ofvers. af K .. Svenska Vet. Akad. , Vol. 58, pp. 207-222, 1901.
+
+Le Gall, R., Grillot, lM., and Jallut, c., Modeling of frost growth and densification, Int. J. of
+
+Heat Mass Transfer, Vol. 40, pp. 3177-3187, 1997.
+
+Kamei, S., Mizushina, T., Kifune, S., and Koto, T., Research on frost formation in a low
+
+temperature dehumidifier, Chern. Eng. ofJapan, Vol. 14, p. 53, 1950.
+
+Kaempfer, T.V., Schneebeli, M., and Sokratov, S.A., A microstructural approach to model
+
+heat transfer in snow, Geophys. Res. Lett., Vol.32, L21503, 2005.
+
+Kandula, M., On the effective thermal conductivity of porous packed beds with uniform
+
+spherical particles, accepted/or publication in l of Porous Media, February 2010.
+
+Kaviany, M., Principles of Heat Transfer in Porous Media, Springer-Verlag, New York,
+
+1995.
+
+Kondrateva, A.S., Thermal conductivity of snow cover and physical process caused by the
+
+temperature gradient, S.I.P.R.E. Translation No. 22, 1954.
+
+Mago, P.G. and Sheriff, S.A., Frost formation and heat transfer on a cold surface in ice fog,
+
+AIAA-2004-164, 2004.
+
+Maxwell, lC., A Treatise on Electricity and Magnetism, Clarendon Press, Oxford, 1873, p.
+
+365.
+
+
+
+
+                                                                                          30
+                                                 ----------------------------------------
+
+
+
+
+Nozad, S., Carbonell, R.G., and Whitaker, S., Heat conduction in multiphase systems, I:
+
+Theory and experiments for two-phase systems, Chern. Eng. Sci., Vol. 40., pp. 843-855,
+
+1985.
+
+O'Neal, D.L. and Tree, D.R., A review of frost formation in simple geometries, ASHRAE
+
+Trans., Vol. 91. pp. 267-281, 1985.
+
+Ostin, R. and Anderson, S., Frost growth parameters in a forced air stream, Int. J. of Heat
+
+Mass Transfer, Vol. 34 (4/5), pp. 1009-1017, 1991.
+
+Pitman, D., and Zuckerman, B., Effective thermal conductivity of snow at -88°, ~27°, and -
+
+5°C, J. of Applied Phys., Vol. 38, pp. 2698-2699, 1967.
+
+Pruppacher, H.R. and Klett, J.D., Microphysics of Clouds and Precipitation, Reidel,
+
+Dordrecht, 1978.
+
+Rayleigh, Lord, On the influence of obstacles in rectangular order upon the properties of a
+
+medium, Phil. Mag., Vol. 34, pp. 481-502; 1892.
+
+Rosenow, W.M. and Hartnett, J.P., Handbook of Heat Transfer, McGraw-Hill, New York,
+
+1973.
+
+Sahin, A.G., Effective Thermal conductivity of frost during the crystal growth period, Int. J.
+
+of Heat Mass Transfer, Vol. 43, 539-553, 2000.
+
+Sami, S.M. and Duong, T., Mass and heat transfer during frost growth, ASRAE Transactions,
+
+Vol. 95, pp. 158-165, 1989.
+
+Schropp, K., Investigation of dew and frost formation on cooling tubes in still air and the
+
+influence upon the heat transfer, Zeitschr. ges. katte. Ind., Vol. 42, pp. 81-85, 127-131, 151-
+
+154, 1935
+
+
+
+
+                                                                                          31
+Shin, J., Tikhonov, A.V., and Kim, C., Experimental study on frost structure on surfaces with
+
+different hydrophilicity: density and thermal conductivity, ASME 1. of Heat Transfer, Vol.
+
+125,pp.84-94,2003.
+
+Sturm, M., Holmgen, J., Konig, M., and Morris, K., The thermal conductivity of seasonal
+
+snow,1. Glaciology, Vol. 43, pp. 26-41, 1997.
+
+Tien, C.L. and Vafai, K., Statistical bounds for the effective thermal conductivity of
+
+microsphere and fibrous insulation, AIAA Progress Series, Vol. 65, pp. 135-148, 1979.
+
+Timoshenko, S.P. and Goodier, J.N., Theory of Elasticity, third ed., McGraw-Hill Book Co.,
+
+New York, 1970.
+
+Vafai, K., Convective flow and heat transfer in variable-porosity media, 1. Fluid Mechanics,
+
+Vol. 147, pp. 233-259, 1984.
+
+Van Dusen, M.S., International Critical Tables 5, McGraw-Hill Book Co., p. 216, 1929
+
+Woodside, W., Calculation of the thermal conductivity of porous media, Canadian 1. of
+
+Phys., Vol. 36, pp. 815-823, 1958.
+
+Yang, D-K and Lee, K-S, Dimensionless correlations of frost properties on a cold plate, Int.
+
+J. of Refrigeration, Vol. 27, pp. 89-96,2004.
+
+Yonko, J.D. and Sepsy, C.F., An investigation of the thermal conductivity of frost while
+
+forming on a flat horizontal plate, Paper No. 2043, Presented at ASHRAE 74th Annual
+
+Meeting, Minnaepolis, MN, 1967.
+
+Yu, B. and Cheng, P., Fractal models for the effective thermal conductivity of bidis persed
+
+porous media, 1. Thermophysics and Heat Transfer, Vol. 16, pp. 22-29, 2002.
+
+Zehner, P. and Schlunder, E.O., Thermal conductivity of granular materials at moderate
+
+temperatures (in German), Chemie Ingr. Tech., Vol. 42, pp. 933-941, 1970.
+
+
+
+
+                                                                                         32
+Figure Captions
+
+Figure l(a). Representation of frost structure during various stages of frost growth.
+
+Figure 1(b). Representation of ice crystal structure (Sahin, 2000).
+
+Figure 1(c). Representation of heat and mass transport by diffusion and convection
+
+in a frost layer.
+
+Figure 2. Schematic of the unit cell in Zehner-Schlunder model (1970).
+
+Figure 3. Effect of mass diffusion on the effective thermal conductivity of frost at various
+
+frost temperatures.
+
+Figure 4. Effect of mass diffusion and eddy convection on the effective thermal conductivity
+
+of frost at 273 K.
+
+Figure 5. Dependence of thermal conductivity of frost on mass diffusion and eddy convection
+
+for various eddy convection coefficients.
+
+Figure 6. Comparisons of predicted thermal conductivity of frost with the correlations of
+
+Sturm et al. (1997), Van Deusen (1929), and Ostin and Anderson (1991).
+
+Figure 7a. Comparisons of predicted thermal conductivity of frost with the measurements of
+
+Pitman and Zuckerman (1967) and Kaempfer et al. (2005) at 246 K.
+
+Figure 7b. Comparisons of predicted thermal conductivity of frost with the measurements of
+
+Pitman and Zuckerman (1967) and Kaempfer et al. (2005) at various temperatures.
+
+Figure 8. Comparisons of predicted thermal conductivity of frost with the measurements of
+
+Brian et a1 (1970).
+
+
+
+
+                                                                                        33
+                     - - lill1~                                                  ful~·-d,.:\"I:I()p ...-d
+                        nuch.:alion                           HlI!Rmlh           gnJ\\th
+                      condL!n-       \      1-<1 gnm1h ).-'-~--+-
+                      salilln       --'li"I.Jst l;olumn         ~       :::--.
+                      moist
+                      I..   air             !,      \11
+                                            ."-/\"-,II      :m~... ~~
+                                                            ""'(j
+                                                                >'  .~e-
+                       .,            n ("         f)   (l             'fP
+                     ...",."""",.,.;.n""';'-rr'"7"l'
+                     supcrtooh.:d thlSI lloclcus            cool...'d sllrrac~
+                     dmpld
+
+                                                   (a)
+
+
+
+
+          colunm            plate                           dendrite
+
+                                                                                                                  ICC
+
+                                    (b)                                                                     (c)
+
+Figure 1. (a) Representation of frost structure during various stages of frost growth, (b)
+Representation of ice crystal structure (Sahin 2000), (c) Representation of heat and mass
+transport by diffusion and convection in a frost layer.
+
+
+                                            direction ofheat flow
+
+
+                                                                                                            z=Q
+             r
+
+
+
+
+                                                                                                            z=l
+
+
+
+
+                                                               z
+
+
+      Figure 2. Schematic of the unit cell in Zehner-Schlunder model (1970).
+
+
+                                                                                                                        34
+          100
+                         - - Theory (Zehner & Schlunder (970)
+                         ----. Theory (diffusion: T,.= 250 K)
+                         ._.- Theon· (diffusion: TI = 2GO K)
+           80                     .
+
+                          - - Thco~· (diffusion: T,= 273K)
+                         .• -- Correlation (Yanko & Sepsy (96 1)
+                          - - (orrdati on (Van Dc lls~ n 1')2'.1)
+           60
+                                    k /k = IOO
+                                            2       t
+                               Theory: Cylinders
+           40
+
+
+           20
+
+
+            o
+                 o              0.2                     0.4         0.6   0.8
+
+
+
+Figure 3. Effect of mass diffusion on the effective thennal conductivity of frost at various
+temperatures.
+
+
+           100
+                     -     - Theory (Zelmcr & Schlunder (1)70)                      j
+                     ----·Theo~· (diffusion: Tt273 K)
+                                                                                I
+
+            80       ._ . - Theory (diffusion-conycction:T,=273 K)
+
+                         - - Correlation (Yonko & Sepsy (967)
+                     . . _- Correlation (Van Dcusen (1)21))
+            60
+                                 k Ik =1
+                                    c           t
+                              k /k = 100
+            40                  2       I
+                           Theory: Cylinders
+
+
+            20
+
+
+             o
+                 o               0.2                    0.4         0.6   0.8
+
+
+
+Figure 4. Effect of mass diffusion and eddy convection on the effective thennal conductivity
+of frost at 273 K.
+
+
+
+                                                                                        35
+           100
+                       - - TheOJ" (diITusion-com'ection: k/ k ,= I)
+                       -----Theof\· (diITusion-colI\'eetion: k Ik =2)
+                                       .                       ..:   I
+
+            80          ._.- Theory (diffusloll-Col1\cction: k Ik =3 )
+                                       •                       l'    I
+
+                         - - Correlation (Yonko & Scpsy 1967)
+                        .. _- Correla tion (Van Deuscn 192'))
+
+           60
+                                 T = 273 K
+                                   f
+                                 k Ik = 100
+                                   2       I
+
+           40               Theory: Cylinders
+
+
+
+            20
+
+
+
+               o
+                   o            0.2               0.4                    0.6           0.8
+
+
+
+Figure 5. Dependence of thermal conductivity of frost on mass diffusion and eddy convection
+for various eddy convection coefficients.
+
+
+         100
+                       - - ( nlrcl~111()11 Or\lllitn ct:11 (I'I'P)
+                       -----Correaltion orYan Deusen (1929)
+          80           ._.- Correlation of OSlin and Anderson ( 11)91 )
+                       .. - Theory (diffusion-colwection: k /k = I)
+                                                                               c   I
+
+
+          60
+                                Tr = 258 K
+                            Theory: Cylinders
+          40
+
+
+          20
+
+
+           o     ~.
+
+               o               0.2               0.4                     0.6            0.8
+                                                             <jl
+Figure 6. Comparisons of predicted thermal conductivity of frost with the correlations
+of Sturm et al. (1997), Van Deusen (1929), and Ostin and Anderson (1991).
+
+
+
+
+                                                                                              36
+                 30
+                                   o Data of Pitman and Zuckerman (1967)                                                                                        ..
+                 25                •          Data of Kaempfer et al. (2005)                                                                              o, , " -
+                                 --Thcory (diffusioll-collycctioll: k Ik = I)
+                                                                                                                  c   I                                  , ,"
+                 20
+                                 -----Theory (djffusion-convection: k /k =2)                                                                      ~ ..
+                                                                                                                                     .. •.
+                                                                                                                  c   I
+                                                                                                                                          ..   ,' j
+
+                                                    T = 246 K                                                                   .. ,,' 0
+                                                       f
+ ~- 15                                                                                                            ,. .
+                                                                                                                          ,,~
+                                              Theory: Cylillders
+ ..!.id
+          II)
+
+                                                                                                    , ..   ....
+                  IO                                                                  ... . '
+                                                                                              . ...
+                                                                                                ~
+
+                                                                               ....
+                                                              .... .... ....
+                                                ~ •• O··
+                              ...... .. -....
+                      5
+
+                      0
+                          0                    0.1                0.2                         OJ                          0.4                   0.5             0.6
+                                                                                               ~
+Figure 7a. Comparisons of predicted thermal conductivity of frost with the measurements of
+Pitman and Zuckerman (1 967) and Kaempfer et a1. (2005) at 246 K
+
+
+                      60
+                                       o Datil of Pit1mlin and ZuckllnulIJI (1 967): 1/ 185 ~
+                                       £::,    Data of Pinman and Zuckenllan ( 1%7): Tt 246 ~
+                      50
+                                       V       Dala llf Pillmun ami i':IICkllnnan ( 1967): T =268 K
+                                                                                                                      f
+                                   - - 'lll\lOry (Jilfllsil1n·I:ol1\\ll:lion:                   "c"I - I: '1",- 185 ~ )                           v
+                      40           -----Theory (diffilsion-convection: k( k,=1: T,=246 ~) H,-,-----1,...f----:;,..,;=-i
+                                                                                                                    ~!
+                                               1h... p,:   d,1l1"" 'iI-LpIlI 'X "I'll . I, 1 I I 1 2r.:\l... )
+
+          ~ 30  II)
+                                                                                                    I
+                                                                                                    '-
+
+          ~
+                                                       Theory: Cylinders
+                      20
+
+                      10
+
+                          0
+                               0                                                                 0.4                  0.5              0.6                0.7        0.8
+
+
+Figure 7b. Comparisons of predicted thermal conductivity of frost with the measurements of
+Pitman and Zuckerman (1967) and Kaempfer et a1. (2005) at various temperatures.
+
+
+                                                                                                                                                                           37
+          5
+
+
+                     T = 175 K
+                                                                 o
+          4           f
+                  Theory: Cylinders
+
+          3
+
+
+          2
+
+                            o Data (Brian et al . 1970)
+                          --Theor\'• (d iffusion-com eClion: k\.' Ik I = I)
+
+
+
+          o ~--~----~----~--~----~--~~--~--~
+           o 0.02 0.04 0.06 0.08 0.1 0. 12 0. 14 0. 16
+                                               ~
+
+Figure 8. Comparisons of predicted thermal conductivity of frost with the measurements of
+Brian et al (1970) at various temperatures.
+
+
+
+
+                                                                                  38
+

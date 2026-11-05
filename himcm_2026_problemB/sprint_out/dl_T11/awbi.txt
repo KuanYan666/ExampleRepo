@@ -1,0 +1,787 @@
+   BASIC CONCEPTS FOR NATURAL
+    VENTILATION OF BUILDINGS
+                     Prof. Hazim Awbi
+
+      Technologies for Sustainable Built Environments Centre
+                     University of Reading, UK
+                  http://www.reading.ac.uk/tsbe
+                  Email: h.b.awbi@reading.ac.uk
+
+
+
+                        CIBSE BSG Seminar: Natural and
+19/05/2010                                                     1
+                        Mixed-Mode Ventilation Modelling
+             Natural Ventilation
+ In Natural Ventilation the airflow is due to wind and buoyancy
+ through cracks in the building envelope or purposely installed
+ openings.
+ Single-Sided Ventilation:
+ Limited to zones close to the openings
+ Cross-Ventilation:
+ Two or more openings on opposite walls - covers a larger zone than the
+ single-sided openings
+ Stack Ventilation:
+ Buoyancy-driven gives larger flows
+ Windcacthers:
+ Wind and buoyancy driven - effective in warm and temperate climates
+ Solar-Induced Ventilation:
+ using the sun to heat building elements to increase buoyancy - more
+ effective in warm climates CIBSE BSG Seminar: Natural and
+19/05/2010                                                                2
+                           Mixed-Mode Ventilation Modelling
+             Hybrid Ventilation
+ In Hybrid (Mixed Mode) Ventilation the airflow
+ is due to wind and buoyancy through purposely
+ installed openings in the building envelope
+ supplemented, when necessary, by mechanical
+ systems.
+ The mechanical component of the hybrid
+ system can be a fan for increasing the
+ ventilation rate, and/or a heat exchanger for
+ heating or cooling the outdoor supply air.
+
+
+                 CIBSE BSG Seminar: Natural and
+19/05/2010                                          3
+                 Mixed-Mode Ventilation Modelling
+        Airflow in Natural Ventilation
+   Factors Influencing the airflow through openings
+         – Wind speed
+         – Wind pressure
+         – Buoyancy (stack) pressure
+         – Characteristics of openings (Cd)
+         – Effective area of multiple openings
+
+   Indoor Environmental considerations
+         – Thermal comfort
+         – Indoor air quality
+
+
+
+                          CIBSE BSG Seminar: Natural and
+19/05/2010                                                   4
+                          Mixed-Mode Ventilation Modelling
+                                               Wind Speed
+   Terrain factors for equation (2).
+   Terrain                              c      a
+   Open flat country                    0.68   0.17                                                                150
+                                                                                                                   140
+   Country with scattered wind breaks   0.52   0.20
+                                                                                                                   130
+                                                                                                                              V/V10 = c Ha
+
+
+
+
+                                                                                 Height above ground level (m/s)
+   Urban                                0.35   0.25
+                                                                                                                   120
+   City                                 0.21   0.33                                                                110
+                                                                                                                   100
+                                                                                                                    90
+                                                                                                                    80
+                                                                                                                    70
+                                                                                                                    60
+                                                                                                                    50
+                                                                                                                    40
+                                                                                                                    30
+                                                                                                                    20
+                                                                                                                    10
+                                                                                                                     0
+                                                                                                                         0.0 0.5 1.0 1.5 2.0 2.5 3.0
+                                                                                                                               Wind speed (m/s)
+
+
+
+
+                                                   CIBSE BSG Seminar: Natural and
+19/05/2010                                                                                                                                             5
+                                                   Mixed-Mode Ventilation Modelling
+           Wind and Stack (Buoyancy) Pressures
+Wind Pressure
+           Pw = ½ ρV2 Cp                                             (1)
+The wind speed V is usually calculated at the height of the opening or a
+reference point on the building (e.g. roof), Cp is the pressure coefficient
+and ρ is the air density.
+
+The expression V/V10 = c Ha                is commonly used.         (2)
+where      V is the required wind speed at height H (m)
+           V10 is reference wind speed (at 10 m in open country)
+           c and a are the terrain factors depending on sheltering
+
+Stack Pressure
+           Ps = - ρ g H (Ti – To/Ti) = - ρ g H (ΔT/Ti)               (3)
+ where To is the outdoor air temperature (K)
+           Ti is the indoor air temperature (K)
+19/05/2010 H is height between two openings
+                                CIBSE BSG Seminar: Natural and
+                                                                           6
+                                Mixed-Mode Ventilation Modelling
+                                 Wind Pressure
+  The static pressure coefficient (Cp) is defined as:
+             Cp = (pw – po) / (½ ρ V2)                                      (4)
+  where pw = static pressure at some point on the building (Pa)
+        po = static pressure of the free stream (Pa)
+        ρ = density of free stream (kg/m3)
+        V = free stream velocity normally calculated at building height
+            or other reference height (m/s)
+                pw
+
+
+
+  po
+                                                                     Plan
+                     Elevation
+
+
+
+                Wind pressure coefficients on a pitched roof building
+
+                                  CIBSE BSG Seminar: Natural and
+19/05/2010                                                                        7
+                                  Mixed-Mode Ventilation Modelling
+     Wind Pressure / Surface Coefficients (Cp) / …
+
+    The relative volume airflow rate error (ri) for a
+    specific pair of openings (i) can be defined as
+    (Co’stola et al, 2010):
+             ri = (VLOC – VAV)/ VAV = VLOC / VAV – 1
+
+    where VLOC = air flow rate calculated using Cp-LOC
+          VAV = air flow rate calculated using Cp-AV
+             Cp-LOC = local pressure coefficient on a
+                      surface
+             Cp-AV = average pressure coefficient over a
+                     surface
+
+                         CIBSE BSG Seminar: Natural and
+19/05/2010                                                  8
+                         Mixed-Mode Ventilation Modelling
+     Wind Pressure / Surface Coefficients (Cp) / …
+
+
+
+
+        Cp-LOC has the same value                   Cp-LOC has a different value
+        as Cp-AV for the surface                    to Cp-AV for the surface
+
+                         (Co’stola et al, 2010)
+                           CIBSE BSG Seminar: Natural and
+19/05/2010                                                                         9
+                           Mixed-Mode Ventilation Modelling
+     Wind Pressure / Surface Coefficients (Cp) / …
+  Upper and lower
+  bound values of (r)
+  as a function of the
+  wind attack angle for
+  95% Confidence
+  Interval when only
+  pairs with the
+  largest ΔCp-AV are
+  taken into account.
+  If all surfaces are
+  considered instead
+  of those with ΔCp-AV
+  = maximum then
+  the difference could
+  be much larger.
+  (α is the roof pitch,
+  Co’stola et al 2010).
+                          CIBSE BSG Seminar: Natural and
+19/05/2010                                                   10
+                          Mixed-Mode Ventilation Modelling
+                Stack (Buoyancy) Pressure
+
+
+
+
+  In this case the air enters the lower zone (Zone 1) from outside and leaves through
+  an opening on the upper zone (Zone 2) with the flow passing through the opening
+  between the two zones. In general, the temperature of zones 1 and 2 are not
+  equal (here T2 > T1) and this results in different pressure gradients for each zone as
+  shown in the Figure. The stack or buoyancy pressure for all the openings is
+  calculated relative to that at the lowest opening. The pressure difference between
+  the two external openings at h1 and h2 may be calculated using:
+
+             Δp = - ρ g [ (z1 - h1) (1 – To/T1) + (h2 – z1) (1 - To/T2)]          (5)
+  where      z1 is the height of the first floor
+             T2 & T1 are the mean temperatures of zones 1 & 2.
+                                 CIBSE BSG Seminar: Natural and
+19/05/2010                                                                              11
+                                 Mixed-Mode Ventilation Modelling
+                Simplified Flow Calculation
+                 Stack
+                                                              40 L/s per m2
+
+
+
+
+              Cross-Flow
+
+                                                              40 L/s per m2
+
+
+
+
+             1 cfm/ft2 = 5 L/s per m2      1 mph = 0.45 m/s
+             (Brown & Huang, 2006)
+                           CIBSE BSG Seminar: Natural and
+19/05/2010                                                                    12
+                           Mixed-Mode Ventilation Modelling
+               Flow through an Opening
+The flow through an opening can be calculated using the
+formula:
+               Q = Aeff [2 Δp / ρ]1/2            (6)
+where Δp is the pressure difference across the opening
+       ρ is the fluid density.
+The effective area (Aeff) is given by: Aeff = Cd A     (7)
+For natural ventilation openings the discharge coefficient (Cd) is
+not only dependent on type of opening and wind pressure but
+also on wind direction.
+Data on Cd for natural ventilation openings is limited
+particularly its variation with wind direction. Cd is one of the
+main difficulties in manual calculation procedures and in
+network flow models for natural ventilation.
+
+
+                       CIBSE BSG Seminar: Natural and
+19/05/2010                                                       13
+                       Mixed-Mode Ventilation Modelling
+                Flow through an Opening / …
+
+Discharge coefficient for
+side hung window                               Discharge coefficient
+                                               For bottom hung window
+
+
+
+
+                            Heiselberg et al (2001)
+                            CIBSE BSG Seminar: Natural and
+19/05/2010                                                              14
+                            Mixed-Mode Ventilation Modelling
+              Flow through a Large Opening
+The flow through a large single opening can be calculated using the formula:
+                  Q = Cd A √(2 Δp / ρ)                         (6)
+
+ For buoyancy-driven flow through a small opening:
+                                                                          vmax
+                  Δp = - ρ g H (ΔT/Ti)                         (3)
+                                                                      H    v(z)
+                               T
+                  Q  C d A gH                                 (9)
+                               Ti
+For buoyancy-driven flow through a large opening:
+                                                                                 z
+                     Cd A    T                                (10)
+                  Q      gH
+                      3      Ti
+where H is the height of the opening. Since this airflow profile varies
+significantly along the opening height, the airflow is integrated over this
+height, producing the 1/3 constant in this equation (Awbi, 1996).
+                            CIBSE BSG Seminar: Natural and
+19/05/2010                                                                        15
+                            Mixed-Mode Ventilation Modelling
+         Effective area of multiple openings
+
+Openings in series:
+                                                  p1        A1   p2
+    Aeff = Cd A = Cd1 A1 + Cd2 A2 +…                        A2
+
+
+Openings in parallel:
+1/A2eff = 1/(Cd A)2 = 1/(Cd1 A1)2 + 1/(Cd2 A2)2 + …
+
+                            p1          A1                       A3   p2
+                                                   A2
+
+
+
+
+                         CIBSE BSG Seminar: Natural and
+19/05/2010                                                                 16
+                         Mixed-Mode Ventilation Modelling
+    Flow through a centre pivoted window
+          What is the effective area?
+
+
+
+
+             Single-sided                Cross
+             ventilation                 ventilation
+
+
+
+
+                       CIBSE BSG Seminar: Natural and
+19/05/2010                                                17
+                       Mixed-Mode Ventilation Modelling
+             Combined Flow through an Opening
+ The total pressure due to
+ wind, stack and a fan can
+ be combined (as shown):
+ Δpt = Δpw + Δps + Δpf
+                                        Wind       Stack   Fan   Total
+
+The total flow through an opening is:           Qt α Δptn
+where n is a value between 0.5 and 1.0 depending on the
+opening dimensions and type of flow (laminar or turbulent),
+e.g. n = 0.5 for a large opening or 0.67 for a small opening.
+It is also possible to calculate the flow due to each pressure
+separately and combine these as follows:
+                 Qt = [Qw1/n + Qs1/n + Qf1/n]n         (8)
+A good approximation for large openings is as follows:
+                 Qt = [Qw2 + Qs2 + Qf2]½               (9)
+                       CIBSE BSG Seminar: Natural and
+19/05/2010                                                               18
+                       Mixed-Mode Ventilation Modelling
+                      Natural Ventilation
+      Single-Sided Ventilation
+
+                                                      The depth should be < 2.5 H
+             1.5m
+
+
+
+
+                                                 H
+             approx
+
+
+
+
+                                  W
+
+
+
+
+      Cross-Ventilation
+
+
+                                           The depth should be < 5 H
+                                      H
+
+
+
+
+                      W
+
+
+                          CIBSE BSG Seminar: Natural and
+19/05/2010                                                                          19
+                          Mixed-Mode Ventilation Modelling
+ Natural Ventilation/…
+             Single-Sided Ventilation – CFD Images
+
+
+
+
+                         CIBSE BSG Seminar: Natural and
+20
+19/05/2010
+                         Mixed-Mode Ventilation Modelling
+Natural Ventilation/…
+             Cross-Ventilation – CFD Images
+
+
+
+
+                      CIBSE BSG Seminar: Natural and
+21
+19/05/2010
+                      Mixed-Mode Ventilation Modelling
+                Natural Ventilation/…
+                              Stack Ventilation
+
+
+
+      BRE Low Energy Office
+
+
+
+
+                                                   CFD simulation of FCU Exhausts in a Stack
+Queen’s Building (De Montfort University)
+                                 CIBSE BSG Seminar: Natural and
+19/05/2010                                                                                     22
+                                 Mixed-Mode Ventilation Modelling
+Natural Ventilation/…
+Windcathchers
+ Bi-directional flow
+  with supply and
+  extract
+ Wind and buoyancy
+  driven
+ Flow-control either
+  by the user or via
+  sensors
+ Suitable for large                                           0.3
+                                                                     Variation of air flow rate with wind speed and direction
+
+
+
+  areas                                                       0.25
+                                                                                                                                    0°
+                                    Air flow rate (Q) m 3/s
+
+
+
+
+ Usually requires roof                                        0.2
+                                                                                                                                    15°
+
+
+  access but flow can                                         0.15
+
+                                                                                                                                    30°
+
+  be ducted
+                                                               0.1
+
+                                                              0.05
+                                                                                                                                    45°
+
+                                                                0
+                                          0      1
+                        CIBSE BSG Seminar:   Natural and2                                   3        4
+                                                                                                     23
+                                                                                                             5        6         7
+19/05/2010                                                                               Wind speed m /s
+                        Mixed-Mode Ventilation Modelling
+Natural Ventilation/…
+       Windcathchers
+
+
+
+
+                     Velocity vectors for the windcatcher with a fan blowing
+                     air centrally down (Hughes & Ghani, 2008)
+
+             CIBSE BSG Seminar: Natural and
+19/05/2010                                                               24
+             Mixed-Mode Ventilation Modelling
+                 Natural Ventilation/…
+                 Solar-Induced Ventilation
+
+
+
+
+                        CoolCool Outdoor
+                            Air
+                        Outdoor
+                 Wall
+         Glass          Air
+                                           Solar chimney on Tånga School,
+                                           Sweden, (Blomsterberg et. al. 2002)
+
+
+Solar Wall (Trombe Wall)                    Solar Chimney                        Solar Roof
+
+
+
+                               CIBSE BSG Seminar: Natural and
+19/05/2010                                                                                    25
+                               Mixed-Mode Ventilation Modelling
+                       Natural Ventilation/…                                                                                     x
+                                        Solar Wall
+                                                           ln 1 +  H   2
+                                                       H -                 s,0 g
+                                                                                                                                      q-
+                                   
+                                  m                                                                                          H                        q+
+                                                                                                     2                                    wy              wy
+                                        2 a H Re nH  1    H  1 1             H
+                                                        +       +           +
+                                          S 2 D h  n + 1 n + 2  2  C d S     S2
+
+                     0.70                                                                                                                                         y
+                                                                                            35
+                     0.60
+u - velocity (m/s)
+
+
+
+
+                     0.50                                                                   30                   x=0.005 m
+                                                                         Temperature (oC)
+
+
+
+                     0.40
+                                                  x=0.005 m
+                                                                                            25                   x=1.20 m            z
+                                                                                            20                   x=2.45 m
+                                                                                                                                                 +
+                     0.30
+                     0.20                         x=1.20 m                                  15                                                   qw
+                     0.10                         x=2.45 m                                  10                                           -           z
+                                                                                                                                                          +
+                     0.00                                                                                                    l           qw       - qw
+                                                                                             5                                               y                y
+                            0.0          0.1           0.2         0.3                                                                           qw               y
+                                               y (m)                                         0                                                        z
+                                                                                                 0       0.1           0.2       0.3
+                                                                                                               y (m)
+                        CFD prediction of temperature & velocity profiles in channel (Rodrigues,                                                 e
+                                              da Piedade & Awbi 2000)
+                                                                   CIBSE BSG Seminar: Natural and
+                       26
+                       19/05/2010
+                                                                   Mixed-Mode Ventilation Modelling
+                   Thermal Comfort
+ Standard thermal comfort models (e.g. Fanger’s) are not usually suitable
+  for naturally ventilated buildings as they are based on uniform thermal
+  environment.
+ Adaptive thermal comfort models are often used to allow for zone and
+  diurnal/seasonal variations in the indoor thermal conditions.
+ Thermal comfort models that are developed for non-uniform thermal
+  environments are more suitable, e.g. Fiala’s model and the CBE (Center
+  for the Built Environment , University of California, Berkeley) model.
+                                                    Overall Thermal Comfort
+                                             2.5
+                                               2
+                   Overall Thermal Comfort
+
+
+
+
+                                             1.5
+                                               1
+                                             0.5                                       DV1
+                                               0                                       DV2
+                                                     -5
+
+
+
+                                                     16
+
+
+
+
+                                                     86
+                                                      2
+                                                      9
+
+                                                     23
+                                                     30
+                                                     37
+                                                     44
+                                                     51
+                                                     58
+                                                     65
+                                                     72
+                                                     79
+
+                                                     93
+                                                    100
+                                                    107
+                                                    114
+                                             -0.5                                      DV3
+                                              -1
+                                             -1.5
+                                              -2
+                                                                 Time (min)
+                                                    CIBSE BSG Seminar: Natural and
+19/05/2010                                                                                   27
+                                                    Mixed-Mode Ventilation Modelling
+               Indoor Air Quality
+As control of ventilation rates
+is difficult for naturally
+ventilated buildings, attention
+should be given to the
+minimum ventilation rate that
+a system can be expected to
+provide. If this is below the
+minimum recommended rate
+for the building then a hybrid
+option should be
+contemplated. Failure to                                  (Fisk, et al. 2003)
+achieve this could cause poor
+indoor air quality issues and
+possible SBS symptoms.
+                       CIBSE BSG Seminar: Natural and
+19/05/2010                                                                      28
+                       Mixed-Mode Ventilation Modelling
+             CFD for Natural Ventilation
+Why Use CFD for Natural Ventilation?
+ Lack of confidence in pressure coefficient data for wind-
+  driven flow calculations
+ Lack of knowledge of effective opening area (i.e. Cd)
+ Difficulty in differentiating between air supply and extract
+  openings (dependent on wind direction, turbulence,
+  temperature difference, etc.)
+ Calculations are needed for different wind directions but
+  classical methods cannot accurately predict the effect of
+  wind direction
+ Usually room air movement predictions are needed in
+  addition to air flow calculation
+ The interaction between mechanical and natural systems is
+  difficult to predict by standard calculation methods
+
+                      CIBSE BSG Seminar: Natural and
+19/05/2010                                                       29
+                      Mixed-Mode Ventilation Modelling
+       CFD Modelling of Natural Ventilation
+    Building model
+   The translation of a real building into an “electronic model”.
+   Most CFD codes can import CAD files but this still requires
+   some engineering and modelling skills.
+
+    Air inlets and outlets
+            Air supply devices (grilles, louvers, etc.) can be complex
+             and some simplification is needed.
+            Understanding of device airflow characteristics will
+             provide more accurate modelling.
+
+    Obstructions
+   Both internal and external flows are greatly influenced by the
+   size and location of obstructions. Can be passive or emit heat
+   and pollution.
+                             CIBSE BSG Seminar: Natural and
+19/05/2010                                                                30
+                             Mixed-Mode Ventilation Modelling
+ CFD Modelling / …
+ Heat and pollution sources
+Internal or external heat and pollution sources should be
+accurately positioned and emission of heat and/or pollution from
+them should be specified.
+
+ Computational grid
+External flows usually require a large number of computational
+cells for accurate results. Therefore, convergence can sometimes
+be difficult.
+Turbulence modelling can be challenging specially where large
+areas of flow separation occur.
+
+ Simulation
+ Sometimes a dynamic simulation is necessary which can be very
+                     CIBSE BSG Seminar: Natural and
+ demanding.
+19/05/2010
+                      Mixed-Mode Ventilation Modelling
+                                                              31
+             CFD Modelling Techniques
+  There are two approaches –
+
+  Internal flow simulation:
+  This requires boundary conditions at inlets & outlets
+  which may be obtained from wind pressure data for
+  the openings or CFD simulations for the whole site.
+
+  Coupled Internal and external flow simulation:
+  This requires climatic data, wind profiles and
+  sheltering of surrounding structures.
+
+
+                    CIBSE BSG Seminar: Natural and
+19/05/2010                                             32
+                    Mixed-Mode Ventilation Modelling
+             Examples of CFD Modelling
+Single-Sided Ventilation (Buoyancy only)
+
+
+Room with lower and upper openings                  3-Storey Dormitory Building
+
+
+
+
+Room dimensions: 4.7 x 2.9 x 2.8 m
+Room load: 700 W (50 W/m2)                  (Allocca, Chen & Glicksman, 2003)
+                         CIBSE BSG Seminar: Natural and
+19/05/2010                                                                    33
+                         Mixed-Mode Ventilation Modelling
+ Single-Sided Ventilation \ cont …   Frame 001  13 Feb 2001 
+
+
+
+
+    Buoyancy-Driven Ventilation                                                                     V=0.2 m/s
+
+
+
+
+                                                                 Internal and external flow modelling. The
+Internal flow modelling only with zero pressure                  interaction between the flow in rooms at
+at openings and zero gradients for velocity and                  different level is clearly visible. This is
+temperature (Allocca, Chen & Glicksman, 2003).                   due to the plume rising from low to high
+                                                                 levels.
+                                  CIBSE BSG Seminar: Natural and
+ 19/05/2010                                                                                                    34
+                                  Mixed-Mode Ventilation Modelling
+             Examples of CFD Modelling / …
+   Passive Ventilation
+   Floor displacement flow by passive air ventilation:
+   cooling coil, wall and floor cavities, perforated floor
+
+
+
+
+                                       Cavity wall not insulated         Cavity wall
+                                       (40 W/m2) on wall                 insulated
+         Room model
+                          Velocity vectors in a vertical plane across the middle of the model
+                          perpendicular to the external cavity wall with cooling coil
+                          CIBSE BSG Seminar: Natural and
+19/05/2010                                                                             35
+                          Mixed-Mode Ventilation Modelling
+                       Examples of CFD Modelling / …
+                                 Pressure Distribution
+                                                                                                      ●   Experiment (with openings           )
+                                       ●   Experiment
+                                                                                                      ×   Experiment (without openings)
+                                           Standard     k- ε
+                    - 1 .5                                                               - 1 .5            LES (with openings)
+                                 -.-       Pk-1
+                                                                                                           LES (without openings)
+                                           Pk-2
+                    -1.0                                                                 -1.0
+
+
+
+
+                    -0.5                                                                 -0.5
+
+
+
+
+                       0                                                                    0
+
+
+
+
+1 .5   1.0    0.5            0                           0     -0.5
+                                                                      1 .5   1.0   0.5            0                                       0       -0.5
+
+  Pressure coefficients from standard                                   Pressure coefficients from LES turbulence
+  k-є turbulence model with wind-tunnel                                 model with wind-tunnel values
+  values
+              Distribution of pressure coefficients around the building
+                                             (Kurabuchi, et al, 2000 )
+                                              CIBSE BSG Seminar: Natural and
+ 19/05/2010                                                                                                                                        36
+                                              Mixed-Mode Ventilation Modelling
+                  CONCLUSIONS
+    • An understanding of the basic principles are
+      necessary for meaningful modelling of naturally
+      ventilated buildings.
+    • Attention should be given to representing
+      opening geometry, pressure and other flow
+      characteristics
+    • To be able to evaluate thermal comfort and
+      indoor air quality CFD is often required.
+    • Where possible coupling of the external wind
+      flow with internal flow should be used in a CFD
+      simulation.
+                     CIBSE BSG Seminar: Natural and
+19/05/2010                                              37
+                     Mixed-Mode Ventilation Modelling
+             Thank you
+
+             Questions?
+
+
+              CIBSE BSG Seminar: Natural and
+19/05/2010                                       38
+              Mixed-Mode Ventilation Modelling
+

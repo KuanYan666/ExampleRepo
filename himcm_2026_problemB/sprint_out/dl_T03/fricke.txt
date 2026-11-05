@@ -1,0 +1,809 @@
+ Energy Use and Sales Productivity of
+Doored and Open Vertical Refrigerated
+           Display Cases
+
+
+          Brian A. Fricke, Ph.D.
+      Bryan R. Becker, Ph.D., P.E.
+   University of Missouri – Kansas City
+                Objective
+• Compare a typical new open refrigerated
+  display case line-up to a typical new glass-
+  doored refrigerated display case line-up
+
+• Quantify and compare the following:
+  – The overall energy consumption for each
+    case type
+  – The impact on food product sales for each
+    case type
+               Synopsis
+• Test Plan
+• Supermarket Descriptions and Display
+  Cases Studied
+• Display Case Electrical Energy
+  Consumption
+• Product Sales
+• Conclusions
+               General Test Plan
+• Identify two similar supermarkets to participate in study
+
+• “Before and after” comparison of selected product sales
+   – Identify existing display case line-up in each store
+       → collect sales data of the products for two months
+   – Replace existing display case line-ups with new display case
+     line-ups
+       → collect sales data of the products for two months
+   – Compare sales data “before and after” installation of the new
+     display case line-ups to determine the effect that new case line-
+     ups had on product sales
+          General Test Plan
+• The products studied in the two
+  supermarkets were different
+  – Sales data for the test products were
+    collected from both supermarkets
+  – Sales data from one supermarket was used
+    as a control to adjust the sales data of
+    products studied in the other supermarket
+    (and vice versa)
+         General Test Plan
+• The energy usage of each new display
+  case line-up was monitored
+  – Compare energy usage of a new open display
+    case line-up versus that of a new doored
+    display case line-up
+
+• Energy consumption of the HVAC systems
+  were not monitored and no modifications
+  were made to the HVAC systems
+            Test Plan Outline
+• For Store #1:
+  – Old open case was replaced with new glass-doored
+    case
+  – New case was in the same location as old case
+  – New case was stocked with the same product as old
+    case
+  – Sales of the product were studied before and after the
+    case was replaced
+  – Energy usage of new glass-doored display case line-
+    up was monitored
+            Test Plan Outline
+• For Store #2:
+  – Old open case was replaced with new open case
+  – New case was in the same location as old case
+  – New case was stocked with the same product as old
+    case
+  – Sales of the product were studied before and after the
+    case was replaced
+  – Energy usage of new open display case line-up was
+    monitored
+            Instrumentation
+• Refrigerant mass flow through display case
+  measured with coriolis mass flow meter
+
+• Refrigerant temperature and pressure entering
+  display case measured
+
+• Refrigerant temperature and pressure exiting
+  display case measured
+
+• One minute sampling rate
+             Instrumentation
+• Electrical energy consumption of display case
+  auxiliaries individually measured
+  – Fans
+  – Lights
+  – Anti-sweat heaters
+• Indoor ambient temperature and relative
+  humidity at each store measured
+• Outdoor ambient temperature and relative
+  humidity at each store measured
+• One minute sampling rate
+             Store #1 Info
+• Located in Osawatomie, KS, a community
+  of 4,600 people
+  – Approximately 50 miles south west of Kansas
+    City, MO
+• Average retail sales of $80,000 per week
+• Store size is 23,000 ft2
+                         Store #1
+• Dairy products, including yogurt, prepackaged cheese,
+  butter, and sour cream, were studied in this store
+• Dairy products initially resided in a 44 foot open, multi-
+  deck case line-up
+• This case was replaced with a new, medium
+  temperature, 20-doored case line-up, nominally 48 feet
+  in length
+   – Fluorescent lighting
+   – Anti-sweat heaters with no controls (always on)
+   – Standard efficiency evaporator fan motors
+• Energy consumption of only 10 door portion of case (24
+  feet) measured
+Store #1: Old Open Case Line-Up
+Store #1: New Doored Case Line-Up
+              Store #2 Info
+• Located in Wamego, KS, a community of
+  approximately 4000 people
+  – Approximately 100 miles west of Kansas City,
+    MO
+• Average retail sales of $140,000 per week
+• Store size is 30,200 ft2
+                    Store #2
+• Beer and various alcoholic beverages (wine
+  coolers, hard lemonade, etc.) were studied in
+  this store
+• Products initially resided in an open, multi-deck
+  case line-up, 24 feet in length
+• This open case line-up was then replaced with a
+  new, medium temperature, open, multi-deck
+  case line-up, 24 feet in length
+  – Fluorescent lighting
+  – Standard efficiency evaporator fan motors
+Store #2: Old Open Case Line-Up
+Store #2: New Open Case Line-Up
+                 Serendipity
+• Owner of Store #1 (new doored diary case) also
+  replaced 12 feet of open beer case with a 6-
+  doored case, nominally 12 feet in length
+• Allowed comparison of:
+  – New doored case beer sales to old open case beer
+    sales in Store #1
+  – New open case beer sales to old open case beer
+    sales in Store #2
+  – New doored case beer sales (Store #1) to new open
+    case beer sales (Store #2)
+                        Sample Energy Related Data
+                           – New Open Case Line-Up –                                                                                                     – New Doored Case Line-Up –
+                          60                                                                        60                                                    80                                                                       45
+
+                                                                                                                                                          70                                                     Temperature
+                          55                                                                        55
+                                                                                                                                                                                                                 Pressure          40
+
+
+
+
+                                                                                                                                   Temperatature (F)…
+                                                                                                                                                          60
+   Temperature (F)...
+
+
+
+
+                                                                                                          Pressure (psig)..
+
+
+
+
+                                                                                                                                                                                                                                         Pressure (psig)..
+                          50                                                                        50
+                                                                                                                                                          50                                                                       35
+                          45                                                                        45                                                    40
+                                                                                                                                                                                                                                   30
+                                                                                                                                                          30
+                          40                                                                        40
+                                                                                                                                                          20
+                                                                                  Temperature                                                                                                                                      25
+                          35                                                                        35
+                                                                                  Pressure                                                                10
+
+                          30                                                                        30                                                     0                                                                       20
+                         5/25/2009   5/25/2009   5/25/2009       5/25/2009   5/25/2009        5/26/2009                                                  5/25/2009   5/25/2009   5/25/2009       5/25/2009   5/25/2009       5/26/2009
+                            0:00        4:48        9:36           14:24       19:12             0:00                                                       0:00        4:48        9:36           14:24       19:12            0:00
+                                                             Tim e                                                                                                                       Tim e
+
+
+                        Suction Temperature and Pressure                                                                                                Suction Temperature and Pressure
+
+                         120                                                                      360                                                    90                                                                       200
+                                                                                 Temperature
+                                                                                                                                                         80
+                                                                                                                                                                                                                                  180
+                         100                                                     Pressure         310
+                                                                                                                                                         70
+Temperature (F)...
+
+
+
+
+                                                                                                                              Temperature (F)...
+                                                                                                          Pressure (psig)..
+
+
+
+
+                                                                                                                                                                                                                                  160
+
+
+
+
+                                                                                                                                                                                                                                                 Pressure (psig)..
+                         80                                                                       260                                                    60
+
+                                                                                                                                                         50                                                                       140
+                         60                                                                       210
+                                                                                                                                                         40                                                                       120
+                         40                                                                       160                                                    30
+                                                                                                                                                                                                                                  100
+                                                                                                                                                         20                                                       Temperature
+                         20                                                                       110
+                                                                                                                                                                                                                  Pressure        80
+                                                                                                                                                         10
+
+                           0                                                                       60                                                      0                                                                       60
+                         5/25/2009   5/25/2009   5/25/2009       5/25/2009   5/25/2009       5/26/2009                                                   5/25/2009   5/25/2009   5/25/2009   5/25/2009       5/25/2009       5/26/2009
+                            0:00        4:48        9:36           14:24       19:12            0:00                                                        0:00        4:48        9:36       14:24           19:12            0:00
+                                                         Tim e                                                                                                                           Tim e
+
+
+                        Liquid Temperature and Pressure                                                                                                 Liquid Temperature and Pressure
+                               Sample Energy Related Data
+                                     – New Open Case Line-Up –                                                                                   – New Doored Case Line-Up –
+                                20                                                                                                               3
+                                18
+                                                                                                                                               2.5
+
+
+
+
+                                                                                                                       Flow Rate (lb/min)….,
+       Flow Rate (lb/min)…..
+
+
+
+
+                                16
+                                14
+                                                                                                                                                 2
+                                12
+                                10                                                                                                             1.5
+                                 8
+                                                                                                                                                 1
+                                 6
+                                 4
+                                                                                                                                               0.5
+                                 2
+                                 0                                                                                                               0
+                               5/25/2009   5/25/2009   5/25/2009       5/25/2009   5/25/2009        5/26/2009                                  5/25/2009   5/25/2009   5/25/2009       5/25/2009       5/25/2009         5/26/2009
+                                  0:00        4:48        9:36           14:24       19:12             0:00                                       0:00        4:48        9:36           14:24           19:12              0:00
+                                                               Tim e                                                                                                           Tim e
+
+
+
+
+                                           Refrigerant Flow Rate                                                                                           Refrigerant Flow Rate
+
+                                60                                                                                                              50
+
+                                                                                                                                                45
+                                50
+Temperature (F)...
+
+
+
+
+                                                                                                                Temperature (F)...
+                                                                                                                                                40
+                                40
+                                                                                                                                                35
+
+                                30                                                                                                              30
+
+                                                                                                                                                25
+                                20
+                                                                                    Air Discharge                                                                                                        Air Discharge
+                                                                                                                                                20
+                                                                                    Air Return                                                                                                           Air Return
+                                10
+                                                                                                                                                15                                                       Evaporator U-Bend
+                                                                                    Evaporator U-Bend
+                                 0                                                                                                              10
+                               5/25/2009   5/25/2009   5/25/2009       5/25/2009   5/25/2009        5/26/2009                                  5/25/2009   5/25/2009   5/25/2009           5/25/2009   5/25/2009         5/26/2009
+                                  0:00        4:48        9:36           14:24       19:12             0:00                                       0:00        4:48        9:36               14:24       19:12              0:00
+                                                               Tim e                                                                                                               Tim e
+
+
+
+                                     Display Case Temperatures                                                                                       Display Case Temperatures
+ Air Temperature within Cases
+• Smaller temperature difference between
+  discharge and return air temperatures in
+  doored case vs. open case
+• Advantage of doored case:
+  – Less product temperature variation due to
+    variation in location within case
+  – Less product temperature variation due to
+    variation in store ambient conditions
+  – Increased food safety
+               Sample Energy Related Data
+                      – New Open Case Line-Up –                                                             – New Doored Case Line-Up –
+
+                0.4                                                                                       0.9
+
+               0.35                                                                                       0.8
+                                                                                                          0.7
+                0.3
+                                                                                                          0.6
+
+
+
+
+                                                                                           Power (kW)..
+Power (kW)..
+
+
+
+
+               0.25
+                                                                                                          0.5                                        Lights
+                0.2                                                                                                                                  Fans
+                                                                                                          0.4
+               0.15                                       Lights                                                                                     Anti-Sweat
+                                                                                                          0.3
+                0.1                                       Fans                                            0.2
+
+               0.05                                                                                       0.1
+
+                 0                                                                                          0
+
+               5/25/2009   5/25/2009   5/25/2009       5/25/2009   5/25/2009   5/26/2009                  5/25/2009    5/25/2009   5/25/2009       5/25/2009      5/25/2009   5/26/2009
+                  0:00        4:48        9:36           14:24       19:12        0:00                       0:00         4:48        9:36           14:24          19:12        0:00
+
+                                               Tim e                                                                                       Tim e
+
+
+
+
+                       Auxiliary Electrical Power                                                                     Auxiliary Electrical Power
+ Electrical Energy Consumption
+    Mean Electrical Energy Consumption of the Open and Doored Display Case Line-Ups Calculated using
+                                    ARI/ANSI Standard 1200-2006.
+                                              Open Display Case            Doored Display Case
+    Electrical Energy Consumption
+                                                  Line-Up                       Line-Up
+    Compressors (kWh/day)                           42.20                          11.70
+
+    Lights (kWh/day)                                 5.18                          11.93
+
+    Fans (kWh/day)                                   5.69                          4.58
+
+    Anti-Sweat Heaters (kWh/day)                      --                           15.50
+
+    Total (kWh/day)                                 53.07                          43.72
+
+    Total (kWh/day per ft)                           2.21                          1.71
+
+
+
+• Per unit length of case, the open display case
+  line-up consumed approximately 1.3 times more
+  energy than the doored display case line-up
+Open Case Line-Up Electrical
+   Energy Consumption
+                                              70
+    Electrical Energy Consumption (kWh/day)
+
+                                              60
+
+
+                                              50
+
+
+                                              40                                                                 Fans
+                                                                                                                 Lights
+                                              30                                                                 Compressors
+
+
+                                              20
+
+
+                                              10
+
+
+                                               0
+                                                   1   3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41
+                                                                               Day
+
+Compressors:                                                  79% of the total daily electrical energy consumption
+Fans:                                                         11% of the total
+Lighting:                                                     10% of the total
+Open Case: Energy Consumption
+  vs Indoor Ambient Conditions
+                                 80.0                                                     50.0
+
+                                 75.0                                                     45.0
+
+
+                                 70.0                                                     40.0
+  Energy Consumption (kWh/day)
+
+
+
+
+                                 65.0                                                     35.0
+
+
+
+
+                                                                                                 Relative Humidity (%)
+         Temperature (F)
+
+
+
+
+                                 60.0                                                     30.0
+
+                                 55.0                                                     25.0
+
+
+                                 50.0                                                     20.0
+
+                                 45.0                                                     15.0
+
+                                 40.0                                                     10.0
+                                                                Indoor Temperature
+                                 35.0                           kWh/day                   5.0
+                                                                Indoor RH
+                                 30.0                                                     0.0
+                                        0   7   14   21    28             35         42
+                                                     Day
+
+
+• Energy consumption closely follows indoor ambient
+  humidity
+Doored Case Line-Up Electrical
+    Energy Consumption
+     Electrical Energy Consumption (kWh/day)   50
+
+                                               45
+                                               40
+
+                                               35
+                                               30                                                Fans
+                                                                                                 Anti-Sweat Heaters
+                                               25
+                                                                                                 Lights
+                                               20                                                Compressor
+                                               15
+
+                                               10
+                                                5
+
+                                                0
+                                                    1   4   7 10 13 16 19 22 25 28 31 34 37 40
+                                                                         Day
+
+ Anti-sweat heaters:                                                36% of the total daily electrical energy use
+ Compressors:                                                       27% of the total
+ Lights:                                                            27% of the total
+ Fans:                                                              10% of the total
+Doored Case: Energy Consumption vs
+     Indoor Ambient Conditions
+                                    80.0                                                     50.0
+
+                                    75.0                                                     45.0
+     Energy Consumption (kWh/day)
+
+
+
+                                    70.0                                                     40.0
+
+                                    65.0                                                     35.0
+
+
+
+
+                                                                                                    Relative Humidity (%)
+            Temperature (F)
+
+
+
+
+                                    60.0                                                     30.0
+
+                                    55.0                                                     25.0
+
+                                    50.0                                                     20.0
+
+                                    45.0                                                     15.0
+
+                                    40.0                                                     10.0
+                                                                   Indoor Temperature
+                                    35.0                           kWh/day                   5.0
+                                                                   Indoor RH
+                                    30.0                                                     0.0
+                                           0   7   14   21    28             35         42
+                                                        Day
+
+
+• Energy consumption independent of indoor ambient
+  conditions
+    Electrical Energy Consumption vs.
+         Indoor Relative Humidity
+                                                         60
+               Electrical Energy Consumption (kWh/day)
+
+                                                         55
+
+
+                                                         50
+
+
+                                                                                                                      Open Line-Up
+                                                         45
+                                                                                                                      Doored Line-Up
+
+
+                                                         40
+
+
+                                                         35
+
+
+                                                         30
+                                                              20   25        30        35        40         45   50
+                                                                        Mean Indoor Relative Humidity (%)
+
+
+
+
+•   Open case line-up: Consumed 1.25 times as much energy when the indoor relative
+    humidity was 45% as compared to when the mean indoor relative humidity was 20%
+•   Doored display case line-up: Electrical energy consumption remained relatively
+    constant with increasing mean indoor relative humidity
+Energy Efficiency Improvements for
+      Doored Display Case
+• Significant anti-sweat heater energy usage
+  with doored case
+  – Anti-sweat heaters were on continuously
+• Energy use could be drastically reduced
+  by using:
+  – Anti-sweat heater controls or “no heat” doors
+  – LED lighting
+Energy Efficiency Improvements for
+      Doored Display Case
+• For 10 doored case line-up, assume:
+  – Zero energy consumption for “no heat” doors
+  – 265 watts energy consumption for LED lighting
+• Estimated energy consumption:
+  – 20.5 kWh/day
+  – 0.802 kWh/day per foot
+     • 53% energy savings compared to new doored display case
+       line-up tested in this study
+     • 64% energy savings compared to new open display case
+       line-up tested in this study
+Weekly Beer Sales: Store #1
+ (Control and Serendipity)
+                120
+
+                100
+Quantity Sold
+
+
+
+
+                 80                                                              Pre
+                                                                                 Post
+                 60
+
+                 40
+
+                 20
+
+                  0
+                      1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+                                               Week
+
+
+
+                Weekly Beer Sales Data from the Old Open and New
+                Doored Display Case Line-Ups for the Period 4 January
+                2009 through 6 June 2009
+Weekly Beer Sales: Store #2
+                 250
+
+
+                 200
+ Quantity Sold
+
+
+
+
+                 150                                                              Pre
+                                                                                  Post
+                 100
+
+
+                 50
+
+
+                  0
+                       1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+                                                Week
+
+
+
+                  Weekly Beer Sales from the Old Open and New Open
+                  Display Case Line-Ups for the Period 4 January 2009
+                  through 6 June 2009
+Summary of Weekly Beer Sales
+                                      Open Display Case        Doored Display Case
+Beer Sales Statistics
+                                          Line-Up                   Line-Up
+Mean Weekly Quantity Sold, Pre-
+                                             104.4                    55.4
+Installation
+Standard Deviation of Weekly
+                                             9.26                     10.6
+Quantity Sold, Pre-Installation
+Mean Weekly Quantity Sold, Post-
+                                             134.6                    70.5
+Installation
+Standard Deviation of Weekly
+                                             26.7                     11.1
+Quantity Sold, Post-Installation
+
+Percentage Increase                          29%                      27%
+
+
+•   Two-sample, unequal-variance t-test:
+     – Increases in sales were significant at the 0.05 level
+•   Rate of increase in beer sales was essentially the same for both the new
+    open and new doored display case line-ups:
+     – „Doored versus open‟ had no effect on product sales
+Weekly Dairy Sales: Store #1
+                  1000
+                   900
+                   800
+                   700
+  Quantity Sold
+
+
+
+
+                                                                                    Pre
+                   600
+                                                                                    Post
+                   500
+                   400
+                   300
+                   200
+                   100
+                     0
+                         1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+                                                  Week
+
+
+
+                  Weekly Dairy Sales Data from the Old Open and New
+                  Doored Display Case Line-Up for the Period 4 January
+                  2009 through 6 June 2009
+Weekly Dairy Sales: Store #2
+         (Control)
+                 5000
+                 4500
+                 4000
+                 3500
+ Quantity Sold
+
+
+
+
+                                                                                   Pre
+                 3000
+                 2500                                                              Post
+                 2000
+                 1500
+                 1000
+                  500
+                    0
+                        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+                                                 Week
+
+
+
+                 Weekly Dairy Sales Data from the Open Display Case
+                 Line-Up for the Period 4 January 2009 through 6 June
+                 2009
+Summary of Weekly Dairy Sales
+                                           Open Display Case          Doored Display Case
+    Dairy Sales Statistics
+                                               Line-Up                     Line-Up
+    Mean Weekly Quantity Sold, Pre-
+                                                  3864                        639.4
+    Installation
+    Standard Deviation of Weekly
+                                                 403.6                        41.3
+    Quantity Sold, Pre-Installation
+    Mean Weekly Quantity Sold, Post-
+                                                  3846                        621.5
+    Installation
+    Standard Deviation of Weekly
+                                                 464.5                        152.2
+    Quantity Sold, Post-Installation
+
+    Percentage Increase                          -0.47%                       -2.8%
+
+
+•      Two-sample, unequal-variance t-test:
+        – No significant difference (at the 0.05 level) in diary product sales before and after
+          installation of the new doored display case line-up
+•      Rate of dairy sales remained the essentially the same before and after the
+       installation of the new doored display case line-up:
+        – „Doored versus open‟ had no effect on product sales
+                    Conclusions
+• Two stores studied:
+   – Store #1
+      • Replaced old open case with new doored case
+      • Measured sales of diary products from old open and new doored
+        cases
+      • Measured energy consumption of new doored case
+   – Store #2
+      • Replaced old open case with new open case
+      • Measured sales of beer and alcoholic beverages from old open and
+        new open cases
+      • Measured energy consumption of new open case
+   – Serendipity
+      • Replaced old open case with new doored case
+      • Measured sales of beer and alcoholic beverages from old open and
+        new doored cases
+                       Conclusions
+• Total electrical energy consumption
+   – Per unit length of case, open display case line-up consumed
+     approximately 1.3 times more energy than the doored display case line-
+     up
+• Electrical energy consumption of the open display case line-up
+  exhibited significant variation from day-to-day
+   – Mainly attributed to daily variation in compressor energy consumption
+• Electrical energy consumption of the doored display case line-up
+  was relatively consistent from day-to-day
+   – All of the components of the electrical load remained fairly constant
+• Increasing mean indoor relative humidity:
+   – Electrical energy consumption of the open display case line-up
+     increased
+   – Electrical energy consumption of the doored display case line-up
+     remained relatively constant
+              Conclusions
+• Smaller temperature difference between
+  discharge and return air temperatures in
+  doored case vs. open case
+• Advantage of doored case:
+  – Less product temperature variation due to
+    variation in location within case
+  – Less product temperature variation due to
+    variation in store ambient conditions
+  – Increased food safety
+                Conclusions
+• Beer sales increased:
+  – 29% in the new open display case line-up
+  – 27% in the new doored display case line-up
+• These increases in sales were significant at the
+  0.05 level (two-sample, unequal-variance t-test)
+• Rate of increase in beer sales was essentially
+  the same for both the new open and new doored
+  display case line-ups:
+  – „Doored versus open‟ had no effect on product sales
+                 Conclusions
+• Dairy products:
+  – There was no significant difference (at the 0.05 level)
+    in diary product sales before and after installation of
+    the new doored display case line-up (two-sample,
+    unequal-variance t-test)
+• Rate of dairy sales remained essentially the
+  same before and after the installation of the new
+  doored display case line-up
+  – „Doored versus open‟ had no effect on product sales
+            Acknowledgments
+• Funding for this project was provided by:
+   – American Society of Heating, Refrigerating and Air-
+     Conditioning Engineers (ASHRAE)
+   – Air-Conditioning and Refrigeration Technology
+     Institute (ARTI)
+
+
+• The authors would also like to thank Affiliated
+  Foods Midwest for facilitating our interaction with
+  the supermarket owners that participated in this
+  study
+Thank You!
+• Questions?
+

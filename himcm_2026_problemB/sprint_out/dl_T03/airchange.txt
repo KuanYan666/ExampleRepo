@@ -1,0 +1,276 @@
+Technical Paper
+
+
+
+
+          The Impact of Humidity on Refrigeration Display Cases
+                                                  in Supermarkets
+
+
+
+
+Introduction
+Air conditioning is important in building design and planning, because besides regulating the interior climate, it contributes
+to the energy efficiency and operating costs of the building. Supermarkets offer particular air conditioning challenges as they
+feature a varied mix of applications under one roof, each with specific requirements to heat and cool the surrounding space and
+provide the required amount of ventilation. Because supermarkets are energy intensive commercial buildings, with energy usage
+intensities ranging from 460 to 750 kW/h per square metre, much of it used in the refrigeration zone, this paper will examine air
+conditioning in supermarkets, more particularly the interaction of air conditioning and refrigerated storage cases and the energy
+efficiency savings that are available if the air conditioning system is correctly designed.
+
+
+The Effect of Humidity on Refrigerated Storage Cases
+Refrigerated display cases exchange heat and moisture with their surrounding environment. The moisture exchange is most critical
+because it raises the energy consumption to maintain a satisfactory temperature and detracts from the presentation of refrigerated
+products, and may impact the proper protection of the product.
+Supermarkets operate their refrigeration systems continuously to maintain proper food storage conditions within their refrigerated
+display cases and food storage areas, typically accounting for approximately 50% of their total electrical energy consumption.
+
+
+
+
+www.airchangedehumidification.com                            The Impact of Humidity on Refrigerated Display Cases | May 2016         1
+Technical Paper
+
+
+
+
+The HVAC system consumes a further 10% of the total energy used by a typical supermarket in order to maintain suitable climatic
+conditions for the occupants and refrigerated display cases. There is a significant interaction between a supermarket’s refrigeration
+system, its HVAC system and the ambient conditions within the store. Heat and moisture contained in the store air contribute both a
+latent and sensible heat load to the supermarket refrigeration system. The moisture which infiltrates the refrigerated cases leads to
+condensation on the interior surfaces and causes frost to form on the evaporator coils.
+To minimize condensation, anti-sweat heaters are used to heat case interior surfaces. Moisture removed by the refrigeration system
+is an inefficient and energy intensive process.
+
+
+
+
+Figure 1 shows the different power consumptions per kilogram of moisture removed by the low and medium temperature display
+cases compared to moisture removed by the HVAC system. Low temperature cases consume approximately 4 to 6 kWh of
+electrical power to remove one kilogram of moisture from the air due to the lower evaporating pressure at which they operate.
+Reducing the ambient relative humidity within the supermarket shifts more of the dehumidification load from the refrigeration cases
+to the more efficient HVAC system, reducing the refrigeration power consumption. It is estimated that there is a 2% reduction
+in refrigeration energy consumed for every 1°C reduction in the air dew point temperature, not including the power saved by
+reducing the number and length of the defrost cycles and the power consumed by the anti-sweat heaters.
+In addition to the energy savings, there are marketing benefits from the reduced humidity including improved product appearance;
+a more comfortable occupant environment; a reduction in mould, mildew and fungal growth and the management of condensation
+on aisle floors which reduces the risk of accidents.
+The performance of refrigerated display systems as a function of relative humidity has been investigated by many different
+researchers.
+One study performed at Southern California Edison’s Refrigeration Technology and Test Center investigated the effects of humidity
+on a medium temperature open five shelf dairy case, a medium temperature open two shelf meat case, a low temperature coffin
+case and a low temperature reach in five shelf cabinet.
+The tests were carried out at an ambient temperature of 23.9°C with the relative humidity ranging from 35% to 55% in 5%
+increments. The results indicated that by reducing the RH from 55% to 35%:
+
+
+
+
+www.airchangedehumidification.com                           The Impact of Humidity on Refrigerated Display Cases | May 2016           2
+Technical Paper
+
+
+
+
+-       Dairy case: The evaporator load was reduced by 21%
+-       Meat case: The evaporator load was reduced by 21.6%
+-       Coffin case: The evaporator load was reduced by 12.6%
+-       Reach in case: There was little impact on refrigeration energy consumption but anti-sweat heater power 			
+        consumption reduced considerably.
+
+
+Other testing has shown a 70%+ reduction in condensate from open and medium temperature dairy cases when the relative
+humidity was reduced from 55 to 35%.
+It has been found that anti-sweat heater energy consumption decreased by 1 to 2% for each 1% reduction in relative humidity and
+that defrost electrical energy savings could be achieved if the store relative humidity was maintained at 35% rather than 55%.
+The overall energy savings achievable by controlling humidity in a supermarket are best summarised by Howell et al in a paper
+published by the University of Southern Florida.
+
+
+
+
+This was based on a typical US store in Tampa Florida with an area of 3700 m2, a conditioned space of 2800 m2, an air supply
+rate of 14,000 m3/s, a ventilation rate of 1.8 m3/s and an indoor temperature of 24°C. The display case refrigeration system
+comprised:
+
+
+
+
+These results are not dissimilar to those of a French study by Ecole des Mines de Paris/ Centre d’Energétique, Paris, in respect of
+a supermarket in the south of France. This study concluded that the supermarket would see a reduction of 181,000 kWh in annual
+refrigeration power consumed compared with the US study saving of 208,000 kWh when RH was lowered from 55% to 35%,
+reflecting the different ambient conditions and refrigeration loads over the one year study period in the two chosen locations.
+
+
+
+
+www.airchangedehumidification.com                          The Impact of Humidity on Refrigerated Display Cases | May 2016        3
+Technical Paper
+
+
+
+
+The French study concluded that the optimum RH for the model store was 45% because the HVAC energy consumed to achieve the
+lower humidity exceeded the refrigeration energy savings. The assumptions behind this statement are unclear.
+The French study also modelled the likely power savings by raising the store ambient temperature between 22-24°C. There were
+energy savings as can be seen in table 4 below but they were insignificant in the overall energy consumption of the supermarket.
+
+
+
+
+All studies have arrived at the same conclusion, lower store humidity results in significantly lower electricity use for refrigeration,
+defrost cycles and anti-sweat heaters. Although, all of the studies reviewed have used relative humidity as the base line, it is in
+fact absolute humidity that is critical to the refrigeration power consumption because it is the amount of moisture available to be
+condensed by the refrigerated cases, and not the relative humidity, that determines the power consumed.
+
+
+The Air Conditioning System
+Conventional air cooling systems, whether DX or chilled water, are not an efficient option to manage high latent loads as they
+must first overcool the air and then reheat it to maintain store comfort. Overcooling and then reheating the air to maintain the stores’
+humidity levels negate the energy savings gained in the refrigeration system particularly at times of low activity when there is only a
+small sensible load in the store.
+Ventilation air whether introduced to satisfy minimum code requirements, as make up air or to provide a positive store air pressure to
+limit infiltration, will, in most cases, be the major source of moisture addition. Therefore, no matter what the air conditioning system
+design, be it DX or chilled water, a central plant or individual zoned area units, it is best practice to treat the outdoor air to remove
+humidity before it is introduced into the store to lower the total store energy consumption.
+Maintaining a lower humidity level at around 40% RH allows the store temperature to be increased as occupants feel comfortable
+even at 23°C because at low humidity, natural perspiration is a highly effective cooling mechanism. This lowers energy
+consumption as indicated in Table 4. Particular attention should be paid to the air temperatures around the refrigerated display
+cases.
+
+
+
+
+www.airchangedehumidification.com                              The Impact of Humidity on Refrigerated Display Cases | May 2016            4
+Technical Paper
+
+
+
+
+Stores aisles in the refrigerated goods section are often too cool due to air spilled from the refrigeration cases. Not only are these
+aisles colder, they exhibit a vertical temperature gradient that makes it even less comfortable for the occupants as demonstrated by
+Figure 2 taken from the Ecole des Mines de Paris/ Centre d’Energétique study paper. Warm dry air, often around 30°C, can be
+distributed directly to the cold aisle zone with either under case or overhead supply ducts to minimize this cold aisle effect.
+
+
+Dehumidification Technologies
+Maintaining store relative humidity to a 40-45% range has significant energy saving benefits if done efficiently.
+Until recently, the best and most efficient way to deliver air at such low dew point was with desiccant dehumidification of the fresh
+supply air.
+Whilst effective in controlling humidity levels, the desiccant requires regeneration with hot air, the temperature being dependent on
+the amount of moisture removed from the desiccant to the regeneration airstream. A secondary heating source is often required to
+raise the regeneration air temperature imposing an energy penalty even where a source of low grade waste heat is available.
+Removal of part of the moisture by pre-cooling the air with refrigeration before passing it through the desiccant wheel will lower the
+required regeneration temperature at the expense of the additional refrigeration energy consumption.
+There are many desiccant system designs where the energy consumption and regeneration air temperature are dependent on the
+number of desiccant wheels, whether they are configured in series or are parallel and whether they use refrigeration to precool the
+air.
+In many cases, particularly if the store is located within a mixed or multi use development, the regeneration airstream needs to be
+ducted to and from the dehumidifier which may be prohibitive for the purposes of building design or capital cost, whether in a new
+or refurbished application.
+The alternative to desiccant dehumidification to achieve this low store RH is to cool the air to a dew point temperature below 5°C
+to cause moisture to condense from the air. Historically, this has not been a viable option as ice forms on the evaporator cooling
+
+
+
+
+www.airchangedehumidification.com                            The Impact of Humidity on Refrigerated Display Cases | May 2016            5
+Technical Paper
+
+
+
+
+coil requiring a defrost cycle which interrupts the dehumidification process and adds to the energy consumed.
+
+
+A Different Approach
+Air Change Australia recognised the limitations of desiccant dehumidification in many applications and developed a low dew point
+dehumidifier [patent pending] that delivers air below 5°C dew point and consumes similar or less electrical power than a typical
+desiccant system by using heat exchange to achieve part of the cooling load.
+It can be used as either a standalone unit discharging waste condenser heat to the outside air via air cooled condensers or
+configured with the building chilled water system to expel waste condenser heat through the chilled water circuit when external
+condensers are either not practical or prohibited.
+
+
+
+
+The Air Change Dehumidifier can precisely deliver air at the specified temperature and humidity down to as low as a 3°C dew
+point temperature.
+From Figure 3 above, an air to air heat exchanger is used to pre-cool incoming air (HX path 1) whilst simultaneously re-heating
+supply air (HX path 2).
+
+
+Consider the energy consumption to deliver a low dew point air condition in two different applications,
+1.      As an addition to an existing HVAC system and
+2.      As a dedicated outdoor air system supplying outside air directly to the space.
+In the first case, the existing HVAC system has typically lowered the air temperature to 13°C meaning that it needs to only be
+reduced by a further 9°C to reach the 4°C dew point.
+Part of this cooling load is achieved by passing the warmer supply air (HX path 1) against the cold 4°C air (HX path 2) to precool
+
+
+
+
+www.airchangedehumidification.com                           The Impact of Humidity on Refrigerated Display Cases | May 2016       6
+Technical Paper
+
+
+
+
+it before reaching the refrigeration evaporator coil as shown in Table 5.
+
+
+
+
+Approximately 40% of the required cooling occurs in the heat exchanger leaving a load of only 12.3kj/kg to be performed by the
+dehumidifier refrigeration system.
+Consider if this dehumidifier was applied to the Tampa Florida store operating 24 hours per day as modelled by Howell et al. If
+the dehumidifier unit was connect to the chilled water system (water cooled condenser and first cooling coil) it would have a COP
+approaching 5.2 and consume 45,00kwh of additional electrical power per annum (to deliver the 1.8m3/s fresh air supply at a
+dew point of 4°C to ensure a 35% RH in the store).
+This compares to the identified refrigeration saving of 421,000 kWh. Obviously this additional HVAC power consumption would
+be reduced if the store did not operate for 24 hours, but the refrigeration savings would be the same. In the second case of a
+dedicated outdoor air system (DOAS) where hot humid air is introduced directly into the dehumidifier, the heat exchanger performs
+40% of the necessary cooling. HX path 1 lowers the air temperature from 32°C to 19.7°C before reaching the dehumidifier
+refrigeration evaporator as shown in Table 6. The supply air, HX path 2, is re-heated from 4°C to 30°C before being distributed
+into the cold refrigeration aisles to raise the ambient temperature and hence comfort level.
+
+
+
+
+Using the Air Change approach, the refrigeration required to deliver 4°C dew point air and hence a 35% store RH is 39.5 kj/kg.
+This compares with a conventional HVAC system load of 45.9 kj/kg to lower the temperature of the fresh air from 32/26.5 °C to
+13/13 °C. At this condition, 35% RH would not be achieved and there would be no resulting benefit to the refrigeration system.
+In this case there is a saving, not a power penalty, to deliver a low store RH to ensure energy savings by the refrigeration system
+provided that 30 °C air can be distributed to the cold aisles to improve occupant comfort.
+
+
+
+
+www.airchangedehumidification.com                           The Impact of Humidity on Refrigerated Display Cases | May 2016           7
+Technical Paper
+
+
+
+
+Conclusion
+As can be seen from the examples above, the return on capital invested to ensure a low store RH has a relatively short payback
+period with the overall benefits from energy savings and produce presentation outweighing the initial capital investment cost.
+Utilising the Air Change approach does not require the complexity and high maintenance costs associated with desiccant systems,
+yet can still deliver outcomes that will reduce electricity consumption and improve occupant comfort.
+
+
+References
+1.      Isolated Sub Dehumidification Strategies in Large Supermarkets and Grocery Stores
+        Submitted to: Refrigeration Project Team Retail Energy Alliance
+        Prepared by Fricke & Sharma of Oak Ridge National Laboratory, Oak Ridge, TN
+2.      Effects of Indoor Relative Humidity on Refrigerated Display Case Performance by Howell, Rosario & Bula of the 		
+        Department of Mechanical Engineering, University of South Florida, Tampa , Florida, USA
+3.      Significant Parameters for Energy Consumption in Frozen Food Area of Large Supermarkets, by Orphelin, Marchio & Bech,
+        Ecole des Mines de Paris/Centre d’Energetiqe, Paris, France
+
+
+
+
+www.airchangedehumidification.com                          The Impact of Humidity on Refrigerated Display Cases | May 2016       8
+

@@ -1,0 +1,103 @@
+Design hour outlet drop dT0 = 18.75 C; box calibration phi = 0.255/0.438, A_fit = 10.69 m2
+phi for a 1 degC shelter-average drop at design hour = 0.053
+                         model    cfm   Q_m3s  ...  m3s_per_kW  fan_d_m  U0_fan_disc
+0               Hessaire MC37M   3100   1.463  ...       5.852      NaN          NaN
+1        Portacool Cyclone 120   2000   0.944  ...       3.146      NaN          NaN
+2  Big Ass Fans Cool-Space 300   2800   1.321  ...       2.686    0.457        8.056
+3      Portacool Jetstream 270  22500  10.619  ...       5.822    1.219        9.099
+4  Big Ass Fans Cool-Space 500  24000  11.327  ...       5.721    1.270        8.941
+5      Portacool Hurricane 370  28500  13.450  ...       7.374    1.219       11.525
+
+[6 rows x 7 columns]
+team scenario.py devices: B 1.10 m3/s / 1.2 kW = 0.92 m3/s per kW; C 2.50/2.5 = 1.00
+market range m3/s per kW: 2.7 - 7.4
+=> at market specific airflow a 1.2 kW cooler moves 3.2-8.8 m3/s, a 2.5 kW one 6.7-18.4
+Hessaire 2.58 gal/h (retailer) at 1.463 m3/s implies a drop of 4.0 C
+water use at design hour team B: 35 L/h
+water use at design hour team C: 79 L/h
+water use at design hour CS300: 42 L/h
+water use at design hour CS500: 356 L/h
+teamB: Q=1.10 d=0.418 U0=8.00
+teamC: Q=2.50 d=0.631 U0=8.00
+CS300: Q=1.32 d=0.457 U0=8.06
+CS500: Q=11.33 d=1.270 U0=8.94
+
+teamB: phi calm end-fire 0.080, back-fire 0.036
+  cross_out 0.080 0.093 0.078 0.058 0.045 0.032 0.024 0.020   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  tail      0.080 0.067 0.058 0.052 0.047 0.040 0.035 0.032   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  cross_in  0.080 0.102 0.127 0.126 0.109 0.079 0.061 0.050   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  back      0.036 0.042 0.050 0.056 0.056 0.047 0.037 0.030   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+
+teamC: phi calm end-fire 0.140, back-fire 0.066
+  cross_out 0.140 0.156 0.152 0.130 0.106 0.076 0.059 0.049   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  tail      0.140 0.124 0.112 0.103 0.095 0.084 0.076 0.070   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  cross_in  0.140 0.162 0.195 0.218 0.214 0.175 0.141 0.117   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  back      0.066 0.074 0.082 0.092 0.099 0.096 0.085 0.072   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+
+CS300: phi calm end-fire 0.090, back-fire 0.041
+  cross_out 0.090 0.104 0.092 0.070 0.055 0.038 0.030 0.025   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  tail      0.090 0.077 0.067 0.060 0.055 0.047 0.042 0.038   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  cross_in  0.090 0.112 0.139 0.143 0.128 0.094 0.073 0.060   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  back      0.041 0.047 0.055 0.063 0.064 0.056 0.045 0.037   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+
+CS500: phi calm end-fire 0.380, back-fire 0.203
+  cross_out 0.380 0.399 0.408 0.401 0.385 0.330 0.274 0.232   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  tail      0.380 0.362 0.347 0.334 0.322 0.301 0.285 0.273   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  cross_in  0.380 0.404 0.432 0.469 0.505 0.543 0.526 0.483   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+  back      0.203 0.211 0.219 0.229 0.239 0.259 0.264 0.259   at Ua = 0.00 0.50 1.00 1.50 2.00 3.00 4.00 5.00
+
+Breakthrough (end-fire, cross-wind blowing the jet out of the open front):
+  teamB: phi halves at Ua=2.29 m/s (U10=5.7); phi<0.053 (<1 C) at Ua=1.66 (U10=4.1); Pratte-Baines centreline leaves front before far end: r<7.04 -> Ua=1.14 (U10=2.8)
+  teamC: phi halves at Ua=3.30 m/s (U10=8.3); phi<0.053 (<1 C) at Ua=4.56 (U10=11.4); Pratte-Baines centreline leaves front before far end: r<4.67 -> Ua=1.71 (U10=4.3)
+  CS300: phi halves at Ua=2.49 m/s (U10=6.2); phi<0.053 (<1 C) at Ua=2.06 (U10=5.2); Pratte-Baines centreline leaves front before far end: r<6.45 -> Ua=1.25 (U10=3.1)
+  CS500: phi halves at Ua=inf m/s (U10=inf); phi<0.053 (<1 C) at Ua=inf (U10=inf); Pratte-Baines centreline leaves front before far end: r<2.32 -> Ua=3.85 (U10=9.6)
+  teamB: centreline blown out before reaching mid-shelter (2.5 m) when Ua > 2.97
+  teamC: centreline blown out before reaching mid-shelter (2.5 m) when Ua > 4.48
+  CS300: centreline blown out before reaching mid-shelter (2.5 m) when Ua > 3.27
+  CS500: centreline blown out before reaching mid-shelter (2.5 m) when Ua > 10.09
+Breakthrough group Pi = U0 d/(Ua L_p) = 0.589 for end-fire; 'bus-stop deflection modulus' (pi/4) Pi^2 = 0.273
+
+Calm phi vs outlet diameter (end-fire): 0.2:0.032 0.4:0.075 0.6:0.130 0.8:0.196 1.0:0.269 1.2:0.350 1.4:0.439 1.6:0.534 1.8:0.636 2.0:0.740
+outlet diameter that reproduces the calibrated phi in calm air (end-fire): {0.255: 0.96, 0.438: 1.4}
+free-jet closed form V/Vzone for d=0.42, L=5: 0.083; d=1.27: 0.417
+calm phi for d=0.42 with Q=0.5/1.1/2.2/4.4 m3/s: [np.float64(0.079), np.float64(0.081), np.float64(0.081), np.float64(0.081)]
+
+Phoenix hot daytime hours (T>=35 C, 10-19 h, Jun 1-Sep 15 2025): n=908, U10 median 2.14, p90 3.83 m/s
+
+Design options for teamB (phi at calm / Phoenix median Ua=0.86 / p90 Ua=1.53):
+  1 End-fire, cross-wind blows jet out the front   0.080  0.085  0.057   -> zone drop 1.5 / 1.6 / 1.1 C
+  2 Back-fire (from back wall), wind along street  0.036  0.048  0.056   -> zone drop 0.7 / 0.9 / 1.1 C
+  3 End-fire at upwind end (wind along street, tail) 0.080  0.061  0.052   -> zone drop 1.5 / 1.1 / 1.0 C
+  4 = 3 + solid far-end panel (upper bound)        0.209  0.137  0.111   -> zone drop 3.9 / 2.6 / 2.1 C
+  5 = 1 + side panels halve in-shelter wind        0.080  0.092  0.088   -> zone drop 1.5 / 1.7 / 1.7 C
+  6 = 1 split into 4 smaller outlets               0.129  0.089  0.052   -> zone drop 2.4 / 1.7 / 1.0 C
+
+Design options for CS500 (phi at calm / Phoenix median Ua=0.86 / p90 Ua=1.53):
+  1 End-fire, cross-wind blows jet out the front   0.380  0.407  0.401   -> zone drop 7.1 / 7.6 / 7.5 C
+  2 Back-fire (from back wall), wind along street  0.203  0.217  0.229   -> zone drop 3.8 / 4.1 / 4.3 C
+  3 End-fire at upwind end (wind along street, tail) 0.380  0.351  0.333   -> zone drop 7.1 / 6.6 / 6.3 C
+  4 = 3 + solid far-end panel (upper bound)        0.849  0.738  0.676   -> zone drop 15.9 / 13.8 / 12.7 C
+  5 = 1 + side panels halve in-shelter wind        0.380  0.396  0.405   -> zone drop 7.1 / 7.4 / 7.6 C
+  6 = 1 split into 4 smaller outlets               0.541  0.579  0.515   -> zone drop 10.1 / 10.9 / 9.7 C
+
+Smart control: lowest outlet speed keeping phi >= 90% of its calm value (CS500 outlet, end-fire, cross-wind out front)
+  Ua=0.25 (U10=0.62) -> U0 >= 2.00 m/s, r=8.0, fan power ~1.1% of max
+  Ua=0.50 (U10=1.25) -> U0 >= 1.97 m/s, r=3.9, fan power ~1.1% of max
+  Ua=0.75 (U10=1.88) -> U0 >= 2.20 m/s, r=2.9, fan power ~1.5% of max
+  Ua=1.00 (U10=2.50) -> U0 >= 2.81 m/s, r=2.8, fan power ~3.1% of max
+  Ua=1.25 (U10=3.12) -> U0 >= 3.64 m/s, r=2.9, fan power ~6.7% of max
+  Ua=1.50 (U10=3.75) -> U0 >= 4.41 m/s, r=2.9, fan power ~12.0% of max
+  Ua=2.00 (U10=5.00) -> U0 >= 6.17 m/s, r=3.1, fan power ~32.8% of max
+  Ua=2.50 (U10=6.25) -> U0 >= 7.93 m/s, r=3.2, fan power ~69.9% of max
+  rule of thumb: U0 ~ 3.0 x in-shelter wind
+  Phoenix hot hours: mean fan power 5.0% of max; hours needing > max speed: 0.0%
+
+Share of hot daytime hours (10-19 h, T>=35 C; Singapore/Houston: T>=32 C) in which the cooler is
+'nearly useless' (shelter-average drop < 1 C, using that hour's own outlet drop), end-fire, cross-wind out front
+     city  thr   n  U10_med  dT0_med  teamB_useless%  teamB_mean_dT  teamC_useless%  teamC_mean_dT  CS500_useless%  CS500_mean_dT
+  Phoenix   35 908     2.14    17.36           12.44           1.33            0.00           2.50             0.0           6.84
+ LasVegas   35 812     2.94    18.78           30.05           1.28            0.00           2.49             0.0           7.31
+  Seville   35 426     1.97    14.71           25.35           1.18            0.00           2.18             0.0           5.90
+  Houston   32 321     2.00     7.36           96.57           0.61           40.19           1.12             0.0           3.03
+Singapore   32  78     2.74     5.72          100.00           0.42           94.87           0.84             0.0           2.34
+figures written

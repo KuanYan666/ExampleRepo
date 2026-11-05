@@ -1,0 +1,48 @@
+=== SHARED CONTEXT (identical in every chat — read fully before starting) ===
+
+We are a 3-student high-school team in HiMCM 2026 (COMAP's High School Mathematical Contest in Modeling), Problem B: "Air Conditioning the Environment: Modeling Energy Waste in Public Cooling". Contest window 4–17 Nov 2026. 25-page limit. AI use is allowed but must be fully documented; no help from people outside the team.
+
+THE PROBLEM'S TASKS (close paraphrase):
+1. Understand the Problem. Open freezer cases in grocery stores continuously use energy to remove heat from food and the surrounding air. What aspects of a freezer case should be considered when measuring cooling efficiency? Should efficiency depend only on energy use? Justify the quantities to include. Use this to motivate the models below.
+2a. A city wants to cool an open-sided bus stop shelter. Options: A. Fan — "makes space feel up to 3 °C cooler", 0.25 "kW/hr". B. Evaporative cooler — "lowers air temperature up to 5 °C", 1.2 "kW/hr". C. Large evaporative cooler — "lowers air temperature up to 8 °C", 2.5 "kW/hr". Develop a measure of cooling efficiency (consider size of cooled area, climate conditions, energy use, number of people benefiting).
+2b. Revise the model for a semi-open rail-station waiting area; explain what changed, why it was necessary, and how it improved the model.
+3. Apply to at least two venues in different climates or with different systems; identify the characteristics that contribute most to efficient cooling.
+4. Balance cooling performance, visitor experience, energy use and cost.
+5. Guidelines + a 1–2 page memo to the Chief Operations Officer + a public blog post.
+Notes: "kW/hr" is not a valid unit; we read it as electrical power in kW. The fan's figure is a FELT temperature; the coolers' figures are AIR temperatures.
+
+TEAM DECISIONS SO FAR:
+- Structure follows the problem: freezer -> bus stop -> rail station -> venues. Each step must add exactly ONE new ingredient.
+- Spine of the paper: what you are cooling changes, so the measure must change. Freezer: food, only ACTUAL temperature matters. Bus stop: a person, FELT temperature matters. Rail station: a crowd; felt temperature AND the crowd itself is a big heat source.
+- Task 1 (freezer) is our foundation. Our physics teammates believe the key physics is AERODYNAMICS: an open case is "sealed" only by an air curtain (a thin downward jet of cold air), and most of the energy is lost through it.
+- Working definition: efficiency = useful service delivered / resources consumed. "Capture fraction" phi = share of the cooling produced that actually reaches its target.
+
+OUR PRELIMINARY NUMBERS (our own estimates, NOT verified — check them and correct them if wrong):
+- Typical 2.5 m open vertical low-temperature (freezer) case: refrigeration load ~2.5 kW; case air ~ -18 °C; store air 24 °C / 55% RH; COP ~1.7; Carnot limit for -18 °C evaporating -> 35 °C condensing ~4.8.
+- Literature: infiltration through the air curtain ~67–85% of total case load (Howell & Adams 1991 ~75%; Amin et al. 2011 up to 80%; Kettering University/Navaz ~70%; a Brunel University thesis >=85%).
+- Per kg of store air entering the case: sensible ~42 kJ, latent (water condensing + freezing) ~27 kJ -> ~39% of the infiltration load is moisture.
+- Store front-door traffic raises store humidity; we estimate this raises case load by 8–27%, and ~73% of that extra is moisture, ~27% temperature.
+- Net heat a case adds to the store = its electricity use (energy conservation). In winter the escaping cold offsets store heating ("waste" partly recovered); a bus shelter's escaping cold is always lost.
+- Time constants: one door opening ~8 s, case air ~1 min, store air ~30 min, product ~1 h, coil frost ~6 h. With hourly weather data, only product temperature and frost need differential equations.
+- Bus shelter: fitting ONE parameter to COMAP's table (pad saturation efficiency 0.85, design hour 43 °C / 12% RH) implies capture fraction ~0.26 (1.2 kW cooler) and ~0.44 (2.5 kW cooler), i.e. ~74% / 56% of the cooling lost; residual +/-0.21 °C on both claims.
+
+MODEL TOOLKIT WE PREFER (from our catalog): composite index, AHP, entropy weights, TOPSIS, regression, curve fitting, ODEs / stock-and-flow, Monte Carlo, queueing (Little's law), linear/integer programming, multi-objective optimisation / Pareto front, dynamic programming. Checks: sensitivity (elasticity E = (dy/dp)(p/y), tornado chart, Monte Carlo / Sobol), validation (units check, limiting cases, back-test, compare with a published figure). Well-documented physics/engineering models from the literature are equally welcome. Judges punish "model forcing": every model must answer the task's verb.
+
+HOW TO WORK AND WRITE:
+- Write for a smart 16-year-old who has NOT studied thermodynamics or fluid mechanics. For every concept: plain words first, then the equation, then define EVERY symbol WITH UNITS, then one sentence of intuition ("this means...").
+- Give a worked numerical example for every equation.
+- Do real research (use web search). Cite every number and equation: author, year, title, link, and page/equation/table if possible. Tag each number [VERIFIED: source] or [ASSUMED: reason]. Never invent a source or a value; if you cannot find something, say so plainly.
+- If you can run Python, run it and include the code, its output and figures (clear labels, units on axes). If you cannot run code, give complete runnable code.
+- Be creative: we want precise, non-obvious, defensible insights that other teams would not think of. No speculation dressed up as fact.
+- Do NOT write the competition paper. Produce a research/modelling memo the team will learn from and then rewrite in their own words.
+- END WITH: (a) 3–5 key findings with numbers; (b) what is verified vs assumed; (c) decisions our team must make; (d) exactly how this feeds the rest of the paper; (e) weaknesses and open questions.
+- Deliver everything as ONE downloadable Markdown file named after your task ID (e.g. T01_air_curtain.md), plus code/figures if produced.
+
+=== END OF SHARED CONTEXT ===
+
+YOUR TASK (T09) — The "number of people benefiting" part of the bus-stop model, and a fair way to compare the three systems.
+
+1. Occupancy via queueing / Little's law L = lambda*W. With random passenger arrivals the mean wait is about half the headway, but at long headways passengers time their arrivals. Find the documented headway threshold where arrivals stop being random (e.g. O'Flaherty & Mangan 1970; Bowman & Turnquist 1981; later studies) and build W(headway). Get realistic hourly lambda from published ridership data for at least one real stop or a transit agency's stop-level data.
+2. Define people-weighted service = sum over hours of N_t x (cooling felt) x dt, and show how occupancy changes which system is "most efficient".
+3. Compare A/B/C with a multi-criteria method from our catalog (composite index or TOPSIS), using criteria such as felt cooling, energy, water use, cost and safety. Get weights two ways (AHP with stated judgement; entropy) and test robustness (weights +/-20%, Monte Carlo).
+4. Explain clearly where multi-criteria methods are appropriate here and where they would be "model forcing".

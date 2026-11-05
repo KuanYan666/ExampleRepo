@@ -1,0 +1,158 @@
+==========================================================================================
+Houston (hot-humid)
+==========================================================================================
+weather 2023: T mean 22.0 C, min 1.3, max 41.7; mean outdoor W 12.9 g/kg
+==========================================================================================
+Minneapolis (cold)
+==========================================================================================
+weather 2023: T mean 8.9 C, min -28.0, max 37.3; mean outdoor W 6.0 g/kg
+ E_LT  E_AC   gas  elec   site  cost   RH        city      config           doors  rh_control
+167.9  47.4 139.5 749.3  888.9 103.0 43.1     houston      remote     no door air       False
+170.0  61.2 149.4 768.7  918.0 105.9 45.8     houston      remote  baseline 153/h       False
+169.4  56.5 145.7 762.3  908.0 104.9 44.9     houston      remote vestibule 153/h       False
+171.5  80.6 156.1 791.8  947.9 109.2 47.5     houston      remote      busy 306/h       False
+175.3 131.1  20.1 843.2  863.3 110.4 39.8     houston      plugin     no door air       False
+176.8 146.8  21.5 863.1  884.5 113.1 41.8     houston      plugin  baseline 153/h       False
+176.4 141.5  20.8 856.4  877.2 112.2 41.1     houston      plugin vestibule 153/h       False
+177.8 169.5  23.2 888.5  911.7 116.4 43.2     houston      plugin      busy 306/h       False
+171.2  47.4  38.6 752.7  791.3  99.4 43.1     houston     reclaim     no door air       False
+173.6  61.2  40.1 772.2  812.3 102.0 45.8     houston     reclaim  baseline 153/h       False
+172.8  56.5  38.5 765.7  804.2 101.1 44.9     houston     reclaim vestibule 153/h       False
+175.1  80.6  43.0 795.4  838.4 105.1 47.5     houston     reclaim      busy 306/h       False
+  0.0  93.9  73.7 636.8  710.5  85.7 48.7     houston no freezers  baseline 153/h       False
+140.2  14.3 447.4 650.5 1097.9 102.5 28.7 minneapolis      remote     no door air       False
+140.7  16.3 527.6 654.3 1181.9 106.2 29.5 minneapolis      remote  baseline 153/h       False
+140.6  15.6 499.4 653.0 1152.5 104.9 29.2 minneapolis      remote vestibule 153/h       False
+141.5  20.9 593.0 660.6 1253.5 109.6 30.5 minneapolis      remote      busy 306/h       False
+157.8  51.0 191.1 706.5  897.6  99.5 27.7 minneapolis      plugin     no door air       False
+157.9  51.7 262.4 708.1  970.5 102.6 28.3 minneapolis      plugin  baseline 153/h       False
+157.9  51.3 236.7 707.5  944.2 101.4 28.1 minneapolis      plugin vestibule 153/h       False
+158.5  56.5 323.4 714.3 1037.7 105.8 29.3 minneapolis      plugin      busy 306/h       False
+150.5  14.3 241.1 660.8  902.0  95.6 28.7 minneapolis     reclaim     no door air       False
+151.2  16.3 314.7 664.7  979.4  99.0 29.5 minneapolis     reclaim  baseline 153/h       False
+151.0  15.6 287.9 663.4  951.3  97.8 29.2 minneapolis     reclaim vestibule 153/h       False
+151.9  20.9 377.1 671.0 1048.1 102.3 30.5 minneapolis     reclaim      busy 306/h       False
+  0.0  29.6 399.6 529.5  929.1  84.8 32.3 minneapolis no freezers  baseline 153/h       False
+
+with 55 % RH cap:
+ E_LT  E_AC   gas  elec   site  cost   RH        city  config           doors  rh_control
+167.8  49.1 139.5 750.9  890.4 103.2 43.0     houston  remote     no door air        True
+169.2  85.4 149.4 790.7  940.1 108.8 44.9     houston  remote  baseline 153/h        True
+168.9  70.6 145.7 775.0  920.7 106.6 44.4     houston  remote vestibule 153/h        True
+169.8 143.2 156.1 849.9 1006.1 116.7 45.7     houston  remote      busy 306/h        True
+175.3 131.2  20.1 843.2  863.3 110.4 39.8     houston  plugin     no door air        True
+176.7 151.3  21.5 867.3  888.8 113.6 41.7     houston  plugin  baseline 153/h        True
+176.3 142.9  20.8 857.8  878.5 112.3 41.1     houston  plugin vestibule 153/h        True
+177.4 194.5  23.2 912.4  935.5 119.5 42.8     houston  plugin      busy 306/h        True
+171.2  49.1  38.6 754.2  792.8  99.6 43.0     houston reclaim     no door air        True
+172.8  85.4  40.1 794.2  834.3 104.9 44.9     houston reclaim  baseline 153/h        True
+172.3  70.6  38.5 778.5  816.9 102.7 44.4     houston reclaim vestibule 153/h        True
+173.4 143.2  43.0 853.6  896.5 112.7 45.7     houston reclaim      busy 306/h        True
+140.2  14.4 447.4 650.6 1098.0 102.5 28.7 minneapolis  remote     no door air        True
+140.7  18.3 527.6 656.1 1183.7 106.4 29.4 minneapolis  remote  baseline 153/h        True
+140.5  16.7 499.4 654.0 1153.5 105.0 29.2 minneapolis  remote vestibule 153/h        True
+141.3  27.0 593.0 666.3 1259.2 110.3 30.3 minneapolis  remote      busy 306/h        True
+157.8  51.0 191.1 706.5  897.6  99.5 27.7 minneapolis  plugin     no door air        True
+157.9  52.0 262.4 708.5  970.8 102.6 28.3 minneapolis  plugin  baseline 153/h        True
+157.9  51.5 236.7 707.6  944.3 101.5 28.1 minneapolis  plugin vestibule 153/h        True
+158.4  58.5 323.4 716.2 1039.6 106.0 29.2 minneapolis  plugin      busy 306/h        True
+150.5  14.4 241.1 660.9  902.0  95.6 28.7 minneapolis reclaim     no door air        True
+151.1  18.3 314.7 666.5  981.2  99.2 29.4 minneapolis reclaim  baseline 153/h        True
+150.9  16.7 287.9 664.4  952.3  97.9 29.2 minneapolis reclaim vestibule 153/h        True
+151.8  27.0 377.1 676.7 1053.8 103.1 30.3 minneapolis reclaim      busy 306/h        True
+
+==========================================================================================
+DOOR-TRAFFIC EFFECT ON ANNUAL FREEZER (LT) ELECTRICITY, 12 cases
+==========================================================================================
+houston      remote  RHcap=False | LT no-door  167.9 MWh | vestibule 153/h:  +0.9% LT,  +2.2% site, $ +1.9k | baseline 153/h:  +1.3% LT,  +3.3% site, $ +2.9k | busy 306/h:  +2.1% LT,  +6.6% site, $ +6.2k
+houston      remote  RHcap=True  | LT no-door  167.8 MWh | vestibule 153/h:  +0.6% LT,  +3.4% site, $ +3.4k | baseline 153/h:  +0.8% LT,  +5.6% site, $ +5.6k | busy 306/h:  +1.2% LT, +13.0% site, $+13.5k
+houston      plugin  RHcap=False | LT no-door  175.3 MWh | vestibule 153/h:  +0.6% LT,  +1.6% site, $ +1.7k | baseline 153/h:  +0.9% LT,  +2.5% site, $ +2.6k | busy 306/h:  +1.4% LT,  +5.6% site, $ +6.0k
+houston      plugin  RHcap=True  | LT no-door  175.3 MWh | vestibule 153/h:  +0.6% LT,  +1.8% site, $ +1.9k | baseline 153/h:  +0.8% LT,  +3.0% site, $ +3.2k | busy 306/h:  +1.2% LT,  +8.4% site, $ +9.1k
+minneapolis  remote  RHcap=False | LT no-door  140.2 MWh | vestibule 153/h:  +0.3% LT,  +5.0% site, $ +2.4k | baseline 153/h:  +0.4% LT,  +7.7% site, $ +3.7k | busy 306/h:  +0.9% LT, +14.2% site, $ +7.1k
+minneapolis  remote  RHcap=True  | LT no-door  140.2 MWh | vestibule 153/h:  +0.3% LT,  +5.1% site, $ +2.5k | baseline 153/h:  +0.3% LT,  +7.8% site, $ +3.9k | busy 306/h:  +0.8% LT, +14.7% site, $ +7.9k
+minneapolis  plugin  RHcap=False | LT no-door  157.8 MWh | vestibule 153/h:  +0.0% LT,  +5.2% site, $ +2.0k | baseline 153/h:  +0.1% LT,  +8.1% site, $ +3.1k | busy 306/h:  +0.4% LT, +15.6% site, $ +6.3k
+minneapolis  plugin  RHcap=True  | LT no-door  157.8 MWh | vestibule 153/h:  +0.0% LT,  +5.2% site, $ +2.0k | baseline 153/h:  +0.1% LT,  +8.2% site, $ +3.1k | busy 306/h:  +0.4% LT, +15.8% site, $ +6.6k
+
+monthly % change in freezer electricity, baseline doors vs no door air (remote rack):
+houston       +0.9  +1.0  +1.2  +1.3  +1.7  +1.6  +1.6  +1.3  +1.5  +1.4  +0.9  +0.5
+  store RH    37.5  39.3  42.4  43.7  51.1  54.8  56.0  52.4  52.9  44.9  39.3  35.0
+  RH no door  35.3  37.0  39.8  40.7  47.7  51.6  52.7  49.8  49.8  42.1  36.8  33.0
+minneapolis   -0.5  -0.5  -0.4  +0.0  +0.6  +1.1  +1.2  +1.3  +1.0  +0.3  -0.2  -0.2
+  store RH    18.4  18.0  19.6  25.0  33.4  38.8  40.6  43.7  40.2  30.8  22.5  22.0
+  RH no door  19.5  19.1  20.4  24.9  31.6  36.7  38.3  40.9  37.5  29.8  22.9  22.5
+
+split of the door effect on the LT evaporator load (annual, remote):
+houston     : d(sensible) -0.02 MWh/case, d(latent) +0.32 MWh/case -> moisture share 107 %  (abs-sum share 94 %)
+      Jun-Aug: d(sens)       +0 kWh, d(lat)      +95 kWh per case
+      Dec-Feb: d(sens)       -9 kWh, d(lat)      +54 kWh per case
+minneapolis : d(sensible) -0.01 MWh/case, d(latent) +0.09 MWh/case -> moisture share 118 %  (abs-sum share 87 %)
+      Jun-Aug: d(sens)       -3 kWh, d(lat)      +73 kWh per case
+      Dec-Feb: d(sens)       +0 kWh, d(lat)      -22 kWh per case
+
+marginal energy per door opening (finite difference 153 -> 168 openings/h peak):
+  houston      freezers    :   +2.57 Wh per opening
+  houston      AC          :  +24.72 Wh per opening
+  houston      gas heat    :  +19.04 Wh per opening
+  houston      whole store :  +50.44 Wh per opening
+  houston      openings per year at baseline: 465,174
+  minneapolis  freezers    :   +0.62 Wh per opening
+  minneapolis  AC          :   +3.94 Wh per opening
+  minneapolis  gas heat    : +144.45 Wh per opening
+  minneapolis  whole store : +150.37 Wh per opening
+  minneapolis  openings per year at baseline: 465,174
+
+==========================================================================================
+WHAT THE FREEZERS DO TO STORE HVAC (12 LT cases present minus absent)
+==========================================================================================
+houston      remote  : annual dAC  -32.7 MWh_e, dHeat  +75.7 MWh_gas, LT 170.0 MWh_e -> HVAC/LT cost ratio -0.06
+     monthly dHVAC cost $:  +198  +111   -47  -110  -271  -313  -358  -374  -299  -142  +122  +261
+houston      plugin  : annual dAC  +53.0 MWh_e, dHeat  -52.2 MWh_gas, LT 176.8 MWh_e -> HVAC/LT cost ratio +0.21
+     monthly dHVAC cost $:    +7   +36  +273  +311  +523  +709  +833  +826  +730  +423  +128    -4
+houston      reclaim : annual dAC  -32.7 MWh_e, dHeat  -33.6 MWh_gas, LT 173.6 MWh_e -> HVAC/LT cost ratio -0.25
+     monthly dHVAC cost $:  -413  -417  -473  -479  -566  -514  -517  -488  -495  -505  -377  -350
+minneapolis  remote  : annual dAC  -13.2 MWh_e, dHeat +128.0 MWh_gas, LT 140.7 MWh_e -> HVAC/LT cost ratio +0.19
+     monthly dHVAC cost $:  +603  +544  +603  +472   +73  -137  -158  -170   -51  +450  +568  +603
+minneapolis  plugin  : annual dAC  +22.1 MWh_e, dHeat -137.2 MWh_gas, LT 157.9 MWh_e -> HVAC/LT cost ratio -0.13
+     monthly dHVAC cost $:  -680  -611  -689  -474  +138  +308  +310  +363  +290  -275  -605  -689
+minneapolis  reclaim : annual dAC  -13.2 MWh_e, dHeat  -84.9 MWh_gas, LT 151.2 MWh_e -> HVAC/LT cost ratio -0.26
+     monthly dHVAC cost $:  -405  -363  -413  -398  -404  -494  -530  -531  -432  -339  -387  -421
+
+sweep (remote):
+  E_LT   E_AC    gas   elec    site   cost    RH        city  N_peak  rh_control  mean_open
+167.90  47.43 139.52 749.35  888.87 103.00 43.06     houston       0       False       0.00
+168.68  50.43 141.73 754.36  896.09 103.74 44.08     houston      25       False       9.30
+169.02  52.82 143.33 757.65  900.98 104.23 44.51     houston      50       False      17.86
+169.57  57.08 146.32 763.35  909.66 105.09 45.22     houston     100       False      34.97
+170.04  61.19 149.37 768.66  918.02 105.90 45.81     houston     153       False      53.10
+170.38  64.61 152.03 772.97  925.01 106.57 46.26     houston     200       False      69.18
+170.70  68.09 154.83 777.28  932.10 107.24 46.67     houston     250       False      86.29
+170.98  71.43 157.59 781.34  938.93 107.88 47.04     houston     300       False     103.40
+171.45  77.81 163.04 788.95  951.99 109.08 47.66     houston     400       False     137.62
+167.82  49.14 139.52 750.85  890.37 103.19 42.99     houston       0        True       0.00
+168.48  54.94 141.73 758.37  900.10 104.26 43.87     houston      25        True       9.30
+168.72  60.52 143.33 764.54  907.87 105.12 44.19     houston      50        True      17.86
+169.02  72.30 146.32 777.10  923.42 106.88 44.62     houston     100        True      34.97
+169.21  85.42 149.37 790.71  940.07 108.77 44.93     houston     153        True      53.10
+169.33  97.31 152.03 802.89  954.93 110.46 45.14     houston     200        True      69.18
+169.41 110.08 154.83 815.88  970.71 112.26 45.30     houston     250        True      86.29
+169.48 122.90 157.59 828.86  986.45 114.06 45.43     houston     300        True     103.40
+169.56 148.56 163.04 854.71 1017.75 117.63 45.63     houston     400        True     137.62
+140.19  14.30 447.40 650.50 1097.90 102.46 28.73 minneapolis       0       False       0.00
+140.40  14.71 466.46 651.53 1117.99 103.36 29.00 minneapolis      25       False       9.30
+140.49  15.06 479.77 652.17 1131.94 103.97 29.13 minneapolis      50       False      17.86
+140.63  15.69 503.91 653.26 1157.17 105.08 29.32 minneapolis     100       False      34.97
+140.75  16.33 527.65 654.27 1181.91 106.16 29.49 minneapolis     153       False      53.10
+140.83  16.88 547.74 655.08 1202.81 107.07 29.61 minneapolis     200       False      69.18
+140.90  17.45 568.39 655.89 1224.28 108.00 29.72 minneapolis     250       False      86.29
+140.97  18.01 588.50 656.65 1245.15 108.90 29.82 minneapolis     300       False     103.40
+141.08  19.10 627.40 658.07 1285.48 110.65 29.99 minneapolis     400       False     137.62
+140.19  14.40 447.40 650.59 1097.98 102.47 28.72 minneapolis       0        True       0.00
+140.39  14.99 466.46 651.78 1118.24 103.39 28.99 minneapolis      25        True       9.30
+140.47  15.57 479.77 652.64 1132.41 104.03 29.11 minneapolis      50        True      17.86
+140.59  16.84 503.91 654.30 1158.21 105.22 29.27 minneapolis     100        True      34.97
+140.68  18.31 527.65 656.07 1183.72 106.39 29.41 minneapolis     153        True      53.10
+140.74  19.71 547.74 657.66 1205.40 107.41 29.50 minneapolis     200        True      69.18
+140.79  21.26 568.39 659.38 1227.77 108.45 29.58 minneapolis     250        True      86.29
+140.82  22.87 588.50 661.12 1249.62 109.49 29.65 minneapolis     300        True     103.40
+140.88  26.18 627.40 664.65 1292.06 111.50 29.77 minneapolis     400        True     137.62
+figures written

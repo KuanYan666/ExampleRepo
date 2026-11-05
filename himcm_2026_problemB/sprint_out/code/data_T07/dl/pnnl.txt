@@ -1,0 +1,1481 @@
+                                                PNNL-20026
+
+
+   Prepared for the U.S. Department of Energy
+   under Contract DE-AC05-76RL01830
+
+
+
+
+Energy Saving Impact of ASHRAE
+90.1 Vestibule Requirements:
+Modeling of Air Infiltration through
+Door Openings
+
+
+H Cho                   K Gowri
+B Liu
+
+
+
+November 2010
+                                               PNNL-20026
+
+
+
+
+Energy Saving Impact of ASHRAE 90.1 Vestibule
+Requirements:
+
+Modeling of Air Infiltration through Door Openings
+
+
+
+
+H Cho          K Gowri
+B Liu
+
+
+
+
+November 2010
+
+
+
+
+Prepared for
+U.S. Department of Energy
+under Contract DE-AC05-76RL01830
+
+
+
+
+Pacific Northwest National Laboratory
+Richland, Washington 99352
+                                               Summary
+
+     This report presents a methodology for modeling air infiltration through door openings. This report
+shows that the estimation of air infiltration rate using the proposed method can be readily used in
+EnergyPlus whole building energy simulations. The purpose of this study is two-fold:
+
+    1. Develop a modeling strategy to capture the energy saving impacts of ASHRAE 90.1 vestibule
+        requirements (i.e., addendum ‘c’ to ASHRAE Standard 90.1-2004 and addendum ‘q’ to ASHRAE
+        Standard 90.1-2007).
+    2. Provide a guideline to model air infiltration through door openings calculated for the whole
+        building simulations to determine its impact for various types of buildings.
+
+Pacific Northwest National Laboratory’s (PNNL) prototypical commercial building models were used in
+the analysis to determine energy savings from the vestibule requirements. The national construction-
+weighted average savings for each building prototype from ASHRAE 90.1 vestibule requirements have
+been determined, and the results are presented in the table below.
+
+                Table S 1. National weighted-average savings for each building prototype
+
+     Building Type               Savings (%)                    Building Type              Savings (%)
+      Small Office                  0.63                      Secondary School                0.06
+    Medium Office                   0.23                   Quick Service Restaurant           4.16
+       Warehouse                    0.36                     Sit-down Restaurant              1.89
+   Stand-alone Retail               2.38                    Outpatient Health Care            0.03
+       Strip Mall                   5.61                         Small Hotel                  0.57
+    Primary School                  0.29                     Mid-rise Apartment               0.30
+
+
+
+
+                                                     iii
+iv
+                                                                       Contents
+
+
+Summary ........................................................................................................................................... iii
+
+1.     Introduction ................................................................................................................................ 1
+
+2.     Modeling Strategy for Air Infiltration through Door Openings ................................................. 3
+
+3.     Building Models and ASHRAE 90.1 Vestibule Requirements .................................................. 7
+
+4.     Estimation of Door-Opening Frequency .................................................................................. 11
+
+5.     Estimation of Air Infiltration through Door Openings ............................................................. 15
+
+6.     Simulation Results .................................................................................................................... 17
+
+7.     Sensitivity Analysis .................................................................................................................. 25
+
+8.     Conclusions .............................................................................................................................. 27
+
+9.     References ................................................................................................................................ 29
+
+APPENDIX A ................................................................................................................................. A-1
+
+
+
+
+                                                                               v
+vi
+                                                               Figures
+
+Figure 1: Air flow coefficient vs. door-opening frequency .............................................................. 4
+
+Figure 2: Pressure factor vs. building height at different outdoor air temperatures .......................... 5
+
+Figure 3: Percentage energy savings from ASHRAE 90.1 vestibule requirements for small office
+      building prototype ..................................................................................................................... 18
+
+Figure 4: Percentage energy savings from ASHRAE 90.1 vestibule requirements for medium
+      office building prototype .......................................................................................................... 19
+
+Figure 5: Percentage energy savings from ASHRAE 90.1 vestibule requirements for warehouse
+      building prototype ..................................................................................................................... 19
+
+Figure 6: Percentage energy savings from ASHRAE 90.1 vestibule requirements for stand-alone
+      retail building prototype............................................................................................................ 20
+
+Figure 7: Percentage energy savings from ASHRAE 90.1 vestibule requirements for strip mall
+      building prototype ..................................................................................................................... 20
+
+Figure 8: Percentage energy savings from ASHRAE 90.1 vestibule requirements for primary
+      school building prototype ......................................................................................................... 21
+
+Figure 9: Percentage energy savings from ASHRAE 90.1 vestibule requirements for secondary
+      school building prototype ......................................................................................................... 21
+
+Figure 10: Percentage energy savings from ASHRAE 90.1 vestibule requirements for fast food
+      restaurant building prototype .................................................................................................... 22
+
+Figure 11: Percentage energy savings from ASHRAE 90.1 vestibule requirements for sit down
+      restaurant building prototype .................................................................................................... 22
+
+Figure 12: Percentage energy savings from ASHRAE 90.1 vestibule requirements for outpatient
+      health care building prototype .................................................................................................. 23
+
+Figure 13: Percentage energy savings from ASHRAE 90.1 vestibule requirements for small hotel
+      building prototype ..................................................................................................................... 23
+
+
+                                                                          vii
+Figure 14: Percentage energy savings from ASHRAE 90.1 vestibule requirements for mid-rise
+    apartment building prototype .................................................................................................... 24
+
+
+
+
+                                                                    viii
+                                                                   Tables
+
+Table S 1. National weighted-average savings for each building prototype ..................................... iii
+
+Table 1 Prototype model characteristics to determine vestibule requirements .................................. 7
+
+Table 2 ASHRAE 90.1 - 2004 vestibule requirement for all prototypes in each zone ...................... 8
+
+Table 3 ASHRAE 90.1 - 2007 vestibule requirement for all prototypes in each zone (Addendum
+      ‘c’ to 90.1-2004) ......................................................................................................................... 9
+
+Table 4 Addendum ‘q’ to ASHRAE 90.1 - 2007 vestibule requirement for all prototypes in each
+      zone ............................................................................................................................................. 9
+
+Table 5 Door-opening frequency estimation for each building type ............................................... 11
+
+Table 6 Air infiltration rates through door openings with and without vestibule ............................ 15
+
+Table 7 Door-opening schedule for each building type ................................................................... 16
+
+Table 8 National weighted-average site energy savings for each building prototype...................... 17
+
+Table 9 Impact of outdoor temperature on the peak air infiltration rate through door openings ..... 25
+
+Table 10 Impact of door-opening frequency on the peak air infiltration rate through door
+      openings .................................................................................................................................... 25
+
+Table 11 Impact of the air infiltration rates through door openings on percentage energy savings
+      for quick service restaurant at Baltimore, MD.......................................................................... 26
+
+
+
+
+                                                                               ix
+x
+                                           1.    Introduction
+
+       Saving energy in residential and commercial buildings is considered to be a key area to achieve
+significant energy saving nationwide 1. Because saving energy in the building sector is a vital issue, the
+importance of energy smart “whole building” design and analysis is also emphasized [1, 2]. Many factors
+need to be considered in a whole building analysis to realistically evaluate building energy savings; one of
+the important factors is air infiltration through the building envelope [3]. Along with whole building air
+leakage, air infiltration through door openings can be an important factor when doors are used frequently.
+Many commercial buildings, such as restaurants, strip-mall stores, retail stores, supermarkets, offices and
+hospitals, are likely to have high door-opening frequency, either at certain time periods of day or in some
+cases throughout the occupied hours. Vestibules or revolving doors are often considered as design
+measures to decrease the air infiltration through door openings and ultimately to reduce the whole
+building energy use when doors are used frequently. To this effect, commercial building energy codes
+such as ASHRAE Standard 90.1 require installing vestibules in some situations. Addendum ‘c’ to
+ASHRAE Standard 90.1-2004 and addendum ‘q’ to ASHRAE Standard 90.1-2007 were developed by the
+ASHRAE 90.1 Envelope Subcommittee to require vestibules in some buildings and in certain climate
+zones to reduce air infiltration through building entrance doors.
+
+       Whole building energy simulation tools can be effectively used to determine the energy impact
+caused by air infiltration through building door openings, and the energy savings potential for reducing
+that infiltration. A few studies have been conducted to estimate air infiltration rates of automatic doors
+for different type of buildings [4, 5]. However, to the authors’ knowledge, no published study was found
+to estimate the energy saving impact of infiltration rate through the door openings. A method to estimate
+air infiltration rate through the door openings with and without vestibules is presented in this report.
+Peak infiltration rates through door openings for each building type, with and without vestibules, were
+estimated, and the estimated values were then directly used in EnergyPlus building energy simulation to
+estimate the impact of specific vestibule requirements introduced into ASHRAE 90.1 on building energy
+use.
+
+
+
+
+1
+ The U.S. Department of Energy reported that the building sector consume approximately 40% of U.S. primary
+energy annually [1].
+
+
+                                                      1
+     The primary objectives of this study are to:
+
+    1. Develop a modeling strategy to capture the energy saving impacts of ASHRAE 90.1 vestibule
+         requirements (i.e., addendum ‘c’ to ASHRAE Standard 90.1-2004 and addendum ‘q’ to ASHRAE
+         Standard 90.1-2007 2).
+    2. Provide a guideline of how to model air infiltration through the door openings in the whole
+         building simulations to determine its impact for various type of buildings.
+
+     In the analysis, exterior doors in each prototype are assumed to be automatic doors. The main reason
+for this simplifying assumption is that door opening pattern of manual doors is extremely difficult (i.e.,
+depending on users’ pattern, the door opening area and opening time can vary significantly). However,
+methods to estimate air flow through automatic doors are available in the literatures [4-6]. Because
+automatic doors often stay open longer with each use than manual doors, this assumption may result in
+over-estimates of infiltration rates through door-openings for buildings that more typically use manual
+doors.
+
+
+
+
+2
+  Addendum ‘c’ to ASHRAE Standard 90.1-2004 and addendum ‘q’ to ASHRAE Standard 90.1-2007 are provided
+in Appendix A.
+
+
+                                                      2
+         2.    Modeling Strategy for Air Infiltration through Door Openings
+
+     Air infiltration through door openings can be determined based on the type and usage of buildings
+and on outdoor wind speed and building pressure differentials. Because of the constant variation in wind
+speed and pressure and door usage, actual air infiltration through doors can vary greatly over the year.
+However, for this study, the air flow rates through open doors are assumed to be constant and were based
+on design/typical values available in the literature. Because air flow through a door for each door opening
+is assumed to be constant in this analysis, the number of people using a door per hour is identified as a
+key parameter to estimate air flow through doors in different types of buildings. The pressure difference
+across a door in a building is the driving force in the actual air flow calculation for the time the door is
+open. This pressure difference depends on pressure difference caused by stack effect and wind-induced
+surface pressure to static pressure. ASHRAE design values [6] for the square root of the pressure
+difference across the door have been recommended for use in the door-air flow calculation.
+
+     Following the method introduced in the ASHRAE handbook [6], the infiltration rate through the
+automatic door can be determined by
+
+                                                       𝑄 = 𝐶𝐴 𝐴𝑅𝑝
+
+where,
+         Q is air flow rate (cfm),
+         CA is air flow coefficient (cfm/ft2-(in. of water)0.5),
+         A is area of the door opening (ft2), and
+         Rp is a pressure factor (in. of water 0.5).
+
+     The air flow coefficient CA with and without vestibules, as shown in Figure 1, can be expressed as a
+function of the door-opening frequency (i.e., the number of people using a door per hour). Note that
+Figure 1 was developed by ASHRAE research project RP-763 [4] to simplify the air flow calculation
+through automatic doors with the following assumptions: (a) the wind velocity on the design day is
+assumed to be at 15 mph; (b) the neutral pressure plane is assumed to be at the mid-height of the building;
+and (c) the draft coefficient in the building is 0.9. Under these assumptions, the pressure factor Rp is a
+design value, which serves to represent the effect of a design pressure difference across the door, and it
+can be obtained using Figure 2. This value remains the same for vestibules.
+
+
+
+
+                                                           3
+                       1500
+                                  Doors with vestibules
+                                  Doors without vestibules
+                                  Cuve Fit - Doors with vestibules
+                                  Cuve Fit - Doors without vestibules
+
+
+
+                       1000
+Air Flow Coefficient
+
+
+
+
+                        500
+
+
+
+
+                          0
+                              0              100                200              300            400   500
+
+                                                        Door-Opening Frequency (People/hr)
+
+                                     Figure 1: Air flow coefficient vs. door-opening frequency [4]
+
+
+
+
+                                                                        4
+                        1
+                                      80 °F
+                                      60 °F
+                                      40 °F
+                                      20 °F
+                       0.8            0 °F
+                                      -20 °F
+                                      - 40 °F
+Pressure factor (Rp)
+
+
+
+
+                       0.6
+
+
+
+
+                       0.4
+
+
+
+
+                       0.2
+
+
+
+
+                        0
+                             0                   100                200                  300               400             500
+
+                                                                      Building height (ft)
+
+                                 Figure 2: Pressure factor vs. building height at different outdoor air temperatures [4]
+
+
+
+
+                                                                           5
+6
+             3.   Building Models and ASHRAE 90.1 Vestibule Requirements
+
+     PNNL’s commercial prototypical building models 3 were used in this study to determine the energy
+saving impact from ASHRAE 90.1 vestibule requirements. The starting point for these models follows
+the minimum requirements of Standard 90.1-2004. Each building prototype was analyzed for the
+vestibule requirements in ASHRAE 90.1-2004 and under subsequent standard modifications. The
+characteristics of each building model are described in Table 1, and this information is used to determine
+vestibule requirements for each building type. The ASHRAE 90.1 vestibule requirement found in the
+2004 standard, 2007 standard (addendum ‘c’ to 90.1-2004) and addendum ‘q’ to 90.1-2007 are described
+in Appendix A.
+
+
+Table 1 Prototype model characteristics to determine vestibule requirements
+                              Gross Floor      Number of      Floor Footprint      Entrance Zone       Building
+Building Prototype
+                              Area [ft2]       stories        Area [ft2]           Area* [ft2]         Height [ft]
+Large Office                  498,600          12             38,400               3,373               156
+Medium Office                 54,000           3              17,876               2,232               39
+Small Office                  5,500            1              5,500                1,221               10
+Warehouse                     49,500           1              49,500               2,550               28
+Quick Service Restaurant      2,500            1              2,500                1,250               10
+Sit-down Restaurant           5,500            1              5,500                4,002               10
+Strip Mall                    22,500           1              22,500               3,750/1,875         17
+Stand-alone Retail            24,695           1              24,695               17,227              20
+Primary School                73,960           1              73,960               1,840               13
+Secondary School              210,900          2              128,242              2,260               26
+Small Hotel                   43,200           4              10,800               1,755               38
+Large Hotel                   122,130          6              21,300               14,081              71
+Hospital                      241,410          5              40,250               15,875              78
+Outpatient Health Care        40,950           3              13,650               1096                30
+High-rise Apartment           84,360           10             8,436                836                 100
+Mid-rise Apartment             33,700          4               8,436               836                 40
+* Entrance zone area is a conditioned space where the entrance doors are located and is modeled as a
+“conditioned/semi-conditioned” zone in the building.
+
+
+
+
+3
+  PNNL’s prototypical building models are closely related to DOE’s commercial reference building series [7]. The
+Department of Energy’s (DOE) Building Technologies Program, working with DOE's three national laboratories
+[including National Renewable Energy Laboratory (NREL), PNNL, and Lawrence Berkeley National Laboratory
+(LBNL)] developed reference models for 16 commercial building types in 16 locations representing all U.S. climate
+zones. Several prototypical building descriptions can be found in PNNL reports [8-10].
+
+
+                                                         7
+     In Tables 2, 3 and 4, all the prototypes in each climate zone are identified for the vestibule
+requirement for each standard and addendum. Tables 2, 3 and 4 show that the vestibule requirements in
+90.1-2004, 90.1-2007 and addendum ‘q’ are the same for large office, large hotel, high-rise apartment and
+hospital. Because vestibules are always required, these buildings are assumed to have no savings from
+vestibule requirements examined in this study. No further analysis to estimate savings has been performed
+for large office, large hotel, high-rise apartment and hospital in this study.
+
+Table 2 ASHRAE 90.1 - 2004 vestibule requirement for all prototypes in each zone
+Building Prototype            Zone 1     Zone 2     Zone 3     Zone 4     Zone 5     Zone 6     Zone 7     Zone 8
+Large Office                  No (a)     No (a)     Yes        Yes        Yes        Yes        Yes        Yes
+Medium Office (b),(e)         No (a)     No (a)     No         No         No         No         No         No
+Small Office (b),(e)          No (a)     No (a)     No         No         No         No         No         No
+Warehouse (b),(e)             No (a)     No (a)     No         No         No         No         No         No
+Quick Service Restaurant
+                              No (a)     No (a)     No         No         No         No         No         No
+(b),(e)
+Sit-down Restaurant (b)       No (a)     No (a)     No         No         No         No         No         No
+Strip Mall (b)                No (a)     No (a)     No         No         No         No         No         No
+Standalone Retail (b)         No (a)     No (a)     No         No         No         No         No         No
+Primary School (b),(e)        No (a)     No (a)     No         No         No         No         No         No
+Secondary School (b),(e)      No (a)     No (a)     No         No         No         No         No         No
+Small Hotel (e)               No (a)     No (a)     No         No         No         No         No         No
+Large Hotel                   No (a)     No (a)     Yes        Yes        Yes        Yes        Yes        Yes
+Hospital                      No (a)     No (a)     Yes        Yes        Yes        Yes        Yes        Yes
+Outpatient Health Care (b)    No (a)     No (a)     No         No         No         No         No         No
+High-rise Apartment (e)       No (a)     No (a)     Yes        Yes        Yes        Yes        Yes        Yes
+Mid-rise Apartment (e)         No (a)     No (a)     No        No         No         No          No          No
+Note: 90.1 exceptions, which are used in determining that no vestibule requirement exists for a building in a
+particular climate zone, are shown in parenthesis (See Appendix A for the description of exceptions)
+
+
+
+
+                                                          8
+Table 3 ASHRAE 90.1 - 2007 vestibule requirement for all prototypes in each zone (Addendum ‘c’ to
+        90.1-2004)
+Building Prototype            Zone 1     Zone 2     Zone 3     Zone 4     Zone 5     Zone 6     Zone 7     Zone 8
+Large Office                  No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Medium Office                 No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Small Office                  No (d)     No (d)     No (e)     No (e)     Yes        Yes        Yes        Yes
+Warehouse                     No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Quick Service Restaurant      No (d)     No (d)     No (e)     No (e)     Yes        Yes        Yes        Yes
+Sit-down Restaurant           No (d)     No (d)     No (e)     No (e)     Yes        Yes        Yes        Yes
+Strip Mall                    No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Standalone Retail             No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Primary School                No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Secondary School              No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Small Hotel                   No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Large Hotel                   No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Hospital                      No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Outpatient Health Care        No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+High-rise Apartment           No (d)     No (d)     Yes        Yes        Yes        Yes        Yes        Yes
+Mid-rise Apartment             No (d)     No (d)     Yes       Yes        Yes        Yes         Yes        Yes
+Note: 90.1 exceptions, which are used in determining that no vestibule requirement exists for a building in a
+particular climate zone, are shown in parenthesis (See Appendix A for the description of exceptions)
+
+
+Table 4 Addendum ‘q’ to ASHRAE 90.1 - 2007 vestibule requirement for all prototypes in each zone
+Building Prototype            Zone 1     Zone 2     Zone 3     Zone 4     Zone 5     Zone 6      Zone 7     Zone 8
+Large Office                  No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Medium Office                 No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Small Office                  No (d)     No (d)     No (e)     No (e)     Yes        Yes         Yes        Yes
+Warehouse                     No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Quick Service Restaurant      No (d)     No (d)     No (e)     No (e)     Yes        Yes         Yes        Yes
+Sit-down Restaurant           No (d)     No (d)     No (e)     No (e)     Yes        Yes         Yes        Yes
+Strip Mall                    No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Standalone Retail             No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Primary School                No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Secondary School              No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Small Hotel                   No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Large Hotel                   No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Hospital                      No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Outpatient Health Care        No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+High-rise Apartment           No (d)     No (d)     Yes        Yes        Yes        Yes         Yes        Yes
+Mid-rise Apartment             No (d)     No (d)     Yes       Yes        Yes        Yes         Yes         Yes
+Note: 90.1 exceptions, which are used in determining that no vestibule requirement exists for a building in a
+particular climate zone, are shown in parenthesis (See Appendix A for the description of exceptions)
+
+
+
+                                                          9
+10
+                          4.     Estimation of Door-Opening Frequency
+
+     Estimating reasonable values of door-opening frequency for different types of buildings is important
+to calculate the infiltration rate through doors. Door-opening frequency can be determined by field
+observations, but it is costly and time-consuming work. It can also be determined by estimating
+occupancy information in buildings. In the analysis, door-opening field data was used for some prototype
+buildings if the data is available in the literature. Otherwise, the number of occupants and the occupancy
+schedule in each prototype building is used to estimate a corresponding door-opening frequency. The
+door-opening frequency for each building prototype at peak hour is shown in Table 5. The door-opening
+frequencies for off-peak-hours were estimated at one-tenth of the value during the peak-hour for all
+prototypes and are also shown in Table 5. The detailed method to estimate the building occupancy for
+each prototype is described in the following sub-sections.
+
+Table 5 Door-opening frequency estimation for each building type 4
+
+                                     Peak                          Door-opening frequency
+      Building Type               occupancy                    [number of door openings per hour]
+                                   [persons]                    Peak                         Off-peak
+       Small Office                    9                         9                               1
+      Medium Office                   105                       105                             10
+        Warehouse                     23                        23                              2
+    Standalone Retail                 77                        153                             15
+        Strip Mall
+                                      17/8                     34/16                            3/2
+ (large store/small store)
+     Primary School                  580                        580                            58
+    Secondary School                 1041                       1041                           104
+Quick Service Restaurant              90                         90                             9
+   Sit-down Restaurant                57                         57                             6
+ Outpatient Health Care              123                        123                            12
+       Small Hotel                    90                         90                             9
+   Mid-rise Apartment                 46                         46                             5
+
+
+
+
+4
+  The door-opening frequency for peak hour can be estimated based on the number of occupants in a building. For
+retail and strip mall stores, it is assumed that customers would use entrance door two times within 1 hour (i.e., once
+they enter and once they leave the store). However, for other building types it can be safely assumed that people
+stay longer than 1 hour in the building and use the entrance door once within 1 hour when they enter or leave.
+Therefore, the door-opening frequency for peak hour can be estimated to be equal to the number of occupants in all
+prototypical buildings except retail and strip mall stores.
+
+
+                                                          11
+Small Office, Medium Office and Warehouse
+
+     The number of occupants (workers) for small office, medium office and warehouse is estimated
+based on the occupancy survey data collected in the Commercial Buildings Energy Consumption Survey
+(CBECS) by Energy Information Administration (EIA) [12]. From the 2003 CBECS data, the number of
+workers for small office, medium office and warehouse prototype was determined to be 9, 105, and 5,
+respectively.
+
+Quick Service and Sit-Down Restaurants
+
+     The number of customers for quick service and sit-down restaurant prototype buildings was
+determined using data from a field study conducted by Claar et al. [13]. The average daily number of
+customers was reported as 898 for a quick service restaurant and 284 for a sit-down restaurant. It is
+assumed that a half of customers for a quick service restaurant use drive-through. If we assume that the
+customer comings and goings are evenly distributed over 5 hours of peak time building usage, the number
+of customers can be estimated as 90 (= 898/2/5) for the quick service restaurant model and 57 (=284/5)
+for the sit-down restaurant model.
+
+Standalone Retail and Strip Mall
+
+     The average door-opening frequency for standalone retail stores is directly obtained from the field
+observation data collected by Yuill [4]. The total number of 52 data sets was collected in different
+locations. The averaged peak door-opening frequency is then calculated to be 153 (opening/hour). If it is
+assumed that customers do not normally stay longer than 1 hour in the retail and strip mall stores, each
+customer would use the entrance door two times within 1 hour. Therefore, the number of people in the
+store during peak hours can be estimated to be one-half of the average door-opening frequency. Then the
+number of people in the store during peak hours is estimated to be 77. The strip mall prototype is
+assumed to have the same number of people (Nretail) per entrance zone area (Aretail). The entrance zone
+area of the standalone retail prototype (Aretail) is 17,227 ft2 (see Table 1). Then the area occupied per
+person (Oretail) for the retail prototype is determined as
+
+                                           Oretail = Aretail / Nretail = 223.7 ft2
+
+     In the strip mall prototype, there are two different sizes of stores within the prototype building: two
+stores with 3,750 ft2 and eight stores with 1,875 ft2. There are multiple stores of each size. The number
+of occupants of the strip mall prototype (Nstrip) for each zone size can be estimated as
+
+
+
+
+                                                         12
+                                     Large store: Nstrip = 3,750 ft2 / Oretail ≈ 17
+
+                                      Small store: Nstrip = 1,875 ft2 / Oretail ≈ 8
+
+     Then, the peak door-opening frequency for large stores and small stores can be estimated to be 34
+and 16 (opening/hour), respectively.
+
+Primary and Secondary Schools
+
+     The total number of occupants in schools consists of the number of staff including teachers and the
+number of students. The number of staff for primary school and secondary school are estimated to be 64
+and 115, respectively, from the CBECS data [12]. The number of students is estimated based on the
+national averages of teacher-to-staff ratio (Rt2sf) and student-to-teacher ratio (Rs2t):
+
+                                   Number of teachers = Number of staff × Rt2sf
+
+                                 Number of students = Number of teachers × Rs2t
+
+where the national average of teacher-to-staff ratio is 0.512 in 2005 [14] and the national average of
+student-to-teacher ratio is 15.7 in 2005 [15]. The total number of occupants is the sum of the number of
+students and staff. The total number of occupants was estimated to be 580 for the primary school
+prototype and 1041 for the secondary school prototype.
+
+Outpatient Health Care
+
+     The average door opening frequency for outpatient health care is directly obtained from the field
+observation data collected by Yuill [6]. A total number of 16 data sets were collected in different
+locations. The average door-opening frequency is calculated to be 123 (opening/hour). This value is used
+for the peak hour door-opening frequency.
+
+Small Hotel and Mid-rise Apartment
+
+     For small hotel and mid-rise apartment prototypes, the number of rooms/units is used to estimate the
+number of occupants. In the small hotel prototype, 77 rooms are available for customers. According to
+the 2007 Lodging Industry Profile report [16], the average occupancy rate was 63.3% for the lodging
+industry in 2006, and there is usually one person in a business room and two persons in a leisure room.
+Based on this information, it is assumed that 65% of guest rooms are occupied and 1.5 people stay in each
+rented room. From the CBECS data [12], the average number of workers in small hotels is given by 15.
+
+
+
+                                                        13
+Then the total occupancy in the small hotel prototype was determined as 90 (≈ 77 × 0.65 × 1.5 + 15).
+There are 23 apartment units available for residence in the mid-rise apartment prototype. It was assumed
+that two people live in each apartment on average, resulting in the total number of residents to be
+estimated as 46 for the mid-rise apartment.
+
+
+
+
+                                                    14
+              5.     Estimation of Air Infiltration through Door Openings
+
+     Using the method described in Section 2 and the door-opening frequency information in Section 4,
+the air infiltration rates through door openings for each prototype are estimated in this section. In this
+estimation, the outdoor temperature is assumed to be 60°F, and the door opening area is assumed to be 21
+ft2 (= 7 ft × 3 ft). The estimated values with and without vestibules are presented in Table 6. A
+sensitivity analysis, discussed in Section 7, shows that variation in the outdoor temperature for low-rise
+buildings has a relatively small contribution to the total introduced infiltration compared to the variation
+in door-opening frequency. The buildings heights for those that are the subject to the new ASHRAE
+90.1-2007 and subsequent addenda vestibule requirements are less than or equal to 40 ft, as described in
+Table 1. This means that the variation in outdoor temperature results in relatively small changes in the air
+infiltration rate through door openings (i.e., as shown in Figure 2, the pressure factor (Rp) will have very
+small changes as varying outdoor temperature from -40°F to 80°F for the building height lower than or
+equal to 40 ft). Therefore, a fixed outdoor temperature assumption for establishing the infiltration rate
+through the door appears to be a reasonable assumption for this type of analysis.
+
+Table 6 Air infiltration rates through door openings with and without vestibule
+
+                                  Air infiltration rate [cfm]             Air infiltration rate [cfm]
+     Building Type              through doors with vestibule           through doors without vestibule
+                                  Peak               Off-peak              Peak              Off-peak
+      Small Office                 162                 21                  275                  40
+     Medium Office                1,438                188                2,210                 318
+       Warehouse                   374                 49                  612                  88
+   Standalone Retail              1,986                260                3,006                 432
+       Strip Mall
+                                 511/285              67/37              824/471              118/68
+(large store/small store)
+    Primary School               6,423                 840                9,205                1,323
+   Secondary School              10,837               1,417               15,161               2,179
+     Quick Service
+                                  1,237                162                1,913                 275
+       Restaurant
+  Sit-down Restaurant              826                 108                1,302                 187
+Outpatient Health Care            1,646                215                2,513                 361
+      Small Hotel                 1,254                164                1,940                 279
+  Mid-rise Apartment               694                 91                 1,103                 159
+
+
+     In Table 7, the door-opening schedule for each prototype is estimated based on the occupancy
+schedule in the building models. Note that the cells highlighted in yellow indicate the off-peak hours,
+while the cells highlighted in green indicate the peak hours. For buildings other than restaurants, the off
+
+
+                                                      15
+    peak hours have one-tenth the door operation as at peak hour. For the restaurants, however, fractional
+    values of the peak hour door-opening frequency used in the simulation are presented in Table 7.
+    Fractional schedules (i.e., smooth transition between the hours) were considered in the restaurant models
+    to remove the unexpected simulation results (e.g., sudden increase of heating, ventilation, and air
+    conditioning (HVAC) system energy use from off-peak hour to peak hour). The values in Tables 6 and 7
+    can be readily used in the EnergyPlus to model the air infiltration through door opening with and without
+    vestibule, and it can be modeled as direct air flow to an entrance zone.
+
+    Table 7 Door-opening schedule for each building type
+
+
+                                                          10-   11a-                                                     10-                   11-
+                          12-6a 6-7a 7-8a 8-9a 9-10a                 12-1p 1-2p 2-3p 3-4p 4-5p 5-6p 6-7p 7-8p 8-9p 9-10p
+                                                          11a   12p                                                      11p                   12a
+               Week Day
+Small Office
+               Weekend
+
+  Medium       Week Day
+  Office       Weekend
+               Week Day
+ Warehouse
+               Weekend
+ Standalone
+                 All
+   Retail
+ Strip Mall      All
+
+  Primary      Week Day
+  School       Weekend
+
+ Secondary     Week Day
+  School       Weekend
+
+Quick Service Week Day         0.144 0.462 0.462 0.462 0.258 0.558 0.829     0.74   0.462 0.258 0.363 0.558 0.829 0.829 0.829 0.558 0.363 0.258
+ Restaurant Weekend            0.144 0.558 0.558 0.462 0.258 0.462 0.558 0.558 0.462 0.363 0.363 0.363      0.74   0.915   0.74   0.65   0.558 0.363
+
+ Sit-down      Week Day        0.144 0.462 0.462 0.462 0.258 0.558 0.829     0.74   0.462 0.258 0.363 0.558 0.829 0.829 0.829 0.558 0.363 0.258
+ Restaurant    Weekend         0.144 0.558 0.558 0.462 0.258 0.462 0.558 0.558 0.462 0.363 0.363 0.363      0.74   0.915   0.74   0.65   0.558 0.363
+
+Outpatient Week Day
+Health Care Weekend
+
+Small Hotel      All
+  Mid-rise
+                 All
+ Apartment
+
+
+                                                   Peak           Off-peak          Unoccupied/no
+                                                   hour             hour             door usage
+
+
+
+
+                                                                     16
+                                        6.     Simulation Results
+
+     EnergyPlus simulations were performed to estimate energy saving impacts from ASHRAE 90.1
+vestibule requirements. Air infiltration rates through door openings with and without vestibule and door-
+opening schedules were implemented in EnergyPlus building models as zone infiltration rates to entrance
+zones. From the whole building simulations, energy end uses for all prototypical buildings and all
+climate zones that are subjected to ASHRAE 90.1 vestibule requirements are estimated. The national
+weighted-average savings for each building prototype from ASHRAE 90.1 vestibule requirements are
+presented in Table 8.
+
+Table 8 National weighted-average site energy savings for each building prototype
+
+            Building Type               Energy End Use Savings [kBtu/ft2]               Savings [%]
+            Small Office                               0.13                                 0.63
+           Medium Office                               0.09                                 0.23
+             Warehouse                                 0.09                                 0.36
+          Standalone Retail                            1.49                                 2.38
+              Strip Mall                               3.56                                 5.61
+           Primary School                              0.16                                 0.29
+          Secondary School                             0.04                                 0.06
+     Quick Service Restaurant                          13.3                                 4.16
+         Sit-down Restaurant                           4.56                                 1.89
+        Outpatient Health Care                         0.04                                 0.03
+             Small Hotel                               0.34                                 0.57
+        Mid-rise Apartment                              0.11                                   0.30
+* The weighting factors used to calculate national average savings are different for each building and each climate
+zone. In the calculation, the energy savings were assumed to be zero for those climate zones where are not subject
+to the new ASHRAE 90.1-2007 and subsequent addenda vestibule requirements (see Tables 3 and 4), and
+this was reflected in the saving calculations and in Figures 3 through 14. The weighting factors, as well as the
+method to estimate the weighting factors and their values can be found in PNNL reports [10, 11].
+
+
+    It is expected that smaller buildings with high door-opening frequency would tend to have larger
+percentage reduction savings from vestibules. From the results shown in Table 8, the following can be
+observed:
+
+    •     Although strip mall, standalone retail, quick service restaurant, and sit-down restaurant building
+          have much smaller peak air infiltration rates through door openings compared to other type of
+          buildings, those buildings have greater percentage energy savings because of the building size
+          and door-opening frequency/schedule.
+
+
+
+
+                                                        17
+    •                    Small office has larger percentage savings compared to medium office because it has smaller total
+                         floor area that can be impacted greatly by air infiltration through door openings. The same fact
+                         can be examined between primary and secondary schools.
+    •                    Larger buildings tend to have smaller impact regarding whole building energy use by air
+                         infiltration through door openings compared to the smaller buildings, but the absolute savings are
+                         much larger as expected.
+    •                    Even though primary and secondary school buildings have very frequent door openings with
+                         resultant large amounts of air infiltration rate through door opening at peak hours, the overall
+                         percentage energy savings impact of the vestibule addenda air leakage through the door is fairly
+                         small. This is caused by larger floor area resulting high baseline energy use.
+
+Figures 3 through 14 show the energy saving results for each prototypical building and each climate zone.
+It is observed from these figures that in general, larger percentage energy savings from the vestibule
+requirement is expected in the colder climate zones. Although the same infiltration rate through
+doors/vestibules was used for each building type across climates, the impact in terms of vestibule benefits
+depends on the outdoor air temperature and humidity conditions.
+
+
+                         2.0%
+                                                   National Weighted-Average Energy Saving: 0.63%
+                                                                                                                     1.59%
+
+                         1.5%
+    Percentage Savings
+
+
+
+
+                                                                                                            1.16%
+
+                         1.0%                                                            0.94%
+
+                                                             0.74%                                 0.76%
+
+
+                                  0.48%                                0.51%
+                         0.5%                        0.37%                      0.39%
+                                           0.23%
+
+
+                         0.0%
+
+
+
+
+                                                                     Climate Location
+Figure 3: Percentage energy savings from ASHRAE 90.1 vestibule requirements for small office building
+                                            prototype
+
+
+
+                                                                      18
+                          0.50%
+                                                   National Weighted-Average Energy Saving: 0.23%
+                                                                                                                                  0.40%
+                          0.40%
+                                                                                                                          0.34%
+   Percentage Savings
+
+
+
+
+                                                                          0.29%           0.29% 0.29%             0.28%
+                          0.30%
+                                                                                  0.26%                   0.25%
+                                                          0.24%
+
+                                  0.19%           0.20%
+                          0.20%                                   0.18%
+                                          0.14%
+
+                          0.10%
+
+
+                          0.00%
+
+
+
+
+                                                                          Climate Location
+
+  Figure 4: Percentage energy savings from ASHRAE 90.1 vestibule requirements for medium office
+                                         building prototype
+
+                          0.6%                     National Weighted-Average Energy Saving: 0.36%
+                                                                                                                                  0.49%
+                          0.5%                                                                    0.46%
+                                                                          0.45%
+                                                                                          0.40%
+     Percentage Savings
+
+
+
+
+                                                                                                          0.39% 0.40% 0.39%
+                          0.4%                            0.37%                   0.37%
+                                  0.33%           0.35%
+                                                                  0.32%
+                                          0.29%
+                          0.3%
+
+
+                          0.2%
+
+
+                          0.1%
+
+
+                          0.0%
+
+
+
+
+                                                                          Climate Location
+
+Figure 5: Percentage energy savings from ASHRAE 90.1 vestibule requirements for warehouse building
+                                            prototype
+
+
+
+                                                                           19
+                               5.0%
+                                                        National Weighted-Average Energy Saving: 2.38%
+                                                                                                                                       4.08%
+                               4.0%
+                                                                                                                               3.50%
+                                                                                                               3.31% 3.35%
+          Percentage Savings
+
+
+
+                                                                                       2.91% 2.92% 2.98%
+                               3.0%
+                                                                               2.42%
+                                                       2.14% 2.21%
+                               2.0%                                    1.67%
+                                       1.49%
+
+                                               0.92%
+                               1.0%
+
+
+                               0.0%
+
+
+
+
+                                                                                Climate Location
+
+Figure 6: Percentage energy savings from ASHRAE 90.1 vestibule requirements for standalone retail
+                                        building prototype
+
+                               9.0%                     National Weighted-Average Energy Saving: 5.61%
+                               8.0%                                                                                                    7.67%
+                                                                                       6.86%                   6.96%           6.90%
+                               7.0%                                                                                    6.41%
+                                                                                                       6.09%
+ Percentage Savings
+
+
+
+
+                                                               5.79%           5.69%           5.68%
+                               6.0%
+                                      4.83%
+                               5.0%
+                                                                       4.15%
+                               4.0%
+                                               3.30%
+                                                       2.98%
+                               3.0%
+
+                               2.0%
+
+                               1.0%
+
+                               0.0%
+
+
+
+
+                                                                               Climate Location
+
+Figure 7: Percentage energy savings from ASHRAE 90.1 vestibule requirements for strip mall building
+                                            prototype
+
+
+
+                                                                                 20
+                               0.6%
+                                                           National Weighted-Average Energy Saving: 0.29%
+
+                               0.5%
+
+                                                                                                      0.40%
+          Percentage Savings
+
+
+
+                                                         0.39%                      0.39%                      0.38%
+                               0.4%                                                                                              0.36%
+                                                                                                                        0.35%
+                                                                                             0.32%                                       0.31%
+                                                                  0.28% 0.28%                                                                    0.29%
+                               0.3%
+                                       0.24%
+                                                0.20%
+                               0.2%
+
+
+                               0.1%
+
+
+                               0.0%
+
+
+
+
+                                                                                     Climate Location
+ Figure 8: Percentage energy savings from ASHRAE 90.1 vestibule requirements for primary school
+                                        building prototype
+
+                               0.16%
+                                                          National Weighted-Average Energy Saving: 0.06%
+                               0.14%                                                                                                             0.134%
+
+                               0.12%
+ Percentage Savings
+
+
+
+
+                                                         0.103%
+                               0.10%                                                0.092%                     0.092%
+                                                                                                                                 0.081% 0.084%
+                               0.08%                                                         0.072%
+                                                                           0.064%                     0.065%
+                                                                  0.057%                                                0.053%
+                               0.06%   0.052%
+                                                0.047%
+                               0.04%
+
+                               0.02%
+
+                               0.00%
+
+
+
+
+                                                                                     Climate Location
+Figure 9: Percentage energy savings from ASHRAE 90.1 vestibule requirements for secondary school
+                                        building prototype
+
+
+
+                                                                                     21
+                       6.0%               National Weighted-Average Energy Saving: 4.16%
+                                                                                                           5.32%
+                                                                                                   4.98%
+                       5.0%                                                        4.57%
+                                                        4.28%                              4.27%
+                                                                 4.02%   3.99%
+  Percentage Savings
+
+
+
+                              3.92%
+                       4.0%                     3.77%
+                                      3.35%
+
+                       3.0%
+
+
+                       2.0%
+
+
+                       1.0%
+
+
+                       0.0%
+
+
+
+
+                                                                Climate Location
+  Figure 10: Percentage energy savings from ASHRAE 90.1 vestibule requirements for quick service
+                                    restaurant building prototype
+
+                       3.5%                   National Weighted-Average Energy Saving: 1.89%
+
+                       3.0%
+                                                                 2.61%                                     2.61%
+                       2.5%
+  Percentage Savings
+
+
+
+
+                                                                                                   2.17%
+                                                        2.01%
+                                                                                   1.91%
+                       2.0%                                                                1.78%
+                                                                         1.70%
+                              1.61%
+                                                1.51%
+                       1.5%           1.37%
+
+
+                       1.0%
+
+                       0.5%
+
+                       0.0%
+
+
+
+
+                                                                Climate Location
+Figure 11: Percentage energy savings from ASHRAE 90.1 vestibule requirements for sit-down restaurant
+                                         building prototype
+
+
+
+                                                                 22
+                      0.07%
+                                                  National Weighted-Average Energy Saving: 0.03%                                        0.061%
+                      0.06%
+
+                      0.05%
+ Percentage Savings
+
+
+
+
+                                                                           0.042%            0.041%                     0.043% 0.044%
+                                                0.039%            0.040%
+                      0.04%                                                                                    0.038%
+                                                                                                      0.036%
+                                       0.033%                                       0.031%
+                                                         0.031%
+                      0.03%   0.028%
+
+
+                      0.02%
+
+                      0.01%
+
+                      0.00%
+
+
+
+
+                                                                            Climate Location
+
+Figure 12: Percentage energy savings from ASHRAE 90.1 vestibule requirements for outpatient health
+                                       care building prototype
+
+                      1.2%
+                                                  National Weighted-Average Energy Saving: 0.57%
+                                                                                                                                        1.00%
+                      1.0%
+                                                                                                                                0.82%
+ Percentage Savings
+
+
+
+
+                      0.8%                                                                                     0.76%
+                                                                                    0.68%                               0.71%
+                                                                                             0.63% 0.63%
+                                                                           0.59%
+                      0.6%                               0.55%
+
+                                                                  0.42%
+                              0.38%             0.39%
+                      0.4%             0.31%
+
+
+                      0.2%
+
+
+                      0.0%
+
+
+
+
+                                                                           Climate Location
+       Figure 13: Percentage energy savings from ASHRAE 90.1 vestibule requirements for small hotel
+                                             building prototype
+
+
+
+                                                                            23
+                       0.70%
+                                                 National Weighted-Average Energy Saving: 0.3%
+                       0.60%                                                                                               0.58%
+
+
+                       0.50%
+  Percentage Savings
+
+
+
+
+                                                                                                                   0.43%
+                                                                                                     0.41% 0.41%
+                       0.40%                                                   0.36%
+                                                                                       0.34% 0.34%
+                                                       0.31%           0.32%
+                       0.30%   0.25%                           0.26%
+                                               0.21%
+                       0.20%           0.16%
+
+
+                       0.10%
+
+                       0.00%
+
+
+
+
+                                                                       Climate Location
+Figure 14: Percentage energy savings from ASHRAE 90.1 vestibule requirements for mid-rise apartment
+                                         building prototype
+
+
+
+
+                                                                        24
+                                        7.     Sensitivity Analysis
+
+     A sensitivity analysis was performed to quantify the influences of each variable such as outdoor
+temperature and door-opening frequency, on the final results. A quick service restaurant located in
+Baltimore MD was used in this analysis. First, the values of outdoor temperature and door-opening
+frequency were varied, as shown in Tables 9 and 10, respectively. Varying the outdoor temperature from
+60°F to -40°F in Table 9 resulted in changes to the peak air infiltration rate of about 7% for this building.
+Thus, the outdoor temperature has little impact on the estimation of peak air infiltration rate through door
+openings using the ASHRAE method. On the other hand, the results in Table 10 show that changing the
+assumptions regarding door-opening frequency has a high contribution to the peak air infiltration rate
+through doors. It indicates that a good estimation of door-opening frequency (and door opening
+schedules) is more important in estimating peak air infiltration rate through door openings.
+
+Table 9 Impact of outdoor temperature on the peak air infiltration rate through door openings
+
+                                   Peak Air Infiltration Rate through
+Outdoor Temperature [°F]*                                                         Percentage Variation
+                                         Door openings [cfm]
+            80                                    1899                                    0.7 %
+       60 (Baseline)                                1913                                   0%
+            40                                      1940                                  1.4 %
+            20                                      1966                                 2.8 %
+             0                                      1993                                  4.2 %
+            -20                                     2020                                  5.6 %
+            -40                                    2046                                    7.0 %
+* The range of outdoor temperature is selected to consider all the ranges shown in Figure 2.
+
+
+Table 10 Impact of door-opening frequency on the peak air infiltration rate through door openings
+
+  Percentage Variation of          Door-opening Frequency            Peak Air Infiltration Rate      Percentage
+Door-opening Frequency [%]       [peak door openings per hour]     through Door Openings [cfm]      Variation [%]
+           -30 %                              63                               1417                      -26 %
+           -20 %                              72                               1585                      -17 %
+           -10 %                              81                               1751                       -8 %
+          Baseline                            90                               1913                        0%
+            10 %                              99                               2073                        8%
+            20 %                              108                              2231                       17 %
+            30 %                              117                              2386                       25 %
+
+
+
+
+                                                           25
+Next, the impact of variation on the air infiltration rates through door-openings has been examined, as
+shown in Table 11. It is seen that a reduction in the estimated infiltration rate per door opening of 20%
+results in a drop in the percentage savings estimate from the vestibule requirements from 3.93% to 3.20%
+(0.73% reduction). An increase in the estimated infiltration rate per door opening increases the
+percentage savings estimate by 0.7 percentage points. This indicates that within this range, a variation of
+infiltration rate per door-opening results in an essentially linear variation in the percentage energy
+savings.
+
+Table 11 Impact of the air infiltration rates through door openings on percentage energy savings for
+        quick service restaurant at Baltimore, MD
+                                                            Total Energy
+Variation on Infiltration   Total Energy Consumption                                                Difference
+                                                        Consumption Building       Percentage
+  Rate through Door          Building with Vestibule                                                  from
+                                                          without Vestibule         Savings
+       Openings                     [MMBtu]                                                          Baseline
+                                                              [MMBtu]
+           -20%                      1,423                      1,470                 3.20%              0.73%
+         -10%                        1,433                      1,486                 3.57%           0.36%
+        Baseline                     1,443                      1,502                 3.93%          Baseline
+          10%                        1,453                      1,518                 4.28%           0.35%
+          20%                        1,463                      1,534                 4.63%           0.70%
+
+
+
+
+                                                       26
+                                          8.     Conclusions
+
+     A method to model air infiltration through the door openings was developed to estimate the energy
+saving impacts of two ASHRAE 90.1 vestibule requirements (i.e., addendum ‘c’ to ASHRAE Standard
+90.1-2004 and addendum ‘q’ to ASHRAE Standard 90.1-2007). This report shows that the estimation of
+air infiltration rate using the proposed method can be readily incorporated into EnergyPlus whole building
+energy simulations to provide estimated percent site energy savings for different building types. PNNL’s
+prototypical commercial building models were used in the analysis to determine the percentage energy
+savings from these new vestibule requirements. All building prototypes were analyzed to see how each
+prototype would be affected by the vestibule requirements of ASHRAE 90.1. The door-opening
+frequency for each indentified building was estimated based on data from available literature or estimated
+using occupancy data.
+
+     Finally the energy savings for each building and each climate location was estimated. The results
+shows that strip mall, standalone retail, quick service restaurant, and sit-down restaurant building have
+larger percentage energy savings compared to other buildings. The simulation results show that the range
+of estimated energy savings from ASHRAE 90.1 vestibule requirements varied between 0.06% to 5.61%
+depending on building type when averaged over all 16 climate zones.
+
+
+
+
+                                                     27
+28
+                                         9.      References
+
+[1] U.S. Department of Energy (DOE). 2010. Energy Efficiency Trends in Residential and Commercial
+    Buildings. Washington, D.C. Last accessed in November, 2010 and available at:
+    http://apps1.eere.energy.gov/buildings/publications/pdfs/corporate/building_trends_2010.pdf
+
+[2] U.S. DOE. 2001. Low-Energy Building Design Guidelines. DOE/EE-0249, Washington, D.C. Last
+    accessed in November, 2010 and available at: http://www1.eere.energy.gov/femp/pdfs/25807.pdf
+
+[3] Gowri, K., D. Winiarski, and R. Jarnagin. 2009. Infiltration Modeling Guidelines for Commercial
+    Building Energy Analysis. PNNL-18898, Pacific Northwest National Laboratory, Richland, WA.
+
+[4] Yuill, G.K. 1996. Impact of High Use Automatic Doors on Infiltration. Project 763-TRP, American
+    Society of Heating, Refrigerating and Air-Conditioning Engineers, Inc., Atlanta, GA.
+
+[5] Kohri, K. 2001. A Simulation Analysis of the Opening Area of Entrance Doors and Winter Airflow
+    into the Entrance Hall of a High-rise Office Building. Seventh International IBPSA Conference, Rio
+    de Janeiro, Brazil.
+
+[6] ASHRAE. 2009. Handbook of Fundamentals. American Society of Heating, Refrigerating and Air-
+    Conditioning Engineers, Inc., Atlanta, GA.
+
+[7] U.S. DOE. 2009. New Construction - Commercial Reference Buildings. Last accessed in November,
+    2010 at: http://www1.eere.energy.gov/buildings/commercial_initiative/new_construction.html
+
+[8] Liu, B., R.E. Jarnagin, D.W. Winiarski, W. Jiang, M.F. McBride and G.C. Crall. 2006. Technical
+    Support Document: Development of the Advanced Energy Design Guide for Small Retail Buildings.
+    PNNL-16031, Pacific Northwest National Laboratory. Richland, WA.
+
+[9] Liu, B., R.E. Jarnagin, W. Jiang, and K. Gowri. 2007. Technical Support Document: Development of
+    the Advanced Energy Design Guide for Small Warehouse and Self-storage Buildings. PNNL-17056,
+    Pacific Northwest National Laboratory, Richland, WA.
+
+[10] Jiang, W., K. Gowri, M.D. Lane, B.A. Thornton, M.I. Rosenberg, and B. Liu. 2009. Technical
+    Support Document: 50% Energy Savings Design Technology Packages for Highway Lodging
+    Buildings. PNNL-18773, Pacific Northwest National Laboratory, PNNL-18773, Richland,
+    Washington.
+
+[11] Thornton, B.A., W. Wang, Y. Huang, M.D. Lane, and B. Liu. 2009. Technical Support Document:
+    50% Energy Savings Design Technology Packages for Small Office Building. PNNL-19341, Pacific
+    Northwest National Laboratory, PNNL-18773, Richland, WA.
+
+
+
+                                                   29
+[12] Energy Information Administration, 2003 Commercial Buildings Energy Consumption Survey, Last
+    accessed in November, 2010 at: http://www.eia.doe.gov/emeu/cbecs/
+
+[13] Claar, C.N., R.P. Mazzucchi, and J.A. Heidell, 1985. The Project on Restaurant Energy
+    Performance – End-use Monitoring and Analysis, PNL-5462, Pacific Northwest National
+    Laboratory, Richland, WA
+
+[14] U.S. Department of Education. National Center for Education Statistics, Digest of Education
+    Statistics 2007, Table 78: Staff employed in public elementary and secondary school systems, by
+    type of assignment and state or jurisdiction: Fall 2005. Last accessed in November, 2010 at:
+    http://nces.ed.gov/programs/digest/d07/tables/dt07_078.asp
+
+[15] U.S. Department of Education, National Center for Education Statistics, Digest of Education
+    Statistics 2007, Table 63: Teachers, enrollment, and pupil/teacher ratios in public elementary and
+    secondary schools, by state or jurisdiction: Fall 2005. Last accessed in November, 2010 at:
+    http://nces.ed.gov/programs/digest/d07/tables/dt07_063.asp
+
+[16] American Hotel & Lodging Association. 2007. The 2007 Lodging Industry Profile. Washington,
+    D.C. Last accessed in November, 2010 at: http://www.ahla.com/content.aspx?id=4214
+
+
+
+
+                                                   30
+APPENDIX A
+                                            APPENDIX A
+
+ASHRAE 90.1-2004 requirement:
+
+     5.4.3.4 Vestibules. A door that separates conditioned space from the exterior shall be protected with
+an enclosed vestibule, with all doors opening into and out of the vestibule equipped with self-closing
+devices. Vestibules shall be designed so that in passing through the vestibule it is not necessary for the
+interior and exterior doors to open at the same time. Interior and exterior doors shall have a minimum
+distance between them of not less than 7 ft when in the closed position.
+
+    Exceptions to 5.4.3.4:
+
+    (a) Doors in buildings in climate zones 1 and 2.
+
+    (b) Doors in buildings less than four stories above grade.
+
+    (c) Doors not intended to be used as a building entrance door, such as mechanical or electrical
+        equipment rooms.
+
+    (d) Doors opening directly from dwelling unit.
+
+    (e) Doors that open directly from a space less than 3000 ft2 in area.
+
+    (f) Doors in building entrances with revolving doors.
+
+    (g) Doors used primarily to facilitate vehicular movement or material handling and adjacent
+        personnel doors.
+
+
+
+ASHRAE 90.1-2007 requirement (addenda ‘c’ to ASHRAE 90.1-2004):
+
+     5.4.3.4 Vestibules. A door that separates conditioned space from the exterior shall be protected with
+an enclosed vestibule, with all doors opening into and out of the vestibule equipped with self-closing
+devices. Vestibules shall be designed so that in passing through the vestibule it is not necessary for the
+interior and exterior doors to open at the same time. Interior and exterior doors shall have a minimum
+distance between them of not less than 7 ft when in the closed position. The exterior envelope of
+conditioned vestibules shall comply with the requirements for a conditioned space. The interior and
+exterior envelope of unconditioned vestibules shall comply with the requirements for a semiheated space.
+
+    Exceptions:
+
+    (a) Building entrances with revolving doors.
+
+    (b) Doors not intended to be used as a building entrance.
+
+    (c) Doors opening directly from dwelling unit.
+
+    (d) Building entrances in buildings located in climate zone 1 or 2.
+
+
+                                                     A-1
+    (e) Building entrances in buildings located in climate zone 3 or 4 that are less than four stories above
+        grade and less than 10,000 ft2 in area.
+
+    (f) Building entrances in buildings located in climate zone 5, 6, 7, or 8 that are less than 1,000 ft2 in
+        area.
+
+    (g) Doors that open directly from a space that is less than 3000 ft2 in area and is separate from the
+        building entrance.
+
+
+
+
+Addendum ‘q’ to ASHRAE 90.1-2007:
+
+     5.4.3.4 Vestibules. Building entrances that separate conditioned space from the exterior shall be
+protected with an enclosed vestibule, with all doors opening into and out of the vestibule equipped with
+self-closing devices. Vestibules shall be designed so that in passing through the vestibule it is not
+necessary for the interior and exterior doors to open at the same time. Interior and exterior doors shall
+have a minimum distance between them of not less than 7 ft when in the closed position. The exterior
+envelope of conditioned vestibules shall comply with the requirements for a conditioned space. The
+interior and exterior envelope of unconditioned vestibules shall comply with the requirements for a
+semiheated space.
+
+    Exceptions:
+
+    (h) Building entrances with revolving doors.
+
+    (i) Doors not intended to be used as a building entrance.
+
+    (j) Doors opening directly from dwelling unit.
+
+    (k) Building entrances in buildings located in climate zone 1 or 2.
+
+    (l) Building entrances in buildings located in climate zone 3 that are less than four stories above
+        grade and less than 10,000 ft2 in area.
+
+    (m) Building entrances in buildings located in climate zone 4, 5, 6, 7, or 8 that are less than 1,000 ft2
+        in area.
+
+    (n) Doors that open directly from a space that is less than 3000 ft2 in area and is separate from the
+        building entrance.
+
+
+
+(Note: Addenda ‘q’, deletes Zone 4 from exception (e), and adds Zone 4 to exception (f)).
+
+
+
+
+                                                     A-2
+A-1
+

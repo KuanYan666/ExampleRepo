@@ -1,0 +1,10 @@
+Daytime (07-20 h) hours with T >= 28 C, every 2nd hour, Jun 1 - Sep 15 2025
+ftd = felt temperature drop (degC, ambient-equivalent); air = air-temperature drop (degC)
+           hours      T     RH    v0  fan_ftd  fan_utci_harm  fan_core_harm  B_air  B_ftd  C_air  C_ftd  B_ratio  C_ratio  fan_per_kW  B_per_kW  C_per_kW
+city                                                                                                                                                     
+Phoenix      718  37.64  18.86  0.80     1.26           0.46           0.19   3.97   1.72   6.71   3.03     0.43     0.45        5.06      1.44      1.21
+LasVegas     712  36.49  12.05  0.99     1.29           0.38           0.07   4.29   2.11   7.27   3.68     0.49     0.51        5.16      1.76      1.47
+Seville      523  34.48  27.16  0.90     1.15           0.20           0.06   3.18   1.44   5.38   2.53     0.45     0.47        4.58      1.20      1.01
+Houston      545  30.99  62.49  0.89     0.94           0.01           0.00   1.34   0.53   2.26   0.92     0.39     0.41        3.77      0.44      0.37
+Singapore    476  30.15  67.96  0.97     0.67           0.00           0.00   1.08   0.47   1.83   0.81     0.43     0.44        2.66      0.39      0.33
+saved figs/T10_one_scale_cities.png

@@ -1,0 +1,61 @@
+==============================================================================
+A. CE (degC) vs air speed, standing person, 0.36 clo, 1.2 met, tr = T
+==============================================================================
+case                       T   RH |   0.5   0.8   1.0   1.5   2.0   3.0   4.0 | v for CE=3
+design hour (team)      43.0   12 |  4.32  5.31  5.69  6.25  6.56  6.89  7.06 |  0.31 m/s
+Phoenix typical         41.3   13 |  4.16  5.13  5.50  6.06  6.38  6.72  6.91 |  0.32 m/s
+Seville typical         36.2   21 |  3.64  4.54  4.90  5.47  5.81  6.21  6.44 |  0.38 m/s
+Houston typical         32.5   56 |  2.96  3.79  4.14  4.71  5.07  5.51  5.79 |  0.51 m/s
+Singapore typical       31.3   62 |  2.86  3.68  4.02  4.60  4.96  5.42  5.70 |  0.54 m/s
+indoor office           27.0   50 |  2.76  3.56  3.91  4.56  5.00  5.57  5.93 |  0.57 m/s
+humid heatwave          36.0   80 |  1.93  2.55  2.83  3.30  3.60  3.98  4.16 |  1.15 m/s
+
+WHO says: AC at 27 C + fan 'will make the room feel 4 C cooler'.
+   at 27 C / 40% RH, CE = 4 C needs v = 1.04 m/s
+   at 27 C / 50% RH, CE = 4 C needs v = 1.07 m/s
+   at 27 C / 60% RH, CE = 4 C needs v = 1.09 m/s
+
+==============================================================================
+B. SENSITIVITY of the speed needed for CE = 3 C to the personal factors
+==============================================================================
+   dry: Phoenix    met=1.0 clo=0.36:  v = 0.37 m/s
+   dry: Phoenix    met=1.0 clo=0.57:  v = 0.41 m/s
+   dry: Phoenix    met=1.2 clo=0.36:  v = 0.32 m/s
+   dry: Phoenix    met=1.2 clo=0.57:  v = 0.35 m/s
+   dry: Phoenix    met=1.4 clo=0.36:  v = 0.29 m/s
+   dry: Phoenix    met=1.4 clo=0.57:  v = 0.31 m/s
+   dry: Phoenix    radiant +5 C (tr=T+5):  v = 0.27 m/s
+   humid: Houston  met=1.0 clo=0.36:  v = 0.68 m/s
+   humid: Houston  met=1.0 clo=0.57:  v = 0.79 m/s
+   humid: Houston  met=1.2 clo=0.36:  v = 0.51 m/s
+   humid: Houston  met=1.2 clo=0.57:  v = 0.59 m/s
+   humid: Houston  met=1.4 clo=0.36:  v = 0.43 m/s
+   humid: Houston  met=1.4 clo=0.57:  v = 0.49 m/s
+   humid: Houston  radiant +5 C (tr=T+5):  v = 0.39 m/s
+
+Team helper core.v_fan_from_claimed_CE (still air 0.3 m/s, met 1.1, clo 0.35, metabolic convection floor ON):
+   43/12:  core.py says 1.25 m/s;  ASHRAE-55 definition (this memo) says 0.31 m/s
+   41.3/13:  core.py says 1.31 m/s;  ASHRAE-55 definition (this memo) says 0.32 m/s
+   32.5/56:  core.py says 2.13 m/s;  ASHRAE-55 definition (this memo) says 0.51 m/s
+
+saved figs/T10_fan_speed_for_3C.png
+
+==============================================================================
+C. '3 C cooler' THAN WHAT?  The ASHRAE CE compares with still air (0.1 m/s).
+   A bus shelter already has a breeze v0.  Speed needed for 3 C relative to v0:
+==============================================================================
+case               | v0=0.1  v0=0.2  v0=0.3  v0=0.5  v0=0.8  v0=1.0  v0=1.5 
+design 43/12       |    0.31    0.53    1.04    4.16     nan     nan     nan
+Phoenix 41.3/13    |    0.32    0.55    1.09    4.08     nan     nan     nan
+Seville 36.2/21    |    0.38    0.65    1.28    3.83     nan     nan     nan
+Houston 32.5/56    |    0.51    0.89    1.70    4.50     nan     nan     nan
+Singapore 31.3/62  |    0.54    0.93    1.75    4.38     nan     nan     nan
+humid 36/80        |    1.15    2.39     nan     nan     nan     nan     nan
+
+Typical afternoon breeze inside a shelter (ASSUMED 0.4 x 10-m wind, as in core.py):
+   Phoenix    median 10-m wind  2.2 m/s -> shelter breeze ~0.89 m/s
+   LasVegas   median 10-m wind  3.0 m/s -> shelter breeze ~1.20 m/s
+   Seville    median 10-m wind  2.1 m/s -> shelter breeze ~0.84 m/s
+   Houston    median 10-m wind  2.4 m/s -> shelter breeze ~0.96 m/s
+   Singapore  median 10-m wind  2.6 m/s -> shelter breeze ~1.03 m/s
+saved figs/T10_fan_3C_vs_baseline_breeze.png

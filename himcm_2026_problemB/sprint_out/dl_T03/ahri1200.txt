@@ -1,0 +1,1557 @@
+                                Edict of government
+
+
+
+
+                                     ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+2023 Standard for
+
+Performance Rating of
+Commercial Refrigerated
+Display Merchandisers and
+Storage Cabinets
+
+
+
+
+  Approved by ANSI on 12 June 2023
+                                     Edict of government
+
+
+
+
+                        ©Copyright 2023, by Air-Conditioning, Heating, and Refrigeration Institute
+                                  Registered United States Patent and Trademark Office
+                                                    Printed in U.S.A.
+
+
+
+                                                    IMPORTANT
+                                                SAFETY DISCLAIMER
+          AHRI does not set safety standards and does not certify or guarantee the safety of any products,
+          components or systems designed, tested, rated, installed or operated in accordance with this
+          standard/guideline. It is strongly recommended that products be designed, constructed, assembled,
+          installed and operated in accordance with nationally recognized safety standards and code requirements
+          appropriate for products covered by this standard/guideline.
+          AHRI uses its best efforts to develop standards/guidelines employing state-of-the-art and accepted
+          industry practices. AHRI does not certify or guarantee that any tests conducted under its
+          standards/guidelines will be non-hazardous or free from risk.
+
+
+
+                                                   ICS Code: 97.130.20
+
+
+                                                          Note:
+                             This standard supersedes ANSI/AHRI Standard 1200-2013 (I-P).
+                                 For SI ratings, see ANSI/AHRI Standard 1201-2013 (SI).
+
+
+                                       AHRI Certification Program Disclaimer
+AHRI Standards are developed independently of AHRI Certification activities and can have scopes that include products that
+are not part of the AHRI Certification Program. The scope of the applicable AHRI Certification Program can be found on
+AHRI’s website at www.ahrinet.org.
+                                       Edict of government
+
+
+                                                            Intent
+
+
+This standard is intended for the guidance of the industry, including manufacturers, engineers, installers, contractors, and
+users. The values reported using this standard allow comparison of energy consumption within each of the following product
+categories: Remote Commercial Refrigerated Display Merchandisers, Remote Commercial Refrigerated Storage Cabinets,
+Self-contained Commercial Refrigerated Display Merchandisers and Self-contained Commercial Refrigerated Storage
+Cabinets.
+
+
+                                                  Review and Amendment
+
+
+This standard is subject to review and amendment as technology advances.
+
+
+                                                         2023 Edition
+
+This edition of AHRI Standard 1200-2023 (I-P), Performance Rating of Commercial Refrigerated Display Merchandisers and
+Storage Cabinets was prepared by the Commercial Refrigeration Standards Technical Committee. It was approved by the
+Refrigeration Standards Subcommittee on 12 April 2023. It was approved as an American National Standard (ANS) on
+12 June 2023.
+
+
+                                          Origin and Development of AHRI 1200
+
+In 2002 the Commercial Refrigerator Manufacturers Division of ARI identified the need for a commercial refrigeration
+standard to assure that perishable foods stored, displayed, and dispensed in retail stores throughout the world for off-premises
+consumption are protected throughout the final stage in the distribution process. The first edition was developed providing a
+method whereby electrical energy consumption values of commercial refrigerators and freezers are determined using
+consistent and repeatable methods.
+
+In 2004 ARI 1200 was harmonized with EN 441. Appendix D was added to provide TDA calculations. Section 3, Section
+5.4, Table 3, and Table 4 were revised to include references to TDA calculations.
+
+In 2006 changes were made to Section 5 and Appendix E to address energy differences for ballasts inside and outside the
+refrigerated area.
+
+In 2008 the rating requirements were updated with a secondary method.
+
+In 2010 the Commercial Refrigerator Manufacturers Section (CRM) made changes to Section 2.2 and Section 3.14.
+Appendix C was added to have consistency with DOE rule.
+
+In 2013 changes were made to incorporate five interpretations and new DOE rules.
+
+
+AHRI Standard 1200-2023 (I-P) contains the following update(s) to the previous edition:
+
+    •    TDA figures and equations were updated for alignment with DOE TP and Standard.
+    •    The Energy Efficiency Ratio (EER) table updated for refrigerant dependability and glide concerns.
+    •    Refrigerant glide updated to in sections 4 and 5including definition, and rating requirement sections.
+    •    Definitions updated to include Ice cream applications and edits to existing definitions.
+    •    Added lighting options and updates to ASHRAE 72.
+    •    Definition section updated to include lighting, and sensors to align with DOE TP requirements.
+    •    Added various product types.
+    •    Consideration of non-standard operating temperatures.
+                                     Edict of government
+
+
+                                                 Committee Personnel
+
+                             Commercial Refrigeration Standards Technical Committee
+                                                  Interest Category    Voting Member               State / Province /
+                   Participant
+                                                    Classification          Role                       Country
+ Homer Redd
+                                                    Product Manufacturer     Chair              VA, USA
+ Hillphoenix
+ Tim Anderson
+                                                    Product Manufacturer     Primary            MO, USA
+ Hussmann Corporation
+ Jeff Bauman
+                                                    Product Manufacturer     Primary            PA, USA
+ Continental Refrigerator
+ Mike Chieffo
+                                                    Product Manufacturer     Primary            WI, USA
+ Zero Zone, Inc
+ Chris Jentzsch
+                                                    Product Manufacturer     Primary            GA, USA
+ Heatcraft Worldwide Refrigeration LLC
+ Jon Murray
+                                                    Product Manufacturer     Primary            MI, USA
+ Structural Concepts Corporation
+ Massoud Neshan
+                                                    Product Manufacturer     Primary            NC, USA
+ Arneg USA
+ Roxanne Scott
+                                                    Product Manufacturer     Primary            OH, USA
+ Emerson Commercial and Residential Solutions
+ Ronald Shughart
+                                                    Product Manufacturer     Primary            GA, USA
+ Heat Transfer Products Group, LLC (HTPG)
+ Brian Austin                                                                Alternate to
+                                                    Product Manufacturer                        GA, USA
+ Heatcraft Worldwide Refrigeration LLC                                       Chris Jentzsch
+ Muhammad Chandasir                                                          Alternate to
+                                                    Product Manufacturer                        GA, USA
+ Hillphoenix                                                                 Homer Redd
+ Bruce Hierlmeier                                                            Alternate to
+                                                    Product Manufacturer                        WI, USA
+ Zero Zone, Inc                                                              Mike Chieffo
+ Scott Martin                                                                Alternate to
+                                                    Product Manufacturer                        GA, USA
+ Hillphoenix                                                                 Homer Redd
+ Wilson Mwaura                                                               Alternate to
+                                                    Product Manufacturer                        MO, USA
+ Hussmann Corporation                                                        Tim Anderson
+ Wayne Schaeffer                                                             Alternate to
+                                                    Product Manufacturer                        MO, USA
+ Hussmann Corporation                                                        Tim Anderson
+ Ron Shebik                                                                  Alternate to
+                                                    Product Manufacturer                        MO, USA
+ Hussmann Corporation                                                        Tim Anderson
+ Mike Straub                                                                 Alternate to
+                                                    Product Manufacturer                        AL, USA
+ Heat Transfer Products Group, LLC (HTPG)                                    Ronald Shughart
+ Greg Kalinyak                                      AHRI Staff Liaison
+
+
+Commercial Refrigeration Standards Technical Committee Scope:
+The Commercial Refrigeration Standards Technical Committee (STC) is responsible for the development and maintenance of
+AHRI standards and guidelines pertaining to the performance ratings of Commercial Refrigerated Equipment that may
+include Display Merchandisers and Storage Cabinets, Walk-in Coolers and Freezers including insulated envelop and systems.
+                                      Edict of government
+
+
+                                          Refrigeration Standards Subcommittee
+
+                                                      Interest Category         Voting Member
+                  Participant                                                                           State / Country
+                                                        Classification               Role
+ Mike Straub
+                                                   Manufacturer                 Chair               AL, USA
+ HTPG
+ Kunal Bansal
+                                                   Manufacturer                 Primary             GA, USA
+ Heatcraft Worldwide Refrigeration LLC
+ Steve Combs
+                                                   Manufacturer                 Primary             VA, USA
+ Everidge
+ Daryl Erbs
+                                                   Manufacturer                 Primary             FL, USA
+ Welbilt, Inc.
+ Bruce Hierlmeier
+                                                   Manufacturer                 Primary             WI, USA
+ Zero Zone, Inc
+ Jennifer Kane
+                                                   Manufacturer                 Primary             MO, USA
+ Trane Technologies
+ Scott Martin
+                                                   Manufacturer                 Primary             GA, USA
+ Hillphoenix
+ Neil Rathje
+                                                   Manufacturer                 Primary             VA, USA
+ Hillphoenix
+ Ron Shebik
+                                                   Manufacturer                 Primary             MO, USA
+ Hussmann Corporation
+ Vince Zolli
+                                                   Manufacturer                 Primary             Canada
+ KeepRite Refrigeration
+ Karl Best                                         AHRI Staff Liaison
+
+
+Refrigeration Standards Subcommittee Scope:
+Scope of the Refrigeration Standards Subcommittee is standards and guidelines related to the end products that are part of the
+AHRI Refrigeration Industry Sector.
+
+These committee lists represent the membership at the time the Technical Committee and Standards Subcommittee were
+balloted on the final text of this edition. Since that time, changes in the membership may have occurred. Membership on
+these committees shall not in and of itself constitute an endorsement by the committee members, employers of AHRI, or any
+document developed by the committee on which the member serves.
+                                   Edict of government
+
+
+                                          Refrigeration Consensus Body List
+
+                                                                       Interest Category
+                            Participant                                                      State / Country
+                                                                         Classification
+Philip Cantin
+                                                                   Consumer/User            VT, USA
+mmic Medical Systems
+Mike Devine
+                                                                   Component Manufacturer   MI, USA
+Tecumseh Products Company
+Jennifer Kane
+                                                                   Product Manufacturer     NC, USA
+Trane Technologies
+Jim Kendzel
+                                                                   General Interest         IL, USA
+American Supply Association
+Paul Lindahl
+                                                                   Product Manufacturer     KS, USA
+SPX Cooling Technologies, Inc.
+W. Vance Payne
+                                                                   Testing Laboratory       MD, USA
+National Institute of Standards & Technology
+
+Charles Plourde-LeBlanc
+                                                                   Product Manufacturer     QC, Canada
+Nortek Air Solutions, LLC
+
+Kazuaki Watanabe
+                                                                   Component Manufacturer   IL, USA
+Figaro USA, Inc.
+                                                          Edict of government
+
+
+                                                                           TABLE OF CONTENTS
+                                                                                                                                                                                   Section
+                                                                                     SECTIONS
+Section 1. Purpose ....................................................................................................................................................................... 1
+Section 2. Scope........................................................................................................................................................................... 1
+Section 3. Definitions .................................................................................................................................................................. 1
+Section 4. Test Requirements ...................................................................................................................................................... 4
+Section 5. Rating Requirements ................................................................................................................................................... 5
+Section 6. Minimum Data Requirements for Published Ratings ................................................................................................. 9
+Section 7. Marking and Nameplate Data ................................................................................................................................... 11
+Section 8. Conformance Conditions .......................................................................................................................................... 11
+Section 9. Symbols and Subscripts ............................................................................................................................................ 11
+
+
+                                                                                       FIGURES
+Figure 1. Sample Front View of Commercial Refrigerated Display Merchandisers for Illustrating Length of Refrigerated
+    Space .................................................................................................................................................................................. 17
+Figure 2. Sample Cross Section of Commercial Refrigerated Storage Cabinets for Refrigerated Volume Calculation ............ 17
+Figure 3. Three-door Vertical Closed Transparent Display Case .............................................................................................. 18
+Figure 4. Vertical Open Multi-deck ........................................................................................................................................... 20
+Figure 5. Vertical Open Multi-deck with Transparent Front ..................................................................................................... 20
+Figure 6. Semi-vertical Open Multi-deck with Smaller Product Zone ...................................................................................... 21
+Figure 7. Semi-vertical Open Multi-deck with Transparent Front............................................................................................. 21
+Figure 8. Horizontal Open Single-deck ..................................................................................................................................... 22
+Figure 9. Horizontal Open Single-deck with Transparent Front ................................................................................................ 22
+Figure 10. SOC with Flat Transparent Front ............................................................................................................................. 23
+Figure 11. SOC with Curved Transparent Front ........................................................................................................................ 23
+Figure 12. SOC with Flat Transparent Front and Top ............................................................................................................... 24
+Figure 13. Horizontal Open Single-deck Island......................................................................................................................... 24
+Figure 14. Horizontal Open Single-deck Island with Transparent Wall .................................................................................... 25
+Figure 15. Island with Transparent Walls .................................................................................................................................. 26
+Figure 16. Vertical Closed Multi-deck with Transparent Doors ................................................................................................ 26
+Figure 17. Vertical End Wall with Transparent Section ............................................................................................................ 27
+Figure 18. Semi-vertical End Wall with Transparent Section ................................................................................................... 28
+Figure 19. Horizontal Single-deck and Single-deck Island End Wall with Transparent Section............................................... 28
+Figure 20. SOC End Wall with Transparent Section ................................................................................................................. 29
+Figure 21. Example TDA for Unique Geometries ..................................................................................................................... 29
+Figure 22. Example TDA for Unique Geometries ..................................................................................................................... 30
+Figure 23. Example TDA for Unique Geometries ..................................................................................................................... 30
+Figure 24. Radius Cases with Transparent Sides ....................................................................................................................... 31
+Figure 25. Mitered Wedge TDA Calculation ............................................................................................................................. 32
+Figure 26. Curved Wedge TDA Calculation ............................................................................................................................. 33
+                                                          Edict of government
+
+
+
+                                                                                       TABLES
+Table 1. EER for Remote Commercial Refrigerated Display Merchandisers and Storage Cabinets ........................................... 8
+Table 2 Example Presentation of Data for Remote Commercial Refrigerated Display Merchandisers and Storage Cabinets .. 10
+Table 3 Example Presentation of Data for Self-contained Commercial Refrigerated Display Merchandisers and Storage
+    Cabinets .............................................................................................................................................................................. 11
+
+
+                                                                                  APPENDICES
+Appendix A. References – Normative ....................................................................................................................................... 14
+Appendix B. References - Informative ...................................................................................................................................... 15
+Appendix C. Commercial Refrigerated Display Merchandiser and Storage Cabinet Refrigerated Volume Calculation –
+   Normative ........................................................................................................................................................................... 16
+Appendix D. Commercial Refrigerated Display Merchandiser and Storage Cabinet Total Display Area (TDA) Calculation –
+   Normative ........................................................................................................................................................................... 18
+Appendix E. Example – Calculation of CEC for Commercial Refrigerated Display Merchandiser or Storage Cabinet Tested
+   with a High-glide Refrigerant– Informative ....................................................................................................................... 34
+Appendix F. Energy Calculations Using Alternate Components – Informative ........................................................................ 35
+                                       Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+ PERFORMANCE RATING OF COMMERCIAL REFRIGERATED
+   DISPLAY MERCHANDISERS AND STORAGE CABINETS
+                                                     Section 1. Purpose
+
+1.1     Purpose
+        The purpose of this standard is to establish for Commercial Refrigerated Display Merchandisers and Storage Cabinets:
+        definitions; test requirements; rating requirements; symbols and subscripts; minimum data requirements for Published
+        Ratings; marking and nameplate data and conformance conditions.
+
+
+                                                     Section 2. Scope
+
+2.1     Scope
+        This standard applies to the following manufacturers’ standard catalog Commercial Refrigerated Display
+        Merchandisers and Storage Cabinets, provided that the cases are equipped and designed to work with electrically
+        driven, direct expansion type systems or thermoelectric systems:
+             •    Self-contained and Remote Commercial Refrigerated Display Merchandisers and Storage Cabinets; and
+             •    Open and Closed Commercial Refrigerated Display Merchandisers
+2.2     Exclusions
+        This standard does not apply to the following:
+             •    Refrigerated vending machines
+             •    Ice makers
+             •    Soft serve extruders
+             •    Secondary coolant applications
+             •    Chef bases
+             •    Buffet tables
+             •    Preparation tables
+             •    Walk-in coolers
+             •    Blast chillers and freezers
+
+                                                   Section 3. Definitions
+
+All terms in this document will follow the standard industry definitions in the ASHRAE Terminology website unless
+otherwise defined in this section.
+3.1     Expressions of Provision
+        Terms that provide clear distinctions between requirements, recommendations, permissions, options, and capabilities.
+                  “Can” or “cannot”
+                  Express an option or capability.
+                  “May”
+                  Signifies a permission expressed by the document.
+                  “Must”
+                  Indication of unavoidable situations and does not mean that an external constraint referred to is a requirement
+                  of the document.
+                  “Shall” or “shall not”
+
+
+
+
+                                                                                                                               1
+                                   Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+              Indication of mandatory requirements to strictly conform to the standard and where deviation is not permitted.
+              “Should” or “should not”
+              Indication of recommendations rather than requirements. In the negative form, a recommendation is the
+              expression of potential choices or courses of action that is not preferred but not prohibited.
+3.2   Standard Specific Definitions:
+              Anti-condensate Energy Consumption (AEC)
+              The energy consumed to prevent collection of or evaporate condensate, or both on the outside of the
+              Commercial Refrigerated Display Merchandiser or Storage Cabinet, that includes fan and condensate heater
+              energy expressed in kW·h per day.
+              Calculated Daily Energy Consumption (CDEC)
+              A value for Remote Commercial Refrigerated Display Merchandisers or Storage Cabinets based upon the
+              requirements of this standard expressed in kW·h per day.
+              Commercial Refrigerated Display Merchandiser
+              A cabinet cooled by a refrigerating system for displaying chilled or frozen products, or both, maintained
+              within prescribed temperature limits.
+              3.2.3.1      Closed Commercial Refrigerated Display Merchandiser
+                           A refrigerated display merchandiser where product is accessible for removal by opening or
+                           moving doors, drawers, or panels.
+              3.2.3.2      Open Commercial Refrigerated Display Merchandiser
+                           A refrigerated display merchandiser where product is accessible for removal without opening or
+                           moving doors, drawers, or panels.
+              3.2.3.3      Remote Commercial Refrigerated Display Merchandiser
+                           A refrigerated display merchandiser that is refrigerated by a field-installed condensing unit or
+                           refrigerating system.
+              3.2.3.4      Self-contained Commercial Refrigerated Display Merchandiser
+                           A refrigerated display merchandiser that has all the refrigerant-containing parts of the
+                           refrigerating system completely factory assembled and tested.
+              3.2.3.5      Service Over Counter (SOC)
+                           A commercial refrigerated display merchandiser equipped with sliding or hinged doors, drawers,
+                           or open in the back, intended for use by sales personnel, and with glass or other transparent
+                           material in the front for displaying merchandise. The equipment has a height not greater than
+                           sixty-six inches and is intended to serve as a counter for transactions between sales personnel
+                           and customers.
+              Commercial Refrigerated Storage Cabinet
+              A closed cabinet cooled by a refrigerating system for storing chilled or frozen products, or both maintained
+              within prescribed temperature limits.
+              3.2.4.1      Remote Commercial Refrigerated Storage Cabinet
+                           A refrigerated storage cabinet that is refrigerated by a field-installed condensing unit or
+                           refrigerating system.
+              3.2.4.2      Self-contained Commercial Refrigerated Storage Cabinet
+                           A refrigerated storage cabinet that has all the refrigerant-containing parts of the refrigerating
+                           system completely factory assembled and tested.
+              Compressor Energy Consumption (CEC)
+              The energy consumed by the compressor expressed in kW·h per day.
+
+
+
+                                                                                                                          2
+                                 Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+             Condensate Evaporator Pan Heater Energy Consumption (PEC)
+             The energy consumed by the condensate evaporator pan heater expressed in kW·h per day.
+             Defrost Energy Consumption (DEC)
+             The energy consumed by the defrost heater(s) expressed in kW·h per day.
+             Dew Point
+             Refrigerant vapor saturation temperature at a specified pressure expressed in °F.
+             3.2.8.1     Adjusted Dew Point
+                         An adjusted temperature lower than actual Dew Point temperature expressed in °F, resulting
+                         from suction line pressure losses, equal to saturated suction temperature at the compressor.
+             Energy Efficiency Ratio (EER)
+             A ratio of the cooling capacity in Btu/h to the power input values in watts at any given set of Rating
+             Conditions expressed in Btu/(W·h).
+             Fan Energy Consumption (FEC)
+             The energy consumed by fan motors expressed in kW·h per day.
+             High Glide Refrigerant
+             A zeotropic refrigerant blend with a temperature glide that is greater than 2°F. Examples include but are not
+             limited to R-407A, R-407C, R-407F, R-448A, and R-449A.
+             Integrated Average Temperature
+             The average of all test package measurements taken during the test expressed in °F.
+             Lighting Energy Consumption (LEC)
+             The energy consumed by the refrigerated display merchandiser or storage cabinet lighting used to illuminate
+             interior refrigerated products expressed in kW·h per day.
+             Product Applications
+             One of four temperature ranges that a Commercial Refrigerated Display Merchandiser or Storage Cabinet is
+             intended to maintain.
+             3.2.14.1    High Temperature Applications
+                         An application where the Integrated Average Temperature is at, or above, 45°F.
+             3.2.14.2    Ice Cream Applications
+                         An application where the Integrated Average Temperature is at, or below, -5°F, and intended for
+                         the display, storage, or dispensing of ice cream.
+             3.2.14.3    Low Temperature Applications
+                         An application where the Integrated Average Temperature is at, or below, 32°F, and greater than
+                         -5°F.
+             3.2.14.4    Medium Temperature Applications
+                         An application where the Integrated Average Temperature is greater than 32°F, and less than
+                         45°F.
+             3.2.14.5    Lowest Application Product Temperature (LAPT)
+                         For remote condensing equipment that is not capable of operating a successful test at a Standard
+                         Rating Condition, the LAPT is the temperature achieved with the Dew Point temperature set to
+                         the manufacturer’s recommended setpoint. For self-contained equipment that is not capable of
+                         operating a successful test at a Standard Rating Condition, the LAPT is the temperature achieved
+                         at the lowest thermostat setting.
+
+
+
+
+                                                                                                                        3
+                                   Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+              Published Rating
+              A statement of the assigned values of those performance characteristics, under stated Rating Conditions,
+              where a unit can be chosen to fit the application. These values apply to all units of the same nominal size and
+              type (identification) produced by the same manufacturer. This includes the rating of all performance
+              characteristics shown on the unit or published in specifications, advertising or other literature controlled by
+              the manufacturer, at stated Rating Conditions.
+              3.2.15.1    Application Rating
+                          A rating based on tests performed at application Rating Conditions other than Standard Rating
+                          Conditions.
+              3.2.15.2    Standard Rating
+                          A rating based on tests performed at Standard Rating Conditions.
+
+
+              Rating Conditions
+              Any set of operating conditions where a single level of performance results and causes only that level of
+              performance to occur.
+              3.2.16.1    Standard Rating Conditions
+                          Rating Conditions used as the basis of comparison for performance.
+              Refrigerated Volume (Vr)
+              The interior total volume of a Commercial Refrigerated Display Merchandiser or Storage Cabinet as
+              calculated by Appendix C is intended to provide a uniform means of determining the dimensions used to
+              calculate volume, taking into account the special features or functional components, or both that are located
+              within the refrigerated compartment(s). The calculation is not intended to provide a means of measuring the
+              product-storage capacity. This volume calculation only applies to Closed Commercial Refrigerated Display
+              Merchandisers and Storage Cabinets.
+              Total Daily Energy Consumption (TDEC)
+              A calculated energy consumption value for Self-contained Commercial Refrigerated Display Merchandisers
+              and Storage Cabinets based upon the requirements of this standard expressed in kW·h per day.
+              Angle Normal
+              The view from a vector perpendicular to a plane tangent to the surface, or the view that has an angle of 90
+              degrees from the surface.
+              Total Display Area (TDA)
+              The sum of the projected area(s) of visible product, expressed in ft 2 such as portions where product can be
+              viewed from an angle normal, or perpendicular, to the transparent area or opening, as calculated by Appendix
+              D.
+              3.2.20.1    Transparent Surface
+                          A transparent surface has greater than or equal to 45% light transmittance, as determined in
+                          accordance with the ASTM Standard E 1084-86 (Reapproved 2015).
+
+                                          Section 4. Test Requirements
+
+4.1   Test Requirements
+      The tests required for this standard shall be conducted in accordance with ASHRAE Standard 72-2022, except the
+      applications and conditions included in this section.
+              Integrated Average Temperature
+              An Integrated Average Temperature of the test simulators shall be maintained based on the Product
+              Application.
+
+
+
+                                                                                                                           4
+                                   Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+              4.1.1.1      High Temperature Applications
+                           Commercial Refrigerated Display Merchandisers and Storage Cabinets intended for High
+                           Temperature Applications shall have an Integrated Average Temperature of 55°F ± 2.0°F.
+              4.1.1.2      Ice Cream Applications
+                           Commercial Refrigerated Display Merchandisers and Storage Cabinets intended specifically for
+                           the storage, display or dispensing of ice cream shall have an Integrated Average Temperature of
+                           -15.0°F ± 2.0°F. Equipment that is not designed, marketed, or intended specifically for the
+                           storage, display or dispensing of ice cream, is not qualified to be an “ice-cream application”. For
+                           example, multi-purpose equipment for low temperature applications manufactured for storage
+                           and display of frozen foods as well as ice cream do not meet the definition in Section 3.2.14.2.
+              4.1.1.3      Low Temperature Applications
+                           Commercial Refrigerated Display Merchandisers and Storage Cabinets intended for Low
+                           Temperature Applications to include storing and displaying frozen products, as well as ice cream
+                           products, shall have an Integrated Average Temperature of 0.0°F ± 2.0°F.
+              4.1.1.4      Medium Temperature Applications
+                           Commercial Refrigerated Display Merchandisers and Storage Cabinets intended for Medium
+                           Temperature Applications shall have an Integrated Average Temperature of 38°F ± 2.0°F.
+              4.1.1.5      Lowest Application Product Temperature (LAPT)
+                           Models not capable of maintaining Integrated Average Temperatures as specified in Section
+                           4.1.1.1, through Section 3.2.14.5 shall be rated at the lowest Integrated Average Temperature a
+                           given unit is capable of maintaining to comply with the steady-state stabilization requirements
+                           specified in ASHRAE 72. For remote condensing equipment that is not capable of operating a
+                           successful test at a Standard Rating Condition, the LAPT is the temperature achieved with the
+                           Dew Point temperature set to the manufacturer’s recommended setpoint. For self-contained
+                           equipment that is not capable of operating a successful test at a Standard Rating Condition, the
+                           LAPT is the temperature achieved at the lowest thermostat setting. The manufacturer shall
+                           maintain and provide justification for the reason(s) that the product cannot obtain the Standard
+                           Rating Condition.
+
+
+              Note: Commercial Refrigerated Display Merchandisers and Storage Cabinets that are designed for use in
+              multiple temperature applications as defined in Sections 3.2.14.1 through Section 3.2.14.5 by making set
+              point adjustments should be rated under each applicable temperature specified.
+
+
+              Electrical Conditions
+              For all dual nameplate voltage equipment covered by this standard, tests shall be performed at both voltages,
+              or at the lower voltage if only a single rating is published.
+              Circulation of Air
+              For self-contained refrigerators designed to be installed next to a wall in the direction of the exhaust or intake,
+              or both, a vertical partition or wall shall be located at the minimum clearance as specified in the installation
+              instructions. If the installation instructions do not provide minimum clearance, the vertical partition or wall
+              shall be located 4 ± 0.5 in from the sides or rear of the cabinet and extend at least 12 in beyond each side of
+              the cabinet from the floor to not less than 12 in above the top of the cabinet.
+
+                                         Section 5. Rating Requirements
+
+5.1   Rating Requirements for Remote Commercial Refrigerated Display Merchandisers and Storage Cabinets
+              General
+
+
+
+
+                                                                                                                               5
+                                 Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+             This section identifies the necessary data required to calculate the CDEC for Remote Commercial
+             Refrigerated Display Merchandisers and Storage Cabinets.
+             CDEC for Remote Commercial Refrigerated Display Merchandisers and Storage Cabinets
+             The total electrical load shall be determined using Equation 1.
+             CEC shall be calculated as described in Section 5.1.2.1.
+             All other electrical loads shall be measured, either individually or at any shared power supply. These shall
+             include evaporator fan motors, lighting, surface anti-condensate load including fans and heaters, defrost
+             heaters, condensate evaporator pans and any other applicable electrical loads when these are part of the unit
+             as seen in Equation 1.
+             The following calculations shall be done to determine the CDEC.
+             CDEC = CEC + [FEC + LEC + AEC + DEC + PEC + OEC]                                                          1
+             The values are expressed in kW·h per day.
+             Remote Commercial Refrigerated Display Merchandisers and Storage Cabinets shall record any measured
+             or calculated loads in the calculation of CDEC. Shown below are formulae for the required individual loads
+             under the calculation approach.
+             5.1.2.1     Calculation of CEC
+                         The EER values in Table 1 shall be used to calculate CEC for a 24-hour period. See Equation 2.
+                         The EER values in Table 1 are based on an evaporator temperature and the Commercial
+                         Refrigerated Display Merchandiser or Storage Cabinet classification. Commercial Refrigerated
+                         Display Merchandisers and Storage Cabinets for Medium and High Temperature Applications
+                         shall use an adjusted dew point temperature that is 2.0°F lower than the Commercial Refrigerated
+                         Display Merchandiser or Storage Cabinet Dew Point.
+                         Commercial Refrigerated Display Merchandisers and Storage Cabinets for Low
+                         Temperature/Ice Cream Applications shall use an adjusted dew point temperature that is 3.0°F
+                         lower than the Commercial Refrigerated Display Merchandiser or Storage Cabinet Dew Point.
+                         Table 1 shall be used for consistency, understanding that other compressor selections can lead
+                         to a different efficiency.
+                         CEC = [(Qrt ) · (t – tdt)] / (EER · 1000)                                                     2
+                         For High Glide Refrigerants, the EER used in the CEC calculation shall be determined based on
+                         adjusted mid-point evaporator temperature.
+                         The mid-point evaporator temperature, Tm, shall be calculated using the following steps (See
+                         Appendix E for example calculation):
+                              1) The entering liquid refrigerant temperature and entering liquid refrigerant pressure of
+                                 the Commercial Refrigerated Display Merchandiser or Storage Cabinet shall be used
+                                 to calculate the entering refrigerant enthalpy, hi.
+                              2) The entering refrigerant enthalpy and suction vapor pressure shall be used to calculate
+                                 the inlet evaporator refrigerant temperature, Ti.
+                              3) The saturated suction refrigerant Dew Point temperature, Tsd, shall be calculated from
+                                 the suction vapor pressure.
+                              4) The inlet evaporator refrigerant temperature shall be subtracted from the saturated
+                                 suction refrigerant Dew Point temperature to determine the total refrigerant glide in
+                                 the evaporator.
+                                 Tsd – Ti = Tg
+                              5) Divide Tg by 2 and subtract this number from Tsd.
+                              6) Round the result to the nearest integer to find Tm, the mid-point evaporator
+                                 temperature.
+
+
+
+
+                                                                                                                           6
+                             Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+                      Tm – 2.0°F (for Medium Temperature and High Temperature Applications) shall then be used as
+                      the adjusted dew point to determine the EER from Table 1.
+                      Tm – 3.0°F (for Low Temperature and Ice Cream Applications) shall then be used as the adjusted
+                      dew point to determine the EER from Table 1.
+
+
+                      Linear interpolation shall be used to calculate EER values for temperatures not shown in Table
+                      1
+
+
+
+
+                                                                                                                  7
+                                      Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+         Table 1. EER for Remote Commercial Refrigerated Display Merchandisers and Storage Cabinets
+ Medium Temperature and High Temperature                                          Low Temperature/Ice Cream
+ Adjusted Dew                     Adjusted Dew                                    Adjusted Dew
+ Point           EER              Point                       EER                 Point            EER
+ °F                               °F                                              °F
+ 0.0             9.25             28.0                        14.47               -36.0            5.48
+ 1.0             9.37             29.0                        14.73               -35.0            5.56
+ 2.0             9.50             30.0                        14.98               -34.0            5.64
+ 3.0             9.63             31.0                        15.27               -33.0            5.73
+ 4.0             9.76             32.0                        15.56               -32.0            5.81
+ 5.0             9.87             33.0                        15.84               -31.0            5.90
+ 6.0             10.03            34.0                        16.13               -30.0            5.98
+ 7.0             10.19            35.0                        16.42               -29.0            6.06
+ 8.0             10.36            36.0                        16.63               -28.0            6.15
+ 9.0             10.52            37.0                        16.93               -27.0            6.24
+ 10.0            10.69            38.0                        17.23               -26.0            6.33
+ 11.0            10.87            39.0                        17.53               -25.0            6.41
+ 12.0            11.05            40.0                        17.84               -24.0            6.50
+ 13.0            11.22            41.0                        18.15               -23.0            6.60
+ 14.0            11.40            42.0                        18.47               -22.0            6.70
+ 15.0            11.58            43.0                        18.79               -21.0            6.78
+ 16.0            11.79            44.0                        19.12               -20.0            6.88
+ 17.0            11.99            45.0                        19.45               -19.0            6.98
+ 18.0            12.19            46.0                        19.79               -18.0            7.08
+ 19.0            12.39            47.0                        20.13               -17.0            7.19
+ 20.0            12.59            48.0                        20.48               -16.0            7.29
+ 21.0            12.85            49.0                        20.83               -15.0            7.39
+ 22.0            13.04            50.0                        21.19               -14.0            7.49
+ 23.0            13.27            51.0                        21.55               -13.0            7.60
+ 24.0            13.49            52.0                        21.91               -12.0            7.70
+ 25.0            13.72            53.0                        22.28               -11.0            7.81
+ 26.0            13.95            54.0                        22.66               -10.0            7.92
+ 27.0            14.18            55.0                        23.04               -9.0             8.03
+                                                                                  -8.0             8.14
+                                                                                  -7.0             8.25
+                                                                                  -6.0             8.36
+                                                                                  -5.0             8.48
+ -
+                                                                                  -4.0             8.59
+                                                                                  -3.0             8.71
+                                                                                  -2.0             8.83
+                                                                                  -1.0             8.95
+Notes:
+     •     EER values at High, Medium, and Low Temperature/Ice Cream Applications are based on a reciprocating
+           compressor.
+     •     Refer to section 5.1.2.1 when calculating EER.
+
+
+
+
+                                                                                                                 8
+                                    Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+               Refrigerated Volume
+               The Refrigerated Volume of the Commercial Refrigerated Display Merchandiser or Storage Cabinet shall be
+               calculated and recorded as described in Appendix C.
+               Total Display Area
+               The TDA of the Commercial Refrigerated Display Merchandiser shall be calculated and recorded based on
+               the equation as described in Appendix D, if applicable.
+               Tolerances
+               To comply with this standard, published CDEC ratings shall be based on data obtained in accordance with
+               this section, and shall be such that any production unit, when tested, shall not exceed these ratings by more
+               than 5%.
+               Multiples
+               The CDEC, in kW·h per day, shall be expressed in 0.01 kW·h per day increments.
+5.2   Rating Requirements for Self-contained Commercial Refrigerated Display Merchandisers and Storage Cabinets
+               General
+               This section identifies the necessary data required to determine the TDEC for Self-contained Commercial
+               Refrigerated Display Merchandisers and Storage Cabinets.
+               TDEC for Self-contained Commercial Refrigerated Display Merchandisers and Storage Cabinets
+               The total electrical load shall be measured to determine TDEC (see Equation 3). The electrical load
+               measurement shall include compressors, evaporator fan motors, condensing fan motors, lighting, anti-
+               condensate loads including fans and heaters, defrost heaters, condensate evaporator pans and any other
+               applicable electrical loads when these are part of the unit:
+               TDEC = Et                                                                                                     3
+               The values are expressed in kW·h per day.
+               Refrigerated Volume
+               The Refrigerated Volume of the Commercial Refrigerated Display Merchandiser or Storage Cabinet shall be
+               calculated and recorded as described in Appendix C.
+               Total Display Area
+               The TDA of the Commercial Refrigerated Display Merchandiser is calculated and recorded as described in
+               Appendix D, if applicable.
+               Tolerances
+               To comply with this standard, published TDEC ratings whether measured or calculated shall be based on
+               data obtained in accordance with this section, and shall be such that any production unit, when tested, shall
+               not exceed these ratings by more than 5%.
+               Multiples
+               The TDEC, expressed in kW·h per day, shall be stated in 0.01 kW·h per day increments.
+
+                         Section 6. Minimum Data Requirements for Published Ratings
+
+6.1   Minimum Data Requirements for Published Ratings
+      As a minimum, Published Ratings shall include all Standard Ratings. All claims to ratings within the scope of this
+      standard shall include the statement "Rated in accordance with AHRI Standard 1200 (I-P)". All claims to ratings
+      outside the scope of this standard shall include the statement "Outside the scope of AHRI Standard 1200 (I-P)".
+      Application Ratings within the scope of the standard shall include a statement of the conditions under which the ratings
+      apply.
+
+
+
+
+                                                                                                                            9
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+         Table 2 represents an example template for remote Commercial Refrigerated Display Merchandiser or Storage Cabinet
+         data that shall be recorded for each appropriate model(s).
+         Table 3 represents an example template for Self-contained Commercial Refrigerated Display Merchandiser or Storage
+         Cabinet data that shall be recorded for each appropriate model(s).
+
+
+ Table 2 Example Presentation of Data for Remote Commercial Refrigerated Display Merchandisers and
+                                    Storage Cabinets (Informative)
+Item
+             Informational Item                                                                    Data
+Number
+    1.       Model Number                                                                          -
+    2.       Refrigerant Used                                                                      -
+    3.       Adjusted Dew Point (Refrigerant), °F                                                  -
+    4.       Load Capacity, Qrt, Btu/h                                                             -
+    5.       Length of refrigerated space, L, ft                                                   -
+             Refrigerated Volume, Vr, ft3 (only for Closed Commercial Refrigerated Display
+   6.                                                                                              -
+             Merchandisers and Storage Cabinets), if applicable
+   7.        TDA, ft2, if applicable                                                               -
+   8.        Unit Test Voltage, Volts                                                              -
+   9.        Evaporator Dew Point Temperature (Refrigerant)1, °F                                   -
+   10.       Integrated Average Temperature of Product Simulators, °F                              -
+   11.       CEC, kW·h per day                                                                     -
+   12.       FEC, kW·h per day, if measured individually                                           -
+   13.       LEC, kW·h per day, if measured individually                                           -
+   14.       PEC, kW·h per day, if measured individually                                           -
+   15.       AEC, kW·h per day, if measured individually                                           -
+   16.       DEC, kW·h per day, if measured individually                                           -
+   17.       Items 11-15, kW·h per day, if measured together                                       -
+   18.       CDEC, kW·h per day                                                                    -
+             CDEC/ Refrigerated Volume, kW·h/ft3per day (only for closed Commercial
+   19.                                                                                             -
+             Refrigerated Display Merchandisers and Storage Cabinets)
+   20.       CDEC/TDA, kW·h/ft2 per day                                                            -
+   21.       Other Loads, Notes:
+                                                                                                   -
+
+Note:
+    1.    For High Glide Refrigerants the Evaporator Dew Point is the Mid-point Evaporator Temperature (Tm), see
+          Section 5.1.2.1 for calculation.
+
+
+
+
+                                                                                                                       10
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+Table 3 Example Presentation of Data for Self-contained Commercial Refrigerated Display Merchandisers
+                                  and Storage Cabinets (Informative)
+ Item
+            Informational Item                                                                             Data
+ Number
+ 1.         Model Number
+ 2.         Length of refrigerated space, L, ft
+            Refrigerated Volume, Vr, ft3 (only for Closed Commercial Refrigerated Display
+ 3.
+            Merchandisers and Storage Cabinets), if applicable
+ 4.         TDA, ft2, if applicable
+ 5.         Unit Test Voltage, Volts
+ 6.         Integrated Average Temperature of Product Simulators, °F
+ 7.         TDEC, kW·h per day
+            TDEC/Refrigerated Volume, kW·h/ft3 per day (only for Closed Commercial Refrigerated
+ 8.
+            Display Merchandisers and Storage Cabinets)
+ 9.         TDEC/TDA, kW·h/ft2 per day
+ 10.        Other Loads, Notes:
+
+
+
+
+                                     Section 7. Marking and Nameplate Data
+
+7.1    Marking and Nameplate Data
+       As a minimum, the following information shall be shown in a conspicuous place on the equipment:
+            1) Name or trade name of manufacturer
+            2) Manufacturer’s model number
+            3) Heat transfer fluid (where appropriate)
+       Nameplate voltages for 60 hertz systems shall include one or more of the equipment nameplate voltage ratings shown
+       in Table 1 of AHRI Standard 110-2016. Nameplate voltages for 50 hertz systems shall include one or more of the
+       utilization voltages shown in Table 1 of IEC Standard 60038-2009.
+
+                                        Section 8. Conformance Conditions
+
+8.1    Conformance
+       While conformance with this standard is voluntary, conformance shall not be claimed or implied for products or
+       equipment within the standard’s Purpose (Section 1) and Scope (Section 2) unless such product claims meet all of the
+       requirements of the standard and all of the testing and rating requirements are measured and reported in complete
+       compliance with the standard. Any product that has not met all the requirements of the standard shall not reference,
+       state, or acknowledge the standard in any written, oral, or electronic communication.
+
+
+                                        Section 9. Symbols and Subscripts
+
+9.1    Symbols and Subscripts
+       Ae       =        Projected area from visible product through end walls, ft 2
+       Ar       =        Gross refrigerated area, ft2
+       AEC      =        Anti-condensate energy consumption, kW·h per day (See Section 3.2.1)
+       CDEC =            Calculated Daily Energy Consumption, kW·h per day (See Section 3.2.2)
+       CEC      =        Compressor Energy Consumption, kW·h per day (See Section 3.2.5)
+
+
+                                                                                                                        11
+                                Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+      CECA   =      Additional CEC for an alternate component, kW·h per day
+      CECR   =      Revised CEC, kW·h per day
+      DEC    =      Defrost Energy Consumption, kW·h per day (See Section 3.2.7)
+      Dh     =      Dimension of projected visible product, ft
+      Eo     =      Original energy consumption, kW·h
+      Es     =      Energy consumption with substituted component, kW·h per day
+      Et     =      Total energy measured or calculated for 24 hour period, kW·h per day
+      EER    =      Energy Efficiency Ratio (Table 1), Btu/W·h (See Section 3.2.9)
+      FEC    =      Fan Energy Consumption, kW·h per day (See Section 3.2.10)
+      hi     =      Enthalpy of refrigerant entering Commercial Refrigerated Display Merchandiser or Storage
+                    Cabinet, Btu/lb
+      LEC    =      Light Energy Consumption, kW·h per day (See Section 3.2.13)
+      LECR   =      Revised Light Energy Consumption, kW·h per day
+      L      =      Interior length of the refrigerated space, ft
+      n      =      Number of fan motors
+      OEC    =      Other applicable Energy Consumption, kW·h per day
+      Pai    =      Power anti-condensate heater input, W
+      Pc     =      Power condensate evaporator pan heater input, W
+      Pd     =      Power defrost heater input, W
+      Pf     =      Power fan, W
+      Pfi    =      Power fan input, W
+      Pfo    =      Power fan output found on part nameplate, W
+      Pli    =      Power light input, W
+      Po     =      Power input calculated for original part, W
+      Ps     =      Power input calculated for substitution part, W
+      PEC    =      Condensate Evaporator Pan Energy Consumption, kW·h per day (See Section 3.2.6)
+      Qrt    =      Commercial Refrigerated Display Merchandiser or Storage Cabinet average refrigerator load for
+                    the running cycle(s) within the test (during total refrigerating time) as determined in section 8.3 of
+                    ANSI/ASHRAE Standard 72-2022, Btu/h
+      t      =      Time unit is tested, h
+      ta     =      Time anti-condensate heaters are on in 24-hour period, h
+      tc     =      Time condensate evaporator pan heaters are on in 24-hour period, h
+      td     =      Time defrost heaters are on in 24-hour period, h
+      tdt    =      Time unit is in defrost, h
+      tf     =      Time fans are on in 24-hour period, h
+      tl     =      Time lights are on in 24-hour period, h
+      to     =      Time original part is on in 24-hour period, h
+      ts     =      Time substitution part is on in 24-hour period, h
+      Tg     =      Temperature glide of refrigerant, °R
+      Ti     =      Temperature at inlet of evaporator coil, °F
+      Tm     =      Temperature at mid-point of evaporator coil, °F
+      Tsd    =      Temperature of saturated suction Dew Point of refrigerant, °F
+
+
+
+                                                                                                                        12
+                                  Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+      TDA     =        Total Display Area, ft2 (See Section 3.2.19)
+      TDEC =           Total Daily Energy Consumption, kW·h per day (See Section 3.2.18)
+      TDECA =          Adjusted Total Daily Energy Consumption, kW·h per day
+      Vr               Refrigerated Volume (See Section 3.2.17)
+      m      =        Motor efficiency
+
+
+      Note: Per day denotes a 24-hour period.
+
+
+
+
+                                                                                             13
+                                      Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+                APPENDIX A. REFERENCES – NORMATIVE
+A.1.     Listed here are all standards, handbooks, and other publications essential to the formation and implementation of the
+standard. All references in this appendix are considered as part of the standard.
+         A.1.1. AHRI Standard 110-2016, Air-Conditioning, Heating and Refrigerating Equipment Nameplate Voltages,
+         2016, Air-Conditioning, Heating, and Refrigeration Institute, 2311 Wilson Boulevard, Suite 400, Arlington, VA
+         22201, U.S.A.
+         A.1.2. ANSI/ASHRAE Standard 72-2022, Method of Testing Commercial Refrigerators and Freezers, 2018,
+         ASHRAE, 180 Technology Parkway, Peachtree Corners, GA 30092, U.S.A.
+         A.1.3. ASHRAE Terminology. ASHRAE. Accessed April 12, 2022.
+         https://www.ashrae.org/technicalresources/free-resources/ashrae-terminology.
+         A.1.4. ASTM Standard E 1084-86 (Reapproved 2015), Standard Test Method for Solar Transmittance (Terrestrial)
+         of Sheet Materials Using Sunlight, 1986, ASTM International, 100 Barr Harbor Drive, PO Box C7, West
+         Conshohocken, PA, 19428, USA.
+         A.1.5. IEC Standard 60038, IEC Standard Voltages, 2021, International Electrotechnical Commission, 3, rue de
+         Varembe, P. O. Box 131, 1211 Geneva 20, Switzerland.
+         A.1.6. 10 CFR Part 431.64. 2014. "Energy Efficiency Program for Certain Commercial and Industrial Equipment."
+         U.S. Code of Federal Regulations. Office of the Federal Register, National Archives and Records Administration, 800
+         North Capitol Street, NW, Washington, DC 20402, U.S.A.
+
+
+
+
+                                                                                                                           14
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+              APPENDIX B. REFERENCES - INFORMATIVE
+B1       Listed here are standards, handbooks and other publications which may provide useful information and background
+but are not considered essential. References in this appendix are not considered part of the standard.
+
+
+        B.1.1. Reference Fluid Thermodynamic and Transport Properties Database (REFPROP), National Institute of
+        Standards and Technology, Version 10.0
+
+
+
+
+                                                                                                                      15
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+  APPENDIX C. COMMERCIAL REFRIGERATED DISPLAY
+       MERCHANDISER AND STORAGE CABINET
+       REFRIGERATED VOLUME CALCULATION –
+                   NORMATIVE
+C.1.   Refrigerated Volume Measurements
+       The Refrigerated Display Merchandiser and Storage Cabinet volume shall be recorded to the nearest 0.01 cubic feet,
+       considering the exact shape of the walls including all depressions or projections. The use of 3-dimensional models
+       can be used for determining Refrigerated Volume. This volume calculation only applies to Closed Commercial
+       Refrigerated Display Merchandisers and Storage Cabinets.
+       C.1.1.   Determining Volume
+                Refrigerated Volume shall encompass the entire interior of the display merchandiser or storage cabinet.
+                C.1.1.1.     Disregarded Items
+                             The following items shall be disregarded for the determination of volume.
+                              1)   Internal fittings such as shelves
+                              2)   Removable partitions
+                              3)   Containers
+                              4)   Interior light housings
+                C.1.1.2.     Deducted Items
+                             The volume of the following items, if present, shall be deducted in the determination of volume.
+                              1) The volume of control housings
+                              2) The volume of the evaporator space (Figure 2)
+                              3) The volume of air ducts required for proper cooling and operation of the unit
+       C.1.2.   Evaporator Space
+                The volume of the evaporator space to be deducted from the Refrigerated Volume shall include forced air
+                evaporators and plate style (or roll-bond) evaporators.
+                C.1.2.1.     Forced Air Evaporators
+                             The total volume to be deducted shall include the total volume of the space occupied by the
+                             evaporator, evaporator cover, the evaporator fan, and fan scroll.
+                C.1.2.2.     Plate Style (or Roll-bond) Evaporators
+                             The volume behind vertically mounted plate style evaporator and the volume above horizontally
+                             mounted plate style evaporators shall be included if the distance between the horizontal plate
+                             style evaporator and the nearest above liner surface is less than 2 in (50 mm). Removable drip
+                             trays/troughs shall not be included.
+       C.1.3.   Commercial Refrigerated Storage Cabinet Refrigerated Volume
+                The Commercial Refrigerated Storage Cabinet Refrigerated Volume (Vr) equals the refrigerated area cross-
+                sectional area multiplied by the length of refrigerated space (L). The sample front view and cross section in
+                Figures 1 and 2 is used as an example in Equation 4.
+                Vr = (L1 · D1 · H1) + (L2 · D2 · H2) + (L3 · D3 · H3) + (L4 · D4 · H4) + (L5 · D5 · H5)                    4
+
+
+
+
+                                                                                                                          16
+                                       Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+Figure 1. Sample Front View of Commercial Refrigerated Display Merchandisers for Illustrating Length of
+                                        Refrigerated Space
+Note: The internal length (L in Figure 1) is measured from the internal panel at one end of the case to the internal panel at the
+other end of the case.
+
+
+
+
+  Figure 2. Sample Cross Section of Commercial Refrigerated Storage Cabinets for Refrigerated Volume
+                                            Calculation
+
+
+
+
+                                                                                                                              17
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+  APPENDIX D. COMMERCIAL REFRIGERATED DISPLAY
+     MERCHANDISER AND STORAGE CABINET TOTAL
+    DISPLAY AREA (TDA) CALCULATION – NORMATIVE
+D.1.   Total Display Area
+       The TDA is the sum of the projected area(s) for visible product, ft 2. See Equation 5.
+        TDA = Dh·L + Ae                                                                                               5
+       Where:
+                Ae = Projected area from visible product through end walls as shown in Figure 17 through Figure 20.
+                Dh = Dimension of projected visible product as shown in Figure 4 to Figure 16.
+                L = Length of Commercial Refrigerated Display Merchandiser or Storage Cabinets as shown in Figure 3.
+       The TDA shall be calculated manually for unique geometries. Refer to Figure 21 through Figure 26.
+       D.1.1.   Nominal Length of Commercial Refrigerated Display Merchandisers or Storage Cabinets
+
+
+
+                                (≥ 45% LIGHT TRANSMITTANCE)
+
+
+
+
+                        Figure 3. Three-door Vertical Closed Transparent Display Case
+
+
+
+
+                                                                                                                      18
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+               D.1.1.1.     Determining the Length of Commercial Refrigerated Display Merchandiser or Storage Cabinets
+                            Use Equations 6 and Equation 7 to determine the Length of Commercial Refrigerated Display
+                            Merchandiser or Storage Cabinets, L, if the interior length consist of not more than 10% non-
+                            transparent material.
+                            When measuring a three-door vertical closed transparent display case as seen in Figure 3:
+                            If
+                              LNT,1 + LNT,2 + LNT,3 + LNT,4 ≤ 0.10(LNT,1 + LT,1 + LNT,2 + LT,2 + LNT,3 + LT,3 + LNT,4)            6
+                            Then
+                              L = LNT,1 + LT,1 + LNT,2 + LT,2 + LNT,3 + LT,3 + LNT,4                                              7
+                            Where:
+                                   LNT,n      =      Linear length of non-transparent area
+                                   LT,n       =      Linear length of transparent area
+               D.1.1.2.    Determining the Length of Commercial Refrigerated Display Merchandiser or Storage Cabinets
+               with Greater than 10% Non-transparent Area
+               Use Equation 8 and Equation 9 for those cases with greater than 10% of non-transparent area. The Length of
+               Commercial Refrigerated Display Merchandiser or Storage Cabinets, L, shall be determined as the projected
+               linear dimension(s) of visible product plus 10% of the linear dimension(s) of visible product to account for
+               non-transparent area.
+               When determining the length for a three-door vertical closed transparent display case as seen in Figure 3:
+               If
+                LNT,1 + LNT,2 + LNT,3 + LNT,4 > 0.10(LNT,1 + LT,1 + LNT,2 + LT,2 + LNT,3 + LT,3 + LNT,4)                 8
+               Then
+                      𝐿 𝑇,1 + 𝐿 𝑇,2 + 𝐿 𝑇,3                                                                              9
+                𝐿=
+                              0.9
+
+
+      D.1.2.   Dimension of Projected Visible Product, Dh
+               Measuring Dh shall include only the visible dimensions. Opaque door frames, light shades, and non-
+               transparent silk screens that impede visibility shall be excluded from the measurement. Figure 4 through
+               Figure 16 present solutions for determining the dimension of projected visible product.
+
+
+
+
+                                                                                                                             19
+                             Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                                Figure 4. Vertical Open Multi-deck
+
+
+
+
+                     Figure 5. Vertical Open Multi-deck with Transparent Front
+
+
+
+
+                                                                                             20
+                             Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                                            Dh = Z
+                 Figure 6. Semi-vertical Open Multi-deck with Smaller Product Zone
+
+
+
+
+                   Figure 7. Semi-vertical Open Multi-deck with Transparent Front
+
+
+
+
+                                                                                             21
+                            Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                              Figure 8. Horizontal Open Single-deck
+
+
+
+
+                   Figure 9. Horizontal Open Single-deck with Transparent Front
+
+
+
+
+                                                                                             22
+                            Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                            Figure 10. SOC with Flat Transparent Front
+
+
+
+
+                          Figure 11. SOC with Curved Transparent Front
+
+
+
+
+                                                                                             23
+                             Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                        Figure 12. SOC with Flat Transparent Front and Top
+
+
+
+
+                          Figure 13. Horizontal Open Single-deck Island
+
+
+
+
+                                                                                             24
+                             Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                Figure 14. Horizontal Open Single-deck Island with Transparent Wall
+
+
+
+
+                                                                                             25
+                             Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                              Figure 15. Island with Transparent Walls
+
+
+
+
+                    Figure 16. Vertical Closed Multi-deck with Transparent Doors
+
+
+
+
+                                                                                             26
+                                   Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+      D.1.3.   Projected Area From Visible Product Through End Walls, Ae
+      Figure 17 through Figure 20 present solutions for determining the projected area of visible product.
+
+
+
+
+                                                                                 Y
+
+
+
+
+                                                   X
+
+                            Figure 17. Vertical End Wall with Transparent Section
+
+
+
+
+                                                                                                             27
+                              Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                      Figure 18. Semi-vertical End Wall with Transparent Section
+
+
+
+
+      Figure 19. Horizontal Single-deck and Single-deck Island End Wall with Transparent Section
+
+
+
+
+                                                                                                   28
+                                   Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                             Figure 20. SOC End Wall with Transparent Section
+      D.1.4.   Unique Geometries
+               For unique geometries, the TDA shall be calculated manually.
+
+
+
+
+                               Figure 21. Example TDA for Unique Geometries
+
+
+
+
+                                                                                             29
+                            Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                          Figure 22. Example TDA for Unique Geometries
+
+
+
+
+                          Figure 23. Example TDA for Unique Geometries
+
+
+
+
+                                                                                             30
+                            Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                         Figure 24. Radius Cases with Transparent Sides
+
+
+
+
+                                                                                             31
+                                 Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                                Figure 25. Mitered Wedge TDA Calculation
+             Note: Dimension L in Figure 25 is shown from the customer facing side of the unit.
+
+
+                                                                                                  32
+                                 Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+
+                                Figure 26. Curved Wedge TDA Calculation
+             Note: Dimension L in Figure 26 is shown from the customer facing side of the unit.
+
+
+                                                                                                  33
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+   APPENDIX E. EXAMPLE – CALCULATION OF CEC FOR
+         COMMERCIAL REFRIGERATED DISPLAY
+   MERCHANDISER OR STORAGE CABINET TESTED WITH
+       A HIGH-GLIDE REFRIGERANT– INFORMATIVE
+
+E.1.   Example calculation of CEC for commercial refrigerated display merchandiser or storage cabinet tested with a
+       high-glide refrigerant– informative.
+
+
+E.2.   Medium-temp Remote Display Merchandiser with R-407A
+       Entering liquid refrigerant temperature = 79.77°F (measured)
+       Entering liquid refrigerant pressure = 203.7 psia (measured)
+       Entering liquid refrigerant enthalpy = 102.62 Btu/lb (calculated from REFPROP 10.0)
+       Inlet evaporator temperature, Ti = 23.87°F (calculated from REFPROP 10.0)
+
+
+       Tsd = 32.0°F (72.4 psia) (Pressure measured, temperature calculated)
+
+
+       Tg = 32.0 – 23.87 = 8.13
+
+
+       8.13 / 2 = 4.07
+
+
+       Tsd (as tested) – 4.07 = 27.93, that is then rounded to the nearest integer, 28, therefore T m = 28°F
+
+
+       Tm (as calculated) – 2 (for Med Temp) is then used to look up the EER from Table 1
+
+
+       28 – 2 = 26°F,
+
+
+       Therefore, the EER used in the CEC calculation is 13.95 (corresponding to a 26°F Adjusted Dew Point in Table 1)
+
+
+
+
+                                                                                                                     34
+                                       Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+           APPENDIX F. ENERGY CALCULATIONS USING
+             ALTERNATE COMPONENTS – INFORMATIVE
+The total energy consumption of a commercial refrigerator can be estimated when components are changed from the original
+equipment’s design. The following instructions can be followed to make those estimates. These calculations can be the basis
+for developing an alternative energy determination method (AEDM). Manufacturers must adjust these calculations to make
+detailed energy estimates for their product.
+F.1.    Remote Refrigerators
+        F.1.1.   Alternate Components - Direct Effects
+                 The energy consumption of substituted or alternate components can be measured or calculated from the
+                 component’s nameplate rating. The energy usage of the substituted or alternate components can be used to
+                 recalculate the CDEC initially calculated in Section 5.1.2 as determined in the initial test with all electric
+                 loads measured, except for CEC.
+                 F.1.1.1.      FEC
+                               When removing or substituting a fan motor, the fan energy can be measured or calculated
+                               according to Equation 10. The energy usage of the substituted or alternate components can be
+                               used to recalculate the CDEC according to Section 5.1.2. When calculating the fan motor energy
+                               for substituting a fan motor, the airflow rate produced from the assembly can be equal to the
+                               original configuration.
+                                FEC = (Pf · tf) / (1000)                                                                    10
+                                     Where:
+                                         Pf = (Pfo · n) / (m)
+                 F.1.1.2.      LEC
+                               When removing or substituting lighting, the lighting energy can be measured or calculated
+                               according to Equation 11. The energy usage of the substituted or alternate components can be
+                               used to recalculate the CDEC according to Section 5.1.2.
+                               LEC = (Pli · tl) / (1000)                                                                   11
+
+                 F.1.1.3.      AEC
+                               When removing or substituting an anti-condensate heater, the heater energy can be measured or
+                               calculated according to Equation 12. The energy usage of the substituted or alternate components
+                               can be used to recalculate the CDEC according to Section 5.2.
+                               AEC = (Pai · ta) / (1000)                                                                  12
+
+                 F.1.1.4.      DEC
+                               When removing or substituting a defrost heater, the heater energy can be measured or calculated
+                               according to Equation 13. The energy usage of the substituted or alternate components can be
+                               used to recalculate the CDEC according to Section 5.2.
+                               DEC = (Pd · td) / (1000)                                                                   13
+
+                 F.1.1.5.      PEC
+                               When removing or substituting a condensate evaporator pan, the pan energy can be measured or
+                               calculated according to Equation 14. The energy usage of the substituted or alternate components
+                               can be used to recalculate the CDEC according to Section 5.2.
+                               PEC = (Pc · tc) / (1000)                                                                   14
+
+
+
+                                                                                                                            35
+                                     Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+       F.1.2.   Alternate Component Indirect Effects
+                The revised Compressor Energy Consumption (CECR) is the indirect effect of alternate component(s) on the
+                CEC and can be measured or calculated. The total revised CEC R is the sum of the CEC and the additional
+                Compressor Energy Consumption (CECA) for each component as seen in Equation 15.
+                CECR = CEC + ∑ CECA                                                                                        15
+
+                F.1.2.1.    Fans
+                            When substituting a fan motor located in the refrigerated space, the change in energy affects the
+                            CEC. The change in CEC can be calculated by multiplying the difference in power usage
+                            between the alternate components by the operating time and dividing by the compressor’s EER
+                            rating. This change in CEC can be added to the original CEC as seen in Equation 16:
+                            CECA = 3.4121· [(Ps · ts) – (Po · to)] / (EER · 1000)                                          16
+
+                F.1.2.2.    Lights
+                            When substituting internal lighting located in the refrigerated space, the change in energy affects
+                            the CEC. The change in CEC can be calculated by multiplying the difference in power usage
+                            between the alternate components by the operating time and dividing by the compressor’s EER
+                            rating. This change in CEC can be added to the original CEC as seen in Equation 17.
+                            For ballast located internal or external to the refrigerated space:
+                            CECA = 3.4121 ·[(Ps · ts) – (Po · to)] / (EER · 1000)                                        17
+
+                F.1.2.3.    Anti-Condensate Heater
+                            When substituting an anti-condensate heater located in the refrigerated space, the change in
+                            energy affects the CEC. The change in CEC can be calculated by dividing the difference in
+                            energy usage between the alternate components by the compressor’s EER rating. This change in
+                            CEC can be added to the original CEC as seen in Equation 18.
+                            CECA = 3.4121 · [(Ps · ts) – (Po · to)] / (EER · 1000)                                       18
+
+                F.1.2.4.    Condensate Evaporator Pans
+                            When substituting a condensate evaporator pan located in the refrigerated space, the change in
+                            energy affects the CEC. The change in CEC can be calculated by dividing the difference in
+                            energy usage between the alternate components by the compressor’s EER rating as seen in
+                            Equation 19.
+                            This change in CEC can be added to the original CEC:
+                            CECA = 3.4121 · [(Ps · ts) – (Po · to)] / (EER · 1000)                                       19
+F.2.   Self-contained.
+       F.2.1. Alternate Components for Self-contained Commercial Refrigerated Display Merchandisers and Storage
+       Cabinets
+                The direct energy consumption of alternate components can be measured or calculated from the component’s
+                nameplate rating. A calculated change in the energy usage for the alternate component should be substituted
+                for the energy usage of the component used in the total energy test only if the alternate component uses less
+                energy than the original component. There should not be a credit for a reduction in the CEC due to alternate
+                components in a Self-contained Commercial Refrigerated Display Merchandiser or Storage Cabinet if a
+                calculated value is used. A direct measurement of the total electrical load should be made if the alternate
+                component uses more energy than the original component or to take a credit for the compressor energy
+                reduction.
+                The calculated direct effect in energy usage can be added to the original TDEC and the TDEC A determined
+                for each component substitution.
+
+
+                                                                                                                            36
+                                   Edict of government
+____________________________________________________________ ANSI/AHRI Standard 1200-2023 (I-P)
+
+
+
+             TDECA = Es − Eo                                                                                        20
+                        Where:
+                                 Es= Ps · ts
+                                 Eo= Po · to
+             F.2.1.1.     FEC
+                          When removing or substituting a fan motor, the fan energy can be measured or calculated
+                          according to Equation 10. The TDECA can be measured or calculated using Equation 20. When
+                          calculating the fan motor energy for substituting a fan motor, the airflow produced from the
+                          assembly can be equal to the original configuration.
+             F.2.1.2.     LEC
+                          When removing or substituting internal lighting, lighting energy can be measured or calculated
+                          from the product nameplate according to Equation 11. The TDECA can be measured or
+                          calculated using Equation 20.
+             F.2.1.3.     AEC
+                          When removing or substituting an anti-condensate heater, the heater energy can be measured or
+                          calculated from the product’s nameplate according to Equation 12. The TDECA can be measured
+                          or calculated using Equation 20.
+             F.2.1.4.     DEC
+                          When removing or substituting a defrost heater, the change in energy can be measured or
+                          calculated according to Equation 13. The TDECA can be measured or calculated using Equation
+                          20.
+             F.2.1.5.     PEC
+                          When removing or substituting a condensate evaporator pan, the change in energy can be
+                          measured or calculated according to Equation 14. The TDECA can be measured or calculated
+                          using Equation 20.
+
+
+
+
+                                                                                                                     37
+

@@ -1,0 +1,121 @@
+Case Study of Adding Glass Doors to Multi-Deck Meat Case
+Project Summary
+
+Two 8’ multi-deck meat cases
+were installed and refrigerated in
+the Hillphoenix case laboratory.
+After confirming identical operating
+performance, one case was
+retrofitted with Anthony glass
+doors, and both cases were fully
+loaded with meat. The case with
+doors measured an 80% lower
+refrigeration load, and 71% lower
+total energy. The shelf life of the
+steak was extended by three days,
+and the ground beef by one day.
+
+Insight
+
+Retailers are looking to save energy, and provide fresher products for their shoppers.
+Studies have shown over 39% supermarket energy is consumed by refrigeration, 23%
+by lighting, and 13% by heating. Open multi-deck display cases, dumping
+                                                 cold air into the aisles, with traditional
+                                                 fluorescent lighting, are major
+                                                 consumers of supermarket energy.
+
+                                                   The open multi-deck merchandiser is
+                                                   typically used to display fresh meat.
+                                                   Meat is one of the highest revenue
+                                                   departments in the supermarket, but
+                                                   also has the highest shrink rate.
+                                                   Typically, supermarket retailers
+                                                   experience a shelf-life of about four
+                                                   days for steak, and two days for
+                                                   ground beef. After these times, the
+                                                   meat has shifted in
+color from bright red to dark red or brown, and shoppers feel it is no longer fresh.
+Myoglobin is the protein in the meat that is responsible for this bright red color. While
+many factors can effect color change (packaging, vitamin E, etc.), one of the largest
+contributors to color shift in fresh red meat is temperature.
+
+Procedure
+
+For this study, two identical Hillphoenix O5DM-8 cases were refrigerated in the
+Richmond, Virginia laboratory, following the standard ASHRAE 72 test procedure for
+commercial refrigerators. After confirming identical temperature and energy
+performance with product simulators, one of the cases was retrofitted with Anthony
+glass doors with LED lights. Fluorescent canoy lights were turned off, expansion valves
+were adjusted, and the temperature and energy measurements were repeated.
+Performance was measured initially without changing the evaporator temperature or
+defrost frequency, and then again after raising the temperature and decreasing the
+defrost frequency.
+
+After taking the case temperature and energy measurements, the ASHRAE simulators
+were removed and the cases were loaded with fresh red meat. A selection of both
+steaks and ground beef were prepared for the test. The product was machine-sliced
+and ground the morning of the test by a local supermarket, from a vacuum-packed
+carcass. The product was then transported in coolers for about 20 minutes, where it
+was immediately placed in the refrigerated display cases. Each day, two steaks and
+two ground beef packages were removed from the refrigerator and photographed to
+assess color shift and judge shelf-life.
+
+Results
+
+Table 1 compares the performance of the open case, to the case after it was initially
+retrofitted with doors. The case heat load dropped 79%, from 1576 to 330 BTUH/ft.
+With such a large load reduction, some of the product temperatures were below
+freezing, so the evaporator temperature was raised 6 °F to achieve similar maximum
+product temperatures as the open case. Additionally, due to the reduced latent load,
+the defrost frequency was reduced from 6 times per day to 2 per day, to benefit the
+meat shelf-life in the next phase of the testing. These final adjustments resulted in a
+total load reduction of 80%, and 71% lower total energy.
+
+Table 2 compares the color shift of the steak in the open case vs. the closed case.
+After four days, the steak from the open case is beginning to get darker and more
+brown, while the steak from the case retrofitted with doors is bright red after seven days.
+
+Similarly, Table 3 compares the color shift of ground beef in the open case vs. the
+closed case. After two days, the ground beef from the open case was darkening and
+beginning to turn brown, while the ground beef from the closed case was still bright red.
+                       Table 1. Open Case vs. Door Case Performance
+
+                                                Open Case vs. Retrofitted Door Case Perform ance
+
+                                              O5M8 NRG without Doors   O5M8 NRG with Doors    O5M8 NRG with Doors
+                       Case Configuration     Angled Shelves with      Same Evaporator Temp   Higher Evaporator Temp
+                                              Mirror                   and Defrosts           and Lower Defrosts per Day
+                         Average Product
+                                                        33.5                    30.4                     36.6
+                         Temperature
+                         Maximum Product
+                                                        39.3                    32.8                     38.3
+                         Temperature
+                         Evaporator
+Perform ance Factors
+
+
+
+
+                                                        23.3                    23                       30.9
+                         Temperature
+                         BTUH/ft                       1576                     330                315(80% lower)
+                         kWh(per day)                   33.3                    9.7                 9.6(71% lower)
+                         $/year @ $0.12/kWh          $1459/yr                 $425/yr                  $420/yr
+                         Def/Day                         6                       6                        2
+Table 2, Steak Color Shift Comparison
+Table 3, Ground Beef Color Shift Comparison
+
+
+
+
+CONCLUSIONS & RECOMMENDATIONS
+
+This test demonstrated under controlled laboratory conditions, that adding doors to
+open cases can reduce the load by 80%, and total energy consumption by 71%.
+Additionally, the more uniform and stable temperatures resulted in shelf life extension
+on fresh red meat by several days. The additional energy savings from raising the
+evaporator temperature was negligible, unless the overall rack suction temperature
+could be raised. However, this step is necessary and recommended to prevent freezing
+the products.
+

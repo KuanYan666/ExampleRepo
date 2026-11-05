@@ -1,0 +1,33 @@
+                         case        city  door_LT_pct  door_site_pct  credit_ratio_remote  credit_ratio_plugin  remote_JJA_$  remote_DJF_$  plugin_JJA_$  plugin_DJF_$
+                     baseline     houston         1.28           3.28                -0.06                 0.21      -1044.93        569.54       2368.64         40.20
+                     baseline minneapolis         0.40           7.65                 0.19                -0.13       -464.49       1750.08        981.55      -1979.58
+internal gains 15 W/m2 (-40%)     houston         1.54           4.05                 0.02                 0.17      -1108.97       1233.90       2524.05       -638.53
+internal gains 15 W/m2 (-40%) minneapolis         0.50           8.16                 0.25                -0.17         25.10       1750.08        935.89      -2000.35
+internal gains 35 W/m2 (+40%)     houston         1.07           2.15                -0.10                 0.23      -1009.53          4.26       2282.05        540.85
+internal gains 35 W/m2 (+40%) minneapolis         0.32           6.72                 0.15                -0.09       -520.04       1729.78        943.34      -1874.07
+    no mechanical ventilation     houston         3.02           3.88                -0.06                 0.21       -948.54        398.36       2216.42        334.91
+    no mechanical ventilation minneapolis         0.96           8.34                 0.18                -0.11       -442.84       1747.39        919.06      -1949.29
+               ventilation x2     houston         0.86           3.02                -0.05                 0.21      -1117.63        679.44       2508.86       -171.53
+               ventilation x2 minneapolis         0.24           7.12                 0.19                -0.14       -457.60       1750.08       1040.77      -1984.27
+    envelope leakage 0.05 ACH     houston         1.51           3.42                -0.05                 0.20       -968.68        536.69       2217.88        113.61
+    envelope leakage 0.05 ACH minneapolis         0.48           7.91                 0.18                -0.12       -461.22       1750.08        976.80      -1982.96
+     envelope leakage 0.3 ACH     houston         0.77           2.94                -0.07                 0.23      -1371.57        672.64       3026.71       -197.22
+     envelope leakage 0.3 ACH minneapolis         0.22           6.79                 0.19                -0.14       -462.63       1750.08        998.36      -1969.07
+              6 freezer cases     houston         1.10           3.34                -0.08                 0.17       -613.98        228.94       1122.16       -109.84
+              6 freezer cases minneapolis         0.24           8.43                 0.17                -0.15       -259.35        875.04        382.27      -1008.17
+             24 freezer cases     houston         1.69           3.11                -0.02                 0.26      -1850.87       1645.56       4744.90       1054.08
+             24 freezer cases minneapolis         0.67           6.46                 0.21                -0.07       -574.35       3500.15       2949.26      -3800.69
+         no fridge (MT) cases     houston         0.91           3.00                -0.22                 0.34      -2386.26       -197.26       2469.01       1243.00
+         no fridge (MT) cases minneapolis         0.24           9.56                 0.11                 0.02       -962.08       1730.51       2192.83      -1758.44
+ freezer COP 1.3 (Westphalen)     houston         1.34           3.21                -0.04                 0.22      -1044.93        569.54       2899.37        184.27
+ freezer COP 1.3 (Westphalen) minneapolis         0.42           7.45                 0.15                -0.11       -464.49       1750.08       1327.90      -2386.10
+                     AC COP 4     houston         1.28           2.93                -0.01                 0.13       -669.97        700.24       1767.33       -216.43
+                     AC COP 4 minneapolis         0.40           7.63                 0.21                -0.16       -181.06       1750.08        572.88      -1979.81
+      infiltration share 0.85     houston         1.39           3.30                -0.05                 0.22      -1138.49        659.65       2586.62        101.45
+      infiltration share 0.85 minneapolis         0.46           7.54                 0.19                -0.12       -499.49       1935.17       1123.03      -2119.55
+      UA x2 (poor insulation)     houston         1.27           3.40                -0.06                 0.17      -1466.18        809.41       2410.67       -471.55
+      UA x2 (poor insulation) minneapolis         0.42           6.18                 0.20                -0.16       -372.32       1750.08        883.18      -2000.20
+    door air per opening x0.5     houston         0.71           1.67                -0.06                 0.21      -1004.54        497.43       2295.16        161.11
+    door air per opening x0.5 minneapolis         0.23           3.83                 0.18                -0.12       -453.61       1749.91        953.83      -1970.12
+    door air per opening x2.0     houston         2.13           6.40                -0.05                 0.21      -1112.55        672.77       2504.06       -155.27
+    door air per opening x2.0 minneapolis         0.64          15.31                 0.19                -0.14       -466.81       1750.08       1035.69      -1981.98

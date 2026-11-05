@@ -1,0 +1,41 @@
+==============================================================================
+A. CHECK OUR HAND-CODED INDICES AGAINST pythermalcomfort
+==============================================================================
+T=25 RH=30 v=0.1:  AT ours  24.06 ptc  24.07 | HI ours  24.34 ptc  25.37 | Humidex ours  24.72 ptc  24.72
+T=35 RH=40 v=1.0:  AT ours  37.69 ptc  37.73 | HI ours  37.22 ptc  37.22 | Humidex ours  42.05 ptc  42.08
+T=40 RH=15 v=2.0:  AT ours  38.24 ptc  38.25 | HI ours  38.01 ptc  38.01 | Humidex ours  40.58 ptc  40.60
+T=33 RH=70 v=0.5:  AT ours  40.23 ptc  40.28 | HI ours  43.47 ptc  43.47 | Humidex ours  47.39 ptc  47.41
+pythermalcomfort docstring example at(25,30,0.1) = 24.1 -> 24.1
+CE official 1.66  vs our unrounded solver 1.659   (T=25, RH=50, v=0.3)
+CE official 4.14  vs our unrounded solver 4.137   (T=30, RH=50, v=1.0)
+CE official 5.33  vs our unrounded solver 5.334   (T=40, RH=15, v=1.0)
+
+==============================================================================
+B. CAN THE INDEX SEE IT?  change of index (degC) from a reference hour
+   reference: T=35 C, RH=40 %, v=0.5 m/s at the body, tr=T (shade)
+==============================================================================
+                    base  d_air_plus1  d_fan_0p5_to_2  d_RH_40_to_60  d_tr_plus10
+index                                                                            
+BoM AT (no rad.)   37.88         1.42           -1.54           3.70         0.00
+BoM AT (rad.)*     38.03         1.44           -1.54           3.90         4.41
+NWS Heat Index     37.22         1.93            0.00           7.83         0.00
+Humidex            42.05         1.73            0.00           6.48         0.00
+WBGT (BoM approx)  32.59         1.06            0.00           4.40         0.00
+UTCI               35.50         1.20           -1.00           2.50         2.40
+SET                30.50         0.95           -2.08           2.61         3.09
+* radiation version: Q approximated as the extra long-wave gain eps*sigma*(tr^4-T^4); a crude stand-in, only to show the term exists.
+
+==============================================================================
+C. WORKED EXAMPLE: the same hour through every index
+==============================================================================
+T=43 C, RH=12 %, v=0.5 m/s:  AT=41.9  HI=40.6  Humidex=43.2  WBGT~32.4  UTCI=42.1  SET=33.5   e=10.3 hPa  Twb=20.9
+T=34 C, RH=60 %, v=0.5 m/s:  AT=40.0  HI=42.2  Humidex=46.5  WBGT~35.7  UTCI=36.5  SET=31.8   e=31.8 hPa  Twb=27.3
+
+==============================================================================
+D. CITY 'TYPICAL HOT AFTERNOON' (median of the daily-max-temperature hours, Jun-Sep 2025)
+==============================================================================
+Phoenix    median peak  41.3 C at   13 % RH  (wet-bulb 20.4 C, depression 20.9 C)   90th-pct peak 44.6 C
+LasVegas   median peak  39.9 C at    7 % RH  (wet-bulb 17.4 C, depression 22.5 C)   90th-pct peak 43.5 C
+Seville    median peak  36.2 C at   21 % RH  (wet-bulb 19.9 C, depression 16.3 C)   90th-pct peak 41.3 C
+Houston    median peak  32.5 C at   56 % RH  (wet-bulb 25.2 C, depression  7.3 C)   90th-pct peak 35.1 C
+Singapore  median peak  31.3 C at   62 % RH  (wet-bulb 25.3 C, depression  6.0 C)   90th-pct peak 32.7 C

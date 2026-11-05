@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<DIV8 N="431.66" TYPE="SECTION" hierarchy_metadata="{&quot;path&quot;:&quot;/on/_SUBSTITUTE_DATE_/title-10/section-431.66&quot;,&quot;citation&quot;:&quot;10 CFR 431.66&quot;}">
+<HEAD>§ 431.66 Energy conservation standards and their effective dates.</HEAD>
+<P>(a) In this section—</P>
+<P>(1) The term “AV” means the adjusted volume (ft
+<SU>3</SU>) (defined as 1.63 × frozen temperature compartment volume (ft
+<SU>3</SU>) + chilled temperature compartment volume (ft
+<SU>3</SU>)) with compartment volumes measured in accordance with the Association of Home Appliance Manufacturers Standard HRF1-1979.</P>
+<P>(2) The term “V” means the chilled or frozen compartment volume (ft
+<SU>3</SU>) (as defined in the Association of Home Appliance Manufacturers Standard HRF1-1979).</P>
+<P>(3) For the purpose of paragraph (d) of this section, the term “TDA” means the total display area (ft
+<SU>2</SU>) of the case, as defined in ARI Standard 1200-2006, appendix D (incorporated by reference, see § 431.63). For the purpose of paragraph (e) of this section, the term “TDA” means the total display area (ft
+<SU>2</SU>) of the case, as defined in AHRI Standard 1200 (I-P)-2010, appendix D (incorporated by reference, see § 431.63).</P>
+<P>(b)(1) Each commercial refrigerator, freezer, and refrigerator-freezer with a self-contained condensing unit designed for holding temperature applications manufactured on or after January 1, 2010 and before March 27, 2017 shall have a daily energy consumption (in kilowatt-hours per day) that does not exceed the following:</P>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%">
+<THEAD>
+<TR>
+<TH class="center border-top-single border-bottom-single border-right-single">Category</TH>
+<TH class="center border-top-single border-bottom-single">Maximum daily energy consumption<br></br>(kilowatt hours per day)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">Refrigerators with solid doors</TD>
+<TD class="left">0.10V + 2.04.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Refrigerators with transparent doors</TD>
+<TD class="left">0.12V + 3.34.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Freezers with solid doors</TD>
+<TD class="left">0.40V + 1.38.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Freezers with transparent doors</TD>
+<TD class="left">0.75V + 4.10.</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single">Refrigerator/freezers with solid doors</TD>
+<TD class="left border-bottom-single">the greater of 0.27AV-0.71 or 0.70.</TD>
+</TR>
+</TBODY>
+</TABLE>
+</DIV></DIV>
+<P>(2) Each service over the counter, self-contained, medium temperature commercial refrigerator (SOC-SC-M) manufactured on or after January 1, 2012, shall have a total daily energy consumption (in kilowatt hours per day) of not more than 0.6 × TDA + 1.0. As used in the preceding sentence, “TDA” means the total display area (ft
+<SU>2</SU>) of the case, as defined in the AHRI Standard 1200 (I-P)-2010, appendix D (incorporated by reference, see § 431.63).</P>
+<P>(c) Each commercial refrigerator with a self-contained condensing unit designed for pull-down temperature applications and transparent doors manufactured on or after January 1, 2010 and before March 27, 2017 shall have a daily energy consumption (in kilowatt-hours per day) of not more than 0.126V + 3.51.</P>
+<P>(d) Each commercial refrigerator, freezer, and refrigerator-freezer with a self-contained condensing unit and without doors; commercial refrigerator, freezer, and refrigerator-freezer with a remote condensing unit; and commercial ice-cream freezer manufactured on or after January 1, 2012 and before March 27, 2017 shall have a daily energy consumption (in kilowatt-hours per day) that does not exceed the levels specified:</P>
+<P>(1) For equipment other than hybrid equipment, refrigerator-freezers or wedge cases:</P>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%">
+<THEAD>
+<TR>
+<TH class="center border-top-single border-bottom-single border-right-single">Equipment category</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Condensing unit<br></br>configuration</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Equipment<br></br>family</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Rating<br></br>temp.<br></br>(°F)</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Operating<br></br>temp.<br></br>(°F)</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Equipment class<br></br>designation *</TH>
+<TH class="center border-top-single border-bottom-single">Maximum daily energy consumption<br></br>(kWh/day)</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">Remote Condensing Commercial Refrigerators and Commercial Freezers</TD>
+<TD class="left border-right-single">Remote (RC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">VOP.RC.M<br></br>VOP.RC.L</TD>
+<TD class="left">0.82 × TDA + 4.07<br></br>2.27 × TDA + 6.85</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">SVO.RC.M<br></br>SVO.RC.L</TD>
+<TD class="left">0.83 × TDA + 3.18<br></br>2.27 × TDA + 6.85</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Open (HZO)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">HZO.RC.M<br></br>HZO.RC.L</TD>
+<TD class="left">0.35 × TDA + 2.88<br></br>0.57 × TDA + 6.88</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Vertical Closed Transparent (VCT)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">VCT.RC.M<br></br>VCT.RC.L</TD>
+<TD class="left">0.22 × TDA + 1.95<br></br>0.56 × TDA + 2.61</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Closed Transparent (HCT)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">HCT.RC.M<br></br>HCT.RC.L</TD>
+<TD class="left">0.16 × TDA + 0.13<br></br>0.34 × TDA + 0.26</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Vertical Closed Solid (VCS)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">VCS.RC.M<br></br>VCS.RC.L</TD>
+<TD class="left">0.11 × V + 0.26<br></br>0.23 × V + 0.54</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Closed Solid (HCS)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">HCS.RC.M<br></br>HCS.RC.L</TD>
+<TD class="left">0.11 × V + 0.26<br></br>0.23 × V + 0.54</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Service Over Counter (SOC)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">SOC.RC.M<br></br>SOC.RC.L</TD>
+<TD class="left">0.51 × TDA + 0.11<br></br>1.08 × TDA + 0.22</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Self-Contained Commercial Refrigerators and Commercial Freezers without Doors</TD>
+<TD class="left border-right-single">Self-Contained (SC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">VOP.SC.M<br></br>VOP.SC.L</TD>
+<TD class="left">1.74 × TDA + 4.71<br></br>4.37 × TDA + 11.82</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">SVO.SC.M<br></br>SVO.SC.L</TD>
+<TD class="left">1.73 × TDA + 4.59<br></br>4.34 × TDA + 11.51</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Open</TD>
+<TD class="right border-right-single">38 (M)<br></br>0 (L)</TD>
+<TD class="right border-right-single">≥32±2<br></br>&lt;32±2</TD>
+<TD class="left border-right-single">HZO.SC.M<br></br>HZO.SC.L</TD>
+<TD class="left">0.77 × TDA + 5.55<br></br>1.92 × TDA + 7.08</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Commercial Ice-Cream Freezers</TD>
+<TD class="left border-right-single">Remote (RC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single">−15 (I)</TD>
+<TD class="right border-right-single">≤−5±2** **</TD>
+<TD class="left border-right-single">VOP.RC.I</TD>
+<TD class="left">2.89 × TDA + 8.7</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">SVO.RC.I</TD>
+<TD class="left">2.89 × TDA + 8.7</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Open (HZO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HZO.RC.I</TD>
+<TD class="left">0.72 × TDA + 8.74</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Vertical Closed Transparent (VCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCT.RC.I</TD>
+<TD class="left">0.66 × TDA + 3.05</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Closed Transparent (HCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCT.RC.I</TD>
+<TD class="left">0.4 × TDA + 0.31</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Vertical Closed Solid (VCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCS.RC.I</TD>
+<TD class="left">0.27 × V + 0.63</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Closed Solid (HCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCS.RC.I</TD>
+<TD class="left">0.27 × V + 0.63</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Service Over Counter (SVO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">SOC.RC.I</TD>
+<TD class="left">1.26 × TDA + 0.26</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Self-Contained (SC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VOP.SC.I</TD>
+<TD class="left">5.55 × TDA + 15.02</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">SVO.SC.I</TD>
+<TD class="left">5.52 × TDA + 14.63</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Open (HZO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HZO.SC.I</TD>
+<TD class="left">2.44 × TDA + 9</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Vertical Closed Transparent (VCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCT.SC.I</TD>
+<TD class="left">0.67 × TDA + 3.29</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Closed Transparent (HCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCT.SC.I</TD>
+<TD class="left">0.56 × TDA + 0.43</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Vertical Closed Solid (VCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCS.SC.I</TD>
+<TD class="left">0.38 × V + 0.88</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Horizontal Closed Solid (HCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCS.SC.I</TD>
+<TD class="left">0.38 × V + 0.88</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single"> </TD>
+<TD class="left border-bottom-single border-right-single"></TD>
+<TD class="left border-bottom-single border-right-single">Service Over Counter (SVO)</TD>
+<TD class="right border-bottom-single border-right-single"> </TD>
+<TD class="right border-bottom-single border-right-single"> </TD>
+<TD class="left border-bottom-single border-right-single">SOC.SC.I</TD>
+<TD class="left border-bottom-single">1.76 × TDA + 0.36
+</TD>
+</TR>
+</TBODY>
+<TFOOT><TR><TD colspan="7">* The meaning of the letters in this column is indicated in the three columns to the left.
+</TD></TR><TR><TD colspan="7">** Ice-cream freezer is defined in 10 CFR 431.62 as a commercial freezer that is designed to operate at or below −5 °F (−21 °C) and that the manufacturer designs, markets, or intends for the storing, displaying, or dispensing of ice cream.</TD></TR></TFOOT></TABLE>
+</DIV></DIV>
+<P>(2) For commercial refrigeration equipment with two or more compartments (<I>i.e.</I>, hybrid refrigerators, hybrid freezers, hybrid refrigerator-freezers, and non-hybrid refrigerator-freezers), the maximum daily energy consumption (MDEC) for each model shall be the sum of the MDEC values for all of its compartments. For each compartment, measure the TDA or volume of that compartment, and determine the appropriate equipment class based on that compartment's equipment family, condensing unit configuration, and designed operating temperature. The MDEC limit for each compartment shall be the calculated value obtained by entering that compartment's TDA or volume into the standard equation in paragraph (d)(1) of this section for that compartment's equipment class. Measure the calculated daily energy consumption (CDEC) or total daily energy consumption (TDEC) for the entire case:</P>
+<P>(i) For remote condensing commercial hybrid refrigerators, hybrid freezers, hybrid refrigerator-freezers, and non-hybrid refrigerator-freezers, where two or more independent condensing units each separately cool only one compartment, measure the total refrigeration load of each compartment separately according to the ARI Standard 1200-2006 test procedure (incorporated by reference, see § 431.63). Calculate compressor energy consumption (CEC) for each compartment using Table 1 in ARI Standard 1200-2006 using the saturated evaporator temperature for that compartment. The CDEC for the entire case shall be the sum of the CEC for each compartment, fan energy consumption (FEC), lighting energy consumption (LEC), anti-condensate energy consumption (AEC), defrost energy consumption (DEC), and condensate evaporator pan energy consumption (PEC) (as measured in ARI Standard 1200-2006).</P>
+<P>(ii) For remote condensing commercial hybrid refrigerators, hybrid freezers, hybrid refrigerator-freezers, and non-hybrid refrigerator-freezers, where two or more compartments are cooled collectively by one condensing unit, measure the total refrigeration load of the entire case according to the ARI Standard 1200-2006 test procedure (incorporated by reference, see § 431.63). Calculate a weighted saturated evaporator temperature for the entire case by:</P>
+<P>(A) Multiplying the saturated evaporator temperature of each compartment by the volume of that compartment (as measured in ARI Standard 1200-2006),</P>
+<P>(B) Summing the resulting values for all compartments, and</P>
+<P>(C) Dividing the resulting total by the total volume of all compartments.</P>
+<P>Calculate the CEC for the entire case using Table 1 in ARI Standard 1200-2006 (incorporated by reference, see § 431.63), using the total refrigeration load and the weighted average saturated evaporator temperature. The CDEC for the entire case shall be the sum of the CEC, FEC, LEC, AEC, DEC, and PEC.</P>
+<P>(iii) For self-contained commercial hybrid refrigerators, hybrid freezers, hybrid refrigerator-freezers, and non-hybrid refrigerator-freezers, measure the TDEC for the entire case according to the ARI Standard 1200-2006 test procedure (incorporated by reference, see § 431.63).</P>
+<P>(3) For remote-condensing and self-contained wedge cases, measure the CDEC or TDEC according to the ARI Standard 1200-2006 test procedure (incorporated by reference, see § 431.63). The MDEC for each model shall be the amount derived by incorporating into the standards equation in paragraph (d)(1) of this section for the appropriate equipment class a value for the TDA that is the product of:</P>
+<P>(i) The vertical height of the air-curtain (or glass in a transparent door) and (ii) The largest overall width of the case, when viewed from the front.</P>
+<P>(e) Each commercial refrigerator, freezer, and refrigerator-freezer with a self-contained condensing unit designed for holding temperature applications and with solid or transparent doors; commercial refrigerator with a self-contained condensing unit designed for pull-down temperature applications and with transparent doors; commercial refrigerator, freezer, and refrigerator-freezer with a self-contained condensing unit and without doors; commercial refrigerator, freezer, and refrigerator-freezer with a remote condensing unit; and commercial ice-cream freezer manufactured on or after March 27, 2017, shall have a daily energy consumption (in kilowatt-hours per day) that does not exceed the levels specified:</P>
+<P>(1) For equipment other than hybrid equipment, refrigerator/freezers, or wedge cases:</P>
+<DIV width="100%"><DIV class="gpotbl_div">
+<TABLE border="1" cellpadding="1" cellspacing="1" class="gpo_table" frame="void" width="100%">
+<THEAD>
+<TR>
+<TH class="center border-top-single border-bottom-single border-right-single">Equipment category</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Condensing<br></br>unit<br></br>configuration</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Equipment<br></br>family</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Rating<br></br>temp.<br></br> °F</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Operating<br></br>temp.<br></br> °F</TH>
+<TH class="center border-top-single border-bottom-single border-right-single">Equipment<br></br>class<br></br>designation *</TH>
+<TH class="center border-top-single border-bottom-single">Maximum<br></br>daily energy<br></br>consumption<br></br>kWh/day</TH>
+</TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD class="left border-right-single">Remote Condensing Commercial Refrigerators and Commercial Freezers</TD>
+<TD class="left border-right-single">Remote (RC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">VOP.RC.M</TD>
+<TD class="left">0.64 × TDA + 4.07.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">VOP.RC.L</TD>
+<TD class="left">2.2 × TDA + 6.85.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"></TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">SVO.RC.M</TD>
+<TD class="left">0.66 × TDA + 3.18.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">SVO.RC.L</TD>
+<TD class="left">2.2 × TDA + 6.85.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Open (HZO)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">HZO.RC.M</TD>
+<TD class="left">0.35 × TDA + 2.88.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">HZO.RC.L</TD>
+<TD class="left">0.55 × TDA + 6.88.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Vertical Closed Transparent (VCT)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">VCT.RC.M</TD>
+<TD class="left">0.15 × TDA + 1.95.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">VCT.RC.L</TD>
+<TD class="left">0.49 × TDA + 2.61.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Transparent (HCT)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">HCT.RC.M</TD>
+<TD class="left">0.16 × TDA + 0.13.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">HCT.RC.L</TD>
+<TD class="left">0.34 × TDA + 0.26.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Vertical Closed Solid (VCS)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">VCS.RC.M</TD>
+<TD class="left">0.1 × V + 0.26.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">VCS.RC.L</TD>
+<TD class="left">0.21 × V + 0.54.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Solid (HCS)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">HCS.RC.M</TD>
+<TD class="left">0.1 × V + 0.26.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">HCS.RC.L</TD>
+<TD class="left">0.21 × V + 0.54.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Service Over Counter (SOC)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">SOC.RC.M</TD>
+<TD class="left">0.44 × TDA + 0.11.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">SOC.RC.L</TD>
+<TD class="left">0.93 × TDA + 0.22.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Self-Contained Commercial Refrigerators and Commercial Freezers Without Doors</TD>
+<TD class="left border-right-single">Self-Contained (SC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">VOP.SC.M</TD>
+<TD class="left">1.69 × TDA + 4.71.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">VOP.SC.L</TD>
+<TD class="left">4.25 × TDA + 11.82.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">SVO.SC.M</TD>
+<TD class="left">1.7 × TDA + 4.59.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">SVO.SC.L</TD>
+<TD class="left">4.26 × TDA + 11.51.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Open (HZO)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">HZO.SC.M</TD>
+<TD class="left">0.72 × TDA + 5.55.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">HZO.SC.L</TD>
+<TD class="left">1.9 × TDA + 7.08.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Self-Contained Commercial Refrigerators and Commercial Freezers With Doors</TD>
+<TD class="left border-right-single">Self-Contained (SC)</TD>
+<TD class="left border-right-single">Vertical Closed Transparent (VCT)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">VCT.SC.M</TD>
+<TD class="left">0.1 × V + 0.86.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">VCT.SC.L</TD>
+<TD class="left">0.29 × V + 2.95.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Vertical Closed Solid (VCS)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">VCS.SC.M</TD>
+<TD class="left">0.05 × V + 1.36.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">VCS.SC.L</TD>
+<TD class="left">0.22 × V + 1.38.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Transparent (HCT)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">HCT.SC.M</TD>
+<TD class="left">0.06 × V + 0.37.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">HCT.SC.L</TD>
+<TD class="left">0.08 × V + 1.23.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Solid (HCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">HCS.SC.M</TD>
+<TD class="left">0.05 × V + 0.91.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">HCS.SC.L</TD>
+<TD class="left">0.06 × V + 1.12.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Service Over Counter (SOC)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">SOC.SC.M</TD>
+<TD class="left">0.52 × TDA + 1.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="right border-right-single">0 (L)</TD>
+<TD class="right border-right-single">&lt;32</TD>
+<TD class="left border-right-single">SOC.SC.L</TD>
+<TD class="left">1.1 × TDA + 2.1.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Self-Contained Commercial Refrigerators with Transparent Doors for Pull-Down Temperature Applications</TD>
+<TD class="left border-right-single">Self-Contained (SC)</TD>
+<TD class="left border-right-single">Pull-Down (PD)</TD>
+<TD class="right border-right-single">38 (M)</TD>
+<TD class="right border-right-single">≥32</TD>
+<TD class="left border-right-single">PD.SC.M</TD>
+<TD class="left">0.11 × V + 0.81.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single">Commercial Ice-Cream Freezers</TD>
+<TD class="left border-right-single">Remote (RC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single">−15 (I)</TD>
+<TD class="right border-right-single">≤−5**</TD>
+<TD class="left border-right-single">VOP.RC.I</TD>
+<TD class="left">2.79 × TDA + 8.7.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">SVO.RC.I</TD>
+<TD class="left">2.79 × TDA + 8.7.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Open (HZO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HZO.RC.I</TD>
+<TD class="left">0.7 × TDA + 8.74.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Vertical Closed Transparent (VCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCT.RC.I</TD>
+<TD class="left">0.58 × TDA + 3.05.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Transparent (HCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCT.RC.I</TD>
+<TD class="left">0.4 × TDA + 0.31.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Vertical Closed Solid (VCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCS.RC.I</TD>
+<TD class="left">0.25 × V + 0.63.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Solid (HCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCS.RC.I</TD>
+<TD class="left">0.25 × V + 0.63.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Service Over Counter (SOC)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">SOC.RC.I</TD>
+<TD class="left">1.09 × TDA + 0.26.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Self-Contained (SC)</TD>
+<TD class="left border-right-single">Vertical Open (VOP)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VOP.SC.I</TD>
+<TD class="left">5.4 × TDA + 15.02.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Semivertical Open (SVO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">SVO.SC.I</TD>
+<TD class="left">5.41 × TDA + 14.63.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Open (HZO)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HZO.SC.I</TD>
+<TD class="left">2.42 × TDA + 9.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Vertical Closed Transparent (VCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCT.SC.I</TD>
+<TD class="left">0.62 × TDA + 3.29.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Transparent (HCT)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCT.SC.I</TD>
+<TD class="left">0.56 × TDA + 0.43.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Vertical Closed Solid (VCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">VCS.SC.I</TD>
+<TD class="left">0.34 × V + 0.88.</TD>
+</TR>
+<TR>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single"> </TD>
+<TD class="left border-right-single">Horizontal Closed Solid (HCS)</TD>
+<TD class="right border-right-single"> </TD>
+<TD class="right border-right-single"> </TD>
+<TD class="left border-right-single">HCS.SC.I</TD>
+<TD class="left">0.34 × V + 0.88.</TD>
+</TR>
+<TR>
+<TD class="left border-bottom-single border-right-single"> </TD>
+<TD class="left border-bottom-single border-right-single"> </TD>
+<TD class="left border-bottom-single border-right-single">Service Over Counter (SOC)</TD>
+<TD class="right border-bottom-single border-right-single"> </TD>
+<TD class="right border-bottom-single border-right-single"> </TD>
+<TD class="left border-bottom-single border-right-single">SOC.SC.I</TD>
+<TD class="left border-bottom-single">1.53 × TDA + 0.36.
+</TD>
+</TR>
+</TBODY>
+<TFOOT><TR><TD colspan="7">* The meaning of the letters in this column is indicated in the columns to the left.
+</TD></TR><TR><TD colspan="7">** Ice-cream freezer is defined in 10 CFR 431.62 as a commercial freezer that is designed to operate at or below −5 °F *(−21 °C) and that the manufacturer designs, markets, or intends for the storing, displaying, or dispensing of ice cream.</TD></TR></TFOOT></TABLE>
+</DIV></DIV>
+<P>(2) For commercial refrigeration equipment with two or more compartments (<I>i.e.,</I> hybrid refrigerators, hybrid freezers, hybrid refrigerator-freezers, and non-hybrid refrigerator-freezers), the maximum daily energy consumption for each model shall be the sum of the MDEC values for all of its compartments. For each compartment, measure the TDA or volume of that compartment, and determine the appropriate equipment class based on that compartment's equipment family, condensing unit configuration, and designed operating temperature. The MDEC limit for each compartment shall be the calculated value obtained by entering that compartment's TDA or volume into the standard equation in paragraph (e)(1) of this section for that compartment's equipment class. Measure the CDEC or TDEC for the entire case as described in § 431.66(d)(2)(i) through (iii), except that where measurements and calculations reference ARI Standard 1200-2006 (incorporated by reference, see § 431.63), AHRI Standard 1200 (I-P)-2010 (incorporated by reference, see § 431.63) shall be used.</P>
+<P>(3) For remote condensing and self-contained wedge cases, measure the CDEC or TDEC according to the AHRI Standard 1200 (I-P)-2010 test procedure (incorporated by reference, see § 431.63). For wedge cases in equipment classes for which a volume metric is used, the MDEC shall be the amount derived from the appropriate standards equation in paragraph (e)(1) of this section. For wedge cases of equipment classes for which a TDA metric is used, the MDEC for each model shall be the amount derived by incorporating into the standards equation in paragraph (e)(1) of this section for the equipment class a value for the TDA that is the product of:</P>
+<P>(i) The vertical height of the air curtain (or glass in a transparent door) and</P>
+<P>(ii) The largest overall width of the case, when viewed from the front.</P>
+<P>(f) <I>Exclusions.</I> The energy conservation standards in paragraphs (b) through (e) of this section do not apply to salad bars, buffet tables, and chef bases or griddle stands.</P>
+<CITA TYPE="N">[70 FR 60414, Oct. 18, 2005, as amended at 74 FR 1140, Jan. 9, 2009; 78 FR 62993, Oct. 23, 2013; 79 FR 22308, Apr. 21, 2014; 79 FR 17816, Mar. 28, 2014]
+</CITA>
+</DIV8>

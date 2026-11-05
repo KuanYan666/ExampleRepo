@@ -1,0 +1,28 @@
+--- houston 2023-07-20 17:00
+outdoor 34.7 C, RH 49 %, W 17.11 g/kg | door openings 153/h, door air 1.39 m3/s = 1.67 kg/s
+store  24.0 C, RH 57.5 %, W 10.72 g/kg (doors sealed: 24.0 C, RH 52.7 %, W 9.81)
+one case load 2.545 kW (sens-from-store 1.454, latent 0.766); sealed 2.475 kW -> +2.8 %
+COP_LT 1.47; lineup electricity 24.63 kW (sealed 24.06); mode cool; AC sens 77.1 kW lat 34.7 kW; heat 0.0 kW
+door sensible load = m cp dT = 18.0 kW ; door latent load = m h_fg dW = 26.7 kW
+freezer lineup credit to store: 26.6 kW (sensible 17.5)
+monthly mean COP: 2.01 1.97 1.88 1.86 1.73 1.62 1.58 1.53 1.61 1.80 1.97 2.04
+monthly mean case load kW: 2.12 2.16 2.22 2.25 2.37 2.42 2.44 2.39 2.39 2.27 2.14 2.07
+store RH range (hourly): 20-71 %, hours above 55 %: 2201, above 60 %: 557
+annual mean case load 2.27 kW vs rated 2.50 kW
+--- minneapolis 2023-01-18 17:00
+outdoor 0.3 C, RH 79 %, W 3.04 g/kg | door openings 153/h, door air 1.45 m3/s = 1.75 kg/s
+store  21.0 C, RH 22.6 %, W 3.48 g/kg (doors sealed: 21.0 C, RH 24.4 %, W 3.74)
+one case load 1.881 kW (sens-from-store 1.350, latent 0.205); sealed 1.901 kW -> -1.1 %
+COP_LT 2.19; lineup electricity 14.22 kW (sealed 14.34); mode heat; AC sens 0.0 kW lat 0.0 kW; heat 86.9 kW
+door sensible load = m cp dT = -36.3 kW ; door latent load = m h_fg dW = -1.9 kW
+freezer lineup credit to store: 18.7 kW (sensible 16.2)
+monthly mean COP: 2.19 2.19 2.19 2.14 1.96 1.78 1.79 1.78 1.87 2.10 2.18 2.19
+monthly mean case load kW: 1.83 1.83 1.84 1.92 2.08 2.20 2.22 2.26 2.19 1.99 1.88 1.87
+store RH range (hourly): 10-69 %, hours above 55 %: 185, above 60 %: 55
+annual mean case load 2.01 kW vs rated 2.50 kW
+houston remote ratio by month: +0.12 +0.07 -0.03 -0.06 -0.14 -0.15 -0.16 -0.17 -0.15 -0.08 +0.08 +0.17 | case-boundary 170.0 MWh, store-boundary 213.0 MWh (site)
+houston plugin ratio by month: +0.00 +0.02 +0.14 +0.17 +0.26 +0.36 +0.40 +0.40 +0.37 +0.22 +0.07 -0.00 | case-boundary 176.8 MWh, store-boundary 177.6 MWh (site)
+houston reclaim ratio by month: -0.24 -0.26 -0.26 -0.27 -0.29 -0.25 -0.24 -0.22 -0.24 -0.27 -0.22 -0.21 | case-boundary 173.6 MWh, store-boundary 107.3 MWh (site)
+minneapolis remote ratio by month: +0.45 +0.45 +0.44 +0.34 +0.04 -0.08 -0.09 -0.09 -0.03 +0.30 +0.43 +0.44 | case-boundary 140.7 MWh, store-boundary 255.5 MWh (site)
+minneapolis plugin ratio by month: -0.43 -0.43 -0.43 -0.29 +0.08 +0.17 +0.16 +0.19 +0.16 -0.16 -0.38 -0.43 | case-boundary 157.9 MWh, store-boundary 42.8 MWh (site)
+minneapolis reclaim ratio by month: -0.27 -0.26 -0.27 -0.26 -0.24 -0.28 -0.29 -0.28 -0.25 -0.21 -0.26 -0.27 | case-boundary 151.2 MWh, store-boundary 53.0 MWh (site)
